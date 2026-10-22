@@ -34,6 +34,8 @@ jobs:
           python-version: "3.12"
       - name: Hämta kupong, streck, odds och resultat
         run: python -m stryktips hamta
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
       - name: Skriv förslag
         run: |
           python -m stryktips forslag --rader "${{ inputs.rader || '64' }}" --risk "${{ inputs.risk || '0.5' }}" || echo "Ingen öppen omgång just nu"

@@ -88,6 +88,8 @@ class Match:
     streck: dict | None = None        # svenska folket, andel 0..1
     tio_tidningar: dict | None = None  # antal tidningar per tecken
     outcome: str | None = None        # "1", "X" eller "2" när matchen är spelad
+    market: dict | None = None        # sannolikheter från The Odds API, se oddsapi.py
+    market_source: str | None = None
 
     @property
     def name(self):
@@ -170,6 +172,11 @@ def load_draw(draw_number):
     result = load_raw("result", draw_number)
     if result:
         apply_result(draw, result)
+    market = (load_raw("marknad", draw_number) or {}).get("matcher", {})
+    for m in draw.matches:
+        info = market.get(str(m.number))
+        if info:
+            m.market, m.market_source = info["sannolikhet"], info["kalla"]
     return draw
 
 

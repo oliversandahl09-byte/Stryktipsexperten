@@ -34,9 +34,12 @@ def normalize(dist):
 def match_probs(match):
     """Bästa uppskattningen av sannolikheten för 1, X och 2 i en match.
 
-    Ordning: aktuella odds, startodds, Tio tidningars tips och sist strecken.
+    Ordning: marknadsodds från The Odds API (Pinnacle i första hand),
+    Svenska Spels aktuella odds, startodds, Tio tidningars tips och sist strecken.
     Returnerar (sannolikheter, källa).
     """
+    if match.market:
+        return normalize(match.market), match.market_source or "marknadsodds"
     for source, probs in (
         ("odds", odds_to_probs(match.odds)),
         ("startodds", odds_to_probs(match.start_odds)),

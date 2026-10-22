@@ -7,10 +7,11 @@
 """
 
 import argparse
+import os
 import sys
 import time
 
-from . import backtest, kupong, rapport, svenskaspel as ss
+from . import backtest, kupong, oddsapi, rapport, svenskaspel as ss
 
 
 def cmd_hamta(args):
@@ -19,6 +20,10 @@ def cmd_hamta(args):
         nr = raw["drawNumber"]
         ss.save_raw("draw", nr, raw)
         print(f"Sparade öppen omgång {nr}")
+        if os.environ.get("ODDS_API_KEY"):
+            oddsapi.update_draw(raw)
+        else:
+            print("Ingen ODDS_API_KEY, använder Svenska Spels odds")
     # Hämta resultat för sparade omgångar som saknar det (t.ex. förra veckan).
     open_numbers = {int(d["drawNumber"]) for d in draws}
     for nr in ss.saved_draw_numbers()[-args.bakat:]:
