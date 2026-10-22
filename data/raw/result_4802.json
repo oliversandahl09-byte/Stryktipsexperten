@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "Brommapoj - Degerfors",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 18313,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 454,
+     "type": "home",
+     "name": "Brommapojkarna",
+     "shortName": "BRO",
+     "mediumName": "Brommapoj",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 235,
+     "type": "away",
+     "name": "Degerfors",
+     "shortName": "DEG",
+     "mediumName": "Degerfors",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "Gefle IF - AFC Eskil",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 18317,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 392,
+     "type": "home",
+     "name": "Gefle",
+     "shortName": "GEF",
+     "mediumName": "Gefle",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 258,
+     "type": "away",
+     "name": "AFC Eskilstuna",
+     "shortName": "ESK",
+     "mediumName": "AFC Eskil",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Viking - Haugesund",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 18339,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 199,
+     "type": "home",
+     "name": "Viking",
+     "shortName": "VIK",
+     "mediumName": "Viking",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    },
+    {
+     "id": 489,
+     "type": "away",
+     "name": "Haugesund",
+     "shortName": "HAU",
+     "mediumName": "Haugesund",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "FC Haka - Inter Åbo",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 2,
+    "away": 2
+   },
+   "matchId": 18345,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 641,
+     "type": "home",
+     "name": "Haka",
+     "shortName": "HAK",
+     "mediumName": "Haka",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    },
+    {
+     "id": 643,
+     "type": "away",
+     "name": "Inter Åbo",
+     "shortName": "INT",
+     "mediumName": "Inter Åbo",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "KuPS - Vaasan Pa",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 18343,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 830,
+     "type": "home",
+     "name": "KuPS",
+     "shortName": "KUPS",
+     "mediumName": "KuPS",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    },
+    {
+     "id": 819,
+     "type": "away",
+     "name": "VPS",
+     "shortName": "VPS",
+     "mediumName": "VPS",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "FC KTP Ko - Ilves",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 18344,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 4148,
+     "type": "home",
+     "name": "Kotka",
+     "shortName": "KOT",
+     "mediumName": "Kotka",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    },
+    {
+     "id": 644,
+     "type": "away",
+     "name": "Ilves",
+     "shortName": "ILV",
+     "mediumName": "Ilves",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "Seinajoen - FC Honka",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 18340,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 640,
+     "type": "home",
+     "name": "SJK",
+     "shortName": "SEI",
+     "mediumName": "SJK",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    },
+    {
+     "id": 832,
+     "type": "away",
+     "name": "Honka",
+     "shortName": "HON",
+     "mediumName": "Honka",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Vestmanna - Fram Reyk",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 18341,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 823,
+     "type": "home",
+     "name": "Vestmannaeyja",
+     "shortName": "IBV",
+     "mediumName": "Vestmanna",
+     "countryId": 43,
+     "countryName": "Island",
+     "isoCode": "ISL"
+    },
+    {
+     "id": 543,
+     "type": "away",
+     "name": "Fram",
+     "shortName": "FRA",
+     "mediumName": "Fram",
+     "countryId": 43,
+     "countryName": "Island",
+     "isoCode": "ISL"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Vasco da - Cruzeiro",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 18353,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 408,
+     "type": "home",
+     "name": "Vasco da Gama",
+     "shortName": "VDG",
+     "mediumName": "Vasco da",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    },
+    {
+     "id": 582,
+     "type": "away",
+     "name": "Cruzeiro",
+     "shortName": "CRU",
+     "mediumName": "Cruzeiro",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "Cuiaba Es - EC Bahia",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 18377,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 531,
+     "type": "home",
+     "name": "Cuiaba Esporte",
+     "shortName": "CUI",
+     "mediumName": "Cuiaba Es",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    },
+    {
+     "id": 864,
+     "type": "away",
+     "name": "Bahia",
+     "shortName": "BAH",
+     "mediumName": "Bahia",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "A Mineiro - Corinthia",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 18451,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 195,
+     "type": "home",
+     "name": "Atletico Mineiro",
+     "shortName": "ATL",
+     "mediumName": "A Mineiro",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    },
+    {
+     "id": 198,
+     "type": "away",
+     "name": "Corinthians",
+     "shortName": "COR",
+     "mediumName": "Corinthia",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "Coritiba - America",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 1
+   },
+   "matchId": 18354,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 436,
+     "type": "home",
+     "name": "Coritiba",
+     "shortName": "COR",
+     "mediumName": "Coritiba",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    },
+    {
+     "id": 298,
+     "type": "away",
+     "name": "America",
+     "shortName": "AMG",
+     "mediumName": "America",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "Palmeiras - Flamengo",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 18355,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 275,
+     "type": "home",
+     "name": "Palmeiras",
+     "shortName": "PAL",
+     "mediumName": "Palmeiras",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    },
+    {
+     "id": 283,
+     "type": "away",
+     "name": "Flamengo",
+     "shortName": "FLA",
+     "mediumName": "Flamengo",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 3,
+   "amount": "960153,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 94,
+   "amount": "11491,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 1268,
+   "amount": "681,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 11887,
+   "amount": "151,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Stryktipset",
+ "productId": 1,
+ "drawNumber": 4802,
+ "currentNetSale": "11078697,00",
+ "regCloseTime": "2023-07-08T15:59:00+02:00"
+}

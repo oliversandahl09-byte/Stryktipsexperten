@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "Nottingha - Man Utd",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 26025,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 69,
+     "type": "home",
+     "name": "Nottingham",
+     "shortName": "NOF",
+     "mediumName": "Nottingha",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 85,
+     "type": "away",
+     "name": "Manchester United",
+     "shortName": "MNU",
+     "mediumName": "Man Utd",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "Aston V - Burnley",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 2
+   },
+   "matchId": 26027,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 84,
+     "type": "home",
+     "name": "Aston Villa",
+     "shortName": "AST",
+     "mediumName": "Aston V",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 1,
+     "type": "away",
+     "name": "Burnley",
+     "shortName": "BUR",
+     "mediumName": "Burnley",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Crystal P - Brentford",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 1
+   },
+   "matchId": 26024,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 87,
+     "type": "home",
+     "name": "Crystal Palace",
+     "shortName": "PAL",
+     "mediumName": "Crystal P",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 80,
+     "type": "away",
+     "name": "Brentford",
+     "shortName": "BRE",
+     "mediumName": "Brentford",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Man City - Sheff U",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 26026,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 2,
+     "type": "home",
+     "name": "Manchester City",
+     "shortName": "MNC",
+     "mediumName": "Man City",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 39,
+     "type": "away",
+     "name": "Sheffield U",
+     "shortName": "SHU",
+     "mediumName": "Sheff U",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "Wolves - Everton",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 0
+   },
+   "matchId": 26029,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 89,
+     "type": "home",
+     "name": "Wolverhampton",
+     "shortName": "WOL",
+     "mediumName": "Wolves",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 62,
+     "type": "away",
+     "name": "Everton",
+     "shortName": "EVE",
+     "mediumName": "Everton",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "Fulham - Arsenal",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 26028,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 68,
+     "type": "home",
+     "name": "Fulham",
+     "shortName": "FUL",
+     "mediumName": "Fulham",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 83,
+     "type": "away",
+     "name": "Arsenal",
+     "shortName": "ARS",
+     "mediumName": "Arsenal",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "Tottenham - Bournemou",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 1
+   },
+   "matchId": 26031,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 86,
+     "type": "home",
+     "name": "Tottenham",
+     "shortName": "TOT",
+     "mediumName": "Tottenham",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 64,
+     "type": "away",
+     "name": "Bournemouth",
+     "shortName": "BRN",
+     "mediumName": "Bournemou",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Juventus - Roma",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 26034,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 173,
+     "type": "home",
+     "name": "Juventus",
+     "shortName": "JUV",
+     "mediumName": "Juventus",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    },
+    {
+     "id": 57,
+     "type": "away",
+     "name": "Roma",
+     "shortName": "ROM",
+     "mediumName": "Roma",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Milan - Sassuolo",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 26033,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 194,
+     "type": "home",
+     "name": "Milan",
+     "shortName": "MIL",
+     "mediumName": "Milan",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    },
+    {
+     "id": 387,
+     "type": "away",
+     "name": "Sassuolo",
+     "shortName": "SAS",
+     "mediumName": "Sassuolo",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "Verona - Salernita",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 26032,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 342,
+     "type": "home",
+     "name": "Verona",
+     "shortName": "VER",
+     "mediumName": "Verona",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    },
+    {
+     "id": 352,
+     "type": "away",
+     "name": "Salernitana",
+     "shortName": "SAL",
+     "mediumName": "Salernita",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "Kilmarnoc - Dundee FC",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 2,
+    "away": 2
+   },
+   "matchId": 26039,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 222,
+     "type": "home",
+     "name": "Kilmarnock",
+     "shortName": "KIL",
+     "mediumName": "Kilmarnoc",
+     "countryId": 23,
+     "countryName": "Skottland",
+     "isoCode": "SCO"
+    },
+    {
+     "id": 395,
+     "type": "away",
+     "name": "Dundee FC",
+     "shortName": "DUN",
+     "mediumName": "Dundee FC",
+     "countryId": 23,
+     "countryName": "Skottland",
+     "isoCode": "SCO"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "Aberdeen - St. Mirre",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 3
+   },
+   "matchId": 26038,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 394,
+     "type": "home",
+     "name": "Aberdeen",
+     "shortName": "ABE",
+     "mediumName": "Aberdeen",
+     "countryId": 23,
+     "countryName": "Skottland",
+     "isoCode": "SCO"
+    },
+    {
+     "id": 401,
+     "type": "away",
+     "name": "St. Mirren",
+     "shortName": "MIR",
+     "mediumName": "St. Mirre",
+     "countryId": 23,
+     "countryName": "Skottland",
+     "isoCode": "SCO"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "Hearts - Ross Coun",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 2,
+    "away": 2
+   },
+   "matchId": 26036,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 402,
+     "type": "home",
+     "name": "Hearts",
+     "shortName": "HOM",
+     "mediumName": "Hearts",
+     "countryId": 23,
+     "countryName": "Skottland",
+     "isoCode": "SCO"
+    },
+    {
+     "id": 403,
+     "type": "away",
+     "name": "Ross County",
+     "shortName": "ROS",
+     "mediumName": "Ross Coun",
+     "countryId": 23,
+     "countryName": "Skottland",
+     "isoCode": "SCO"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 25,
+   "amount": "238375,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 716,
+   "amount": "3121,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 9890,
+   "amount": "180,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 79511,
+   "amount": "46,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Stryktipset",
+ "productId": 1,
+ "drawNumber": 4828,
+ "currentNetSale": "22920736,00",
+ "regCloseTime": "2023-12-30T15:59:00+01:00"
+}

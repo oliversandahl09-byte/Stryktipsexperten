@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "West Ham - Man City",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 82958,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 52,
+     "type": "home",
+     "name": "West Ham",
+     "shortName": "WHU",
+     "mediumName": "West Ham",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 2,
+     "type": "away",
+     "name": "Manchester City",
+     "shortName": "MNC",
+     "mediumName": "Man City",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "Arsenal - Everton",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 82957,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 83,
+     "type": "home",
+     "name": "Arsenal",
+     "shortName": "ARS",
+     "mediumName": "Arsenal",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 62,
+     "type": "away",
+     "name": "Everton",
+     "shortName": "EVE",
+     "mediumName": "Everton",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Chelsea - Newcastle",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 82959,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 71,
+     "type": "home",
+     "name": "Chelsea",
+     "shortName": "CHE",
+     "mediumName": "Chelsea",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 88,
+     "type": "away",
+     "name": "Newcastle",
+     "shortName": "NEW",
+     "mediumName": "Newcastle",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Sunderlan - Brighton",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 82956,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 129,
+     "type": "home",
+     "name": "Sunderland",
+     "shortName": "SUN",
+     "mediumName": "Sunderlan",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 5,
+     "type": "away",
+     "name": "Brighton",
+     "shortName": "BHA",
+     "mediumName": "Brighton",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "Burnley - Bournemou",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 82955,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 1,
+     "type": "home",
+     "name": "Burnley",
+     "shortName": "BUR",
+     "mediumName": "Burnley",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 64,
+     "type": "away",
+     "name": "Bournemouth",
+     "shortName": "BRN",
+     "mediumName": "Bournemou",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "Birmingha - Sheff U",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 82965,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 93,
+     "type": "home",
+     "name": "Birmingham",
+     "shortName": "BIR",
+     "mediumName": "Birmingha",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 39,
+     "type": "away",
+     "name": "Sheffield U",
+     "shortName": "SHU",
+     "mediumName": "Sheff U",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "Leicester - QPR",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 3
+   },
+   "matchId": 82968,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 60,
+     "type": "home",
+     "name": "Leicester",
+     "shortName": "LEI",
+     "mediumName": "Leicester",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 40,
+     "type": "away",
+     "name": "Queens Park Rangers",
+     "shortName": "QPR",
+     "mediumName": "QPR",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Millwall - Blackburn",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 82962,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 33,
+     "type": "home",
+     "name": "Millwall",
+     "shortName": "MIL",
+     "mediumName": "Millwall",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 91,
+     "type": "away",
+     "name": "Blackburn",
+     "shortName": "BLA",
+     "mediumName": "Blackburn",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Norwich - Preston",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 82969,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 6,
+     "type": "home",
+     "name": "Norwich",
+     "shortName": "NOR",
+     "mediumName": "Norwich",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 37,
+     "type": "away",
+     "name": "Preston",
+     "shortName": "PRE",
+     "mediumName": "Preston",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "Stoke - Watford",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 1
+   },
+   "matchId": 82967,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 32,
+     "type": "home",
+     "name": "Stoke",
+     "shortName": "STO",
+     "mediumName": "Stoke",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 79,
+     "type": "away",
+     "name": "Watford",
+     "shortName": "WAT",
+     "mediumName": "Watford",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "West Brom - Hull",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 0
+   },
+   "matchId": 82966,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 63,
+     "type": "home",
+     "name": "West Bromwich",
+     "shortName": "WBA",
+     "mediumName": "West Brom",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 92,
+     "type": "away",
+     "name": "Hull",
+     "shortName": "HUL",
+     "mediumName": "Hull",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "Reading - Plymouth",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 2,
+    "away": 2
+   },
+   "matchId": 82973,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 31,
+     "type": "home",
+     "name": "Reading",
+     "shortName": "REA",
+     "mediumName": "Reading",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 126,
+     "type": "away",
+     "name": "Plymouth",
+     "shortName": "PA",
+     "mediumName": "Plymouth",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "Wycombe - Luton",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 82977,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 128,
+     "type": "home",
+     "name": "Wycombe",
+     "shortName": "WYW",
+     "mediumName": "Wycombe",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 36,
+     "type": "away",
+     "name": "Luton",
+     "shortName": "LUT",
+     "mediumName": "Luton",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 11,
+   "amount": "1181818,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 211,
+   "amount": "14222,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 2854,
+   "amount": "841,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 23017,
+   "amount": "217,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Stryktipset",
+ "productId": 1,
+ "drawNumber": 4944,
+ "currentNetSale": "30778173,00",
+ "regCloseTime": "2026-03-14T15:59:00+01:00"
+}

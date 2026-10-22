@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "USA - Tyskland",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 88960,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 709,
+     "type": "home",
+     "name": "USA",
+     "shortName": "USA",
+     "mediumName": "USA",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    },
+    {
+     "id": 717,
+     "type": "away",
+     "name": "Tyskland",
+     "shortName": "GER",
+     "mediumName": "Tyskland",
+     "countryId": 21,
+     "countryName": "Tyskland",
+     "isoCode": "DEU"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "England - Nya Zeela",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 88963,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 697,
+     "type": "home",
+     "name": "England",
+     "shortName": "ENG",
+     "mediumName": "England",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 706,
+     "type": "away",
+     "name": "Nya Zeeland",
+     "shortName": "NZL",
+     "mediumName": "Nya Zeela",
+     "countryId": 68,
+     "countryName": "Nya Zeeland",
+     "isoCode": "NZL"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Brasilien - Egypten",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 88953,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 712,
+     "type": "home",
+     "name": "Brasilien",
+     "shortName": "BRA",
+     "mediumName": "Brasilien",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    },
+    {
+     "id": 741,
+     "type": "away",
+     "name": "Egypten",
+     "shortName": "EGY",
+     "mediumName": "Egypten",
+     "countryId": 84,
+     "countryName": "Egypten",
+     "isoCode": "EGY"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Portugal - Chile",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 88955,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 684,
+     "type": "home",
+     "name": "Portugal",
+     "shortName": "POR",
+     "mediumName": "Portugal",
+     "countryId": 17,
+     "countryName": "Portugal",
+     "isoCode": "PRT"
+    },
+    {
+     "id": 714,
+     "type": "away",
+     "name": "Chile",
+     "shortName": "CHI",
+     "mediumName": "Chile",
+     "countryId": 20,
+     "countryName": "Chile",
+     "isoCode": "CHL"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "Bolivia - Skottland",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 4
+   },
+   "matchId": 88964,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 1540,
+     "type": "home",
+     "name": "Bolivia",
+     "shortName": "BOL",
+     "mediumName": "Bolivia",
+     "countryId": 34,
+     "countryName": "Bolivia",
+     "isoCode": "BOL"
+    },
+    {
+     "id": 725,
+     "type": "away",
+     "name": "Skottland",
+     "shortName": "SCO",
+     "mediumName": "Skottland",
+     "countryId": 23,
+     "countryName": "Skottland",
+     "isoCode": "SCO"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "Schweiz - Australie",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 89039,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 673,
+     "type": "home",
+     "name": "Schweiz",
+     "shortName": "SUI",
+     "mediumName": "Schweiz",
+     "countryId": 29,
+     "countryName": "Schweiz",
+     "isoCode": "CHE"
+    },
+    {
+     "id": 734,
+     "type": "away",
+     "name": "Australien",
+     "shortName": "AUS",
+     "mediumName": "Australie",
+     "countryId": 80,
+     "countryName": "Australien",
+     "isoCode": "AUS"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "Rumänien - Wales",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 88951,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 718,
+     "type": "home",
+     "name": "Rumänien",
+     "shortName": "ROU",
+     "mediumName": "Rumänien",
+     "countryId": 74,
+     "countryName": "Rumänien",
+     "isoCode": "ROU"
+    },
+    {
+     "id": 724,
+     "type": "away",
+     "name": "Wales",
+     "shortName": "WAL",
+     "mediumName": "Wales",
+     "countryId": 78,
+     "countryName": "Wales",
+     "isoCode": "WAL"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Panama - Bosnien/H",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 88961,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 4193,
+     "type": "home",
+     "name": "Panama",
+     "shortName": "PAN",
+     "mediumName": "Panama",
+     "countryId": 126,
+     "countryName": "Panama",
+     "isoCode": "PAN"
+    },
+    {
+     "id": 704,
+     "type": "away",
+     "name": "Bosnien & Hercegovina",
+     "shortName": "BIH",
+     "mediumName": "Bosnien/H",
+     "countryId": 67,
+     "countryName": "Bosnien och Hercegovina",
+     "isoCode": "BIH"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Venezuela - Turkiet",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 88949,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 737,
+     "type": "home",
+     "name": "Venezuela",
+     "shortName": "VEN",
+     "mediumName": "Venezuela",
+     "countryId": 38,
+     "countryName": "Venezuela",
+     "isoCode": "VEN"
+    },
+    {
+     "id": 719,
+     "type": "away",
+     "name": "Turkiet",
+     "shortName": "TUR",
+     "mediumName": "Turkiet",
+     "countryId": 42,
+     "countryName": "Turkiet",
+     "isoCode": "TUR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "Albanien - Luxemburg",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 88957,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 685,
+     "type": "home",
+     "name": "Albanien",
+     "shortName": "ALB",
+     "mediumName": "Albanien",
+     "countryId": 54,
+     "countryName": "Albanien",
+     "isoCode": "ALB"
+    },
+    {
+     "id": 700,
+     "type": "away",
+     "name": "Luxemburg",
+     "shortName": "LUX",
+     "mediumName": "Luxemburg",
+     "countryId": 64,
+     "countryName": "Luxemburg",
+     "isoCode": "LUX"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "Castellon - Almería",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 89040,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 7775,
+     "type": "home",
+     "name": "Castellón",
+     "shortName": "CAS",
+     "mediumName": "Castellon",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    },
+    {
+     "id": 430,
+     "type": "away",
+     "name": "Almería",
+     "shortName": "ALM",
+     "mediumName": "Almería",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "Gefle - Hamm. TFF",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 4
+   },
+   "matchId": 88956,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 392,
+     "type": "home",
+     "name": "Gefle",
+     "shortName": "GEF",
+     "mediumName": "Gefle",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 449,
+     "type": "away",
+     "name": "Hammarby TFF",
+     "shortName": "HAM",
+     "mediumName": "Hamm. TFF",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "Jön Södra - Trollhätt",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 4,
+    "away": 1
+   },
+   "matchId": 88958,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 272,
+     "type": "home",
+     "name": "Jönköpings Södra",
+     "shortName": "JÖN",
+     "mediumName": "Jön Södra",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 215,
+     "type": "away",
+     "name": "Trollhättan",
+     "shortName": "FCT",
+     "mediumName": "Trollhätt",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 382,
+   "amount": "8434,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 8405,
+   "amount": "143,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 75320,
+   "amount": "0,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 363384,
+   "amount": "0,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Stryktipset",
+ "productId": 1,
+ "drawNumber": 4956,
+ "currentNetSale": "12391860,00",
+ "regCloseTime": "2026-06-06T15:59:00+02:00"
+}

@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "Nederländ - Sverige",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 5,
+    "away": 1
+   },
+   "matchId": 87409,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 678,
+     "type": "home",
+     "name": "Nederländerna",
+     "shortName": "NED",
+     "mediumName": "Nederländ",
+     "countryId": 26,
+     "countryName": "Nederländerna",
+     "isoCode": "NLD"
+    },
+    {
+     "id": 689,
+     "type": "away",
+     "name": "Sverige",
+     "shortName": "SVE",
+     "mediumName": "Sverige",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "Tyskland - Elfenbens",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 87429,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 717,
+     "type": "home",
+     "name": "Tyskland",
+     "shortName": "GER",
+     "mediumName": "Tyskland",
+     "countryId": 21,
+     "countryName": "Tyskland",
+     "isoCode": "DEU"
+    },
+    {
+     "id": 761,
+     "type": "away",
+     "name": "Elfenbenskusten",
+     "shortName": "CIV",
+     "mediumName": "Elfenbens",
+     "countryId": 100,
+     "countryName": "Elfenbenskusten",
+     "isoCode": "CIV"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Ecuador - Curacao",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 87415,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 669,
+     "type": "home",
+     "name": "Ecuador",
+     "shortName": "ECU",
+     "mediumName": "Ecuador",
+     "countryId": 41,
+     "countryName": "Ecuador",
+     "isoCode": "ECU"
+    },
+    {
+     "id": 3408,
+     "type": "away",
+     "name": "Curacao",
+     "shortName": "CUR",
+     "mediumName": "Curacao",
+     "countryId": 123,
+     "countryName": "Curacao",
+     "isoCode": "CUW"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Tunisien - Japan",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 4
+   },
+   "matchId": 87412,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 747,
+     "type": "home",
+     "name": "Tunisien",
+     "shortName": "TUN",
+     "mediumName": "Tunisien",
+     "countryId": 90,
+     "countryName": "Tunisien",
+     "isoCode": "TUN"
+    },
+    {
+     "id": 713,
+     "type": "away",
+     "name": "Japan",
+     "shortName": "JPN",
+     "mediumName": "Japan",
+     "countryId": 72,
+     "countryName": "Japan",
+     "isoCode": "JPN"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "Spanien - Saudiarab",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 4,
+    "away": 0
+   },
+   "matchId": 87406,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 683,
+     "type": "home",
+     "name": "Spanien",
+     "shortName": "ESP",
+     "mediumName": "Spanien",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    },
+    {
+     "id": 708,
+     "type": "away",
+     "name": "Saudiarabien",
+     "shortName": "KSA",
+     "mediumName": "Saudiarab",
+     "countryId": 69,
+     "countryName": "Saudiarabien",
+     "isoCode": "SAU"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "Belgien - Iran",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 87410,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 677,
+     "type": "home",
+     "name": "Belgien",
+     "shortName": "BEL",
+     "mediumName": "Belgien",
+     "countryId": 32,
+     "countryName": "Belgien",
+     "isoCode": "BEL"
+    },
+    {
+     "id": 711,
+     "type": "away",
+     "name": "Iran",
+     "shortName": "IRI",
+     "mediumName": "Iran",
+     "countryId": 71,
+     "countryName": "Iran",
+     "isoCode": "IRN"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "Uruguay - Kap Verde",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 2,
+    "away": 2
+   },
+   "matchId": 87448,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 668,
+     "type": "home",
+     "name": "Uruguay",
+     "shortName": "URU",
+     "mediumName": "Uruguay",
+     "countryId": 35,
+     "countryName": "Uruguay",
+     "isoCode": "URY"
+    },
+    {
+     "id": 16,
+     "type": "away",
+     "name": "Kap Verde",
+     "shortName": "CPV",
+     "mediumName": "Kap Verde",
+     "countryId": 9,
+     "countryName": "Kap Verde",
+     "isoCode": "CPV"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Nya Zeela - Egypten",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 3
+   },
+   "matchId": 87450,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 706,
+     "type": "home",
+     "name": "Nya Zeeland",
+     "shortName": "NZL",
+     "mediumName": "Nya Zeela",
+     "countryId": 68,
+     "countryName": "Nya Zeeland",
+     "isoCode": "NZL"
+    },
+    {
+     "id": 741,
+     "type": "away",
+     "name": "Egypten",
+     "shortName": "EGY",
+     "mediumName": "Egypten",
+     "countryId": 84,
+     "countryName": "Egypten",
+     "isoCode": "EGY"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Brage - Värnamo",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 5,
+    "away": 1
+   },
+   "matchId": 89427,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 334,
+     "type": "home",
+     "name": "Brage",
+     "shortName": "IKB",
+     "mediumName": "Brage",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 201,
+     "type": "away",
+     "name": "Värnamo",
+     "shortName": "VÄR",
+     "mediumName": "Värnamo",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "Helsingbo - GIF Sunds",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 5,
+    "away": 2
+   },
+   "matchId": 89428,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 238,
+     "type": "home",
+     "name": "Helsingborg",
+     "shortName": "HEL",
+     "mediumName": "Helsingbo",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 357,
+     "type": "away",
+     "name": "GIF Sundsvall",
+     "shortName": "SUN",
+     "mediumName": "GIF Sunds",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "Norrby - Nordic U",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 89430,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 208,
+     "type": "home",
+     "name": "Norrby",
+     "shortName": "NOR",
+     "mediumName": "Norrby",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 1301,
+     "type": "away",
+     "name": "Nordic United",
+     "shortName": "NOR",
+     "mediumName": "Nordic U",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "Öster - Falkenber",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 3
+   },
+   "matchId": 89431,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 336,
+     "type": "home",
+     "name": "Öster",
+     "shortName": "ÖST",
+     "mediumName": "Öster",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 450,
+     "type": "away",
+     "name": "Falkenberg",
+     "shortName": "FFF",
+     "mediumName": "Falkenber",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "Östersund - Norrköpin",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 2
+   },
+   "matchId": 89436,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 206,
+     "type": "home",
+     "name": "Östersund",
+     "shortName": "ÖST",
+     "mediumName": "Östersund",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 356,
+     "type": "away",
+     "name": "IFK Norrköping",
+     "shortName": "NKP",
+     "mediumName": "Norrköpin",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 41,
+   "amount": "71744,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 1116,
+   "amount": "988,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 13667,
+   "amount": "64,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 93955,
+   "amount": "19,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Stryktipset",
+ "productId": 1,
+ "drawNumber": 4958,
+ "currentNetSale": "11313587,00",
+ "regCloseTime": "2026-06-20T18:59:00+02:00"
+}

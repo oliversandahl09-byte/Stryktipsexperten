@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "Southampt - Arsenal",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 84115,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 81,
+     "type": "home",
+     "name": "Southampton",
+     "shortName": "SOU",
+     "mediumName": "Southampt",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 83,
+     "type": "away",
+     "name": "Arsenal",
+     "shortName": "ARS",
+     "mediumName": "Arsenal",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "Chelsea - Port Vale",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 7,
+    "away": 0
+   },
+   "matchId": 84120,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 71,
+     "type": "home",
+     "name": "Chelsea",
+     "shortName": "CHE",
+     "mediumName": "Chelsea",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 141,
+     "type": "away",
+     "name": "Port Vale",
+     "shortName": "PVA",
+     "mediumName": "Port Vale",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "At Madrid - Barcelona",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 84116,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 43,
+     "type": "home",
+     "name": "Atlético Madrid",
+     "shortName": "ATM",
+     "mediumName": "At Madrid",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    },
+    {
+     "id": 50,
+     "type": "away",
+     "name": "Barcelona",
+     "shortName": "BAR",
+     "mediumName": "Barcelona",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Mallorca - R. Madrid",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 84121,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 416,
+     "type": "home",
+     "name": "Mallorca",
+     "shortName": "MAL",
+     "mediumName": "Mallorca",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    },
+    {
+     "id": 72,
+     "type": "away",
+     "name": "Real Madrid",
+     "shortName": "RMA",
+     "mediumName": "R. Madrid",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "Real Beti - Espanyol",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 84608,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 233,
+     "type": "home",
+     "name": "Real Betis",
+     "shortName": "RBB",
+     "mediumName": "Real Beti",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    },
+    {
+     "id": 243,
+     "type": "away",
+     "name": "Espanyol",
+     "shortName": "ESP",
+     "mediumName": "Espanyol",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "Lazio - Parma",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 84118,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 316,
+     "type": "home",
+     "name": "Lazio",
+     "shortName": "LAZ",
+     "mediumName": "Lazio",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    },
+    {
+     "id": 1056,
+     "type": "away",
+     "name": "Parma",
+     "shortName": "PAR",
+     "mediumName": "Parma",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "Verona - Fiorentin",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 84119,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 342,
+     "type": "home",
+     "name": "Verona",
+     "shortName": "VER",
+     "mediumName": "Verona",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    },
+    {
+     "id": 353,
+     "type": "away",
+     "name": "Fiorentina",
+     "shortName": "FIO",
+     "mediumName": "Fiorentin",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Stuttgart - Dortmund",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 2
+   },
+   "matchId": 84114,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 148,
+     "type": "home",
+     "name": "Stuttgart",
+     "shortName": "STU",
+     "mediumName": "Stuttgart",
+     "countryId": 21,
+     "countryName": "Tyskland",
+     "isoCode": "DEU"
+    },
+    {
+     "id": 149,
+     "type": "away",
+     "name": "Dortmund",
+     "shortName": "BVB",
+     "mediumName": "Dortmund",
+     "countryId": 21,
+     "countryName": "Tyskland",
+     "isoCode": "DEU"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Strasbour - Nice",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 1
+   },
+   "matchId": 84614,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 250,
+     "type": "home",
+     "name": "Strasbourg",
+     "shortName": "RCS",
+     "mediumName": "Strasbour",
+     "countryId": 22,
+     "countryName": "Frankrike",
+     "isoCode": "FRA"
+    },
+    {
+     "id": 247,
+     "type": "away",
+     "name": "Nice",
+     "shortName": "NIC",
+     "mediumName": "Nice",
+     "countryId": 22,
+     "countryName": "Frankrike",
+     "isoCode": "FRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "Brest - Rennes",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 3,
+    "away": 4
+   },
+   "matchId": 84606,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 268,
+     "type": "home",
+     "name": "Brest",
+     "shortName": "BRE",
+     "mediumName": "Brest",
+     "countryId": 22,
+     "countryName": "Frankrike",
+     "isoCode": "FRA"
+    },
+    {
+     "id": 223,
+     "type": "away",
+     "name": "Rennes",
+     "shortName": "REN",
+     "mediumName": "Rennes",
+     "countryId": 22,
+     "countryName": "Frankrike",
+     "isoCode": "FRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "Lille - Lens",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 0
+   },
+   "matchId": 84611,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 266,
+     "type": "home",
+     "name": "Lille",
+     "shortName": "LIL",
+     "mediumName": "Lille",
+     "countryId": 22,
+     "countryName": "Frankrike",
+     "isoCode": "FRA"
+    },
+    {
+     "id": 267,
+     "type": "away",
+     "name": "Lens",
+     "shortName": "LEN",
+     "mediumName": "Lens",
+     "countryId": 22,
+     "countryName": "Frankrike",
+     "isoCode": "FRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "OH Leuven - St. Liege",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 3
+   },
+   "matchId": 84599,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 1004,
+     "type": "home",
+     "name": "OH Leuven",
+     "shortName": "OHE",
+     "mediumName": "OH Leuven",
+     "countryId": 32,
+     "countryName": "Belgien",
+     "isoCode": "BEL"
+    },
+    {
+     "id": 1019,
+     "type": "away",
+     "name": "Standard Liege",
+     "shortName": "STL",
+     "mediumName": "St. Liege",
+     "countryId": 32,
+     "countryName": "Belgien",
+     "isoCode": "BEL"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "Ajax - Twente",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 84603,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 180,
+     "type": "home",
+     "name": "Ajax",
+     "shortName": "AJA",
+     "mediumName": "Ajax",
+     "countryId": 26,
+     "countryName": "Nederländerna",
+     "isoCode": "NLD"
+    },
+    {
+     "id": 166,
+     "type": "away",
+     "name": "Twente",
+     "shortName": "TWE",
+     "mediumName": "Twente",
+     "countryId": 26,
+     "countryName": "Nederländerna",
+     "isoCode": "NLD"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 11,
+   "amount": "875238,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 268,
+   "amount": "8923,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 3830,
+   "amount": "499,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 33973,
+   "amount": "117,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Stryktipset",
+ "productId": 1,
+ "drawNumber": 4947,
+ "currentNetSale": "24528680,00",
+ "regCloseTime": "2026-04-04T16:14:00+02:00"
+}

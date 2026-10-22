@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "Nederländ - Irland",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 25386,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 678,
+     "type": "home",
+     "name": "Nederländerna",
+     "shortName": "NED",
+     "mediumName": "Nederländ",
+     "countryId": 26,
+     "countryName": "Nederländerna",
+     "isoCode": "NLD"
+    },
+    {
+     "id": 679,
+     "type": "away",
+     "name": "Irland",
+     "shortName": "IRL",
+     "mediumName": "Irland",
+     "countryId": 27,
+     "countryName": "Irland",
+     "isoCode": "IRL"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "Israel - Rumänien",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 25387,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 688,
+     "type": "home",
+     "name": "Israel",
+     "shortName": "ISR",
+     "mediumName": "Israel",
+     "countryId": 56,
+     "countryName": "Israel",
+     "isoCode": "ISR"
+    },
+    {
+     "id": 718,
+     "type": "away",
+     "name": "Rumänien",
+     "shortName": "ROU",
+     "mediumName": "Rumänien",
+     "countryId": 74,
+     "countryName": "Rumänien",
+     "isoCode": "ROU"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Schweiz - Kosovo",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 25388,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 673,
+     "type": "home",
+     "name": "Schweiz",
+     "shortName": "SUI",
+     "mediumName": "Schweiz",
+     "countryId": 29,
+     "countryName": "Schweiz",
+     "isoCode": "CHE"
+    },
+    {
+     "id": 682,
+     "type": "away",
+     "name": "Kosovo",
+     "shortName": "KOS",
+     "mediumName": "Kosovo",
+     "countryId": 53,
+     "countryName": "Kosovo",
+     "isoCode": "XXK"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Tyskland - Turkiet",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 2,
+    "away": 3
+   },
+   "matchId": 25411,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 717,
+     "type": "home",
+     "name": "Tyskland",
+     "shortName": "GER",
+     "mediumName": "Tyskland",
+     "countryId": 21,
+     "countryName": "Tyskland",
+     "isoCode": "DEU"
+    },
+    {
+     "id": 719,
+     "type": "away",
+     "name": "Turkiet",
+     "shortName": "TUR",
+     "mediumName": "Turkiet",
+     "countryId": 42,
+     "countryName": "Turkiet",
+     "isoCode": "TUR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "Blackpool - Shrewsbur",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 4,
+    "away": 0
+   },
+   "matchId": 25810,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 38,
+     "type": "home",
+     "name": "Blackpool",
+     "shortName": "BLP",
+     "mediumName": "Blackpool",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 130,
+     "type": "away",
+     "name": "Shrewsbury",
+     "shortName": "SHR",
+     "mediumName": "Shrewsbur",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "Stevenage - Lincoln",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 25812,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 133,
+     "type": "home",
+     "name": "Stevenage",
+     "shortName": "STE",
+     "mediumName": "Stevenage",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 104,
+     "type": "away",
+     "name": "Lincoln",
+     "shortName": "LIC",
+     "mediumName": "Lincoln",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "Accringto - Wrexham",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 25814,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 108,
+     "type": "home",
+     "name": "Accrington",
+     "shortName": "ACC",
+     "mediumName": "Accringto",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 1554,
+     "type": "away",
+     "name": "Wrexham",
+     "shortName": "WRE",
+     "mediumName": "Wrexham",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Barrow - Crawley",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 25818,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 99,
+     "type": "home",
+     "name": "Barrow",
+     "shortName": "BAR",
+     "mediumName": "Barrow",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 98,
+     "type": "away",
+     "name": "Crawley Town",
+     "shortName": "CRA",
+     "mediumName": "Crawley",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Forest Gr - Grimsby",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 2,
+    "away": 2
+   },
+   "matchId": 25815,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 138,
+     "type": "home",
+     "name": "Forest Green",
+     "shortName": "FGR",
+     "mediumName": "Forest Gr",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 785,
+     "type": "away",
+     "name": "Grimsby",
+     "shortName": "GRI",
+     "mediumName": "Grimsby",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "Gillingha - Salford",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 1
+   },
+   "matchId": 25813,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 127,
+     "type": "home",
+     "name": "Gillingham",
+     "shortName": "GIL",
+     "mediumName": "Gillingha",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 117,
+     "type": "away",
+     "name": "Salford",
+     "shortName": "SAL",
+     "mediumName": "Salford",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "Harrogate - Swindon",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 25816,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 118,
+     "type": "home",
+     "name": "Harrogate",
+     "shortName": "HTO",
+     "mediumName": "Harrogate",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 134,
+     "type": "away",
+     "name": "Swindon",
+     "shortName": "SWI",
+     "mediumName": "Swindon",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "Mansfield - Newport",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 25817,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 120,
+     "type": "home",
+     "name": "Mansfield",
+     "shortName": "MAT",
+     "mediumName": "Mansfield",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 135,
+     "type": "away",
+     "name": "Newport",
+     "shortName": "NC",
+     "mediumName": "Newport",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "Sutton - Tranmere",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 25820,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 121,
+     "type": "home",
+     "name": "Sutton",
+     "shortName": "SUT",
+     "mediumName": "Sutton",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 136,
+     "type": "away",
+     "name": "Tranmere",
+     "shortName": "TRA",
+     "mediumName": "Tranmere",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 13,
+   "amount": "312927,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 665,
+   "amount": "2294,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 9851,
+   "amount": "123,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 81775,
+   "amount": "31,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Stryktipset",
+ "productId": 1,
+ "drawNumber": 4821,
+ "currentNetSale": "15646393,00",
+ "regCloseTime": "2023-11-18T15:59:00+01:00"
+}

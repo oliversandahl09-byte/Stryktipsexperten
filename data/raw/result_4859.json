@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "Brommapoj - Halmstad",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 4,
+    "away": 1
+   },
+   "matchId": 41440,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 454,
+     "type": "home",
+     "name": "Brommapojkarna",
+     "shortName": "BRO",
+     "mediumName": "Brommapoj",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 207,
+     "type": "away",
+     "name": "Halmstad",
+     "shortName": "HBK",
+     "mediumName": "Halmstad",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "Sandviken - Gefle",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 4,
+    "away": 0
+   },
+   "matchId": 41456,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 310,
+     "type": "home",
+     "name": "Sandviken",
+     "shortName": "SAN",
+     "mediumName": "Sandviken",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 392,
+     "type": "away",
+     "name": "Gefle",
+     "shortName": "GEF",
+     "mediumName": "Gefle",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Varberg - Helsingbo",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 3
+   },
+   "matchId": 41459,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 354,
+     "type": "home",
+     "name": "Varberg",
+     "shortName": "VBG",
+     "mediumName": "Varberg",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 238,
+     "type": "away",
+     "name": "Helsingborg",
+     "shortName": "HEL",
+     "mediumName": "Helsingbo",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Midtjylla - Aalborg",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 41467,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 412,
+     "type": "home",
+     "name": "Midtjylland",
+     "shortName": "MJY",
+     "mediumName": "Midtjylla",
+     "countryId": 31,
+     "countryName": "Danmark",
+     "isoCode": "DNK"
+    },
+    {
+     "id": 461,
+     "type": "away",
+     "name": "Aalborg",
+     "shortName": "AAB",
+     "mediumName": "Aalborg",
+     "countryId": 31,
+     "countryName": "Danmark",
+     "isoCode": "DNK"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "Sp Lissab - Porto",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 3,
+    "away": 3
+   },
+   "matchId": 41450,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 171,
+     "type": "home",
+     "name": "Sporting Lissabon",
+     "shortName": "SPO",
+     "mediumName": "Sp Lissab",
+     "countryId": 17,
+     "countryName": "Portugal",
+     "isoCode": "PRT"
+    },
+    {
+     "id": 314,
+     "type": "away",
+     "name": "Porto",
+     "shortName": "FCP",
+     "mediumName": "Porto",
+     "countryId": 17,
+     "countryName": "Portugal",
+     "isoCode": "PRT"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "Galatasar - Besiktas",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 5
+   },
+   "matchId": 41572,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 417,
+     "type": "home",
+     "name": "Galatasaray",
+     "shortName": "GAL",
+     "mediumName": "Galatasar",
+     "countryId": 42,
+     "countryName": "Turkiet",
+     "isoCode": "TUR"
+    },
+    {
+     "id": 331,
+     "type": "away",
+     "name": "Besiktas",
+     "shortName": "BES",
+     "mediumName": "Besiktas",
+     "countryId": 42,
+     "countryName": "Turkiet",
+     "isoCode": "TUR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "Grasshopp - Basel",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 3
+   },
+   "matchId": 41464,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 176,
+     "type": "home",
+     "name": "Grasshoppers",
+     "shortName": "GCZ",
+     "mediumName": "Grasshopp",
+     "countryId": 29,
+     "countryName": "Schweiz",
+     "isoCode": "CHE"
+    },
+    {
+     "id": 577,
+     "type": "away",
+     "name": "Basel",
+     "shortName": "FCB",
+     "mediumName": "Basel",
+     "countryId": 29,
+     "countryName": "Schweiz",
+     "isoCode": "CHE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Lugano - Servette",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 1
+   },
+   "matchId": 41466,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 553,
+     "type": "home",
+     "name": "Lugano",
+     "shortName": "LUG",
+     "mediumName": "Lugano",
+     "countryId": 29,
+     "countryName": "Schweiz",
+     "isoCode": "CHE"
+    },
+    {
+     "id": 322,
+     "type": "away",
+     "name": "Servette",
+     "shortName": "SER",
+     "mediumName": "Servette",
+     "countryId": 29,
+     "countryName": "Schweiz",
+     "isoCode": "CHE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Luzern - Sion",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 41471,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 177,
+     "type": "home",
+     "name": "Luzern",
+     "shortName": "FCL",
+     "mediumName": "Luzern",
+     "countryId": 29,
+     "countryName": "Schweiz",
+     "isoCode": "CHE"
+    },
+    {
+     "id": 552,
+     "type": "away",
+     "name": "Sion",
+     "shortName": "SIO",
+     "mediumName": "Sion",
+     "countryId": 29,
+     "countryName": "Schweiz",
+     "isoCode": "CHE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "Motherwel - Ross Coun",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 41463,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 397,
+     "type": "home",
+     "name": "Motherwell",
+     "shortName": "MOT",
+     "mediumName": "Motherwel",
+     "countryId": 23,
+     "countryName": "Skottland",
+     "isoCode": "SCO"
+    },
+    {
+     "id": 403,
+     "type": "away",
+     "name": "Ross County",
+     "shortName": "ROS",
+     "mediumName": "Ross Coun",
+     "countryId": 23,
+     "countryName": "Skottland",
+     "isoCode": "SCO"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "Mechelen - Westerlo",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 2,
+    "away": 4
+   },
+   "matchId": 41469,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 374,
+     "type": "home",
+     "name": "Mechelen",
+     "shortName": "KV",
+     "mediumName": "Mechelen",
+     "countryId": 32,
+     "countryName": "Belgien",
+     "isoCode": "BEL"
+    },
+    {
+     "id": 1010,
+     "type": "away",
+     "name": "Westerlo",
+     "shortName": "WES",
+     "mediumName": "Westerlo",
+     "countryId": 32,
+     "countryName": "Belgien",
+     "isoCode": "BEL"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "OH Leuven - Genk",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 1
+   },
+   "matchId": 41470,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 1004,
+     "type": "home",
+     "name": "OH Leuven",
+     "shortName": "OHE",
+     "mediumName": "OH Leuven",
+     "countryId": 32,
+     "countryName": "Belgien",
+     "isoCode": "BEL"
+    },
+    {
+     "id": 426,
+     "type": "away",
+     "name": "Genk",
+     "shortName": "GEN",
+     "mediumName": "Genk",
+     "countryId": 32,
+     "countryName": "Belgien",
+     "isoCode": "BEL"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "St. Truid - Charleroi",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 4
+   },
+   "matchId": 41472,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 1022,
+     "type": "home",
+     "name": "St. Truidense",
+     "shortName": "STT",
+     "mediumName": "St. Truid",
+     "countryId": 32,
+     "countryName": "Belgien",
+     "isoCode": "BEL"
+    },
+    {
+     "id": 375,
+     "type": "away",
+     "name": "Charleroi",
+     "shortName": "CHA",
+     "mediumName": "Charleroi",
+     "countryId": 32,
+     "countryName": "Belgien",
+     "isoCode": "BEL"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 68,
+   "amount": "100610,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 1342,
+   "amount": "1021,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 12009,
+   "amount": "91,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 67288,
+   "amount": "33,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Stryktipset",
+ "productId": 1,
+ "drawNumber": 4859,
+ "currentNetSale": "14054519,00",
+ "regCloseTime": "2024-08-03T15:59:00+02:00"
+}

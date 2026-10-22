@@ -1,0 +1,2040 @@
+{
+ "productName": "Stryktipset",
+ "seasonLastDraw": false,
+ "productId": 1,
+ "currentNetSale": "11003206,00",
+ "regCloseDescription": "Stryktipset v 26, stänger 2026-06-27 15:59",
+ "extraInfo": null,
+ "drawNumber": 4959,
+ "betIndex": 0,
+ "drawState": "Finalized",
+ "drawStateId": 20,
+ "regBetDisabled": "NotDisabled",
+ "regOpenTime": "2026-06-22T19:00:00+02:00",
+ "regCloseTime": "2026-06-27T15:59:00+02:00",
+ "cancelCloseTime": "2026-06-27T16:00:00+02:00",
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "drawComment": "Stryktipset v. 2026-26",
+ "bombenDrawNum": 969,
+ "relatedDraws": [
+  {
+   "productId": 23,
+   "drawNumber": 969,
+   "regCloseTime": "2026-06-27T16:59:00+02:00"
+  }
+ ],
+ "rowPrice": "1,00",
+ "fund": null,
+ "drawEvents": [
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Panama - England",
+   "extraInfo": null,
+   "eventNumber": 1,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 87425,
+    "matchStart": "2026-06-27T23:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-06-28T00:55:03+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 4193,
+      "type": "home",
+      "name": "Panama",
+      "result": "0",
+      "shortName": "PAN",
+      "mediumName": "Panama",
+      "countryId": 126,
+      "countryName": "Panama",
+      "isoCode": "PAN"
+     },
+     {
+      "id": 697,
+      "type": "away",
+      "name": "England",
+      "result": "2",
+      "shortName": "ENG",
+      "mediumName": "England",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 136,
+     "name": "VM",
+     "country": {
+      "id": 1,
+      "name": "Internationell",
+      "isoCode": "INT"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "0",
+      "away": "2"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "2"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "0",
+      "away": "2"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "12,50",
+    "x": "6,25",
+    "two": "1,25"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-06-27T16:00:00.346+02:00",
+    "distributionRefDate": "2026-06-27T15:58:32.598+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "12,50"
+      },
+      "distribution": {
+       "distribution": "5",
+       "refDistribution": "5"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "6,25"
+      },
+      "distribution": {
+       "distribution": "9",
+       "refDistribution": "9"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,25"
+      },
+      "distribution": {
+       "distribution": "86",
+       "refDistribution": "86"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "5",
+    "x": "9",
+    "two": "86",
+    "date": "2026-06-27T16:00:00.346+02:00",
+    "refOne": "5",
+    "refX": "9",
+    "refTwo": "86",
+    "refDate": "2026-06-27T15:58:32.598+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "66457050"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Kroatien - Ghana",
+   "extraInfo": null,
+   "eventNumber": 2,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 87440,
+    "matchStart": "2026-06-27T23:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-06-28T00:58:43+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 23,
+      "type": "home",
+      "name": "Kroatien",
+      "result": "2",
+      "shortName": "CRO",
+      "mediumName": "Kroatien",
+      "countryId": 13,
+      "countryName": "Kroatien",
+      "isoCode": "HRV"
+     },
+     {
+      "id": 749,
+      "type": "away",
+      "name": "Ghana",
+      "result": "1",
+      "shortName": "GHA",
+      "mediumName": "Ghana",
+      "countryId": 92,
+      "countryName": "Ghana",
+      "isoCode": "GHA"
+     }
+    ],
+    "league": {
+     "id": 136,
+     "name": "VM",
+     "country": {
+      "id": 1,
+      "name": "Internationell",
+      "isoCode": "INT"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "2",
+      "away": "1"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "1",
+      "away": "1"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "2",
+      "away": "1"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "1,64",
+    "x": "3,75",
+    "two": "6,10"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-06-27T16:00:00.346+02:00",
+    "distributionRefDate": "2026-06-27T15:58:32.598+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,64"
+      },
+      "distribution": {
+       "distribution": "47",
+       "refDistribution": "47"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,75"
+      },
+      "distribution": {
+       "distribution": "33",
+       "refDistribution": "33"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "6,10"
+      },
+      "distribution": {
+       "distribution": "20",
+       "refDistribution": "20"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "47",
+    "x": "33",
+    "two": "20",
+    "date": "2026-06-27T16:00:00.346+02:00",
+    "refOne": "47",
+    "refX": "33",
+    "refTwo": "20",
+    "refDate": "2026-06-27T15:58:32.598+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "66457052"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Colombia - Portugal",
+   "extraInfo": null,
+   "eventNumber": 3,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 87424,
+    "matchStart": "2026-06-28T01:30:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-06-28T03:28:14+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 707,
+      "type": "home",
+      "name": "Colombia",
+      "result": "0",
+      "shortName": "COL",
+      "mediumName": "Colombia",
+      "countryId": 40,
+      "countryName": "Colombia",
+      "isoCode": "COL"
+     },
+     {
+      "id": 684,
+      "type": "away",
+      "name": "Portugal",
+      "result": "0",
+      "shortName": "POR",
+      "mediumName": "Portugal",
+      "countryId": 17,
+      "countryName": "Portugal",
+      "isoCode": "PRT"
+     }
+    ],
+    "league": {
+     "id": 136,
+     "name": "VM",
+     "country": {
+      "id": 1,
+      "name": "Internationell",
+      "isoCode": "INT"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "0",
+      "away": "0"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "3,65",
+    "x": "3,50",
+    "two": "2,08"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-06-27T16:00:00.346+02:00",
+    "distributionRefDate": "2026-06-27T15:58:32.598+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,65"
+      },
+      "distribution": {
+       "distribution": "23",
+       "refDistribution": "23"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,50"
+      },
+      "distribution": {
+       "distribution": "28",
+       "refDistribution": "28"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,08"
+      },
+      "distribution": {
+       "distribution": "49",
+       "refDistribution": "49"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "23",
+    "x": "28",
+    "two": "49",
+    "date": "2026-06-27T16:00:00.346+02:00",
+    "refOne": "23",
+    "refX": "28",
+    "refTwo": "49",
+    "refDate": "2026-06-27T15:58:32.598+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "66457038"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "DR Kongo - Uzbekista",
+   "extraInfo": null,
+   "eventNumber": 4,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 87447,
+    "matchStart": "2026-06-28T01:30:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-06-28T03:31:46+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 2658,
+      "type": "home",
+      "name": "DR Kongo",
+      "result": "3",
+      "shortName": "COD",
+      "mediumName": "DR Kongo",
+      "countryId": 122,
+      "countryName": "DR Kongo",
+      "isoCode": "COD"
+     },
+     {
+      "id": 1485,
+      "type": "away",
+      "name": "Uzbekistan",
+      "result": "1",
+      "shortName": "UZB",
+      "mediumName": "Uzbekista",
+      "countryId": 120,
+      "countryName": "Uzbekistan",
+      "isoCode": "UZB"
+     }
+    ],
+    "league": {
+     "id": 136,
+     "name": "VM",
+     "country": {
+      "id": 1,
+      "name": "Internationell",
+      "isoCode": "INT"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "3",
+      "away": "1"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "1"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "3",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "3",
+      "away": "1"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "2,07",
+    "x": "3,70",
+    "two": "3,45"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-06-27T16:00:00.346+02:00",
+    "distributionRefDate": "2026-06-27T15:58:32.598+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,07"
+      },
+      "distribution": {
+       "distribution": "67",
+       "refDistribution": "67"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,70"
+      },
+      "distribution": {
+       "distribution": "21",
+       "refDistribution": "21"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,45"
+      },
+      "distribution": {
+       "distribution": "12",
+       "refDistribution": "12"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "67",
+    "x": "21",
+    "two": "12",
+    "date": "2026-06-27T16:00:00.346+02:00",
+    "refOne": "67",
+    "refX": "21",
+    "refTwo": "12",
+    "refDate": "2026-06-27T15:58:32.598+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "66457040"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Jordanien - Argentina",
+   "extraInfo": null,
+   "eventNumber": 5,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 87442,
+    "matchStart": "2026-06-28T04:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-06-28T05:57:12+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 735,
+      "type": "home",
+      "name": "Jordanien",
+      "result": "1",
+      "shortName": "JOR",
+      "mediumName": "Jordanien",
+      "countryId": 81,
+      "countryName": "Jordanien",
+      "isoCode": "JOR"
+     },
+     {
+      "id": 755,
+      "type": "away",
+      "name": "Argentina",
+      "result": "3",
+      "shortName": "ARG",
+      "mediumName": "Argentina",
+      "countryId": 18,
+      "countryName": "Argentina",
+      "isoCode": "ARG"
+     }
+    ],
+    "league": {
+     "id": 136,
+     "name": "VM",
+     "country": {
+      "id": 1,
+      "name": "Internationell",
+      "isoCode": "INT"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "1",
+      "away": "3"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "2"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "1",
+      "away": "1"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "1",
+      "away": "3"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "16,00",
+    "x": "6,75",
+    "two": "1,21"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-06-27T16:00:00.346+02:00",
+    "distributionRefDate": "2026-06-27T15:58:32.598+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "16,00"
+      },
+      "distribution": {
+       "distribution": "5",
+       "refDistribution": "5"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "6,75"
+      },
+      "distribution": {
+       "distribution": "9",
+       "refDistribution": "8"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,21"
+      },
+      "distribution": {
+       "distribution": "86",
+       "refDistribution": "87"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "5",
+    "x": "9",
+    "two": "86",
+    "date": "2026-06-27T16:00:00.346+02:00",
+    "refOne": "5",
+    "refX": "8",
+    "refTwo": "87",
+    "refDate": "2026-06-27T15:58:32.598+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "66457026"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Algeriet - Österrike",
+   "extraInfo": null,
+   "eventNumber": 6,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 87433,
+    "matchStart": "2026-06-28T04:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-06-28T05:58:54+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 774,
+      "type": "home",
+      "name": "Algeriet",
+      "result": "3",
+      "shortName": "ALG",
+      "mediumName": "Algeriet",
+      "countryId": 106,
+      "countryName": "Algeriet",
+      "isoCode": "DZA"
+     },
+     {
+      "id": 692,
+      "type": "away",
+      "name": "Österrike",
+      "result": "3",
+      "shortName": "AUT",
+      "mediumName": "Österrike",
+      "countryId": 59,
+      "countryName": "Österrike",
+      "isoCode": "AUT"
+     }
+    ],
+    "league": {
+     "id": 136,
+     "name": "VM",
+     "country": {
+      "id": 1,
+      "name": "Internationell",
+      "isoCode": "INT"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "3",
+      "away": "3"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "1",
+      "away": "1"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "2",
+      "away": "2"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "3",
+      "away": "3"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "3,35",
+    "x": "2,65",
+    "two": "2,80"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-06-27T16:00:00.346+02:00",
+    "distributionRefDate": "2026-06-27T15:58:32.598+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,35"
+      },
+      "distribution": {
+       "distribution": "22",
+       "refDistribution": "22"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,65"
+      },
+      "distribution": {
+       "distribution": "42",
+       "refDistribution": "42"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,80"
+      },
+      "distribution": {
+       "distribution": "36",
+       "refDistribution": "36"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "22",
+    "x": "42",
+    "two": "36",
+    "date": "2026-06-27T16:00:00.346+02:00",
+    "refOne": "22",
+    "refX": "42",
+    "refTwo": "36",
+    "refDate": "2026-06-27T15:58:32.598+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "66457028"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "GIF Sunds - Östersund",
+   "extraInfo": null,
+   "eventNumber": 7,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 89559,
+    "matchStart": "2026-06-27T17:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-06-27T18:52:44+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 357,
+      "type": "home",
+      "name": "GIF Sundsvall",
+      "result": "0",
+      "shortName": "SUN",
+      "mediumName": "GIF Sunds",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 206,
+      "type": "away",
+      "name": "Östersund",
+      "result": "2",
+      "shortName": "ÖST",
+      "mediumName": "Östersund",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 26,
+     "name": "Superettan",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "0",
+      "away": "2"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "2"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "0",
+      "away": "2"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "3,35",
+    "x": "3,40",
+    "two": "2,12"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-06-27T16:00:00.346+02:00",
+    "distributionRefDate": "2026-06-27T15:58:32.598+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,35"
+      },
+      "distribution": {
+       "distribution": "22",
+       "refDistribution": "22"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,40"
+      },
+      "distribution": {
+       "distribution": "25",
+       "refDistribution": "25"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,12"
+      },
+      "distribution": {
+       "distribution": "53",
+       "refDistribution": "53"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "22",
+    "x": "25",
+    "two": "53",
+    "date": "2026-06-27T16:00:00.346+02:00",
+    "refOne": "22",
+    "refX": "25",
+    "refTwo": "53",
+    "refDate": "2026-06-27T15:58:32.598+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "67126202"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Nordic U - Oddevold",
+   "extraInfo": null,
+   "eventNumber": 8,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 89550,
+    "matchStart": "2026-06-27T17:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-06-27T18:56:57+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 1301,
+      "type": "home",
+      "name": "Nordic United",
+      "result": "3",
+      "shortName": "NOR",
+      "mediumName": "Nordic U",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 446,
+      "type": "away",
+      "name": "Oddevold",
+      "result": "3",
+      "shortName": "ODD",
+      "mediumName": "Oddevold",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 26,
+     "name": "Superettan",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "3",
+      "away": "3"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "2",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "1",
+      "away": "3"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "3",
+      "away": "3"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "2,63",
+    "x": "3,45",
+    "two": "2,50"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-06-27T16:00:00.346+02:00",
+    "distributionRefDate": "2026-06-27T15:58:32.598+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,63"
+      },
+      "distribution": {
+       "distribution": "37",
+       "refDistribution": "38"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,45"
+      },
+      "distribution": {
+       "distribution": "27",
+       "refDistribution": "26"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,50"
+      },
+      "distribution": {
+       "distribution": "36",
+       "refDistribution": "36"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "37",
+    "x": "27",
+    "two": "36",
+    "date": "2026-06-27T16:00:00.346+02:00",
+    "refOne": "38",
+    "refX": "26",
+    "refTwo": "36",
+    "refDate": "2026-06-27T15:58:32.598+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "67126208"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Gefle - Stocksund",
+   "extraInfo": null,
+   "eventNumber": 9,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 89552,
+    "matchStart": "2026-06-27T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-06-27T18:03:18+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 392,
+      "type": "home",
+      "name": "Gefle",
+      "result": "2",
+      "shortName": "GEF",
+      "mediumName": "Gefle",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 573,
+      "type": "away",
+      "name": "Stocksund",
+      "result": "1",
+      "shortName": "STO",
+      "mediumName": "Stocksund",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 316,
+     "name": "Ettan, Sverige",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "2",
+      "away": "1"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "1"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "2",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "2",
+      "away": "1"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "1,56",
+    "x": "4,10",
+    "two": "4,40"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-06-27T16:00:00.346+02:00",
+    "distributionRefDate": "2026-06-27T15:58:32.598+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,56"
+      },
+      "distribution": {
+       "distribution": "60",
+       "refDistribution": "60"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "4,10"
+      },
+      "distribution": {
+       "distribution": "22",
+       "refDistribution": "22"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "4,40"
+      },
+      "distribution": {
+       "distribution": "18",
+       "refDistribution": "18"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "60",
+    "x": "22",
+    "two": "18",
+    "date": "2026-06-27T16:00:00.346+02:00",
+    "refOne": "60",
+    "refX": "22",
+    "refTwo": "18",
+    "refDate": "2026-06-27T15:58:32.598+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "68310998"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Arlanda - IF Karlst",
+   "extraInfo": null,
+   "eventNumber": 10,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 89553,
+    "matchStart": "2026-06-27T17:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-06-27T18:55:17+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 3471,
+      "type": "home",
+      "name": "Arlanda",
+      "result": "1",
+      "shortName": "ARL",
+      "mediumName": "Arlanda",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 448,
+      "type": "away",
+      "name": "IF Karlstad",
+      "result": "0",
+      "shortName": "KAR",
+      "mediumName": "IF Karlst",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 316,
+     "name": "Ettan, Sverige",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "1",
+      "away": "0"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "2,63",
+    "x": "3,30",
+    "two": "2,33"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-06-27T16:00:00.346+02:00",
+    "distributionRefDate": "2026-06-27T15:58:32.598+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,63"
+      },
+      "distribution": {
+       "distribution": "28",
+       "refDistribution": "28"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,30"
+      },
+      "distribution": {
+       "distribution": "27",
+       "refDistribution": "27"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,33"
+      },
+      "distribution": {
+       "distribution": "45",
+       "refDistribution": "45"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "28",
+    "x": "27",
+    "two": "45",
+    "date": "2026-06-27T16:00:00.346+02:00",
+    "refOne": "28",
+    "refX": "27",
+    "refTwo": "45",
+    "refDate": "2026-06-27T15:58:32.598+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "68310996"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Lund - Skövde",
+   "extraInfo": null,
+   "eventNumber": 11,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 89574,
+    "matchStart": "2026-06-27T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-06-27T17:53:00+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 308,
+      "type": "home",
+      "name": "Lund",
+      "result": "2",
+      "shortName": "LBK",
+      "mediumName": "Lund",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 504,
+      "type": "away",
+      "name": "Skövde AIK",
+      "result": "1",
+      "shortName": "SKÖ",
+      "mediumName": "Skövde ",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 316,
+     "name": "Ettan, Sverige",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "2",
+      "away": "1"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "2",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "1"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "2",
+      "away": "1"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "1,71",
+    "x": "3,70",
+    "two": "3,90"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-06-27T16:00:00.346+02:00",
+    "distributionRefDate": "2026-06-27T15:58:32.598+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,71"
+      },
+      "distribution": {
+       "distribution": "67",
+       "refDistribution": "67"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,70"
+      },
+      "distribution": {
+       "distribution": "20",
+       "refDistribution": "20"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,90"
+      },
+      "distribution": {
+       "distribution": "13",
+       "refDistribution": "13"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "67",
+    "x": "20",
+    "two": "13",
+    "date": "2026-06-27T16:00:00.346+02:00",
+    "refOne": "67",
+    "refX": "20",
+    "refTwo": "13",
+    "refDate": "2026-06-27T15:58:32.598+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "68311704"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "AFC Malmö - Jön Södra",
+   "extraInfo": null,
+   "eventNumber": 12,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 89570,
+    "matchStart": "2026-06-27T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-06-27T17:59:00+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 828,
+      "type": "home",
+      "name": "AFC Malmö",
+      "result": "1",
+      "shortName": "ARI",
+      "mediumName": "AFC Malmö",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 272,
+      "type": "away",
+      "name": "Jönköpings Södra",
+      "result": "0",
+      "shortName": "JÖN",
+      "mediumName": "Jön Södra",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 316,
+     "name": "Ettan, Sverige",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "1",
+      "away": "0"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "2,80",
+    "x": "3,20",
+    "two": "2,25"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-06-27T16:00:00.346+02:00",
+    "distributionRefDate": "2026-06-27T15:58:32.598+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,80"
+      },
+      "distribution": {
+       "distribution": "43",
+       "refDistribution": "43"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,20"
+      },
+      "distribution": {
+       "distribution": "24",
+       "refDistribution": "24"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,25"
+      },
+      "distribution": {
+       "distribution": "33",
+       "refDistribution": "33"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "43",
+    "x": "24",
+    "two": "33",
+    "date": "2026-06-27T16:00:00.346+02:00",
+    "refOne": "43",
+    "refX": "24",
+    "refTwo": "33",
+    "refDate": "2026-06-27T15:58:32.598+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "68311700"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Åtvidaber - Rosengård",
+   "extraInfo": null,
+   "eventNumber": 13,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 89551,
+    "matchStart": "2026-06-27T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-06-27T17:58:17+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 307,
+      "type": "home",
+      "name": "Åtvidaberg",
+      "result": "3",
+      "shortName": "ÅFF",
+      "mediumName": "Åtvidaber",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 588,
+      "type": "away",
+      "name": "Rosengård",
+      "result": "3",
+      "shortName": "ROS",
+      "mediumName": "Rosengård",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 316,
+     "name": "Ettan, Sverige",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "3",
+      "away": "3"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "3",
+      "away": "2"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "1"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "3",
+      "away": "3"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "2,60",
+    "x": "3,25",
+    "two": "2,40"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-06-27T16:00:00.346+02:00",
+    "distributionRefDate": "2026-06-27T15:58:32.598+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,60"
+      },
+      "distribution": {
+       "distribution": "46",
+       "refDistribution": "46"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,25"
+      },
+      "distribution": {
+       "distribution": "27",
+       "refDistribution": "27"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,40"
+      },
+      "distribution": {
+       "distribution": "27",
+       "refDistribution": "27"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "46",
+    "x": "27",
+    "two": "27",
+    "date": "2026-06-27T16:00:00.346+02:00",
+    "refOne": "46",
+    "refX": "27",
+    "refTwo": "27",
+    "refDate": "2026-06-27T15:58:32.598+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "68311702"
+    }
+   ]
+  }
+ ],
+ "retailerOpenTime": "2026-06-22T19:00:00+02:00",
+ "retailerCloseTime": "2026-06-27T15:59:00+02:00",
+ "retailerCancelCloseTime": "2026-06-27T16:00:00+02:00",
+ "lastDateWithoutTimeOfDay": "2026-06-29T00:00:00+02:00"
+}

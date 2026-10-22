@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "Bournemou - Aston V",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 62100,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 64,
+     "type": "home",
+     "name": "Bournemouth",
+     "shortName": "BRN",
+     "mediumName": "Bournemou",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 84,
+     "type": "away",
+     "name": "Aston Villa",
+     "shortName": "AST",
+     "mediumName": "Aston V",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "Fulham - Everton",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 3
+   },
+   "matchId": 62099,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 68,
+     "type": "home",
+     "name": "Fulham",
+     "shortName": "FUL",
+     "mediumName": "Fulham",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 62,
+     "type": "away",
+     "name": "Everton",
+     "shortName": "EVE",
+     "mediumName": "Everton",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Southampt - Man City",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 62097,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 81,
+     "type": "home",
+     "name": "Southampton",
+     "shortName": "SOU",
+     "mediumName": "Southampt",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 2,
+     "type": "away",
+     "name": "Manchester City",
+     "shortName": "MNC",
+     "mediumName": "Man City",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Ipswich - Brentford",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 62096,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 110,
+     "type": "home",
+     "name": "Ipswich",
+     "shortName": "IPS",
+     "mediumName": "Ipswich",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 80,
+     "type": "away",
+     "name": "Brentford",
+     "shortName": "BRE",
+     "mediumName": "Brentford",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "Wolves - Brighton",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 2
+   },
+   "matchId": 62098,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 89,
+     "type": "home",
+     "name": "Wolverhampton",
+     "shortName": "WOL",
+     "mediumName": "Wolves",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 5,
+     "type": "away",
+     "name": "Brighton",
+     "shortName": "BHA",
+     "mediumName": "Brighton",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "Notts Cou - Wimbledon",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 62308,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 2005,
+     "type": "home",
+     "name": "Notts County",
+     "shortName": "NOC",
+     "mediumName": "Notts Cou",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 140,
+     "type": "away",
+     "name": "Wimbledon",
+     "shortName": "WIM",
+     "mediumName": "Wimbledon",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "GAIS - Värnamo",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 62101,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 216,
+     "type": "home",
+     "name": "GAIS",
+     "shortName": "GAIS",
+     "mediumName": "GAIS",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 201,
+     "type": "away",
+     "name": "Värnamo",
+     "shortName": "VÄR",
+     "mediumName": "Värnamo",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Sirius - Häcken",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 62103,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 202,
+     "type": "home",
+     "name": "Sirius",
+     "shortName": "SIR",
+     "mediumName": "Sirius",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 236,
+     "type": "away",
+     "name": "Häcken",
+     "shortName": "HAC",
+     "mediumName": "Häcken",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Lazio - Juventus",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 62112,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 316,
+     "type": "home",
+     "name": "Lazio",
+     "shortName": "LAZ",
+     "mediumName": "Lazio",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    },
+    {
+     "id": 173,
+     "type": "away",
+     "name": "Juventus",
+     "shortName": "JUV",
+     "mediumName": "Juventus",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "At Madrid - Sociedad",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 4,
+    "away": 0
+   },
+   "matchId": 62117,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 43,
+     "type": "home",
+     "name": "Atlético Madrid",
+     "shortName": "ATM",
+     "mediumName": "At Madrid",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    },
+    {
+     "id": 232,
+     "type": "away",
+     "name": "Real Sociedad",
+     "shortName": "SOC",
+     "mediumName": "Sociedad",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "Girona - Villarrea",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 62115,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 574,
+     "type": "home",
+     "name": "Girona",
+     "shortName": "GIR",
+     "mediumName": "Girona",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    },
+    {
+     "id": 65,
+     "type": "away",
+     "name": "Villarreal",
+     "shortName": "VIL",
+     "mediumName": "Villarrea",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "Monaco - Lyon",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 62128,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 224,
+     "type": "home",
+     "name": "Monaco",
+     "shortName": "ASM",
+     "mediumName": "Monaco",
+     "countryId": 22,
+     "countryName": "Frankrike",
+     "isoCode": "FRA"
+    },
+    {
+     "id": 53,
+     "type": "away",
+     "name": "Lyon",
+     "shortName": "LYO",
+     "mediumName": "Lyon",
+     "countryId": 22,
+     "countryName": "Frankrike",
+     "isoCode": "FRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "Benfica - Sp Lissab",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 62399,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 42,
+     "type": "home",
+     "name": "Benfica",
+     "shortName": "BEN",
+     "mediumName": "Benfica",
+     "countryId": 17,
+     "countryName": "Portugal",
+     "isoCode": "PRT"
+    },
+    {
+     "id": 171,
+     "type": "away",
+     "name": "Sporting Lissabon",
+     "shortName": "SPO",
+     "mediumName": "Sp Lissab",
+     "countryId": 17,
+     "countryName": "Portugal",
+     "isoCode": "PRT"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 5,
+   "amount": "1119407,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 163,
+   "amount": "12876,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 2684,
+   "amount": "625,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 25703,
+   "amount": "136,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Stryktipset",
+ "productId": 1,
+ "drawNumber": 4900,
+ "currentNetSale": "21527062,00",
+ "regCloseTime": "2025-05-10T15:59:00+02:00"
+}

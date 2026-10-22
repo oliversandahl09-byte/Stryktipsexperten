@@ -1,0 +1,2040 @@
+{
+ "productName": "Stryktipset",
+ "seasonLastDraw": false,
+ "productId": 1,
+ "currentNetSale": "17551924,00",
+ "regCloseDescription": "Stryktipset v 40, stänger 2026-10-03 15:59",
+ "extraInfo": null,
+ "drawNumber": 4973,
+ "betIndex": 0,
+ "drawState": "Finalized",
+ "drawStateId": 20,
+ "regBetDisabled": "NotDisabled",
+ "regOpenTime": "2026-09-30T07:00:00+02:00",
+ "regCloseTime": "2026-10-03T15:59:00+02:00",
+ "cancelCloseTime": "2026-10-03T16:00:00+02:00",
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "drawComment": "Stryktipset v. 2026-40",
+ "bombenDrawNum": 983,
+ "relatedDraws": [
+  {
+   "productId": 23,
+   "drawNumber": 983,
+   "regCloseTime": "2026-10-03T15:59:00+02:00"
+  }
+ ],
+ "rowPrice": "1,00",
+ "fund": null,
+ "drawEvents": [
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Kroatien - England",
+   "extraInfo": null,
+   "eventNumber": 1,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 94599,
+    "matchStart": "2026-10-03T18:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-10-03T19:51:48+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 23,
+      "type": "home",
+      "name": "Kroatien",
+      "result": "0",
+      "shortName": "CRO",
+      "mediumName": "Kroatien",
+      "countryId": 13,
+      "countryName": "Kroatien",
+      "isoCode": "HRV"
+     },
+     {
+      "id": 697,
+      "type": "away",
+      "name": "England",
+      "result": "7",
+      "shortName": "ENG",
+      "mediumName": "England",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 69,
+     "name": "UEFA Nations League",
+     "country": {
+      "id": 1,
+      "name": "Internationell",
+      "isoCode": "INT"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "0",
+      "away": "7"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "4"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "3"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "0",
+      "away": "7"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "4,20",
+    "x": "3,85",
+    "two": "1,89"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-03T16:00:00.642+02:00",
+    "distributionRefDate": "2026-10-03T15:58:03.152+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "4,20"
+      },
+      "distribution": {
+       "distribution": "15",
+       "refDistribution": "15"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,85"
+      },
+      "distribution": {
+       "distribution": "23",
+       "refDistribution": "23"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,89"
+      },
+      "distribution": {
+       "distribution": "62",
+       "refDistribution": "62"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "15",
+    "x": "23",
+    "two": "62",
+    "date": "2026-10-03T16:00:00.642+02:00",
+    "refOne": "15",
+    "refX": "23",
+    "refTwo": "62",
+    "refDate": "2026-10-03T15:58:03.152+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "68931698"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Nordmaked - Skottland",
+   "extraInfo": null,
+   "eventNumber": 2,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 94609,
+    "matchStart": "2026-10-03T20:45:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-10-03T22:42:48+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 702,
+      "type": "home",
+      "name": "Nordmakedonien",
+      "result": "0",
+      "shortName": "MKD",
+      "mediumName": "Nordmaked",
+      "countryId": 66,
+      "countryName": "Nordmakedonien",
+      "isoCode": "MKD"
+     },
+     {
+      "id": 725,
+      "type": "away",
+      "name": "Skottland",
+      "result": "2",
+      "shortName": "SCO",
+      "mediumName": "Skottland",
+      "countryId": 23,
+      "countryName": "Skottland",
+      "isoCode": "SCO"
+     }
+    ],
+    "league": {
+     "id": 69,
+     "name": "UEFA Nations League",
+     "country": {
+      "id": 1,
+      "name": "Internationell",
+      "isoCode": "INT"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "0",
+      "away": "2"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "1"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "1"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "0",
+      "away": "2"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "4,75",
+    "x": "3,65",
+    "two": "1,81"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-03T16:00:00.642+02:00",
+    "distributionRefDate": "2026-10-03T15:58:03.152+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "4,75"
+      },
+      "distribution": {
+       "distribution": "13",
+       "refDistribution": "13"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,65"
+      },
+      "distribution": {
+       "distribution": "24",
+       "refDistribution": "24"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,81"
+      },
+      "distribution": {
+       "distribution": "63",
+       "refDistribution": "63"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "13",
+    "x": "24",
+    "two": "63",
+    "date": "2026-10-03T16:00:00.642+02:00",
+    "refOne": "13",
+    "refX": "24",
+    "refTwo": "63",
+    "refDate": "2026-10-03T15:58:03.152+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "68932788"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Schweiz - Slovenien",
+   "extraInfo": null,
+   "eventNumber": 3,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 94593,
+    "matchStart": "2026-10-03T20:45:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-10-03T22:37:14+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 673,
+      "type": "home",
+      "name": "Schweiz",
+      "result": "2",
+      "shortName": "SUI",
+      "mediumName": "Schweiz",
+      "countryId": 29,
+      "countryName": "Schweiz",
+      "isoCode": "CHE"
+     },
+     {
+      "id": 690,
+      "type": "away",
+      "name": "Slovenien",
+      "result": "1",
+      "shortName": "SLO",
+      "mediumName": "Slovenien",
+      "countryId": 57,
+      "countryName": "Slovenien",
+      "isoCode": "SVN"
+     }
+    ],
+    "league": {
+     "id": 69,
+     "name": "UEFA Nations League",
+     "country": {
+      "id": 1,
+      "name": "Internationell",
+      "isoCode": "INT"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "2",
+      "away": "1"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "2",
+      "away": "1"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "2",
+      "away": "1"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "1,35",
+    "x": "5,00",
+    "two": "10,50"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-03T16:00:00.642+02:00",
+    "distributionRefDate": "2026-10-03T15:58:03.152+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,35"
+      },
+      "distribution": {
+       "distribution": "81",
+       "refDistribution": "81"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "5,00"
+      },
+      "distribution": {
+       "distribution": "14",
+       "refDistribution": "14"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "10,50"
+      },
+      "distribution": {
+       "distribution": "5",
+       "refDistribution": "5"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "81",
+    "x": "14",
+    "two": "5",
+    "date": "2026-10-03T16:00:00.642+02:00",
+    "refOne": "81",
+    "refX": "14",
+    "refTwo": "5",
+    "refDate": "2026-10-03T15:58:03.152+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "68932790"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Burton - Huddersfi",
+   "extraInfo": null,
+   "eventNumber": 4,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 94614,
+    "matchStart": "2026-10-03T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-10-03T17:56:10+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 109,
+      "type": "home",
+      "name": "Burton",
+      "result": "1",
+      "shortName": "BUR",
+      "mediumName": "Burton",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     },
+     {
+      "id": 94,
+      "type": "away",
+      "name": "Huddersfield",
+      "result": "3",
+      "shortName": "HUD",
+      "mediumName": "Huddersfi",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 8,
+     "name": "League One",
+     "country": {
+      "id": 2,
+      "name": "England",
+      "isoCode": "ENG"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "1",
+      "away": "3"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "1",
+      "away": "2"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "1"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "1",
+      "away": "3"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "3,85",
+    "x": "3,65",
+    "two": "1,88"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-03T16:00:00.642+02:00",
+    "distributionRefDate": "2026-10-03T15:58:03.152+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,85"
+      },
+      "distribution": {
+       "distribution": "23",
+       "refDistribution": "23"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,65"
+      },
+      "distribution": {
+       "distribution": "26",
+       "refDistribution": "26"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,88"
+      },
+      "distribution": {
+       "distribution": "51",
+       "refDistribution": "51"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "23",
+    "x": "26",
+    "two": "51",
+    "date": "2026-10-03T16:00:00.642+02:00",
+    "refOne": "23",
+    "refX": "26",
+    "refTwo": "51",
+    "refDate": "2026-10-03T15:58:03.152+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72341222"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Leyton Or - Plymouth",
+   "extraInfo": null,
+   "eventNumber": 5,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 94612,
+    "matchStart": "2026-10-03T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-10-03T17:54:47+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 122,
+      "type": "home",
+      "name": "Leyton Orient",
+      "result": "0",
+      "shortName": "LEY",
+      "mediumName": "Leyton Or",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     },
+     {
+      "id": 126,
+      "type": "away",
+      "name": "Plymouth",
+      "result": "2",
+      "shortName": "PA",
+      "mediumName": "Plymouth",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 8,
+     "name": "League One",
+     "country": {
+      "id": 2,
+      "name": "England",
+      "isoCode": "ENG"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "0",
+      "away": "2"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "2"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "0",
+      "away": "2"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "3,45",
+    "x": "3,60",
+    "two": "2,00"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-03T16:00:00.642+02:00",
+    "distributionRefDate": "2026-10-03T15:58:03.152+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,45"
+      },
+      "distribution": {
+       "distribution": "24",
+       "refDistribution": "24"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,60"
+      },
+      "distribution": {
+       "distribution": "24",
+       "refDistribution": "24"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,00"
+      },
+      "distribution": {
+       "distribution": "52",
+       "refDistribution": "52"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "24",
+    "x": "24",
+    "two": "52",
+    "date": "2026-10-03T16:00:00.642+02:00",
+    "refOne": "24",
+    "refX": "24",
+    "refTwo": "52",
+    "refDate": "2026-10-03T15:58:03.152+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72341224"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Reading - Bradford",
+   "extraInfo": null,
+   "eventNumber": 6,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 94613,
+    "matchStart": "2026-10-03T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-10-03T17:53:37+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 31,
+      "type": "home",
+      "name": "Reading",
+      "result": "1",
+      "shortName": "REA",
+      "mediumName": "Reading",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     },
+     {
+      "id": 114,
+      "type": "away",
+      "name": "Bradford",
+      "result": "1",
+      "shortName": "BRA",
+      "mediumName": "Bradford",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 8,
+     "name": "League One",
+     "country": {
+      "id": 2,
+      "name": "England",
+      "isoCode": "ENG"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "1",
+      "away": "1"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "1"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "1",
+      "away": "1"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "2,28",
+    "x": "3,25",
+    "two": "3,10"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-03T16:00:00.642+02:00",
+    "distributionRefDate": "2026-10-03T15:58:03.152+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,28"
+      },
+      "distribution": {
+       "distribution": "48",
+       "refDistribution": "48"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,25"
+      },
+      "distribution": {
+       "distribution": "25",
+       "refDistribution": "25"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,10"
+      },
+      "distribution": {
+       "distribution": "27",
+       "refDistribution": "27"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "48",
+    "x": "25",
+    "two": "27",
+    "date": "2026-10-03T16:00:00.642+02:00",
+    "refOne": "48",
+    "refX": "25",
+    "refTwo": "27",
+    "refDate": "2026-10-03T15:58:03.152+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72341232"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Accringto - Cheltenha",
+   "extraInfo": null,
+   "eventNumber": 7,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 94618,
+    "matchStart": "2026-10-03T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-10-03T17:59:00+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 108,
+      "type": "home",
+      "name": "Accrington",
+      "result": "2",
+      "shortName": "ACC",
+      "mediumName": "Accringto",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     },
+     {
+      "id": 101,
+      "type": "away",
+      "name": "Cheltenham",
+      "result": "0",
+      "shortName": "CHE",
+      "mediumName": "Cheltenha",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 13,
+     "name": "League Two",
+     "country": {
+      "id": 2,
+      "name": "England",
+      "isoCode": "ENG"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "2",
+      "away": "0"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "2",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "2",
+      "away": "0"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "2,35",
+    "x": "3,25",
+    "two": "2,70"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-03T16:00:00.642+02:00",
+    "distributionRefDate": "2026-10-03T15:58:03.152+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,35"
+      },
+      "distribution": {
+       "distribution": "35",
+       "refDistribution": "35"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,25"
+      },
+      "distribution": {
+       "distribution": "30",
+       "refDistribution": "30"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,70"
+      },
+      "distribution": {
+       "distribution": "35",
+       "refDistribution": "35"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "35",
+    "x": "30",
+    "two": "35",
+    "date": "2026-10-03T16:00:00.642+02:00",
+    "refOne": "35",
+    "refX": "30",
+    "refTwo": "35",
+    "refDate": "2026-10-03T15:58:03.152+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72342094"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Crewe - Bristol R",
+   "extraInfo": null,
+   "eventNumber": 8,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 94621,
+    "matchStart": "2026-10-03T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-10-03T17:54:16+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 139,
+      "type": "home",
+      "name": "Crewe",
+      "result": "3",
+      "shortName": "CRA",
+      "mediumName": "Crewe",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     },
+     {
+      "id": 137,
+      "type": "away",
+      "name": "Bristol Rovers",
+      "result": "1",
+      "shortName": "BR",
+      "mediumName": "Bristol R",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 13,
+     "name": "League Two",
+     "country": {
+      "id": 2,
+      "name": "England",
+      "isoCode": "ENG"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "3",
+      "away": "1"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "2",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "1",
+      "away": "1"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "3",
+      "away": "1"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "2,70",
+    "x": "3,25",
+    "two": "2,33"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-03T16:00:00.642+02:00",
+    "distributionRefDate": "2026-10-03T15:58:03.152+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,70"
+      },
+      "distribution": {
+       "distribution": "30",
+       "refDistribution": "30"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,25"
+      },
+      "distribution": {
+       "distribution": "32",
+       "refDistribution": "32"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,33"
+      },
+      "distribution": {
+       "distribution": "38",
+       "refDistribution": "38"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "30",
+    "x": "32",
+    "two": "38",
+    "date": "2026-10-03T16:00:00.642+02:00",
+    "refOne": "30",
+    "refX": "32",
+    "refTwo": "38",
+    "refDate": "2026-10-03T15:58:03.152+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72342110"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Exeter - Rotherham",
+   "extraInfo": null,
+   "eventNumber": 9,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 94616,
+    "matchStart": "2026-10-03T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-10-03T17:56:11+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 123,
+      "type": "home",
+      "name": "Exeter",
+      "result": "1",
+      "shortName": "EXE",
+      "mediumName": "Exeter",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     },
+     {
+      "id": 102,
+      "type": "away",
+      "name": "Rotherham",
+      "result": "0",
+      "shortName": "ROT",
+      "mediumName": "Rotherham",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 13,
+     "name": "League Two",
+     "country": {
+      "id": 2,
+      "name": "England",
+      "isoCode": "ENG"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "1",
+      "away": "0"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "2,48",
+    "x": "3,35",
+    "two": "2,70"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-03T16:00:00.642+02:00",
+    "distributionRefDate": "2026-10-03T15:58:03.152+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,48"
+      },
+      "distribution": {
+       "distribution": "36",
+       "refDistribution": "36"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,35"
+      },
+      "distribution": {
+       "distribution": "30",
+       "refDistribution": "30"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,70"
+      },
+      "distribution": {
+       "distribution": "34",
+       "refDistribution": "34"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "36",
+    "x": "30",
+    "two": "34",
+    "date": "2026-10-03T16:00:00.642+02:00",
+    "refOne": "36",
+    "refX": "30",
+    "refTwo": "34",
+    "refDate": "2026-10-03T15:58:03.152+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72342114"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Gillingha - Newport",
+   "extraInfo": null,
+   "eventNumber": 10,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 94615,
+    "matchStart": "2026-10-03T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-10-03T17:54:16+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 127,
+      "type": "home",
+      "name": "Gillingham",
+      "result": "0",
+      "shortName": "GIL",
+      "mediumName": "Gillingha",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     },
+     {
+      "id": 135,
+      "type": "away",
+      "name": "Newport",
+      "result": "0",
+      "shortName": "NC",
+      "mediumName": "Newport",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 13,
+     "name": "League Two",
+     "country": {
+      "id": 2,
+      "name": "England",
+      "isoCode": "ENG"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "0",
+      "away": "0"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "1,93",
+    "x": "3,35",
+    "two": "3,50"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-03T16:00:00.642+02:00",
+    "distributionRefDate": "2026-10-03T15:58:03.152+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,93"
+      },
+      "distribution": {
+       "distribution": "52",
+       "refDistribution": "53"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,35"
+      },
+      "distribution": {
+       "distribution": "25",
+       "refDistribution": "24"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,50"
+      },
+      "distribution": {
+       "distribution": "23",
+       "refDistribution": "23"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "52",
+    "x": "25",
+    "two": "23",
+    "date": "2026-10-03T16:00:00.642+02:00",
+    "refOne": "53",
+    "refX": "24",
+    "refTwo": "23",
+    "refDate": "2026-10-03T15:58:03.152+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72342118"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Grimsby - Shrewsbur",
+   "extraInfo": null,
+   "eventNumber": 11,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 94620,
+    "matchStart": "2026-10-03T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-10-03T17:53:12+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 785,
+      "type": "home",
+      "name": "Grimsby",
+      "result": "1",
+      "shortName": "GRI",
+      "mediumName": "Grimsby",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     },
+     {
+      "id": 130,
+      "type": "away",
+      "name": "Shrewsbury",
+      "result": "2",
+      "shortName": "SHR",
+      "mediumName": "Shrewsbur",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 13,
+     "name": "League Two",
+     "country": {
+      "id": 2,
+      "name": "England",
+      "isoCode": "ENG"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "1",
+      "away": "2"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "1"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "1",
+      "away": "1"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "1",
+      "away": "2"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "1,67",
+    "x": "3,55",
+    "two": "4,50"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-03T16:00:00.642+02:00",
+    "distributionRefDate": "2026-10-03T15:58:03.152+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,67"
+      },
+      "distribution": {
+       "distribution": "67",
+       "refDistribution": "67"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,55"
+      },
+      "distribution": {
+       "distribution": "20",
+       "refDistribution": "20"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "4,50"
+      },
+      "distribution": {
+       "distribution": "13",
+       "refDistribution": "13"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "67",
+    "x": "20",
+    "two": "13",
+    "date": "2026-10-03T16:00:00.642+02:00",
+    "refOne": "67",
+    "refX": "20",
+    "refTwo": "13",
+    "refDate": "2026-10-03T15:58:03.152+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72342122"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Rochdale - Swindon",
+   "extraInfo": null,
+   "eventNumber": 12,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 94617,
+    "matchStart": "2026-10-03T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-10-03T17:57:55+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 115,
+      "type": "home",
+      "name": "Rochdale",
+      "result": "1",
+      "shortName": "ROC",
+      "mediumName": "Rochdale",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     },
+     {
+      "id": 134,
+      "type": "away",
+      "name": "Swindon",
+      "result": "0",
+      "shortName": "SWI",
+      "mediumName": "Swindon",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 13,
+     "name": "League Two",
+     "country": {
+      "id": 2,
+      "name": "England",
+      "isoCode": "ENG"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "1",
+      "away": "0"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "2,15",
+    "x": "3,35",
+    "two": "2,95"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-03T16:00:00.642+02:00",
+    "distributionRefDate": "2026-10-03T15:58:03.152+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,15"
+      },
+      "distribution": {
+       "distribution": "45",
+       "refDistribution": "45"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,35"
+      },
+      "distribution": {
+       "distribution": "27",
+       "refDistribution": "27"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,95"
+      },
+      "distribution": {
+       "distribution": "28",
+       "refDistribution": "28"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "45",
+    "x": "27",
+    "two": "28",
+    "date": "2026-10-03T16:00:00.642+02:00",
+    "refOne": "45",
+    "refX": "27",
+    "refTwo": "28",
+    "refDate": "2026-10-03T15:58:03.152+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72342130"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Salford - Fleetwood",
+   "extraInfo": null,
+   "eventNumber": 13,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 94619,
+    "matchStart": "2026-10-03T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-10-03T17:53:13+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 117,
+      "type": "home",
+      "name": "Salford",
+      "result": "1",
+      "shortName": "SAL",
+      "mediumName": "Salford",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     },
+     {
+      "id": 105,
+      "type": "away",
+      "name": "Fleetwood",
+      "result": "0",
+      "shortName": "FLE",
+      "mediumName": "Fleetwood",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 13,
+     "name": "League Two",
+     "country": {
+      "id": 2,
+      "name": "England",
+      "isoCode": "ENG"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "1",
+      "away": "0"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "1,61",
+    "x": "3,80",
+    "two": "4,50"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-03T16:00:00.642+02:00",
+    "distributionRefDate": "2026-10-03T15:58:03.152+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,61"
+      },
+      "distribution": {
+       "distribution": "63",
+       "refDistribution": "63"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,80"
+      },
+      "distribution": {
+       "distribution": "23",
+       "refDistribution": "23"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "4,50"
+      },
+      "distribution": {
+       "distribution": "14",
+       "refDistribution": "14"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "63",
+    "x": "23",
+    "two": "14",
+    "date": "2026-10-03T16:00:00.642+02:00",
+    "refOne": "63",
+    "refX": "23",
+    "refTwo": "14",
+    "refDate": "2026-10-03T15:58:03.152+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72342132"
+    }
+   ]
+  }
+ ],
+ "retailerOpenTime": "2026-09-30T07:00:00+02:00",
+ "retailerCloseTime": "2026-10-03T15:59:00+02:00",
+ "retailerCancelCloseTime": "2026-10-03T16:00:00+02:00",
+ "lastDateWithoutTimeOfDay": "2026-10-04T00:00:00+02:00"
+}

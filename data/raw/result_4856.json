@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "Sirius - GAIS",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 1
+   },
+   "matchId": 40456,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 202,
+     "type": "home",
+     "name": "Sirius",
+     "shortName": "SIR",
+     "mediumName": "Sirius",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 216,
+     "type": "away",
+     "name": "GAIS",
+     "shortName": "GAIS",
+     "mediumName": "GAIS",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "Brann - Haugesund",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 40438,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 850,
+     "type": "home",
+     "name": "Brann",
+     "shortName": "BRA",
+     "mediumName": "Brann",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    },
+    {
+     "id": 489,
+     "type": "away",
+     "name": "Haugesund",
+     "shortName": "HAU",
+     "mediumName": "Haugesund",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Fredrikst - Molde",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 40443,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 1008,
+     "type": "home",
+     "name": "Fredrikstad FK",
+     "shortName": "FFK",
+     "mediumName": "Fredrikst",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    },
+    {
+     "id": 384,
+     "type": "away",
+     "name": "Molde",
+     "shortName": "MFK",
+     "mediumName": "Molde",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Lilleströ - Strömsgod",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 1
+   },
+   "matchId": 40453,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 407,
+     "type": "home",
+     "name": "Lilleström",
+     "shortName": "LSK",
+     "mediumName": "Lilleströ",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    },
+    {
+     "id": 491,
+     "type": "away",
+     "name": "Strömsgodset",
+     "shortName": "STG",
+     "mediumName": "Strömsgod",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "Odds - Ham-Kam",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 40449,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 421,
+     "type": "home",
+     "name": "Odds",
+     "shortName": "ODD",
+     "mediumName": "Odds",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    },
+    {
+     "id": 493,
+     "type": "away",
+     "name": "Ham-Kam",
+     "shortName": "HAM",
+     "mediumName": "Ham-Kam",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "Sandefjor - Bodö/Glim",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 40457,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 492,
+     "type": "home",
+     "name": "Sandefjord",
+     "shortName": "SAN",
+     "mediumName": "Sandefjor",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    },
+    {
+     "id": 56,
+     "type": "away",
+     "name": "Bodö/Glimt",
+     "shortName": "B/G",
+     "mediumName": "Bodö/Glim",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "Tromsö - KFUM Oslo",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 40442,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 590,
+     "type": "home",
+     "name": "Tromsö",
+     "shortName": "TIL",
+     "mediumName": "Tromsö",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    },
+    {
+     "id": 852,
+     "type": "away",
+     "name": "KFUM Oslo",
+     "shortName": "KFU",
+     "mediumName": "KFUM Oslo",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Viking - Kristians",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 40444,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 199,
+     "type": "home",
+     "name": "Viking",
+     "shortName": "VIK",
+     "mediumName": "Viking",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    },
+    {
+     "id": 490,
+     "type": "away",
+     "name": "Kristiansund",
+     "shortName": "KRI",
+     "mediumName": "Kristians",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Bahia - Cuiaba Es",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 40611,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 864,
+     "type": "home",
+     "name": "Bahia",
+     "shortName": "BAH",
+     "mediumName": "Bahia",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    },
+    {
+     "id": 531,
+     "type": "away",
+     "name": "Cuiaba Esporte",
+     "shortName": "CUI",
+     "mediumName": "Cuiaba Es",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "Cruzeiro - Bragatino",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 40609,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 582,
+     "type": "home",
+     "name": "Cruzeiro",
+     "shortName": "CRU",
+     "mediumName": "Cruzeiro",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    },
+    {
+     "id": 299,
+     "type": "away",
+     "name": "Bragantino",
+     "shortName": "BRA",
+     "mediumName": "Bragatino",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "Austin FC - Seattle",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 40452,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 554,
+     "type": "home",
+     "name": "Austin FC",
+     "shortName": "ATX",
+     "mediumName": "Austin FC",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    },
+    {
+     "id": 534,
+     "type": "away",
+     "name": "Seattle Sounders",
+     "shortName": "SEA",
+     "mediumName": "Seattle",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "Houston - Minnesota",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 40440,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 380,
+     "type": "home",
+     "name": "Houston Dynamo",
+     "shortName": "HOU",
+     "mediumName": "Houston",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    },
+    {
+     "id": 535,
+     "type": "away",
+     "name": "Minnesota United",
+     "shortName": "MIN",
+     "mediumName": "Minnesota",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "Montreal - Atlanta",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 40446,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 185,
+     "type": "home",
+     "name": "CF Montreal",
+     "shortName": "MON",
+     "mediumName": "Montreal",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    },
+    {
+     "id": 431,
+     "type": "away",
+     "name": "Atlanta United FC",
+     "shortName": "ATL",
+     "mediumName": "Atlanta",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 1,
+   "amount": "10000000,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 58,
+   "amount": "19859,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 951,
+   "amount": "968,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 8194,
+   "amount": "234,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Stryktipset",
+ "productId": 1,
+ "drawNumber": 4856,
+ "currentNetSale": "11814143,00",
+ "regCloseTime": "2024-07-13T16:59:00+02:00"
+}

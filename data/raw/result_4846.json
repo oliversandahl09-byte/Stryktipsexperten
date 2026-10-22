@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "Man City - Wolves",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 5,
+    "away": 1
+   },
+   "matchId": 37097,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 2,
+     "type": "home",
+     "name": "Manchester City",
+     "shortName": "MNC",
+     "mediumName": "Man City",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 89,
+     "type": "away",
+     "name": "Wolverhampton",
+     "shortName": "WOL",
+     "mediumName": "Wolves",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "Brentford - Fulham",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 37100,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 80,
+     "type": "home",
+     "name": "Brentford",
+     "shortName": "BRE",
+     "mediumName": "Brentford",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 68,
+     "type": "away",
+     "name": "Fulham",
+     "shortName": "FUL",
+     "mediumName": "Fulham",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Burnley - Newcastle",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 4
+   },
+   "matchId": 37098,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 1,
+     "type": "home",
+     "name": "Burnley",
+     "shortName": "BUR",
+     "mediumName": "Burnley",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 88,
+     "type": "away",
+     "name": "Newcastle",
+     "shortName": "NEW",
+     "mediumName": "Newcastle",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Sheff U - Nottingha",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 3
+   },
+   "matchId": 37099,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 39,
+     "type": "home",
+     "name": "Sheffield U",
+     "shortName": "SHU",
+     "mediumName": "Sheff U",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 69,
+     "type": "away",
+     "name": "Nottingham",
+     "shortName": "NOF",
+     "mediumName": "Nottingha",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "Oxford - Peterboro",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 37464,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 106,
+     "type": "home",
+     "name": "Oxford",
+     "shortName": "OXU",
+     "mediumName": "Oxford",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 35,
+     "type": "away",
+     "name": "Peterborough ",
+     "shortName": "PET",
+     "mediumName": "Peterboro",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "Sirius - Häcken",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 3
+   },
+   "matchId": 37107,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 202,
+     "type": "home",
+     "name": "Sirius",
+     "shortName": "SIR",
+     "mediumName": "Sirius",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 236,
+     "type": "away",
+     "name": "Häcken",
+     "shortName": "HAC",
+     "mediumName": "Häcken",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "Monza - Lazio",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 2,
+    "away": 2
+   },
+   "matchId": 37465,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 347,
+     "type": "home",
+     "name": "Monza",
+     "shortName": "MON",
+     "mediumName": "Monza",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    },
+    {
+     "id": 316,
+     "type": "away",
+     "name": "Lazio",
+     "shortName": "LAZ",
+     "mediumName": "Lazio",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Girona - Barcelona",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 4,
+    "away": 2
+   },
+   "matchId": 37102,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 574,
+     "type": "home",
+     "name": "Girona",
+     "shortName": "GIR",
+     "mediumName": "Girona",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    },
+    {
+     "id": 50,
+     "type": "away",
+     "name": "Barcelona",
+     "shortName": "BAR",
+     "mediumName": "Barcelona",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Mallorca - At Madrid",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 37104,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 416,
+     "type": "home",
+     "name": "Mallorca",
+     "shortName": "MAL",
+     "mediumName": "Mallorca",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    },
+    {
+     "id": 43,
+     "type": "away",
+     "name": "Atlético Madrid",
+     "shortName": "ATM",
+     "mediumName": "At Madrid",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "Metz - Rennes",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 2,
+    "away": 3
+   },
+   "matchId": 37117,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 252,
+     "type": "home",
+     "name": "Metz",
+     "shortName": "MET",
+     "mediumName": "Metz",
+     "countryId": 22,
+     "countryName": "Frankrike",
+     "isoCode": "FRA"
+    },
+    {
+     "id": 223,
+     "type": "away",
+     "name": "Rennes",
+     "shortName": "REN",
+     "mediumName": "Rennes",
+     "countryId": 22,
+     "countryName": "Frankrike",
+     "isoCode": "FRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "Brest - Nantes",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 37116,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 268,
+     "type": "home",
+     "name": "Brest",
+     "shortName": "BRE",
+     "mediumName": "Brest",
+     "countryId": 22,
+     "countryName": "Frankrike",
+     "isoCode": "FRA"
+    },
+    {
+     "id": 253,
+     "type": "away",
+     "name": "Nantes",
+     "shortName": "NAN",
+     "mediumName": "Nantes",
+     "countryId": 22,
+     "countryName": "Frankrike",
+     "isoCode": "FRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "Köln - Freiburg",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 37106,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 424,
+     "type": "home",
+     "name": "Köln",
+     "shortName": "KÖL",
+     "mediumName": "Köln",
+     "countryId": 21,
+     "countryName": "Tyskland",
+     "isoCode": "DEU"
+    },
+    {
+     "id": 350,
+     "type": "away",
+     "name": "Freiburg",
+     "shortName": "SCF",
+     "mediumName": "Freiburg",
+     "countryId": 21,
+     "countryName": "Tyskland",
+     "isoCode": "DEU"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "Brann - Rosenborg",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 0
+   },
+   "matchId": 37157,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 850,
+     "type": "home",
+     "name": "Brann",
+     "shortName": "BRA",
+     "mediumName": "Brann",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    },
+    {
+     "id": 383,
+     "type": "away",
+     "name": "Rosenborg",
+     "shortName": "RBK",
+     "mediumName": "Rosenborg",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 133,
+   "amount": "97744,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 3187,
+   "amount": "823,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 35725,
+   "amount": "58,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 231126,
+   "amount": "18,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Stryktipset",
+ "productId": 1,
+ "drawNumber": 4846,
+ "currentNetSale": "26924785,00",
+ "regCloseTime": "2024-05-04T15:59:00+02:00"
+}

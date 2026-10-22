@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "Spanien - Kroatien",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 0
+   },
+   "matchId": 38367,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 683,
+     "type": "home",
+     "name": "Spanien",
+     "shortName": "ESP",
+     "mediumName": "Spanien",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    },
+    {
+     "id": 23,
+     "type": "away",
+     "name": "Kroatien",
+     "shortName": "CRO",
+     "mediumName": "Kroatien",
+     "countryId": 13,
+     "countryName": "Kroatien",
+     "isoCode": "HRV"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "Italien - Albanien",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 38391,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 716,
+     "type": "home",
+     "name": "Italien",
+     "shortName": "ITA",
+     "mediumName": "Italien",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    },
+    {
+     "id": 685,
+     "type": "away",
+     "name": "Albanien",
+     "shortName": "ALB",
+     "mediumName": "Albanien",
+     "countryId": 54,
+     "countryName": "Albanien",
+     "isoCode": "ALB"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Hamm. TFF - Vasalund",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 39609,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 449,
+     "type": "home",
+     "name": "Hammarby TFF",
+     "shortName": "HAM",
+     "mediumName": "Hamm. TFF",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 459,
+     "type": "away",
+     "name": "Vasalund",
+     "shortName": "VAS",
+     "mediumName": "Vasalund",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Karlberg - Stocksund",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 39605,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 758,
+     "type": "home",
+     "name": "Karlberg",
+     "shortName": "KAR",
+     "mediumName": "Karlberg",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 573,
+     "type": "away",
+     "name": "Stocksund",
+     "shortName": "STO",
+     "mediumName": "Stocksund",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "Lund - Torslanda",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 39606,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 308,
+     "type": "home",
+     "name": "Lund",
+     "shortName": "LBK",
+     "mediumName": "Lund",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 610,
+     "type": "away",
+     "name": "Torslanda",
+     "shortName": "TOR",
+     "mediumName": "Torslanda",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "Norrby - Oskarsham",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 6,
+    "away": 0
+   },
+   "matchId": 39607,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 208,
+     "type": "home",
+     "name": "Norrby",
+     "shortName": "NOR",
+     "mediumName": "Norrby",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 256,
+     "type": "away",
+     "name": "Oskarshamn",
+     "shortName": "OSK",
+     "mediumName": "Oskarsham",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "Rosengård - Trollhätt",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 39604,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 588,
+     "type": "home",
+     "name": "Rosengård",
+     "shortName": "ROS",
+     "mediumName": "Rosengård",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 215,
+     "type": "away",
+     "name": "Trollhättan",
+     "shortName": "FCT",
+     "mediumName": "Trollhätt",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Ängelholm - Tvååker",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 39608,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 443,
+     "type": "home",
+     "name": "Ängelholms FF",
+     "shortName": "ÄNG",
+     "mediumName": "Ängelholm",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 389,
+     "type": "away",
+     "name": "Tvååker",
+     "shortName": "TVÅ",
+     "mediumName": "Tvååker",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Gauthiod - Stenungsu",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 2
+   },
+   "matchId": 39610,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 613,
+     "type": "home",
+     "name": "Gauthiod",
+     "shortName": "IKG",
+     "mediumName": "Gauthiod",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 829,
+     "type": "away",
+     "name": "Stenungsund",
+     "shortName": "STE",
+     "mediumName": "Stenungsu",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "Qviding - V. Frölun",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 2,
+    "away": 2
+   },
+   "matchId": 39611,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 451,
+     "type": "home",
+     "name": "Qviding",
+     "shortName": "QVI",
+     "mediumName": "Qviding",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 612,
+     "type": "away",
+     "name": "Västra Frölunda",
+     "shortName": "VÄF",
+     "mediumName": "V. Frölun",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "Colombia - Bolivia",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 0
+   },
+   "matchId": 39613,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 707,
+     "type": "home",
+     "name": "Colombia",
+     "shortName": "COL",
+     "mediumName": "Colombia",
+     "countryId": 40,
+     "countryName": "Colombia",
+     "isoCode": "COL"
+    },
+    {
+     "id": 1540,
+     "type": "away",
+     "name": "Bolivia",
+     "shortName": "BOL",
+     "mediumName": "Bolivia",
+     "countryId": 34,
+     "countryName": "Bolivia",
+     "isoCode": "BOL"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "Bragatino - Juventude",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 39612,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 299,
+     "type": "home",
+     "name": "Bragantino",
+     "shortName": "BRA",
+     "mediumName": "Bragatino",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    },
+    {
+     "id": 530,
+     "type": "away",
+     "name": "Juventude",
+     "shortName": "JUV",
+     "mediumName": "Juventude",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "Fluminens - Goianiens",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 39623,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 182,
+     "type": "home",
+     "name": "Fluminense",
+     "shortName": "FLU",
+     "mediumName": "Fluminens",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    },
+    {
+     "id": 332,
+     "type": "away",
+     "name": "Goianiense",
+     "shortName": "GOI",
+     "mediumName": "Goianiens",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 41,
+   "amount": "66991,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 1245,
+   "amount": "827,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 14587,
+   "amount": "56,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 96008,
+   "amount": "17,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Stryktipset",
+ "productId": 1,
+ "drawNumber": 4852,
+ "currentNetSale": "10564095,00",
+ "regCloseTime": "2024-06-15T15:59:00+02:00"
+}

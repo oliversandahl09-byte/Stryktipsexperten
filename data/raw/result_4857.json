@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "Brommapoj - Hammarby",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 2
+   },
+   "matchId": 40770,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 454,
+     "type": "home",
+     "name": "Brommapojkarna",
+     "shortName": "BRO",
+     "mediumName": "Brommapoj",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 269,
+     "type": "away",
+     "name": "Hammarby",
+     "shortName": "HAM",
+     "mediumName": "Hammarby",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "Örebro - Örgryte",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 40785,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 271,
+     "type": "home",
+     "name": "Örebro",
+     "shortName": "ÖRE",
+     "mediumName": "Örebro",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 335,
+     "type": "away",
+     "name": "Örgryte",
+     "shortName": "ÖRG",
+     "mediumName": "Örgryte",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Molde - KFUM Oslo",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 2,
+    "away": 3
+   },
+   "matchId": 40756,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 384,
+     "type": "home",
+     "name": "Molde",
+     "shortName": "MFK",
+     "mediumName": "Molde",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    },
+    {
+     "id": 852,
+     "type": "away",
+     "name": "KFUM Oslo",
+     "shortName": "KFU",
+     "mediumName": "KFUM Oslo",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Sarpsborg - Brann",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 40772,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 420,
+     "type": "home",
+     "name": "Sarpsborg",
+     "shortName": "SAR",
+     "mediumName": "Sarpsborg",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    },
+    {
+     "id": 850,
+     "type": "away",
+     "name": "Brann",
+     "shortName": "BRA",
+     "mediumName": "Brann",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "Club Brüg - Royale Un",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 40885,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 414,
+     "type": "home",
+     "name": "Club Brügge",
+     "shortName": "BRÜ",
+     "mediumName": "Club Brüg",
+     "countryId": 32,
+     "countryName": "Belgien",
+     "isoCode": "BEL"
+    },
+    {
+     "id": 498,
+     "type": "away",
+     "name": "Royale Union SG",
+     "shortName": "USG",
+     "mediumName": "Royale Un",
+     "countryId": 32,
+     "countryName": "Belgien",
+     "isoCode": "BEL"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "HJK Helsi - Haka",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 40786,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 817,
+     "type": "home",
+     "name": "HJK Helsingfors",
+     "shortName": "HJK",
+     "mediumName": "HJK Helsi",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    },
+    {
+     "id": 641,
+     "type": "away",
+     "name": "Haka",
+     "shortName": "HAK",
+     "mediumName": "Haka",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "Oulu - Ekenas Id",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 40789,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 639,
+     "type": "home",
+     "name": "Oulu",
+     "shortName": "ACO",
+     "mediumName": "Oulu",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    },
+    {
+     "id": 6808,
+     "type": "away",
+     "name": "Ekenas Idrottsforening",
+     "shortName": "EIF",
+     "mediumName": "Ekenas Id",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Akureyrar - Vikingur",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 40787,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 813,
+     "type": "home",
+     "name": "Akureyrar",
+     "shortName": "KAA",
+     "mediumName": "Akureyrar",
+     "countryId": 43,
+     "countryName": "Island",
+     "isoCode": "ISL"
+    },
+    {
+     "id": 544,
+     "type": "away",
+     "name": "Vikingur",
+     "shortName": "VIK",
+     "mediumName": "Vikingur",
+     "countryId": 43,
+     "countryName": "Island",
+     "isoCode": "ISL"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Kopavogur - IF Vestri",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 40788,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 3534,
+     "type": "home",
+     "name": "Kopavogur",
+     "shortName": "KOP",
+     "mediumName": "Kopavogur",
+     "countryId": 43,
+     "countryName": "Island",
+     "isoCode": "ISL"
+    },
+    {
+     "id": 6982,
+     "type": "away",
+     "name": "IF Vestri",
+     "shortName": "VES",
+     "mediumName": "IF Vestri",
+     "countryId": 43,
+     "countryName": "Island",
+     "isoCode": "ISL"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "Moss - Kongsving",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 40766,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 3966,
+     "type": "home",
+     "name": "Moss",
+     "shortName": "MFK",
+     "mediumName": "Moss",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    },
+    {
+     "id": 3965,
+     "type": "away",
+     "name": "Kongsvinger",
+     "shortName": "KIL",
+     "mediumName": "Kongsving",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "Raufoss - Stabæk",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 40767,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 917,
+     "type": "home",
+     "name": "Raufoss",
+     "shortName": "RAU",
+     "mediumName": "Raufoss",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    },
+    {
+     "id": 875,
+     "type": "away",
+     "name": "Stabæk",
+     "shortName": "STB",
+     "mediumName": "Stabæk",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "IK Start - Vålerenga",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 40781,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 1009,
+     "type": "home",
+     "name": "IK Start",
+     "shortName": "STA",
+     "mediumName": "IK Start",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    },
+    {
+     "id": 345,
+     "type": "away",
+     "name": "Vålerenga",
+     "shortName": "VIF",
+     "mediumName": "Vålerenga",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "Lugano - Grasshopp",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 40896,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 553,
+     "type": "home",
+     "name": "Lugano",
+     "shortName": "LUG",
+     "mediumName": "Lugano",
+     "countryId": 29,
+     "countryName": "Schweiz",
+     "isoCode": "CHE"
+    },
+    {
+     "id": 176,
+     "type": "away",
+     "name": "Grasshoppers",
+     "shortName": "GCZ",
+     "mediumName": "Grasshopp",
+     "countryId": 29,
+     "countryName": "Schweiz",
+     "isoCode": "CHE"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 2,
+   "amount": "1419172,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 122,
+   "amount": "8724,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 1964,
+   "amount": "433,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 20167,
+   "amount": "87,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Stryktipset",
+ "productId": 1,
+ "drawNumber": 4857,
+ "currentNetSale": "10916714,00",
+ "regCloseTime": "2024-07-20T15:59:00+02:00"
+}

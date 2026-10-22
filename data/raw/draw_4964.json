@@ -1,0 +1,2040 @@
+{
+ "productName": "Stryktipset",
+ "seasonLastDraw": false,
+ "productId": 1,
+ "currentNetSale": "12839016,00",
+ "regCloseDescription": "Stryktipset v 31, stänger 2026-08-01 15:59",
+ "extraInfo": null,
+ "drawNumber": 4964,
+ "betIndex": 0,
+ "drawState": "Finalized",
+ "drawStateId": 20,
+ "regBetDisabled": "NotDisabled",
+ "regOpenTime": "2026-07-27T21:00:00+02:00",
+ "regCloseTime": "2026-08-01T15:59:00+02:00",
+ "cancelCloseTime": "2026-08-01T16:00:00+02:00",
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "drawComment": "Stryktipset v. 2026-31",
+ "bombenDrawNum": 974,
+ "relatedDraws": [
+  {
+   "productId": 23,
+   "drawNumber": 974,
+   "regCloseTime": "2026-08-01T15:59:00+02:00"
+  }
+ ],
+ "rowPrice": "1,00",
+ "fund": null,
+ "drawEvents": [
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Norrköpin - Helsingbo",
+   "extraInfo": null,
+   "eventNumber": 1,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 90727,
+    "matchStart": "2026-08-01T17:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-08-01T18:50:31+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 356,
+      "type": "home",
+      "name": "IFK Norrköping",
+      "result": "2",
+      "shortName": "NKP",
+      "mediumName": "Norrköpin",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 238,
+      "type": "away",
+      "name": "Helsingborg",
+      "result": "0",
+      "shortName": "HEL",
+      "mediumName": "Helsingbo",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 26,
+     "name": "Superettan",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "2",
+      "away": "0"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "2",
+      "away": "0"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "1,56",
+    "x": "4,25",
+    "two": "5,20"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-08-01T16:00:00.176+02:00",
+    "distributionRefDate": "2026-08-01T15:58:40.568+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,56"
+      },
+      "distribution": {
+       "distribution": "72",
+       "refDistribution": "72"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "4,25"
+      },
+      "distribution": {
+       "distribution": "17",
+       "refDistribution": "17"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "5,20"
+      },
+      "distribution": {
+       "distribution": "11",
+       "refDistribution": "11"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "72",
+    "x": "17",
+    "two": "11",
+    "date": "2026-08-01T16:00:00.176+02:00",
+    "refOne": "72",
+    "refX": "17",
+    "refTwo": "11",
+    "refDate": "2026-08-01T15:58:40.568+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "67126244"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Brage - Landskron",
+   "extraInfo": null,
+   "eventNumber": 2,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 90725,
+    "matchStart": "2026-08-01T17:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-08-01T18:54:35+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 334,
+      "type": "home",
+      "name": "Brage",
+      "result": "2",
+      "shortName": "IKB",
+      "mediumName": "Brage",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 259,
+      "type": "away",
+      "name": "Landskrona",
+      "result": "1",
+      "shortName": "LKB",
+      "mediumName": "Landskron",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 26,
+     "name": "Superettan",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "2",
+      "away": "1"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "2",
+      "away": "1"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "2",
+      "away": "1"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "2,45",
+    "x": "3,50",
+    "two": "2,63"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-08-01T16:00:00.176+02:00",
+    "distributionRefDate": "2026-08-01T15:58:40.568+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,45"
+      },
+      "distribution": {
+       "distribution": "33",
+       "refDistribution": "33"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,50"
+      },
+      "distribution": {
+       "distribution": "28",
+       "refDistribution": "28"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,63"
+      },
+      "distribution": {
+       "distribution": "39",
+       "refDistribution": "39"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "33",
+    "x": "28",
+    "two": "39",
+    "date": "2026-08-01T16:00:00.176+02:00",
+    "refOne": "33",
+    "refX": "28",
+    "refTwo": "39",
+    "refDate": "2026-08-01T15:58:40.568+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "67126258"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Lyngby - Århus",
+   "extraInfo": null,
+   "eventNumber": 3,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 90768,
+    "matchStart": "2026-08-01T18:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-08-01T19:58:48+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 1024,
+      "type": "home",
+      "name": "Lyngby",
+      "result": "2",
+      "shortName": "LBY",
+      "mediumName": "Lyngby",
+      "countryId": 31,
+      "countryName": "Danmark",
+      "isoCode": "DNK"
+     },
+     {
+      "id": 462,
+      "type": "away",
+      "name": "Århus",
+      "result": "2",
+      "shortName": "AGF",
+      "mediumName": "Århus",
+      "countryId": 31,
+      "countryName": "Danmark",
+      "isoCode": "DNK"
+     }
+    ],
+    "league": {
+     "id": 27,
+     "name": "Superligan",
+     "country": {
+      "id": 31,
+      "name": "Danmark",
+      "isoCode": "DNK"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "2",
+      "away": "2"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "1"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "2",
+      "away": "1"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "2",
+      "away": "2"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "3,75",
+    "x": "3,80",
+    "two": "1,98"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-08-01T16:00:00.176+02:00",
+    "distributionRefDate": "2026-08-01T15:58:40.568+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,75"
+      },
+      "distribution": {
+       "distribution": "30",
+       "refDistribution": "30"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,80"
+      },
+      "distribution": {
+       "distribution": "25",
+       "refDistribution": "25"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,98"
+      },
+      "distribution": {
+       "distribution": "45",
+       "refDistribution": "45"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "30",
+    "x": "25",
+    "two": "45",
+    "date": "2026-08-01T16:00:00.176+02:00",
+    "refOne": "30",
+    "refX": "25",
+    "refTwo": "45",
+    "refDate": "2026-08-01T15:58:40.568+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "71924940"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Fredrikst - Sandefjor",
+   "extraInfo": null,
+   "eventNumber": 4,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 90755,
+    "matchStart": "2026-08-01T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-08-01T17:56:14+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 1008,
+      "type": "home",
+      "name": "Fredrikstad FK",
+      "result": "1",
+      "shortName": "FFK",
+      "mediumName": "Fredrikst",
+      "countryId": 24,
+      "countryName": "Norge",
+      "isoCode": "NOR"
+     },
+     {
+      "id": 492,
+      "type": "away",
+      "name": "Sandefjord",
+      "result": "0",
+      "shortName": "SAN",
+      "mediumName": "Sandefjor",
+      "countryId": 24,
+      "countryName": "Norge",
+      "isoCode": "NOR"
+     }
+    ],
+    "league": {
+     "id": 24,
+     "name": "Eliteserien",
+     "country": {
+      "id": 24,
+      "name": "Norge",
+      "isoCode": "NOR"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "1",
+      "away": "0"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "2,12",
+    "x": "3,50",
+    "two": "3,10"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-08-01T16:00:00.176+02:00",
+    "distributionRefDate": "2026-08-01T15:58:40.568+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,12"
+      },
+      "distribution": {
+       "distribution": "42",
+       "refDistribution": "42"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,50"
+      },
+      "distribution": {
+       "distribution": "30",
+       "refDistribution": "30"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,10"
+      },
+      "distribution": {
+       "distribution": "28",
+       "refDistribution": "28"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "42",
+    "x": "30",
+    "two": "28",
+    "date": "2026-08-01T16:00:00.176+02:00",
+    "refOne": "42",
+    "refX": "30",
+    "refTwo": "28",
+    "refDate": "2026-08-01T15:58:40.568+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "67015294"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "IK Start - Viking",
+   "extraInfo": null,
+   "eventNumber": 5,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 90760,
+    "matchStart": "2026-08-01T18:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-08-01T19:54:04+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 1009,
+      "type": "home",
+      "name": "IK Start",
+      "result": "0",
+      "shortName": "STA",
+      "mediumName": "IK Start",
+      "countryId": 24,
+      "countryName": "Norge",
+      "isoCode": "NOR"
+     },
+     {
+      "id": 199,
+      "type": "away",
+      "name": "Viking",
+      "result": "3",
+      "shortName": "VIK",
+      "mediumName": "Viking",
+      "countryId": 24,
+      "countryName": "Norge",
+      "isoCode": "NOR"
+     }
+    ],
+    "league": {
+     "id": 24,
+     "name": "Eliteserien",
+     "country": {
+      "id": 24,
+      "name": "Norge",
+      "isoCode": "NOR"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "0",
+      "away": "3"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "3"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "0",
+      "away": "3"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "5,40",
+    "x": "4,20",
+    "two": "1,52"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-08-01T16:00:00.176+02:00",
+    "distributionRefDate": "2026-08-01T15:58:40.568+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "5,40"
+      },
+      "distribution": {
+       "distribution": "11",
+       "refDistribution": "11"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "4,20"
+      },
+      "distribution": {
+       "distribution": "16",
+       "refDistribution": "16"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,52"
+      },
+      "distribution": {
+       "distribution": "73",
+       "refDistribution": "73"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "11",
+    "x": "16",
+    "two": "73",
+    "date": "2026-08-01T16:00:00.176+02:00",
+    "refOne": "11",
+    "refX": "16",
+    "refTwo": "73",
+    "refDate": "2026-08-01T15:58:40.568+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "67015300"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Aberdeen - Hearts",
+   "extraInfo": null,
+   "eventNumber": 6,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 90790,
+    "matchStart": "2026-08-01T18:30:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-08-01T20:26:54+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 394,
+      "type": "home",
+      "name": "Aberdeen",
+      "result": "2",
+      "shortName": "ABE",
+      "mediumName": "Aberdeen",
+      "countryId": 23,
+      "countryName": "Skottland",
+      "isoCode": "SCO"
+     },
+     {
+      "id": 402,
+      "type": "away",
+      "name": "Hearts",
+      "result": "1",
+      "shortName": "HOM",
+      "mediumName": "Hearts",
+      "countryId": 23,
+      "countryName": "Skottland",
+      "isoCode": "SCO"
+     }
+    ],
+    "league": {
+     "id": 46,
+     "name": "Premiership",
+     "country": {
+      "id": 23,
+      "name": "Skottland",
+      "isoCode": "SCO"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "2",
+      "away": "1"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "1"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "2",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "2",
+      "away": "1"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "4,25",
+    "x": "3,75",
+    "two": "1,75"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-08-01T16:00:00.176+02:00",
+    "distributionRefDate": "2026-08-01T15:58:40.568+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "4,25"
+      },
+      "distribution": {
+       "distribution": "40",
+       "refDistribution": "40"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,75"
+      },
+      "distribution": {
+       "distribution": "24",
+       "refDistribution": "24"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,75"
+      },
+      "distribution": {
+       "distribution": "36",
+       "refDistribution": "36"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "40",
+    "x": "24",
+    "two": "36",
+    "date": "2026-08-01T16:00:00.176+02:00",
+    "refOne": "40",
+    "refX": "24",
+    "refTwo": "36",
+    "refDate": "2026-08-01T15:58:40.568+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72201566"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Hässlehol - Åtvidaber",
+   "extraInfo": null,
+   "eventNumber": 7,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 90738,
+    "matchStart": "2026-08-01T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-08-01T17:55:03+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 512,
+      "type": "home",
+      "name": "Hässleholms IF",
+      "result": "2",
+      "shortName": "HÄS",
+      "mediumName": "Hässlehol",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 307,
+      "type": "away",
+      "name": "Åtvidaberg",
+      "result": "0",
+      "shortName": "ÅFF",
+      "mediumName": "Åtvidaber",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 316,
+     "name": "Ettan, Sverige",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "2",
+      "away": "0"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "2",
+      "away": "0"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "2,15",
+    "x": "3,40",
+    "two": "2,80"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-08-01T16:00:00.176+02:00",
+    "distributionRefDate": "2026-08-01T15:58:40.568+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,15"
+      },
+      "distribution": {
+       "distribution": "39",
+       "refDistribution": "39"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,40"
+      },
+      "distribution": {
+       "distribution": "26",
+       "refDistribution": "26"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,80"
+      },
+      "distribution": {
+       "distribution": "35",
+       "refDistribution": "35"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "39",
+    "x": "26",
+    "two": "35",
+    "date": "2026-08-01T16:00:00.176+02:00",
+    "refOne": "39",
+    "refX": "26",
+    "refTwo": "35",
+    "refDate": "2026-08-01T15:58:40.568+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "68311714"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Laholm - Trollhätt",
+   "extraInfo": null,
+   "eventNumber": 8,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 90744,
+    "matchStart": "2026-08-01T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-08-01T17:51:04+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 3809,
+      "type": "home",
+      "name": "Laholm",
+      "result": "0",
+      "shortName": "LAH",
+      "mediumName": "Laholm",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 215,
+      "type": "away",
+      "name": "Trollhättan",
+      "result": "1",
+      "shortName": "FCT",
+      "mediumName": "Trollhätt",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 316,
+     "name": "Ettan, Sverige",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "0",
+      "away": "1"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "1"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "0",
+      "away": "1"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "3,15",
+    "x": "3,50",
+    "two": "1,94"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-08-01T16:00:00.176+02:00",
+    "distributionRefDate": "2026-08-01T15:58:40.568+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,15"
+      },
+      "distribution": {
+       "distribution": "32",
+       "refDistribution": "32"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,50"
+      },
+      "distribution": {
+       "distribution": "26",
+       "refDistribution": "26"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,94"
+      },
+      "distribution": {
+       "distribution": "42",
+       "refDistribution": "42"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "32",
+    "x": "26",
+    "two": "42",
+    "date": "2026-08-01T16:00:00.176+02:00",
+    "refOne": "32",
+    "refX": "26",
+    "refTwo": "42",
+    "refDate": "2026-08-01T15:58:40.568+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "68311716"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Olympic - Skövde",
+   "extraInfo": null,
+   "eventNumber": 9,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 90735,
+    "matchStart": "2026-08-01T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-08-01T17:52:05+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 444,
+      "type": "home",
+      "name": "Olympic",
+      "result": "3",
+      "shortName": "OLY",
+      "mediumName": "Olympic",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 504,
+      "type": "away",
+      "name": "Skövde AIK",
+      "result": "1",
+      "shortName": "SKÖ",
+      "mediumName": "Skövde ",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 316,
+     "name": "Ettan, Sverige",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "3",
+      "away": "1"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "3",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "1"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "3",
+      "away": "1"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "1,78",
+    "x": "3,60",
+    "two": "3,65"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-08-01T16:00:00.176+02:00",
+    "distributionRefDate": "2026-08-01T15:58:40.568+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,78"
+      },
+      "distribution": {
+       "distribution": "61",
+       "refDistribution": "61"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,60"
+      },
+      "distribution": {
+       "distribution": "23",
+       "refDistribution": "23"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,65"
+      },
+      "distribution": {
+       "distribution": "16",
+       "refDistribution": "16"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "61",
+    "x": "23",
+    "two": "16",
+    "date": "2026-08-01T16:00:00.176+02:00",
+    "refOne": "61",
+    "refX": "23",
+    "refTwo": "16",
+    "refDate": "2026-08-01T15:58:40.568+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "68311718"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Järfälla - Stockholm",
+   "extraInfo": null,
+   "eventNumber": 10,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 90740,
+    "matchStart": "2026-08-01T16:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-08-01T17:56:04+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 821,
+      "type": "home",
+      "name": "Järfälla",
+      "result": "0",
+      "shortName": "JÄR",
+      "mediumName": "Järfälla",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 457,
+      "type": "away",
+      "name": "Stockholm Internazionale",
+      "result": "4",
+      "shortName": "STO",
+      "mediumName": "Stockholm",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 316,
+     "name": "Ettan, Sverige",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "0",
+      "away": "4"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "2"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "2"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "0",
+      "away": "4"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "5,00",
+    "x": "3,90",
+    "two": "1,50"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-08-01T16:00:00.176+02:00",
+    "distributionRefDate": "2026-08-01T15:58:40.568+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "5,00"
+      },
+      "distribution": {
+       "distribution": "11",
+       "refDistribution": "11"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,90"
+      },
+      "distribution": {
+       "distribution": "15",
+       "refDistribution": "15"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,50"
+      },
+      "distribution": {
+       "distribution": "74",
+       "refDistribution": "74"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "11",
+    "x": "15",
+    "two": "74",
+    "date": "2026-08-01T16:00:00.176+02:00",
+    "refOne": "11",
+    "refX": "15",
+    "refTwo": "74",
+    "refDate": "2026-08-01T15:58:40.568+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "68311008"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "AIK - Örgryte",
+   "extraInfo": null,
+   "eventNumber": 11,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 90728,
+    "matchStart": "2026-08-02T16:30:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-08-02T18:20:35+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 255,
+      "type": "home",
+      "name": "AIK",
+      "result": "0",
+      "shortName": "AIK",
+      "mediumName": "AIK",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 335,
+      "type": "away",
+      "name": "Örgryte",
+      "result": "3",
+      "shortName": "ÖRG",
+      "mediumName": "Örgryte",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 25,
+     "name": "Allsvenskan",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "0",
+      "away": "3"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "2"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "0",
+      "away": "1"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "0",
+      "away": "3"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "1,58",
+    "x": "4,40",
+    "two": "6,00"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-08-01T16:00:00.176+02:00",
+    "distributionRefDate": "2026-08-01T15:58:40.568+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,58"
+      },
+      "distribution": {
+       "distribution": "75",
+       "refDistribution": "75"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "4,40"
+      },
+      "distribution": {
+       "distribution": "17",
+       "refDistribution": "17"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "6,00"
+      },
+      "distribution": {
+       "distribution": "8",
+       "refDistribution": "8"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "75",
+    "x": "17",
+    "two": "8",
+    "date": "2026-08-01T16:00:00.176+02:00",
+    "refOne": "75",
+    "refX": "17",
+    "refTwo": "8",
+    "refDate": "2026-08-01T15:58:40.568+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "67126662"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Brommapoj - Malmö",
+   "extraInfo": null,
+   "eventNumber": 12,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 90726,
+    "matchStart": "2026-08-02T14:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-08-02T15:51:24+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 454,
+      "type": "home",
+      "name": "Brommapojkarna",
+      "result": "1",
+      "shortName": "BRO",
+      "mediumName": "Brommapoj",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 209,
+      "type": "away",
+      "name": "Malmö",
+      "result": "2",
+      "shortName": "MAL",
+      "mediumName": "Malmö",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 25,
+     "name": "Allsvenskan",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "1",
+      "away": "2"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "0",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "1",
+      "away": "2"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "1",
+      "away": "2"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "3,10",
+    "x": "3,80",
+    "two": "2,25"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-08-01T16:00:00.176+02:00",
+    "distributionRefDate": "2026-08-01T15:58:40.568+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,10"
+      },
+      "distribution": {
+       "distribution": "22",
+       "refDistribution": "22"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,80"
+      },
+      "distribution": {
+       "distribution": "29",
+       "refDistribution": "29"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "2,25"
+      },
+      "distribution": {
+       "distribution": "49",
+       "refDistribution": "49"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "22",
+    "x": "29",
+    "two": "49",
+    "date": "2026-08-01T16:00:00.176+02:00",
+    "refOne": "22",
+    "refX": "29",
+    "refTwo": "49",
+    "refDate": "2026-08-01T15:58:40.568+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "67126674"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "IFK Göteb - Degerfors",
+   "extraInfo": null,
+   "eventNumber": 13,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 90732,
+    "matchStart": "2026-08-02T14:00:00+02:00",
+    "status": "Slut",
+    "statusId": 31,
+    "sportEventStatus": "Ended",
+    "statusTime": "2026-08-02T15:52:17+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 237,
+      "type": "home",
+      "name": "IFK Göteborg",
+      "result": "2",
+      "shortName": "IFK",
+      "mediumName": "IFK Göteb",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 235,
+      "type": "away",
+      "name": "Degerfors",
+      "result": "0",
+      "shortName": "DEG",
+      "mediumName": "Degerfors",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 25,
+     "name": "Allsvenskan",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": [
+     {
+      "type": 9,
+      "sportEventResultType": "Current",
+      "description": "Current",
+      "home": "2",
+      "away": "0"
+     },
+     {
+      "type": 1,
+      "sportEventResultType": "Halftime",
+      "description": "Mid time",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 6,
+      "sportEventResultType": "Period2",
+      "description": "Period 2",
+      "home": "1",
+      "away": "0"
+     },
+     {
+      "type": 2,
+      "sportEventResultType": "Fulltime",
+      "description": "Full time",
+      "home": "2",
+      "away": "0"
+     }
+    ]
+   },
+   "odds": null,
+   "favouriteOdds": null,
+   "startOdds": {
+    "one": "1,76",
+    "x": "3,90",
+    "two": "4,90"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-08-01T16:00:00.176+02:00",
+    "distributionRefDate": "2026-08-01T15:58:40.568+02:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "1,76"
+      },
+      "distribution": {
+       "distribution": "61",
+       "refDistribution": "61"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "3,90"
+      },
+      "distribution": {
+       "distribution": "24",
+       "refDistribution": "24"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": null,
+       "favouriteOdds": null,
+       "startOdds": "4,90"
+      },
+      "distribution": {
+       "distribution": "15",
+       "refDistribution": "15"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "61",
+    "x": "24",
+    "two": "15",
+    "date": "2026-08-01T16:00:00.176+02:00",
+    "refOne": "61",
+    "refX": "24",
+    "refTwo": "15",
+    "refDate": "2026-08-01T15:58:40.568+02:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "67126666"
+    }
+   ]
+  }
+ ],
+ "retailerOpenTime": "2026-07-27T21:00:00+02:00",
+ "retailerCloseTime": "2026-08-01T15:59:00+02:00",
+ "retailerCancelCloseTime": "2026-08-01T16:00:00+02:00",
+ "lastDateWithoutTimeOfDay": "2026-08-03T00:00:00+02:00"
+}

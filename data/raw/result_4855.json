@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "England - Schweiz",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 40427,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 697,
+     "type": "home",
+     "name": "England",
+     "shortName": "ENG",
+     "mediumName": "England",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 673,
+     "type": "away",
+     "name": "Schweiz",
+     "shortName": "SUI",
+     "mediumName": "Schweiz",
+     "countryId": 29,
+     "countryName": "Schweiz",
+     "isoCode": "CHE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "Nederländ - Turkiet",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 40464,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 678,
+     "type": "home",
+     "name": "Nederländerna",
+     "shortName": "NED",
+     "mediumName": "Nederländ",
+     "countryId": 26,
+     "countryName": "Nederländerna",
+     "isoCode": "NLD"
+    },
+    {
+     "id": 719,
+     "type": "away",
+     "name": "Turkiet",
+     "shortName": "TUR",
+     "mediumName": "Turkiet",
+     "countryId": 42,
+     "countryName": "Turkiet",
+     "isoCode": "TUR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Colombia - Panama",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 5,
+    "away": 0
+   },
+   "matchId": 40465,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 707,
+     "type": "home",
+     "name": "Colombia",
+     "shortName": "COL",
+     "mediumName": "Colombia",
+     "countryId": 40,
+     "countryName": "Colombia",
+     "isoCode": "COL"
+    },
+    {
+     "id": 4193,
+     "type": "away",
+     "name": "Panama",
+     "shortName": "PAN",
+     "mediumName": "Panama",
+     "countryId": 126,
+     "countryName": "Panama",
+     "isoCode": "PAN"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Uruguay - Brasilien",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 40466,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 668,
+     "type": "home",
+     "name": "Uruguay",
+     "shortName": "URU",
+     "mediumName": "Uruguay",
+     "countryId": 35,
+     "countryName": "Uruguay",
+     "isoCode": "URY"
+    },
+    {
+     "id": 712,
+     "type": "away",
+     "name": "Brasilien",
+     "shortName": "BRA",
+     "mediumName": "Brasilien",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "Akranes - Kopavogur",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 8,
+    "away": 0
+   },
+   "matchId": 40362,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 841,
+     "type": "home",
+     "name": "Akranes",
+     "shortName": "AKR",
+     "mediumName": "Akranes",
+     "countryId": 43,
+     "countryName": "Island",
+     "isoCode": "ISL"
+    },
+    {
+     "id": 3534,
+     "type": "away",
+     "name": "Kopavogur",
+     "shortName": "KOP",
+     "mediumName": "Kopavogur",
+     "countryId": 43,
+     "countryName": "Island",
+     "isoCode": "ISL"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "KR Reykja - Stjarnan",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 40365,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 540,
+     "type": "home",
+     "name": "KR Reykjavik",
+     "shortName": "KR",
+     "mediumName": "KR Reykja",
+     "countryId": 43,
+     "countryName": "Island",
+     "isoCode": "ISL"
+    },
+    {
+     "id": 532,
+     "type": "away",
+     "name": "Stjarnan",
+     "shortName": "STJ",
+     "mediumName": "Stjarnan",
+     "countryId": 43,
+     "countryName": "Island",
+     "isoCode": "ISL"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "Flamengo - Cuiaba Es",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 40372,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 283,
+     "type": "home",
+     "name": "Flamengo",
+     "shortName": "FLA",
+     "mediumName": "Flamengo",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    },
+    {
+     "id": 531,
+     "type": "away",
+     "name": "Cuiaba Esporte",
+     "shortName": "CUI",
+     "mediumName": "Cuiaba Es",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Sao Paulo - Bragatino",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 40371,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 327,
+     "type": "home",
+     "name": "Sao Paulo",
+     "shortName": "SPA",
+     "mediumName": "Sao Paulo",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    },
+    {
+     "id": 299,
+     "type": "away",
+     "name": "Bragantino",
+     "shortName": "BRA",
+     "mediumName": "Bragatino",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Cincinnat - Inter Mia",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 6,
+    "away": 1
+   },
+   "matchId": 40368,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 388,
+     "type": "home",
+     "name": "Cincinnati",
+     "shortName": "CIN",
+     "mediumName": "Cincinnat",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    },
+    {
+     "id": 174,
+     "type": "away",
+     "name": "Inter Miami",
+     "shortName": "MIA",
+     "mediumName": "Inter Mia",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "Columbus - Toronto",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 4,
+    "away": 0
+   },
+   "matchId": 40370,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 576,
+     "type": "home",
+     "name": "Columbus Crew",
+     "shortName": "CLB",
+     "mediumName": "Columbus",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    },
+    {
+     "id": 381,
+     "type": "away",
+     "name": "Toronto FC",
+     "shortName": "TOR",
+     "mediumName": "Toronto",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "Montreal - Vancouver",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 40369,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 185,
+     "type": "home",
+     "name": "CF Montreal",
+     "shortName": "MON",
+     "mediumName": "Montreal",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    },
+    {
+     "id": 324,
+     "type": "away",
+     "name": "Vancouver Whitecaps",
+     "shortName": "VAN",
+     "mediumName": "Vancouver",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "Orlando - DC United",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 5,
+    "away": 0
+   },
+   "matchId": 40366,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 382,
+     "type": "home",
+     "name": "Orlando City",
+     "shortName": "ORL",
+     "mediumName": "Orlando",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    },
+    {
+     "id": 187,
+     "type": "away",
+     "name": "DC United",
+     "shortName": "DC",
+     "mediumName": "DC United",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "Philadelp - NY Red Bu",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 40367,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 434,
+     "type": "home",
+     "name": "Philadelphia Union",
+     "shortName": "PHI",
+     "mediumName": "Philadelp",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    },
+    {
+     "id": 184,
+     "type": "away",
+     "name": "New York Red Bulls",
+     "shortName": "NYRB",
+     "mediumName": "NY Red Bu",
+     "countryId": 28,
+     "countryName": "USA",
+     "isoCode": "USA"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 169,
+   "amount": "16581,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 5145,
+   "amount": "204,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 47567,
+   "amount": "17,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 236604,
+   "amount": "0,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Stryktipset",
+ "productId": 1,
+ "drawNumber": 4855,
+ "currentNetSale": "10777922,00",
+ "regCloseTime": "2024-07-06T15:59:00+02:00"
+}

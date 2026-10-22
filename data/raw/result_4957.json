@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "Qatar - Schweiz",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 87457,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 1480,
+     "type": "home",
+     "name": "Qatar",
+     "shortName": "QAT",
+     "mediumName": "Qatar",
+     "countryId": 118,
+     "countryName": "Qatar",
+     "isoCode": "QAT"
+    },
+    {
+     "id": 673,
+     "type": "away",
+     "name": "Schweiz",
+     "shortName": "SUI",
+     "mediumName": "Schweiz",
+     "countryId": 29,
+     "countryName": "Schweiz",
+     "isoCode": "CHE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "IF Karlst - Gefle",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 89174,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 448,
+     "type": "home",
+     "name": "IF Karlstad",
+     "shortName": "KAR",
+     "mediumName": "IF Karlst",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 392,
+     "type": "away",
+     "name": "Gefle",
+     "shortName": "GEF",
+     "mediumName": "Gefle",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Järfälla - Arlanda",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 2,
+    "away": 3
+   },
+   "matchId": 89175,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 821,
+     "type": "home",
+     "name": "Järfälla",
+     "shortName": "JÄR",
+     "mediumName": "Järfälla",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 3471,
+     "type": "away",
+     "name": "Arlanda",
+     "shortName": "ARL",
+     "mediumName": "Arlanda",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Stocksund - Sollentun",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 3,
+    "away": 3
+   },
+   "matchId": 89172,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 573,
+     "type": "home",
+     "name": "Stocksund",
+     "shortName": "STO",
+     "mediumName": "Stocksund",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 262,
+     "type": "away",
+     "name": "Sollentuna",
+     "shortName": "SOL",
+     "mediumName": "Sollentun",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "Trollhätt - Kristians",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 89178,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 215,
+     "type": "home",
+     "name": "Trollhättan",
+     "shortName": "FCT",
+     "mediumName": "Trollhätt",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 550,
+     "type": "away",
+     "name": "Kristianstad",
+     "shortName": "KRI",
+     "mediumName": "Kristians",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "Åtvidaber - Eskilsmin",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 4,
+    "away": 0
+   },
+   "matchId": 89176,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 307,
+     "type": "home",
+     "name": "Åtvidaberg",
+     "shortName": "ÅFF",
+     "mediumName": "Åtvidaber",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 579,
+     "type": "away",
+     "name": "Eskilsminne",
+     "shortName": "ESK",
+     "mediumName": "Eskilsmin",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "FF Jaro - HJK Helsi",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 2,
+    "away": 5
+   },
+   "matchId": 89173,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 9202,
+     "type": "home",
+     "name": "FF Jaro",
+     "shortName": "JAR",
+     "mediumName": "FF Jaro",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    },
+    {
+     "id": 817,
+     "type": "away",
+     "name": "HJK Helsingfors",
+     "shortName": "HJK",
+     "mediumName": "HJK Helsi",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Lahti - SJK",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 2,
+    "away": 3
+   },
+   "matchId": 89170,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 642,
+     "type": "home",
+     "name": "Lahti",
+     "shortName": "LAH",
+     "mediumName": "Lahti",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    },
+    {
+     "id": 640,
+     "type": "away",
+     "name": "SJK",
+     "shortName": "SEI",
+     "mediumName": "SJK",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Mariehamn - IF Gnista",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 3
+   },
+   "matchId": 89167,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 831,
+     "type": "home",
+     "name": "Mariehamn",
+     "shortName": "MAR",
+     "mediumName": "Mariehamn",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    },
+    {
+     "id": 6878,
+     "type": "away",
+     "name": "IF Gnistan",
+     "shortName": "GNI",
+     "mediumName": "IF Gnista",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "VPS - KuPS",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 89171,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 819,
+     "type": "home",
+     "name": "VPS",
+     "shortName": "VPS",
+     "mediumName": "VPS",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    },
+    {
+     "id": 830,
+     "type": "away",
+     "name": "KuPS",
+     "shortName": "KUPS",
+     "mediumName": "KuPS",
+     "countryId": 46,
+     "countryName": "Finland",
+     "isoCode": "FIN"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "Brasilien - Marocko",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 87466,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 712,
+     "type": "home",
+     "name": "Brasilien",
+     "shortName": "BRA",
+     "mediumName": "Brasilien",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    },
+    {
+     "id": 739,
+     "type": "away",
+     "name": "Marocko",
+     "shortName": "MAR",
+     "mediumName": "Marocko",
+     "countryId": 83,
+     "countryName": "Marocko",
+     "isoCode": "MAR"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "Haiti - Skottland",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 87474,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 4397,
+     "type": "home",
+     "name": "Haiti",
+     "shortName": "HAI",
+     "mediumName": "Haiti",
+     "countryId": 156,
+     "countryName": "Haiti",
+     "isoCode": "HTI"
+    },
+    {
+     "id": 725,
+     "type": "away",
+     "name": "Skottland",
+     "shortName": "SCO",
+     "mediumName": "Skottland",
+     "countryId": 23,
+     "countryName": "Skottland",
+     "isoCode": "SCO"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "Australie - Turkiet",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 87459,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 734,
+     "type": "home",
+     "name": "Australien",
+     "shortName": "AUS",
+     "mediumName": "Australie",
+     "countryId": 80,
+     "countryName": "Australien",
+     "isoCode": "AUS"
+    },
+    {
+     "id": 719,
+     "type": "away",
+     "name": "Turkiet",
+     "shortName": "TUR",
+     "mediumName": "Turkiet",
+     "countryId": 42,
+     "countryName": "Turkiet",
+     "isoCode": "TUR"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 2,
+   "amount": "3071868,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 160,
+   "amount": "7414,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 2840,
+   "amount": "334,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 27708,
+   "amount": "71,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Stryktipset",
+ "productId": 1,
+ "drawNumber": 4957,
+ "currentNetSale": "12167286,00",
+ "regCloseTime": "2026-06-13T15:59:00+02:00"
+}
