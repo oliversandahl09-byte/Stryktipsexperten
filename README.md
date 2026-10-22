@@ -20,6 +20,19 @@ Hämtar veckans Stryktips-kupong från Svenska Spel och föreslår ett system
 4. **Backtest.** Gamla omgångar spelas om med samma regler, och insats och
    utdelning räknas med de verkliga utdelningarna för 10–13 rätt.
 
+## Webbsidan
+
+`webb/index.html` visar veckans omgång: mest troliga raden, sannolikheter, streck
+och värde per match. Du väljer system (max antal rader, eller exakt antal halv-
+och helgarderingar) och spelstil, och förslaget räknas om direkt i webbläsaren
+med samma metod som `kupong.py`. Tryck på ett tecken för att låsa egna val, så
+fylls resten av systemet i runt dem.
+
+Sidan publiceras med GitHub Pages av `.github/workflows/webb.yml`, varje gång
+veckans förslag har skrivits. Slå på det under **Settings → Pages → Source:
+GitHub Actions**. Lokalt: `python -m http.server` i repots rot och öppna
+<http://localhost:8000/webb/>.
+
 ## Automatiskt varje vecka
 
 GitHub Actions (`.github/workflows/veckovis.yml`) kör torsdag, fredag och

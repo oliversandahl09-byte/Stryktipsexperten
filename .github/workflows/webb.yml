@@ -1,0 +1,43 @@
+name: Webbsidan
+
+# Publicerar webb/ med veckans förslag på GitHub Pages.
+# Kräver att Pages är påslaget med källan "GitHub Actions" (Settings → Pages).
+
+on:
+  push:
+    branches: [main]
+    paths: ["webb/**", "forslag/senaste.json", ".github/workflows/webb.yml"]
+  # Veckans förslag pushas av en annan workflow med GITHUB_TOKEN, vilket inte
+  # startar push-triggern. Därför publiceras sidan också när den är klar.
+  workflow_run:
+    workflows: ["Veckans stryktips"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Bygg sidan
+        run: |
+          mkdir -p _site
+          cp webb/index.html _site/
+          cp forslag/senaste.json _site/
+      - uses: actions/upload-pages-artifact@v3
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--START-->
+<title>Stryktipsexperten</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: en kupong. Inställningar och summering i en sticky panel, 13 matchrader med 1 X 2-rutor. */
+:root {
+  --bg: #f3f5f1;
+  --surface: #ffffff;
+  --ink: #15201a;
+  --muted: #5f6d64;
+  --line: #dde3dc;
+  --accent: #0f7a4a;
+  --accent-ink: #ffffff;
+  --mark: #ffd23f;
+  --mark-ink: #1d1a05;
+  --bar: #c9e6d4;
+  --value: #b24a00;
+  --lock: #3557c9;
+  --hero: #15201a;
+  --hero-ink: #f3f5f1;
+  --hero-tile: #26342c;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --font-data: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1511; --surface: #162019; --ink: #e8efe9; --muted: #93a398; --line: #26332b;
+    --accent: #3ccf88; --accent-ink: #062314; --mark: #ffd23f; --mark-ink: #1d1a05;
+    --bar: #22513a; --value: #ff9a4d; --lock: #8ea8ff;
+    --hero: #1d2b23; --hero-ink: #e8efe9; --hero-tile: #2a3b31; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1511; --surface: #162019; --ink: #e8efe9; --muted: #93a398; --line: #26332b;
+  --accent: #3ccf88; --accent-ink: #062314; --mark: #ffd23f; --mark-ink: #1d1a05;
+  --bar: #22513a; --value: #ff9a4d; --lock: #8ea8ff;
+    --hero: #1d2b23; --hero-ink: #e8efe9; --hero-tile: #2a3b31; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 15px/1.5 var(--font-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 24px 48px;
+}
+.wrap { max-width: 1060px; margin: 0 auto; display: grid; gap: 24px; }
+header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; }
+h1 { font: 800 clamp(30px, 6vw, 48px)/1 var(--font-display); letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
+h1 span { color: var(--accent); }
+.meta { color: var(--muted); font-size: 14px; display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.meta b { color: var(--ink); font-weight: 600; }
+h2 { font: 700 13px/1.2 var(--font-body); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0; }
+
+.layout { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 24px; align-items: start; }
+@media (max-width: 860px) { .layout { grid-template-columns: minmax(0, 1fr); } }
+.panel { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); display: grid; gap: 20px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+@media (max-width: 860px) { .panel { position: static; } }
+
+.seg { display: grid; grid-template-columns: 1fr 1fr; background: var(--bg); border-radius: 8px; padding: 3px; gap: 3px; }
+.seg button { border: 0; background: transparent; color: var(--muted); font: 600 14px var(--font-body); padding: 8px; border-radius: 6px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgb(0 0 0 / 0.12); }
+.group { display: grid; gap: 10px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips button { font: 500 13px var(--font-data); border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+  padding: 6px 10px; border-radius: 999px; cursor: pointer; font-variant-numeric: tabular-nums; }
+.chips button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.field { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); }
+.field input[type="number"] { width: 90px; font: 500 14px var(--font-data); padding: 6px 8px; border: 1px solid var(--line);
+  border-radius: 6px; background: var(--bg); color: var(--ink); }
+.stepper { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.stepper .lbl { font-weight: 600; }
+.stepper .lbl small { display: block; color: var(--muted); font-weight: 400; font-size: 12px; }
+.stepper .ctl { display: flex; align-items: center; gap: 4px; }
+.stepper button { width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+  font: 700 18px var(--font-body); cursor: pointer; }
+.stepper button:disabled { opacity: 0.35; cursor: default; }
+.stepper output { min-width: 28px; text-align: center; font: 700 18px var(--font-data); }
+input[type="range"] { width: 100%; accent-color: var(--accent); }
+.range-labels { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); }
+
+.sum { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 12px; padding-top: 16px; border-top: 1px solid var(--line); }
+.stat .k { font-size: 12px; color: var(--muted); }
+.stat .v { font: 700 22px/1.15 var(--font-data); font-variant-numeric: tabular-nums; }
+.stat.big .v { font: 800 34px/1 var(--font-display); }
+.odds { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.odds div { background: var(--bg); border-radius: 8px; padding: 6px 10px; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.odds .k { font-size: 11px; color: var(--muted); }
+.odds .v { font: 700 14px var(--font-data); }
+.warn { color: var(--value); font-size: 13px; margin: 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.btn { font: 600 14px var(--font-body); border-radius: 8px; padding: 9px 14px; cursor: pointer; border: 1px solid var(--line);
+  background: var(--surface); color: var(--ink); }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+button:focus-visible, input:focus-visible { outline: 3px solid var(--lock); outline-offset: 2px; }
+
+.likely { background: var(--hero); color: var(--hero-ink); border-radius: 14px; padding: 18px 20px; display: grid; gap: 10px; }
+.likely h2 { color: inherit; opacity: 0.7; }
+.likely-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.likely-row span { display: grid; place-items: center; width: 36px; height: 44px; border-radius: 6px; background: var(--hero-tile);
+  font: 700 18px var(--font-data); position: relative; }
+.likely-row span small { position: absolute; top: 2px; left: 4px; font-size: 9px; opacity: 0.55; font-weight: 500; }
+.likely p { margin: 0; font-size: 13px; opacity: 0.75; }
+
+.coupon { display: grid; gap: 8px; }
+.coupon-head, .match { display: grid; grid-template-columns: 28px minmax(0, 1fr) 210px 64px; gap: 12px; align-items: center; }
+.coupon-head { padding: 0 14px; font-size: 12px; color: var(--muted); }
+.coupon-head .signs { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; }
+.match { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 14px; }
+.match.locked { border-color: var(--lock); }
+.nr { font: 700 16px var(--font-data); color: var(--muted); }
+.teams { min-width: 0; }
+.teams .name { font-weight: 600; overflow-wrap: anywhere; }
+.teams .sub { font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 2px 10px; }
+.teams .sub .hot { color: var(--value); font-weight: 600; }
+.signs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.sign { position: relative; overflow: hidden; border: 1.5px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink);
+  height: 52px; cursor: pointer; display: grid; align-content: center; justify-items: center; gap: 1px; padding: 0; font: inherit; }
+.sign .fill { position: absolute; left: 0; right: 0; bottom: 0; background: var(--bar); z-index: 0; }
+.sign .s, .sign .p { position: relative; z-index: 1; }
+.sign .s { font: 700 17px/1 var(--font-data); }
+.sign .p { font: 500 11px var(--font-data); color: var(--muted); }
+.sign.on { background: var(--mark); border-color: var(--mark); color: var(--mark-ink); }
+.sign.on .fill { display: none; }
+.sign.on .p { color: var(--mark-ink); opacity: 0.75; }
+.sign.top::after { content: ""; position: absolute; top: 5px; right: 5px; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); z-index: 1; }
+.kind { text-align: right; font-size: 12px; color: var(--muted); display: grid; gap: 2px; justify-items: end; }
+.kind b { font: 700 13px var(--font-body); color: var(--ink); }
+.kind button { border: 0; background: none; color: var(--lock); font: 600 12px var(--font-body); cursor: pointer; padding: 0; }
+@media (max-width: 560px) {
+  .coupon-head { display: none; }
+  .match { grid-template-columns: 24px minmax(0, 1fr) auto; grid-template-areas: "nr teams kind" "signs signs signs"; row-gap: 10px; }
+  .match .nr { grid-area: nr; } .match .teams { grid-area: teams; } .match .signs { grid-area: signs; } .match .kind { grid-area: kind; }
+}
+.legend { font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -2px; margin-right: 6px; }
+footer { font-size: 13px; color: var(--muted); max-width: 70ch; }
+.toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--bg);
+  padding: 10px 16px; border-radius: 8px; font-weight: 600; font-size: 14px; }
+.error { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
+@media (prefers-reduced-motion: no-preference) { .sign { transition: background-color .15s, border-color .15s; } }
+</style>
+<!--END-HEAD-->
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Stryktips<span>experten</span></h1>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <section class="likely" aria-labelledby="likely-h">
+    <h2 id="likely-h">Mest troliga raden</h2>
+    <div class="likely-row" id="likely"></div>
+    <p id="likely-note"></p>
+  </section>
+
+  <div class="layout">
+    <aside class="panel" aria-label="Systeminställningar">
+      <div class="group">
+        <h2>System</h2>
+        <div class="seg" role="group" aria-label="Typ av system">
+          <button type="button" id="mode-budget" aria-pressed="true">Max rader</button>
+          <button type="button" id="mode-exakt" aria-pressed="false">Egna garderingar</button>
+        </div>
+      </div>
+
+      <div class="group" id="budget-box">
+        <div class="chips" id="budget-chips"></div>
+        <label class="field" for="budget">Eget antal rader <input type="number" id="budget" min="1" max="1594323" step="1"></label>
+      </div>
+
+      <div class="group" id="exakt-box" hidden>
+        <div class="stepper">
+          <span class="lbl">Halvgarderingar <small>två tecken, ×2 rader</small></span>
+          <span class="ctl"><button type="button" id="halv-minus" aria-label="Färre halvgarderingar">−</button><output id="halv"></output><button type="button" id="halv-plus" aria-label="Fler halvgarderingar">+</button></span>
+        </div>
+        <div class="stepper">
+          <span class="lbl">Helgarderingar <small>alla tre tecken, ×3 rader</small></span>
+          <span class="ctl"><button type="button" id="hel-minus" aria-label="Färre helgarderingar">−</button><output id="hel"></output><button type="button" id="hel-plus" aria-label="Fler helgarderingar">+</button></span>
+        </div>
+      </div>
+
+      <div class="group">
+        <h2><label for="risk">Spelstil</label></h2>
+        <input type="range" id="risk" min="0" max="1" step="0.05">
+        <div class="range-labels"><span>Säkra tecken</span><span id="risk-v"></span><span>Skrällar</span></div>
+      </div>
+
+      <div class="sum" aria-live="polite">
+        <div class="stat big"><div class="k">Rader</div><div class="v" id="s-rows"></div></div>
+        <div class="stat big"><div class="k">Kostnad</div><div class="v" id="s-cost"></div></div>
+        <div class="stat"><div class="k">Spikar / halv / hel</div><div class="v" id="s-mix"></div></div>
+        <div class="stat"><div class="k">Väntade rätt</div><div class="v" id="s-exp"></div></div>
+        <div class="odds">
+          <div><div class="k">13 rätt</div><div class="v" id="p13"></div></div>
+          <div><div class="k">12+</div><div class="v" id="p12"></div></div>
+          <div><div class="k">11+</div><div class="v" id="p11"></div></div>
+          <div><div class="k">10+</div><div class="v" id="p10"></div></div>
+        </div>
+        <p class="warn" id="warn" hidden></p>
+      </div>
+
+      <div class="actions">
+        <button type="button" class="btn primary" id="copy">Kopiera systemet</button>
+        <button type="button" class="btn" id="unlock">Rensa egna val</button>
+      </div>
+    </aside>
+
+    <main class="coupon" aria-label="Kupong">
+      <div class="coupon-head"><span>#</span><span>Match</span><span class="signs"><span>1</span><span>X</span><span>2</span></span><span style="text-align:right">Val</span></div>
+      <div id="matches" class="coupon"></div>
+      <div class="legend">
+        <span><i style="background:var(--mark)"></i>Med i systemet</span>
+        <span><i style="background:var(--bar)"></i>Sannolikhet (stapelns höjd)</span>
+        <span><i style="background:var(--accent);border-radius:50%;width:8px;height:8px"></i>Mest troligt</span>
+        <span>Tryck på ett tecken för att låsa egna val. Resten av systemet räknas om.</span>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    Sannolikheterna kommer från oddsen med spelbolagets marginal borträknad. <b>Värde</b> är sannolikhet delat med svenska folkets streck;
+    över 1 betyder att tecknet går in oftare än folk tror. Chanserna för 10–13 rätt gäller systemets bästa rad och bygger på modellen,
+    inte på några garantier. Spela för pengar du har råd att förlora.
+  </footer>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const OUT = ["1", "X", "2"];
+const CHOICES = [["1"], ["X"], ["2"], ["1", "X"], ["1", "2"], ["X", "2"], ["1", "X", "2"]];
+const BUDGETS = [1, 16, 32, 48, 64, 96, 128, 192, 256, 384, 576];
+const pct = (x, d = 0) => (x * 100).toLocaleString("sv-SE", { minimumFractionDigits: d, maximumFractionDigits: d }) + " %";
+const $ = id => document.getElementById(id);
+
+let data;
+const state = { mode: "budget", budget: 64, halv: 6, hel: 0, risk: 0.5, locks: {} };
+
+function load() {
+  try { Object.assign(state, JSON.parse(localStorage.getItem("stryktips-val") || "{}")); } catch (e) {}
+}
+function save() {
+  try { localStorage.setItem("stryktips-val", JSON.stringify({ ...state, omgang: data.omgang })); } catch (e) {}
+}
+
+// Samma poäng som stryktips/kupong.py: logaritmen av träffchans och spelvärde, vägda med risk.
+function score(m, cover, risk) {
+  const hit = cover.reduce((s, o) => s + m.sannolikhet[o], 0);
+  const val = cover.reduce((s, o) => s + m.varde[o], 0);
+  return (1 - risk) * Math.log(Math.max(hit, 1e-9)) + risk * Math.log(Math.max(val, 1e-9));
+}
+
+// Dynamisk programmering över (antal halv, antal hel), som kupong.build_system.
+// Med exact satt måste systemet ha precis så många garderingar.
+function buildSystem(matches, { budget, exact, risk, locks }) {
+  let dp = new Map([["0,0", { s: 0, covers: [] }]]);
+  for (const m of matches) {
+    const lock = locks[m.nr];
+    const options = lock ? [lock.split("")] : CHOICES;
+    const next = new Map();
+    for (const [key, cur] of dp) {
+      const [h, f] = key.split(",").map(Number);
+      for (const cover of options) {
+        const nh = h + (cover.length === 2), nf = f + (cover.length === 3);
+        if (exact ? (nh > exact.halv || nf > exact.hel) : 2 ** nh * 3 ** nf > budget) continue;
+        const s = cur.s + score(m, cover, risk);
+        const k = nh + "," + nf;
+        if (!next.has(k) || s > next.get(k).s) next.set(k, { s, covers: [...cur.covers, cover] });
+      }
+    }
+    dp = next;
+  }
+  let best = null;
+  for (const [key, v] of dp) {
+    const [h, f] = key.split(",").map(Number);
+    if (exact && (h !== exact.halv || f !== exact.hel)) continue;
+    if (!best || v.s > best.s) best = { ...v, halv: h, hel: f };
+  }
+  if (!best) return null;
+  return { covers: best.covers, halv: best.halv, hel: best.hel, rows: 2 ** best.halv * 3 ** best.hel };
+}
+
+// Fördelning av antal rätt på systemets bästa rad (varje match träffas med sin täckta sannolikhet).
+function correctDist(hits) {
+  let poly = [1];
+  for (const p of hits) {
+    const next = new Array(poly.length + 1).fill(0);
+    poly.forEach((c, k) => { next[k] += c * (1 - p); next[k + 1] += c * p; });
+    poly = next;
+  }
+  return poly;
+}
+const atLeast = (dist, k) => dist.slice(k).reduce((a, b) => a + b, 0);
+const topSign = m => OUT.reduce((a, b) => (m.sannolikhet[b] > m.sannolikhet[a] ? b : a));
+
+function fmtChance(p) {
+  if (p >= 0.995) return "≈100 %";
+  if (p >= 0.1) return pct(p);
+  if (p >= 0.001) return pct(p, 1);
+  return "1 på " + Math.round(1 / p).toLocaleString("sv-SE");
+}
+
+function renderStatic() {
+  const close = data.spelstopp ? new Date(data.spelstopp) : null;
+  $("meta").innerHTML = `<span>Omgång <b>${data.omgang}</b></span>` +
+    (close ? `<span>Spelstopp <b>${close.toLocaleString("sv-SE", { weekday: "long", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Stockholm" })}</b></span>` : "");
+  const tops = data.matcher.map(topSign);
+  $("likely").innerHTML = tops.map((s, i) => `<span><small>${i + 1}</small>${s}</span>`).join("");
+  const p = data.matcher.reduce((a, m, i) => a * m.sannolikhet[tops[i]], 1);
+  const exp = data.matcher.reduce((a, m, i) => a + m.sannolikhet[tops[i]], 0);
+  $("likely-note").textContent = `Det mest sannolika tecknet i varje match. Enskilt ger raden i snitt ${exp.toLocaleString("sv-SE", { maximumFractionDigits: 1 })} rätt och 13 rätt med chansen ${fmtChance(p)}.`;
+  $("budget-chips").innerHTML = BUDGETS.map(b => `<button type="button" data-b="${b}">${b}</button>`).join("");
+}
+
+function render() {
+  const exact = state.mode === "exakt" ? { halv: state.halv, hel: state.hel } : null;
+  const sys = buildSystem(data.matcher, { budget: state.budget, exact, risk: state.risk, locks: state.locks });
+  const warn = $("warn");
+  warn.hidden = !!sys;
+  if (!sys) warn.textContent = "Dina låsta val ryms inte i systemet. Öka antalet rader eller rensa några val.";
+
+  $("mode-budget").setAttribute("aria-pressed", state.mode === "budget");
+  $("mode-exakt").setAttribute("aria-pressed", state.mode === "exakt");
+  $("budget-box").hidden = state.mode !== "budget";
+  $("exakt-box").hidden = state.mode !== "exakt";
+  document.querySelectorAll("#budget-chips button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.b === state.budget));
+  $("budget").value = state.budget;
+  $("halv").textContent = state.halv;
+  $("hel").textContent = state.hel;
+  $("halv-minus").disabled = state.halv <= 0;
+  $("hel-minus").disabled = state.hel <= 0;
+  $("halv-plus").disabled = $("hel-plus").disabled = state.halv + state.hel >= data.matcher.length;
+  $("risk").value = state.risk;
+  $("risk-v").textContent = state.risk <= 0.2 ? "Försiktig" : state.risk >= 0.8 ? "Djärv" : "Balanserad";
+
+  const covers = sys ? sys.covers : data.matcher.map(() => []);
+  const hits = data.matcher.map((m, i) => covers[i].reduce((s, o) => s + m.sannolikhet[o], 0));
+  const dist = correctDist(hits);
+  $("s-rows").textContent = sys ? sys.rows.toLocaleString("sv-SE") : "–";
+  $("s-cost").textContent = sys ? sys.rows.toLocaleString("sv-SE") + " kr" : "–";
+  const spikar = covers.filter(c => c.length === 1).length;
+  $("s-mix").textContent = sys ? `${spikar} / ${sys.halv} / ${sys.hel}` : "–";
+  $("s-exp").textContent = sys ? hits.reduce((a, b) => a + b, 0).toLocaleString("sv-SE", { maximumFractionDigits: 1 }) : "–";
+  [13, 12, 11, 10].forEach(k => $("p" + k).textContent = sys ? fmtChance(atLeast(dist, k)) : "–");
+
+  $("matches").innerHTML = data.matcher.map((m, i) => {
+    const cover = covers[i], top = topSign(m), locked = !!state.locks[m.nr];
+    const kind = cover.length === 1 ? "Spik" : cover.length === 2 ? "Halv" : cover.length === 3 ? "Hel" : "";
+    const hot = OUT.filter(o => m.varde[o] >= 1.15);
+    const sub = [
+      m.streck ? `Streck ${OUT.map(o => Math.round(m.streck[o] * 100)).join("–")}` : "Inga streck än",
+      hot.length ? `<span class="hot">Värde på ${hot.join(", ")}</span>` : "",
+    ].filter(Boolean).join("</span><span>");
+    const signs = OUT.map(o => {
+      const p = m.sannolikhet[o];
+      const on = cover.includes(o);
+      return `<button type="button" class="sign${on ? " on" : ""}${o === top ? " top" : ""}" data-nr="${m.nr}" data-o="${o}"
+        aria-pressed="${on}" aria-label="Match ${m.nr}, ${o}: ${pct(p)}, värde ${m.varde[o].toFixed(2)}">
+        <span class="fill" style="height:${Math.round(p * 100)}%"></span><span class="s">${o}</span><span class="p">${Math.round(p * 100)}%</span></button>`;
+    }).join("");
+    return `<div class="match${locked ? " locked" : ""}">
+      <span class="nr">${m.nr}</span>
+      <div class="teams"><div class="name">${m.match}</div><div class="sub"><span>${sub}</span></div></div>
+      <div class="signs">${signs}</div>
+      <div class="kind"><b>${kind}</b>${locked ? `<button type="button" data-unlock="${m.nr}">Låst · släpp</button>` : `<span>${m.kalla}</span>`}</div>
+    </div>`;
+  }).join("");
+  window.currentCovers = covers;
+  save();
+}
+
+function toggleSign(nr, o) {
+  const i = data.matcher.findIndex(m => m.nr === nr);
+  const current = state.locks[nr] ? state.locks[nr].split("") : window.currentCovers[i];
+  const set = new Set(current);
+  set.has(o) ? set.delete(o) : set.add(o);
+  const next = OUT.filter(x => set.has(x)).join("");
+  if (next) state.locks[nr] = next; else delete state.locks[nr];
+  render();
+}
+
+function toast(msg) {
+  const t = $("toast");
+  t.textContent = msg; t.hidden = false;
+  clearTimeout(toast.t); toast.t = setTimeout(() => (t.hidden = true), 2200);
+}
+
+function bind() {
+  $("mode-budget").onclick = () => { state.mode = "budget"; render(); };
+  $("mode-exakt").onclick = () => { state.mode = "exakt"; render(); };
+  $("budget-chips").onclick = e => { const b = e.target.closest("button"); if (b) { state.budget = +b.dataset.b; render(); } };
+  $("budget").onchange = e => { const v = Math.max(1, Math.floor(+e.target.value || 1)); state.budget = v; render(); };
+  const step = (key, d) => () => { state[key] = Math.max(0, state[key] + d); render(); };
+  $("halv-minus").onclick = step("halv", -1); $("halv-plus").onclick = step("halv", 1);
+  $("hel-minus").onclick = step("hel", -1); $("hel-plus").onclick = step("hel", 1);
+  $("risk").oninput = e => { state.risk = +e.target.value; render(); };
+  $("unlock").onclick = () => { state.locks = {}; render(); toast("Egna val rensade"); };
+  $("matches").onclick = e => {
+    const u = e.target.closest("[data-unlock]");
+    if (u) { delete state.locks[+u.dataset.unlock]; render(); return; }
+    const s = e.target.closest(".sign");
+    if (s) toggleSign(+s.dataset.nr, s.dataset.o);
+  };
+  $("copy").onclick = () => {
+    const text = `Stryktipset omgång ${data.omgang}\n` +
+      data.matcher.map((m, i) => `${String(m.nr).padStart(2)}. ${(window.currentCovers[i].join("") || "-").padEnd(3)}  ${m.match}`).join("\n") +
+      `\n${$("s-rows").textContent} rader, ${$("s-cost").textContent}`;
+    const done = () => toast("Systemet är kopierat");
+    navigator.clipboard?.writeText(text).then(done, () => fallbackCopy(text, done)) ?? fallbackCopy(text, done);
+  };
+}
+function fallbackCopy(text, done) {
+  const ta = document.createElement("textarea");
+  ta.value = text; document.body.appendChild(ta); ta.select();
+  try { document.execCommand("copy"); done(); } catch (e) { toast("Markera och kopiera texten manuellt"); }
+  ta.remove();
+}
+
+async function fetchData() {
+  if (window.STRYKTIPS_DATA) return window.STRYKTIPS_DATA;
+  for (const url of ["senaste.json", "../forslag/senaste.json"]) {
+    try { const r = await fetch(url, { cache: "no-store" }); if (r.ok) return await r.json(); } catch (e) {}
+  }
+  throw new Error("Hittade inget förslag");
+}
+
+fetchData().then(d => {
+  data = d;
+  state.budget = data.rader || state.budget;
+  state.risk = data.risk ?? state.risk;
+  load();
+  // Låsta val gäller bara den omgång de gjordes för.
+  try { if (JSON.parse(localStorage.getItem("stryktips-val") || "{}").omgang !== data.omgang) state.locks = {}; } catch (e) {}
+  renderStatic(); bind(); render();
+}).catch(() => {
+  document.querySelector(".wrap").innerHTML = `<div class="error"><h1>Stryktips<span>experten</span></h1>
+    <p>Veckans förslag kunde inte laddas. Det skrivs av GitHub Actions torsdag till lördag; kör <b>Veckans stryktips</b> under Actions om det saknas.</p></div>`;
+});
+</script>
+<!--END-BODY-->
+</body>
+</html>
