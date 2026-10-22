@@ -26,7 +26,9 @@
   --accent-ink: #ffffff;
   --mark: #0a52a3;
   --mark-ink: #ffffff;
-  --bar: #d6e4f4;
+  --bar: #9fc2ec;
+  --mark-light: #3f80cf;
+  --bar-on: #06386f;
   --value: #d0021b;
   --lock: #e3051b;
   --focus: #ffc20e;
@@ -126,15 +128,15 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--focus); out
   background: var(--soft); color: var(--ink); border: 1px solid var(--line); }
 .h2h i.home { border-color: var(--muted); }
 .signs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
-.sign { position: relative; overflow: hidden; border: 1.5px solid var(--line); border-radius: 8px; background: var(--soft); color: var(--ink);
+.sign { position: relative; overflow: hidden; border: 1.5px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink);
   height: 52px; cursor: pointer; display: grid; align-content: center; justify-items: center; gap: 1px; padding: 0; font: inherit; }
 .sign .fill { position: absolute; left: 0; right: 0; bottom: 0; background: var(--bar); z-index: 0; }
 .sign .s, .sign .p { position: relative; z-index: 1; }
 .sign .s { font: 700 17px/1 var(--font-data); }
-.sign .p { font: 500 11px var(--font-data); color: var(--muted); }
-.sign.on { background: var(--mark); border-color: var(--mark); color: var(--mark-ink); }
-.sign.on .fill { display: none; }
-.sign.on .p { color: var(--mark-ink); opacity: 0.75; }
+.sign .p { font: 600 11px var(--font-data); color: var(--ink); }
+.sign.on { background: var(--mark-light); border-color: var(--bar-on); color: var(--mark-ink); }
+.sign.on .fill { background: var(--bar-on); }
+.sign.on .p { color: var(--mark-ink); }
 .sign.top::after { content: ""; position: absolute; top: 5px; right: 5px; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); z-index: 1; }
 .kind { text-align: right; font-size: 12px; color: var(--muted); display: grid; gap: 2px; justify-items: end; }
 .kind b { font: 700 13px var(--font-body); color: var(--ink); }
