@@ -1,0 +1,45 @@
+name: Hämta historik och backtesta
+
+on:
+  workflow_dispatch:
+    inputs:
+      fran:
+        description: "Från omgång"
+        default: "4800"
+      till:
+        description: "Till omgång"
+        default: "4900"
+      rader:
+        description: "Antal rader i backtestet"
+        default: "64"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data
+  cancel-in-progress: false
+
+jobs:
+  historik:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Hämta gamla omgångar
+        run: python -m stryktips historik "${{ inputs.fran }}" "${{ inputs.till }}"
+      - name: Spara i repot
+        run: |
+          git config user.name "stryktipsexperten"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "Historik ${{ inputs.fran }}-${{ inputs.till }}"
+          git push
+      - name: Backtest
+        run: |
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          python -m stryktips backtest --rader "${{ inputs.rader }}" --svep | tee -a "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"

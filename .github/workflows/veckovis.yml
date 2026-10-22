@@ -1,0 +1,47 @@
+name: Veckans stryktips
+
+on:
+  schedule:
+    # Tider i UTC. Torsdag och fredag kväll samt lördag förmiddag inför spelstopp,
+    # måndag för att spara helgens resultat.
+    - cron: "0 18 * * 4"
+    - cron: "0 18 * * 5"
+    - cron: "0 10 * * 6"
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      rader:
+        description: "Max antal rader (1 kr/rad)"
+        default: "64"
+      risk:
+        description: "Risknivå 0-1 (0 = säkra tecken, 1 = jaga skrällar)"
+        default: "0.5"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data
+  cancel-in-progress: false
+
+jobs:
+  tips:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Hämta kupong, streck, odds och resultat
+        run: python -m stryktips hamta
+      - name: Skriv förslag
+        run: |
+          python -m stryktips forslag --rader "${{ inputs.rader || '64' }}" --risk "${{ inputs.risk || '0.5' }}" || echo "Ingen öppen omgång just nu"
+          if [ -f forslag/SENASTE.md ]; then cat forslag/SENASTE.md >> "$GITHUB_STEP_SUMMARY"; fi
+      - name: Spara i repot
+        run: |
+          git config user.name "stryktipsexperten"
+          git config user.email "actions@users.noreply.github.com"
+          git add data forslag
+          git diff --cached --quiet || git commit -m "Data och förslag $(date -u +%F)"
+          git push
