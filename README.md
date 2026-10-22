@@ -30,6 +30,11 @@ och helgarderingar) och spelstil, och förslaget räknas om direkt i webbläsare
 med samma metod som `kupong.py`. Tryck på ett tecken för att låsa egna val, så
 fylls resten av systemet i runt dem.
 
+Sidan visar också **inbördes möten** mellan lagen (senaste tio säsongerna, från
+[football-data.co.uk](https://www.football-data.co.uk), ingen nyckel behövs).
+Ett reglage styr hur mycket de ska väga in i sannolikheterna, från inget alls
+till hälften. Hämtas med `python -m stryktips inbordes`.
+
 Sidan publiceras med GitHub Pages av `.github/workflows/webb.yml`, varje gång
 veckans förslag har skrivits. Slå på det under **Settings → Pages → Source:
 GitHub Actions**. Lokalt: `python -m http.server` i repots rot och öppna

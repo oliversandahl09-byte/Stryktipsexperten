@@ -36,6 +36,8 @@ jobs:
         run: python -m stryktips hamta
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+      - name: Hämta inbördes möten
+        run: python -m stryktips inbordes || echo "Inga inbördes möten den här gången"
       - name: Skriv förslag
         run: |
           python -m stryktips forslag --rader "${{ inputs.rader || '64' }}" --risk "${{ inputs.risk || '0.5' }}" || echo "Ingen öppen omgång just nu"
