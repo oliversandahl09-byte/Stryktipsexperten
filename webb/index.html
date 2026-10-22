@@ -94,6 +94,8 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .odds .k { font-size: 11px; color: var(--muted); white-space: nowrap; }
 .odds .v { font: 700 14px var(--font-data); white-space: nowrap; }
 .warn { color: var(--value); font-size: 13px; margin: 0; }
+.export .btn { width: 100%; }
+.hint { margin: 0; font-size: 12px; color: var(--muted); }
 .actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .btn { font: 600 14px var(--font-body); border-radius: 8px; padding: 9px 14px; cursor: pointer; border: 1px solid var(--line);
   background: var(--surface); color: var(--ink); }
@@ -221,6 +223,10 @@ footer { font-size: 13px; color: var(--on-page-muted); max-width: 70ch; }
       <div class="actions">
         <button type="button" class="btn primary" id="copy">Kopiera systemet</button>
         <button type="button" class="btn" id="unlock">Rensa egna val</button>
+      </div>
+      <div class="group export">
+        <button type="button" class="btn primary" id="download">Ladda ner fil till Svenska Spel</button>
+        <p class="hint">Filen innehåller systemet som enkelrader. Lämna in den under <b>Externa</b> på Stryktipset hos Svenska Spel och kontrollera att antalet rader stämmer innan du betalar.</p>
       </div>
     </aside>
 
@@ -453,6 +459,7 @@ function bind() {
   $("hel-minus").onclick = step("hel", -1); $("hel-plus").onclick = step("hel", 1);
   $("risk").oninput = e => { state.risk = +e.target.value; render(); };
   $("h2hw").oninput = e => { state.h2hw = +e.target.value; render(); };
+  $("download").onclick = download;
   $("unlock").onclick = () => { state.locks = {}; render(); toast("Egna val rensade"); };
   $("matches").onclick = e => {
     const u = e.target.closest("[data-unlock]");
@@ -468,6 +475,29 @@ function bind() {
     navigator.clipboard?.writeText(text).then(done, () => fallbackCopy(text, done)) ?? fallbackCopy(text, done);
   };
 }
+// Alla enkelrader i systemet, i matchordning.
+function expandRows(covers) {
+  return covers.reduce((rows, cover) => rows.flatMap(r => cover.map(o => [...r, o])), [[]]);
+}
+
+// Svenska Spels format för externa spel: produktnamnet på första raden,
+// sedan en rad per enkelrad som börjar med E.
+function externalFile(covers) {
+  return ["Stryktipset", ...expandRows(covers).map(r => "E," + r.join(","))].join("\n") + "\n";
+}
+
+function download() {
+  const covers = window.currentCovers;
+  if (!covers || covers.some(c => !c.length)) { toast("Systemet är inte komplett"); return; }
+  const blob = new Blob([externalFile(covers)], { type: "text/plain" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `stryktipset_${data.omgang}.txt`;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  toast(`Filen med ${expandRows(covers).length} rader är nedladdad`);
+}
+
 function fallbackCopy(text, done) {
   const ta = document.createElement("textarea");
   ta.value = text; document.body.appendChild(ta); ta.select();
