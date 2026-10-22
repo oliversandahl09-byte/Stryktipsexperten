@@ -4,6 +4,7 @@
   python -m stryktips historik 4700 4980    hämta gamla omgångar (med resultat)
   python -m stryktips forslag --rader 96    skriv förslag för nästa omgång
   python -m stryktips backtest --rader 64   testa modellen på sparad historik
+  python -m stryktips inbordes              inbördes möten för nästa omgång
 """
 
 import argparse
@@ -11,7 +12,7 @@ import os
 import sys
 import time
 
-from . import backtest, kupong, oddsapi, rapport, svenskaspel as ss
+from . import backtest, inbordes, kupong, oddsapi, rapport, svenskaspel as ss
 
 
 def cmd_hamta(args):
@@ -65,6 +66,14 @@ def cmd_forslag(args):
     print(f"Skrev {path}")
 
 
+def cmd_inbordes(args):
+    candidates = [n for n in ss.saved_draw_numbers() if not ss.load_raw("result", n)]
+    nr = args.omgang or (candidates[-1] if candidates else None)
+    if not nr:
+        sys.exit("Ingen öppen omgång sparad. Kör 'hamta' först.")
+    print(f"Skrev {inbordes.write(ss.load_raw('draw', nr))}")
+
+
 def cmd_backtest(args):
     risks = [i / 10 for i in range(0, 11, 2)] if args.svep else [args.risk]
     for risk in risks:
@@ -95,6 +104,10 @@ def main(argv=None):
             sp.add_argument("--omgang", type=int)
         else:
             sp.add_argument("--svep", action="store_true", help="testa flera risknivåer")
+
+    ib = sub.add_parser("inbordes", help="inbördes möten för nästa omgång")
+    ib.add_argument("--omgang", type=int)
+    ib.set_defaults(func=cmd_inbordes)
 
     args = p.parse_args(argv)
     args.func(args)

@@ -97,8 +97,8 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .stat.big .v { font: 800 34px/1 var(--font-display); }
 .odds { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
 .odds div { background: var(--bg); border-radius: 8px; padding: 6px 10px; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
-.odds .k { font-size: 11px; color: var(--muted); }
-.odds .v { font: 700 14px var(--font-data); }
+.odds .k { font-size: 11px; color: var(--muted); white-space: nowrap; }
+.odds .v { font: 700 14px var(--font-data); white-space: nowrap; }
 .warn { color: var(--value); font-size: 13px; margin: 0; }
 .actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .btn { font: 600 14px var(--font-body); border-radius: 8px; padding: 9px 14px; cursor: pointer; border: 1px solid var(--line);
@@ -125,6 +125,10 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--lock); outl
 .teams .name { font-weight: 600; overflow-wrap: anywhere; }
 .teams .sub { font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 2px 10px; }
 .teams .sub .hot { color: var(--value); font-weight: 600; }
+.h2h { display: inline-flex; align-items: center; gap: 3px; flex-wrap: wrap; }
+.h2h i { font: 700 10px/16px var(--font-data); font-style: normal; width: 16px; text-align: center; border-radius: 3px;
+  background: var(--bg); color: var(--ink); border: 1px solid var(--line); }
+.h2h i.home { border-color: var(--muted); }
 .signs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
 .sign { position: relative; overflow: hidden; border: 1.5px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink);
   height: 52px; cursor: pointer; display: grid; align-content: center; justify-items: center; gap: 1px; padding: 0; font: inherit; }
@@ -199,6 +203,12 @@ footer { font-size: 13px; color: var(--muted); max-width: 70ch; }
         <div class="range-labels"><span>Säkra tecken</span><span id="risk-v"></span><span>Skrällar</span></div>
       </div>
 
+      <div class="group" id="h2h-box" hidden>
+        <h2><label for="h2hw">Inbördes möten</label></h2>
+        <input type="range" id="h2hw" min="0" max="0.5" step="0.05">
+        <div class="range-labels"><span>Bara odds</span><span id="h2hw-v"></span><span>Mycket</span></div>
+      </div>
+
       <div class="sum" aria-live="polite">
         <div class="stat big"><div class="k">Rader</div><div class="v" id="s-rows"></div></div>
         <div class="stat big"><div class="k">Kostnad</div><div class="v" id="s-cost"></div></div>
@@ -227,6 +237,7 @@ footer { font-size: 13px; color: var(--muted); max-width: 70ch; }
         <span><i style="background:var(--bar)"></i>Sannolikhet (stapelns höjd)</span>
         <span><i style="background:var(--accent);border-radius:50%;width:8px;height:8px"></i>Mest troligt</span>
         <span>Tryck på ett tecken för att låsa egna val. Resten av systemet räknas om.</span>
+        <span id="h2h-legend" hidden>Inbördes: senaste mötena, nyast först, sett från hemmalaget. Inramad = samma hemmaplan som nu.</span>
       </div>
     </main>
   </div>
@@ -234,7 +245,8 @@ footer { font-size: 13px; color: var(--muted); max-width: 70ch; }
   <footer>
     Sannolikheterna kommer från oddsen med spelbolagets marginal borträknad. <b>Värde</b> är sannolikhet delat med svenska folkets streck;
     över 1 betyder att tecknet går in oftare än folk tror. Chanserna för 10–13 rätt gäller systemets bästa rad och bygger på modellen,
-    inte på några garantier. Spela för pengar du har råd att förlora.
+    inte på några garantier. Inbördes möten kommer från football-data.co.uk (tio säsonger bakåt) och vägs in så mycket du väljer;
+    oddsen tar redan hänsyn till mycket av det, så en låg vikt är oftast klokast. Spela för pengar du har råd att förlora.
   </footer>
 </div>
 <div class="toast" id="toast" hidden></div>
@@ -247,7 +259,25 @@ const pct = (x, d = 0) => (x * 100).toLocaleString("sv-SE", { minimumFractionDig
 const $ = id => document.getElementById(id);
 
 let data;
-const state = { mode: "budget", budget: 64, halv: 6, hel: 0, risk: 0.5, locks: {} };
+const state = { mode: "budget", budget: 64, halv: 6, hel: 0, risk: 0.5, h2hw: 0.15, locks: {} };
+let base, h2h = {};
+
+// Väger ihop oddsens sannolikhet med utfallen i inbördes möten. Få möten ger mindre vikt,
+// och varje utfall får ett extra möte så att inget blir noll.
+function withH2H(m) {
+  const info = h2h[m.nr];
+  const n = info ? info.moten.length : 0;
+  if (!n || !state.h2hw) return m;
+  const w = state.h2hw * Math.min(n, 6) / 6;
+  const sannolikhet = {}, varde = {};
+  for (const o of OUT) {
+    const freq = (info.summering[o] + 1) / (n + 3);
+    sannolikhet[o] = (1 - w) * m.sannolikhet[o] + w * freq;
+    // varde = sannolikhet / streck, så strecket är sannolikhet / varde.
+    varde[o] = sannolikhet[o] * m.varde[o] / m.sannolikhet[o];
+  }
+  return { ...m, sannolikhet, varde };
+}
 
 function load() {
   try { Object.assign(state, JSON.parse(localStorage.getItem("stryktips-val") || "{}")); } catch (e) {}
@@ -317,15 +347,22 @@ function renderStatic() {
   const close = data.spelstopp ? new Date(data.spelstopp) : null;
   $("meta").innerHTML = `<span>Omgång <b>${data.omgang}</b></span>` +
     (close ? `<span>Spelstopp <b>${close.toLocaleString("sv-SE", { weekday: "long", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Stockholm" })}</b></span>` : "");
+  $("budget-chips").innerHTML = BUDGETS.map(b => `<button type="button" data-b="${b}">${b}</button>`).join("");
+  const hasH2H = Object.keys(h2h).length > 0;
+  $("h2h-box").hidden = $("h2h-legend").hidden = !hasH2H;
+}
+
+function renderLikely() {
   const tops = data.matcher.map(topSign);
   $("likely").innerHTML = tops.map((s, i) => `<span><small>${i + 1}</small>${s}</span>`).join("");
   const p = data.matcher.reduce((a, m, i) => a * m.sannolikhet[tops[i]], 1);
   const exp = data.matcher.reduce((a, m, i) => a + m.sannolikhet[tops[i]], 0);
   $("likely-note").textContent = `Det mest sannolika tecknet i varje match. Enskilt ger raden i snitt ${exp.toLocaleString("sv-SE", { maximumFractionDigits: 1 })} rätt och 13 rätt med chansen ${fmtChance(p)}.`;
-  $("budget-chips").innerHTML = BUDGETS.map(b => `<button type="button" data-b="${b}">${b}</button>`).join("");
 }
 
 function render() {
+  data.matcher = base.map(withH2H);
+  renderLikely();
   const exact = state.mode === "exakt" ? { halv: state.halv, hel: state.hel } : null;
   const sys = buildSystem(data.matcher, { budget: state.budget, exact, risk: state.risk, locks: state.locks });
   const warn = $("warn");
@@ -345,6 +382,8 @@ function render() {
   $("halv-plus").disabled = $("hel-plus").disabled = state.halv + state.hel >= data.matcher.length;
   $("risk").value = state.risk;
   $("risk-v").textContent = state.risk <= 0.2 ? "Försiktig" : state.risk >= 0.8 ? "Djärv" : "Balanserad";
+  $("h2hw").value = state.h2hw;
+  $("h2hw-v").textContent = state.h2hw ? `${Math.round(state.h2hw * 100)} % vikt` : "Av";
 
   const covers = sys ? sys.covers : data.matcher.map(() => []);
   const hits = data.matcher.map((m, i) => covers[i].reduce((s, o) => s + m.sannolikhet[o], 0));
@@ -363,6 +402,7 @@ function render() {
     const sub = [
       m.streck ? `Streck ${OUT.map(o => Math.round(m.streck[o] * 100)).join("–")}` : "Inga streck än",
       hot.length ? `<span class="hot">Värde på ${hot.join(", ")}</span>` : "",
+      h2hLine(m.nr),
     ].filter(Boolean).join("</span><span>");
     const signs = OUT.map(o => {
       const p = m.sannolikhet[o];
@@ -380,6 +420,16 @@ function render() {
   }).join("");
   window.currentCovers = covers;
   save();
+}
+
+function h2hLine(nr) {
+  const info = h2h[nr];
+  if (!info) return "";
+  if (!info.moten.length) return "Inga inbördes möten";
+  const s = info.summering;
+  const chips = info.moten.slice(0, 6).map(g =>
+    `<i class="${g.samma_plan ? "home" : ""}" title="${g.datum}: ${g.hemma} ${g.mal[0]}–${g.mal[1]} ${g.borta}">${g.utfall}</i>`).join("");
+  return `<span class="h2h">Inbördes ${s["1"]}–${s.X}–${s["2"]} ${chips}</span>`;
 }
 
 function toggleSign(nr, o) {
@@ -407,6 +457,7 @@ function bind() {
   $("halv-minus").onclick = step("halv", -1); $("halv-plus").onclick = step("halv", 1);
   $("hel-minus").onclick = step("hel", -1); $("hel-plus").onclick = step("hel", 1);
   $("risk").oninput = e => { state.risk = +e.target.value; render(); };
+  $("h2hw").oninput = e => { state.h2hw = +e.target.value; render(); };
   $("unlock").onclick = () => { state.locks = {}; render(); toast("Egna val rensade"); };
   $("matches").onclick = e => {
     const u = e.target.closest("[data-unlock]");
@@ -437,8 +488,19 @@ async function fetchData() {
   throw new Error("Hittade inget förslag");
 }
 
-fetchData().then(d => {
+async function fetchH2H() {
+  if (window.STRYKTIPS_INBORDES) return window.STRYKTIPS_INBORDES;
+  for (const url of ["inbordes.json", "../forslag/inbordes.json"]) {
+    try { const r = await fetch(url, { cache: "no-store" }); if (r.ok) return await r.json(); } catch (e) {}
+  }
+  return null;
+}
+
+Promise.all([fetchData(), fetchH2H()]).then(([d, ib]) => {
   data = d;
+  base = d.matcher;
+  // Inbördes möten används bara om de gäller samma omgång.
+  if (ib && ib.omgang === d.omgang) h2h = ib.matcher || {};
   state.budget = data.rader || state.budget;
   state.risk = data.risk ?? state.risk;
   load();
