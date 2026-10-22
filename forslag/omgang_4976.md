@@ -7,7 +7,7 @@ Chans till 13 rätt enligt modellen: **0.11%**
 | # | Match | Tips | Sannolikhet 1/X/2 | Streck 1/X/2 | Värde 1/X/2 | Källa |
 |---|---|---|---|---|---|---|
 | 1 | Chelsea - Tottenham | **1** | 57% / 22% / 21% | 62% / 22% / 16% | 0.92 / 1.01 / **1.30** | odds |
-| 2 | Arsenal - Everton | **1** | 67% / 21% / 12% | 72% / 18% / 10% | 0.93 / 1.14 / **1.22** | odds |
+| 2 | Arsenal - Everton | **1** | 67% / 21% / 12% | 72% / 17% / 11% | 0.93 / **1.21** / 1.11 | odds |
 | 3 | Coventry - Fulham | **2** | 31% / 27% / 43% | 37% / 27% / 36% | 0.83 / 0.99 / **1.18** | odds |
 | 4 | Blackburn - Wrexham | **2** | 36% / 28% / 36% | 45% / 28% / 27% | 0.80 / 1.02 / **1.33** | odds |
 | 5 | Cardiff - Birmingham | **12** | 35% / 26% / 39% | 31% / 27% / 42% | 1.13 / 0.97 / 0.93 | odds |
@@ -16,7 +16,7 @@ Chans till 13 rätt enligt modellen: **0.11%**
 | 8 | Queens Park Rangers - Swansea | **12** | 41% / 28% / 32% | 40% / 27% / 33% | 1.02 / 1.02 / 0.96 | odds |
 | 9 | Stoke - Bristol City | **2** | 41% / 27% / 32% | 61% / 21% / 18% | 0.67 / **1.30** / **1.77** | odds |
 | 10 | West Ham - Southampton | **1** | 57% / 22% / 21% | 61% / 23% / 16% | 0.93 / 0.98 / **1.31** | odds |
-| 11 | Wolverhampton - Watford | **1** | 70% / 18% / 12% | 71% / 16% / 13% | 0.98 / 1.14 / 0.93 | odds |
+| 11 | Wolverhampton - Watford | **1** | 70% / 18% / 12% | 72% / 15% / 13% | 0.97 / **1.21** / 0.93 | odds |
 | 12 | Cambridge - Plymouth | **12** | 40% / 27% / 33% | 44% / 28% / 28% | 0.92 / 0.96 / **1.17** | odds |
 | 13 | Oxford - Bradford | **12** | 34% / 29% / 38% | 35% / 31% / 34% | 0.96 / 0.92 / 1.11 | odds |
 
