@@ -16,7 +16,7 @@ Chans till 13 rätt enligt modellen: **0.11%**
 | 8 | Queens Park Rangers - Swansea | **12** | 38% / 28% / 33% | 40% / 27% / 33% | 0.96 / 1.05 / 1.00 | pinnacle |
 | 9 | Stoke - Bristol City | **2** | 40% / 29% / 31% | 61% / 21% / 18% | 0.66 / **1.36** / **1.73** | pinnacle |
 | 10 | West Ham - Southampton | **1** | 56% / 22% / 21% | 61% / 23% / 16% | 0.92 / 0.97 / **1.34** | pinnacle |
-| 11 | Wolverhampton - Watford | **1** | 70% / 18% / 11% | 71% / 16% / 13% | 0.99 / 1.15 / 0.88 | pinnacle |
+| 11 | Wolverhampton - Watford | **1** | 70% / 18% / 11% | 72% / 15% / 13% | 0.97 / **1.23** / 0.88 | pinnacle |
 | 12 | Cambridge - Plymouth | **12** | 40% / 26% / 34% | 44% / 28% / 28% | 0.91 / 0.93 / **1.21** | pinnacle |
 | 13 | Oxford - Bradford | **12** | 35% / 28% / 37% | 35% / 31% / 34% | 1.01 / 0.90 / 1.08 | pinnacle |
 
