@@ -33,6 +33,8 @@
   --lock: #e3051b;
   --focus: #ffc20e;
   --hl: #fff4d6;
+  --ok: #12813a;
+  --ok-ink: #ffffff;
   --hero: #062b55;
   --hero-ink: #ffffff;
   --hero-tile: #123f72;
@@ -165,6 +167,19 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--focus); out
 .sign.top::after { content: ""; position: absolute; top: 5px; right: 5px; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); z-index: 1; }
 .kind { text-align: right; font-size: 12px; color: var(--muted); display: grid; gap: 2px; justify-items: end; }
 .kind b { font: 700 13px var(--font-body); color: var(--ink); }
+.livebar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; background: var(--surface); color: var(--ink);
+  border-radius: 12px; padding: 12px 16px; box-shadow: 0 2px 8px rgb(0 0 0 / 0.25); }
+.livebar .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+@media (prefers-reduced-motion: no-preference) { .livebar .dot { animation: pulse 1.6s ease-in-out infinite; } }
+@keyframes pulse { 50% { opacity: 0.3; } }
+.livebar b { font: 700 15px var(--font-display); }
+.livebar .muted { color: var(--muted); font-size: 13px; }
+.live { display: inline-block; margin-left: 8px; padding: 1px 7px; border-radius: 5px; font: 700 12px/18px var(--font-data);
+  background: var(--soft); color: var(--ink); vertical-align: 1px; }
+.live.hit { background: var(--ok); color: var(--ok-ink); }
+.live.miss { background: var(--accent); color: var(--accent-ink); }
+.live small { font: 500 11px var(--font-body); margin-left: 4px; }
+.sign.now { box-shadow: 0 0 0 3px var(--focus); }
 .kind button { border: 0; background: none; color: var(--lock); font: 600 12px var(--font-body); cursor: pointer; padding: 0; }
 @media (max-width: 560px) {
   .coupon-head { display: none; }
@@ -188,6 +203,8 @@ footer { font-size: 13px; color: var(--on-page-muted); max-width: 70ch; }
     <h1>Stryktips<span>experten</span></h1>
     <div class="meta" id="meta"></div>
   </header>
+
+  <section class="livebar" id="livebar" aria-live="polite" hidden></section>
 
   <section class="likely" aria-labelledby="likely-h">
     <h2 id="likely-h">Mest troliga raden</h2>
@@ -442,19 +459,61 @@ function render() {
     const signs = OUT.map(o => {
       const p = m.sannolikhet[o];
       const on = cover.includes(o);
-      return `<button type="button" class="sign${on ? " on" : ""}${o === top ? " top" : ""}" data-nr="${m.nr}" data-o="${o}"
+      return `<button type="button" class="sign${on ? " on" : ""}${o === top ? " top" : ""}${liveOutcome(m.nr) === o ? " now" : ""}" data-nr="${m.nr}" data-o="${o}"
         aria-pressed="${on}" aria-label="Match ${m.nr}, ${o}: ${pct(p)}, värde ${m.varde[o].toFixed(2)}">
         <span class="fill" style="height:${Math.round(p * 100)}%"></span><span class="s">${o}</span><span class="p">${Math.round(p * 100)}%</span></button>`;
     }).join("");
     return `<div class="match${locked ? " locked" : ""}">
       <span class="nr">${m.nr}</span>
-      <div class="teams"><div class="name">${m.match}</div><div class="sub"><span>${sub}</span></div></div>
+      <div class="teams"><div class="name">${m.match}${liveBadge(m.nr, cover)}</div><div class="sub"><span>${sub}</span></div></div>
       <div class="signs">${signs}</div>
       <div class="kind"><b>${kind}</b>${locked ? `<button type="button" data-unlock="${m.nr}">Låst · släpp</button>` : `<span>${m.kalla}</span>`}</div>
     </div>`;
   }).join("");
   window.currentCovers = covers;
+  renderLive();
   save();
+}
+
+let live = null;
+
+const liveOutcome = nr => live && live.matcher[nr] && live.matcher[nr].utfall;
+
+function liveBadge(nr, cover) {
+  const s = live && live.matcher[nr];
+  if (!s || s.lage === "ej startad") return "";
+  const score = s.mal ? `${s.mal[0]}–${s.mal[1]}` : "";
+  const cls = s.utfall ? (cover.includes(s.utfall) ? " hit" : " miss") : "";
+  return `<span class="live${cls}">${score}<small>${s.status}</small></span>`;
+}
+
+function renderLive() {
+  const bar = $("livebar");
+  const started = live ? Object.entries(live.matcher).filter(([, s]) => s.utfall) : [];
+  bar.hidden = !started.length;
+  if (!started.length) return;
+  const covers = window.currentCovers || [];
+  const idx = nr => data.matcher.findIndex(m => String(m.nr) === nr);
+  const hits = started.filter(([nr, s]) => (covers[idx(nr)] || []).includes(s.utfall)).length;
+  const ongoing = started.filter(([, s]) => s.lage === "pågår").length;
+  const time = new Date(live.hamtad).toLocaleTimeString("sv-SE", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Stockholm" });
+  bar.innerHTML = `<span class="dot" aria-hidden="true"></span><b>Live: ${hits} av ${started.length} rätt just nu</b>
+    <span class="muted">${ongoing ? `${ongoing} matcher pågår` : "Alla startade matcher är klara"} · uppdaterad ${time} · hämtas var tionde minut</span>`;
+}
+
+async function fetchLive() {
+  for (const url of ["live.json?t=" + Date.now(), "../forslag/live.json"]) {
+    try { const r = await fetch(url, { cache: "no-store" }); if (r.ok) return await r.json(); } catch (e) {}
+  }
+  return null;
+}
+
+async function refreshLive() {
+  const l = await fetchLive();
+  if (!l || l.omgang !== data.omgang) return;
+  if (live && live.hamtad === l.hamtad) return;
+  live = l;
+  render();
 }
 
 function h2hLine(nr) {
@@ -618,6 +677,8 @@ Promise.all([fetchData(), fetchH2H(), fetchTables()]).then(([d, ib, tb]) => {
   // Låsta val gäller bara den omgång de gjordes för.
   try { if (JSON.parse(localStorage.getItem("stryktips-val") || "{}").omgang !== data.omgang) state.locks = {}; } catch (e) {}
   renderStatic(); bind(); render(); renderTables();
+  refreshLive();
+  setInterval(refreshLive, 60000);
   $("league-tabs").onclick = e => { const b = e.target.closest("button"); if (b) { state.league = b.dataset.league; renderTables(); save(); } };
 }).catch(() => {
   document.querySelector(".wrap").innerHTML = `<div class="error"><h1>Stryktips<span>experten</span></h1>

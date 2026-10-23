@@ -6,6 +6,7 @@
   python -m stryktips backtest --rader 64   testa modellen på sparad historik
   python -m stryktips inbordes              inbördes möten för nästa omgång
   python -m stryktips tabell                tabeller för Premier League och Championship
+  python -m stryktips live --ut live.json   liveresultat medan matcherna spelas
 """
 
 import argparse
@@ -13,7 +14,7 @@ import os
 import sys
 import time
 
-from . import backtest, inbordes, kupong, oddsapi, rapport, svenskaspel as ss, tabell
+from . import backtest, inbordes, kupong, live, oddsapi, rapport, svenskaspel as ss, tabell
 
 
 def cmd_hamta(args):
@@ -79,6 +80,11 @@ def cmd_tabell(args):
     print(f"Skrev {tabell.write()}")
 
 
+def cmd_live(args):
+    nr = live.write(args.ut, force=args.alltid)
+    print(f"Skrev liveresultat för omgång {nr} till {args.ut}" if nr else "Inga matcher pågår just nu")
+
+
 def cmd_backtest(args):
     risks = [i / 10 for i in range(0, 11, 2)] if args.svep else [args.risk]
     for risk in risks:
@@ -115,6 +121,11 @@ def main(argv=None):
     ib.set_defaults(func=cmd_inbordes)
 
     sub.add_parser("tabell", help="tabeller för Premier League och Championship").set_defaults(func=cmd_tabell)
+
+    lv = sub.add_parser("live", help="liveresultat medan matcherna spelas")
+    lv.add_argument("--ut", default="live.json", help="fil att skriva")
+    lv.add_argument("--alltid", action="store_true", help="skriv även när inga matcher pågår")
+    lv.set_defaults(func=cmd_live)
 
     args = p.parse_args(argv)
     args.func(args)
