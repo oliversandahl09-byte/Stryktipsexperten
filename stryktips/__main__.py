@@ -5,7 +5,7 @@
   python -m stryktips forslag --rader 96    skriv förslag för nästa omgång
   python -m stryktips backtest --rader 64   testa modellen på sparad historik
   python -m stryktips inbordes              inbördes möten för nästa omgång
-  python -m stryktips tabell                tabeller för Premier League och Championship
+  python -m stryktips tabell                tabeller för Premier League, Championship och League One
   python -m stryktips live --ut live.json   liveresultat medan matcherna spelas
 """
 
@@ -120,7 +120,7 @@ def main(argv=None):
     ib.add_argument("--omgang", type=int)
     ib.set_defaults(func=cmd_inbordes)
 
-    sub.add_parser("tabell", help="tabeller för Premier League och Championship").set_defaults(func=cmd_tabell)
+    sub.add_parser("tabell", help="tabeller för Premier League, Championship och League One").set_defaults(func=cmd_tabell)
 
     lv = sub.add_parser("live", help="liveresultat medan matcherna spelas")
     lv.add_argument("--ut", default="live.json", help="fil att skriva")

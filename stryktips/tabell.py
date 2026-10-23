@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 from .inbordes import BASE, _get, parse_csv, season_codes
 from .rapport import OUT_DIR
 
-LEAGUES = {"E0": "Premier League", "E1": "Championship"}
+LEAGUES = {"E0": "Premier League", "E1": "Championship", "E2": "League One"}
 
 
 def standings(games):
