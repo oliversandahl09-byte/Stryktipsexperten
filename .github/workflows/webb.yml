@@ -6,7 +6,7 @@ name: Webbsidan
 on:
   push:
     branches: [main]
-    paths: ["webb/**", "forslag/senaste.json", "forslag/inbordes.json", ".github/workflows/webb.yml"]
+    paths: ["webb/**", "forslag/senaste.json", "forslag/inbordes.json", "forslag/tabeller.json", ".github/workflows/webb.yml"]
   # Veckans förslag pushas av en annan workflow med GITHUB_TOKEN, vilket inte
   # startar push-triggern. Därför publiceras sidan också när den är klar.
   workflow_run:
@@ -39,6 +39,7 @@ jobs:
           cp webb/index.html _site/
           cp forslag/senaste.json _site/
           if [ -f forslag/inbordes.json ]; then cp forslag/inbordes.json _site/; fi
+          if [ -f forslag/tabeller.json ]; then cp forslag/tabeller.json _site/; fi
       - uses: actions/upload-pages-artifact@v3
       - id: deploy
         uses: actions/deploy-pages@v4
