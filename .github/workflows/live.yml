@@ -1,0 +1,46 @@
+name: Liveresultat
+
+# Svenska Spels API går inte att anropa direkt från webbsidan (CORS), så
+# ställningarna hämtas här var tionde minut och sidan publiceras om, men bara
+# medan någon match på kupongen pågår. Övrig tid avslutas körningen direkt.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pågår någon match?
+        id: live
+        run: |
+          python -m stryktips live --ut /tmp/live.json
+          if [ -f /tmp/live.json ]; then echo "pagar=true" >> "$GITHUB_OUTPUT"; fi
+      - name: Bygg sidan
+        if: steps.live.outputs.pagar == 'true'
+        run: sh webb/bygg.sh
+      - if: steps.live.outputs.pagar == 'true'
+        uses: actions/upload-pages-artifact@v3
+      - id: deploy
+        if: steps.live.outputs.pagar == 'true'
+        uses: actions/deploy-pages@v4

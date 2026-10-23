@@ -39,6 +39,12 @@ Till höger visas **aktuella tabeller** för Premier League och Championship,
 räknade ur säsongens resultat hos football-data.co.uk. Lag som finns på
 kupongen är markerade med matchnumret. Hämtas med `python -m stryktips tabell`.
 
+**Liveresultat:** medan matcherna spelas hämtar `.github/workflows/live.yml`
+ställningarna från Svenska Spel var tionde minut och publicerar om sidan.
+Sidan visar ställningen per match, markerar om ditt system täcker den och
+räknar hur många rätt du har just nu. Svenska Spels API går inte att anropa
+direkt från webbsidan (CORS), därav omvägen via GitHub Actions.
+
 Sidan publiceras med GitHub Pages av `.github/workflows/webb.yml`, varje gång
 veckans förslag har skrivits. Slå på det under **Settings → Pages → Source:
 GitHub Actions**. Lokalt: `python -m http.server` i repots rot och öppna
