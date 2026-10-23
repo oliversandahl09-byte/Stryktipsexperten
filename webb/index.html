@@ -505,7 +505,7 @@ function renderLive() {
 // Adressen till Cloudflare-proxyn (cloudflare/live-worker.js). Den ger ställningar
 // inom någon minut. Utan den, eller om den inte svarar, används live.json som
 // GitHub Actions publicerar var tionde minut.
-const LIVE_PROXY = "";
+const LIVE_PROXY = "https://stryktips-live.persandahl.workers.dev/";
 let liveFromProxy = false;
 
 async function fetchLive() {
