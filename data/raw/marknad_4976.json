@@ -1,5 +1,5 @@
 {
- "hamtad": "2026-10-23T05:10:37+00:00",
+ "hamtad": "2026-10-23T05:28:34+00:00",
  "matcher": {
   "1": {
    "sannolikhet": {
@@ -8,7 +8,7 @@
     "2": 0.22228251794957424
    },
    "kalla": "pinnacle",
-   "spelbolag": 25,
+   "spelbolag": 24,
    "match": "Chelsea - Tottenham Hotspur"
   },
   "2": {
@@ -18,7 +18,7 @@
     "2": 0.11646586345381525
    },
    "kalla": "pinnacle",
-   "spelbolag": 25,
+   "spelbolag": 24,
    "match": "Arsenal - Everton"
   },
   "3": {
@@ -28,7 +28,7 @@
     "2": 0.42434594983367796
    },
    "kalla": "pinnacle",
-   "spelbolag": 25,
+   "spelbolag": 24,
    "match": "Coventry City - Fulham"
   },
   "4": {
@@ -83,9 +83,9 @@
   },
   "9": {
    "sannolikhet": {
-    "1": 0.40535640383895316,
-    "X": 0.28435449224523573,
-    "2": 0.31028910391581105
+    "1": 0.4020334800507776,
+    "X": 0.28961074398794623,
+    "2": 0.3083557759612761
    },
    "kalla": "pinnacle",
    "spelbolag": 22,

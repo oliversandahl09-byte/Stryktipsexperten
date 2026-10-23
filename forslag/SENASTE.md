@@ -14,7 +14,7 @@ Chans till 13 rätt enligt modellen: **0.11%**
 | 6 | Lincoln - Burnley | **12** | 34% / 27% / 40% | 33% / 27% / 40% | 1.02 / 0.99 / 0.99 | pinnacle |
 | 7 | Preston - West Bromwich | **12** | 26% / 26% / 48% | 20% / 21% / 59% | **1.31** / **1.23** / 0.81 | pinnacle |
 | 8 | Queens Park Rangers - Swansea | **12** | 39% / 28% / 33% | 41% / 27% / 32% | 0.95 / 1.05 / 1.02 | pinnacle |
-| 9 | Stoke - Bristol City | **2** | 41% / 28% / 31% | 61% / 21% / 18% | 0.66 / **1.35** / **1.72** | pinnacle |
+| 9 | Stoke - Bristol City | **2** | 40% / 29% / 31% | 61% / 21% / 18% | 0.66 / **1.38** / **1.71** | pinnacle |
 | 10 | West Ham - Southampton | **1** | 56% / 22% / 21% | 62% / 22% / 16% | 0.91 / 1.01 / **1.34** | pinnacle |
 | 11 | Wolverhampton - Watford | **1** | 70% / 18% / 11% | 72% / 15% / 13% | 0.97 / **1.23** / 0.88 | pinnacle |
 | 12 | Cambridge - Plymouth | **12** | 40% / 26% / 34% | 44% / 28% / 28% | 0.91 / 0.92 / **1.21** | pinnacle |
