@@ -50,6 +50,8 @@ class WriteTest(unittest.TestCase):
         self.assertEqual(data["serier"]["E0"]["tabell"][0]["lag"], "Arsenal")
         self.assertEqual(data["serier"]["E0"]["senaste_match"], "2026-08-24")
         self.assertIn("E1", data["serier"])
+        self.assertTrue(any(u.endswith("/mmz4281/2627/E2.csv") for u in urls))
+        self.assertEqual(data["serier"]["E2"]["namn"], "League One")
 
 
 if __name__ == "__main__":

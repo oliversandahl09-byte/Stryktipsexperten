@@ -70,7 +70,8 @@ h2 { font: 700 13px/1.2 var(--font-body); text-transform: uppercase; letter-spac
 @media (max-width: 860px) { .layout { grid-template-columns: minmax(0, 1fr); } }
 .tables { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); background: var(--surface); border-radius: 14px;
   padding: 16px; display: grid; gap: 12px; box-shadow: 0 2px 8px rgb(0 0 0 / 0.25); min-width: 0; }
-.tables .seg { grid-template-columns: 1fr 1fr; }
+.tables .seg { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 1fr; }
+.tables .seg button { font-size: 13px; padding: 8px 4px; }
 .table-wrap { overflow-x: auto; }
 .league { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
 .league th { font-size: 11px; font-weight: 600; color: var(--muted); text-align: right; padding: 4px 6px; border-bottom: 1px solid var(--line); }
@@ -616,9 +617,10 @@ async function fetchTables() {
   return null;
 }
 
-// Zoner: Premier League topp 4 och 3 sist, Championship 2 upp, 3–6 kval och 3 sist.
+// Zoner: Premier League topp 4 och 3 sist, Championship 2 upp, 3–6 kval och 3 sist,
+// League One som Championship men 4 sist.
 function zone(code, plac, n) {
-  if (plac > n - 3) return "z-down";
+  if (plac > n - (code === "E2" ? 4 : 3)) return "z-down";
   if (code === "E0") return plac <= 4 ? "z-top" : "";
   return plac <= 2 ? "z-top" : plac <= 6 ? "z-play" : "";
 }
