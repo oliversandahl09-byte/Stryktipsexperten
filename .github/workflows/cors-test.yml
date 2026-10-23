@@ -1,0 +1,11 @@
+name: CORS-test
+on: push
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for u in https://api.spela.svenskaspel.se/draw/1/stryktipset/draws https://api.spela.svenskaspel.se/draw/1/stryktipset/draws/4976; do
+            echo "== GET $u"; curl -sS -D - -o /dev/null -H "Origin: https://oliversandahl09-byte.github.io" "$u" | grep -i "^HTTP\|access-control\|vary"
+            echo "== OPTIONS"; curl -sS -D - -o /dev/null -X OPTIONS -H "Origin: https://oliversandahl09-byte.github.io" -H "Access-Control-Request-Method: GET" "$u" | grep -i "^HTTP\|access-control"
+          done
