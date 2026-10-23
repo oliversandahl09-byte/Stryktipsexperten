@@ -32,6 +32,7 @@
   --value: #d0021b;
   --lock: #e3051b;
   --focus: #ffc20e;
+  --hl: #fff4d6;
   --hero: #062b55;
   --hero-ink: #ffffff;
   --hero-tile: #123f72;
@@ -51,7 +52,7 @@ body {
   padding-right: max(16px, env(safe-area-inset-right, 0px));
   padding-block: 24px 48px;
 }
-.wrap { max-width: 1060px; margin: 0 auto; display: grid; gap: 24px; }
+.wrap { max-width: 1440px; margin: 0 auto; display: grid; gap: 24px; }
 header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; }
 h1 { color: var(--on-page); font: 800 clamp(30px, 6vw, 48px)/1 var(--font-display); letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
 h1 span { color: var(--accent-ink); background: var(--accent); border-radius: 8px; padding: 0 0.18em 0.04em; margin-left: 0.06em; }
@@ -59,8 +60,32 @@ h1 span { color: var(--accent-ink); background: var(--accent); border-radius: 8p
 .meta b { color: var(--on-page); font-weight: 600; }
 h2 { font: 700 13px/1.2 var(--font-body); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0; }
 
-.layout { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 24px; align-items: start; }
+.layout { display: grid; grid-template-columns: 300px minmax(0, 1fr) 330px; gap: 24px; align-items: start; }
+@media (max-width: 1280px) {
+  .layout { grid-template-columns: 300px minmax(0, 1fr); }
+  .tables { grid-column: 1 / -1; position: static; }
+}
 @media (max-width: 860px) { .layout { grid-template-columns: minmax(0, 1fr); } }
+.tables { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); background: var(--surface); border-radius: 14px;
+  padding: 16px; display: grid; gap: 12px; box-shadow: 0 2px 8px rgb(0 0 0 / 0.25); min-width: 0; }
+.tables .seg { grid-template-columns: 1fr 1fr; }
+.table-wrap { overflow-x: auto; }
+.league { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+.league th { font-size: 11px; font-weight: 600; color: var(--muted); text-align: right; padding: 4px 6px; border-bottom: 1px solid var(--line); }
+.league th:nth-child(2) { text-align: left; }
+.league td { padding: 4px 6px; text-align: right; border-bottom: 1px solid var(--soft); white-space: nowrap; }
+.league td:first-child { color: var(--muted); font: 600 12px var(--font-data); border-left: 3px solid transparent; }
+.league td.team { text-align: left; }
+.league td.pts { font-weight: 700; }
+.league tr.z-top td:first-child { border-left-color: var(--mark); }
+.league tr.z-play td:first-child { border-left-color: var(--bar); }
+.league tr.z-down td:first-child { border-left-color: var(--accent); }
+.league tr.on td { background: var(--hl); }
+.league tr.on td.team { font-weight: 700; }
+.league .badge { display: inline-block; min-width: 18px; margin-left: 6px; padding: 0 4px; border-radius: 4px; background: var(--accent);
+  color: var(--accent-ink); font: 700 10px/16px var(--font-data); text-align: center; }
+.tables .hint span { display: inline-flex; align-items: center; gap: 4px; margin-right: 10px; }
+.tables .hint i { width: 3px; height: 12px; display: inline-block; }
 .panel { box-shadow: 0 2px 8px rgb(0 0 0 / 0.25); position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); display: grid; gap: 20px;
   background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
 @media (max-width: 860px) { .panel { position: static; } }
@@ -243,6 +268,13 @@ footer { font-size: 13px; color: var(--on-page-muted); max-width: 70ch; }
         <span id="h2h-legend" hidden>Inbördes: senaste mötena, nyast först, sett från hemmalaget. Inramad = samma hemmaplan som nu.</span>
       </div>
     </main>
+
+    <aside class="tables" id="tables" aria-label="Tabeller" hidden>
+      <h2>Tabeller</h2>
+      <div class="seg" role="group" aria-label="Serie" id="league-tabs"></div>
+      <div class="table-wrap" id="league-table"></div>
+      <p class="hint" id="league-hint"></p>
+    </aside>
   </div>
 
   <footer>
@@ -515,6 +547,57 @@ async function fetchData() {
   throw new Error("Hittade inget förslag");
 }
 
+let tables = null;
+
+async function fetchTables() {
+  if (window.STRYKTIPS_TABELLER) return window.STRYKTIPS_TABELLER;
+  for (const url of ["tabeller.json", "../forslag/tabeller.json"]) {
+    try { const r = await fetch(url, { cache: "no-store" }); if (r.ok) return await r.json(); } catch (e) {}
+  }
+  return null;
+}
+
+// Zoner: Premier League topp 4 och 3 sist, Championship 2 upp, 3–6 kval och 3 sist.
+function zone(code, plac, n) {
+  if (plac > n - 3) return "z-down";
+  if (code === "E0") return plac <= 4 ? "z-top" : "";
+  return plac <= 2 ? "z-top" : plac <= 6 ? "z-play" : "";
+}
+
+function couponTeams() {
+  const map = {};
+  for (const [nr, info] of Object.entries(h2h)) for (const lag of info.lag || []) map[lag] = nr;
+  return map;
+}
+
+function renderTables() {
+  const leagues = Object.entries((tables && tables.serier) || {}).filter(([, l]) => l.tabell && l.tabell.length);
+  $("tables").hidden = !leagues.length;
+  if (!leagues.length) return;
+  const onCoupon = couponTeams();
+  if (!state.league || !leagues.some(([c]) => c === state.league)) {
+    // Visa serien med flest lag på kupongen först.
+    state.league = leagues.map(([c, l]) => [c, l.tabell.filter(r => onCoupon[r.lag]).length]).sort((a, b) => b[1] - a[1])[0][0];
+  }
+  $("league-tabs").innerHTML = leagues.map(([c, l]) =>
+    `<button type="button" data-league="${c}" aria-pressed="${c === state.league}">${l.namn}</button>`).join("");
+  const league = tables.serier[state.league];
+  const rows = league.tabell;
+  $("league-table").innerHTML = `<table class="league"><thead><tr><th>#</th><th>Lag</th><th>S</th><th>V</th><th>O</th><th>F</th><th>+/-</th><th>P</th></tr></thead><tbody>` +
+    rows.map(r => {
+      const nr = onCoupon[r.lag];
+      const diff = r.gm - r.im;
+      return `<tr class="${zone(state.league, r.plac, rows.length)}${nr ? " on" : ""}"><td>${r.plac}</td>
+        <td class="team">${r.lag}${nr ? `<span class="badge" title="Match ${nr} på kupongen">${nr}</span>` : ""}</td>
+        <td>${r.s}</td><td>${r.v}</td><td>${r.o}</td><td>${r.f}</td><td>${diff > 0 ? "+" : ""}${diff}</td><td class="pts">${r.p}</td></tr>`;
+    }).join("") + `</tbody></table>`;
+  const updated = league.senaste_match ? new Date(league.senaste_match).toLocaleDateString("sv-SE", { day: "numeric", month: "long" }) : "okänt";
+  const legend = state.league === "E0"
+    ? `<span><i style="background:var(--mark)"></i>Champions League</span><span><i style="background:var(--accent)"></i>Nedflyttning</span>`
+    : `<span><i style="background:var(--mark)"></i>Uppflyttning</span><span><i style="background:var(--bar)"></i>Playoff</span><span><i style="background:var(--accent)"></i>Nedflyttning</span>`;
+  $("league-hint").innerHTML = `${legend}<br>Gula rader är lag på kupongen, siffran är matchnumret. Matcher spelade till och med ${updated}.`;
+}
+
 async function fetchH2H() {
   if (window.STRYKTIPS_INBORDES) return window.STRYKTIPS_INBORDES;
   for (const url of ["inbordes.json", "../forslag/inbordes.json"]) {
@@ -523,7 +606,8 @@ async function fetchH2H() {
   return null;
 }
 
-Promise.all([fetchData(), fetchH2H()]).then(([d, ib]) => {
+Promise.all([fetchData(), fetchH2H(), fetchTables()]).then(([d, ib, tb]) => {
+  tables = tb;
   data = d;
   base = d.matcher;
   // Inbördes möten används bara om de gäller samma omgång.
@@ -533,7 +617,8 @@ Promise.all([fetchData(), fetchH2H()]).then(([d, ib]) => {
   load();
   // Låsta val gäller bara den omgång de gjordes för.
   try { if (JSON.parse(localStorage.getItem("stryktips-val") || "{}").omgang !== data.omgang) state.locks = {}; } catch (e) {}
-  renderStatic(); bind(); render();
+  renderStatic(); bind(); render(); renderTables();
+  $("league-tabs").onclick = e => { const b = e.target.closest("button"); if (b) { state.league = b.dataset.league; renderTables(); save(); } };
 }).catch(() => {
   document.querySelector(".wrap").innerHTML = `<div class="error"><h1>Stryktips<span>experten</span></h1>
     <p>Veckans förslag kunde inte laddas. Det skrivs av GitHub Actions torsdag till lördag; kör <b>Veckans stryktips</b> under Actions om det saknas.</p></div>`;

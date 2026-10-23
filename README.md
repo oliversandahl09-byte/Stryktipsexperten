@@ -35,6 +35,10 @@ Sidan visar också **inbördes möten** mellan lagen (senaste tio säsongerna, f
 Ett reglage styr hur mycket de ska väga in i sannolikheterna, från inget alls
 till hälften. Hämtas med `python -m stryktips inbordes`.
 
+Till höger visas **aktuella tabeller** för Premier League och Championship,
+räknade ur säsongens resultat hos football-data.co.uk. Lag som finns på
+kupongen är markerade med matchnumret. Hämtas med `python -m stryktips tabell`.
+
 Sidan publiceras med GitHub Pages av `.github/workflows/webb.yml`, varje gång
 veckans förslag har skrivits. Slå på det under **Settings → Pages → Source:
 GitHub Actions**. Lokalt: `python -m http.server` i repots rot och öppna
