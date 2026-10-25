@@ -25,6 +25,27 @@ class StateTest(unittest.TestCase):
         self.assertNotIn("utfall", live.match_state(event(5, "NotStarted", current=(0, 0))))
 
 
+class PayoutTest(unittest.TestCase):
+    def test_sale_streck_and_payouts(self):
+        ev = event(1, "Ended", current=(1, 0))
+        ev["svenskaFolket"] = {"one": "62", "x": "23", "two": "15"}
+        raw = {"drawNumber": 7, "currentNetSale": "27643404,00", "rowPrice": "1,00", "drawEvents": [ev]}
+        result = {"distribution": [
+            {"name": "13 rätt", "winners": 18, "amount": "399293,00"},
+            {"name": "10 rätt", "winners": 45068, "amount": "99,00"},
+        ]}
+        self.assertTrue(live.all_ended(raw))
+        out = live.build(raw, result)
+        self.assertEqual((out["omsattning"], out["radpris"]), (27643404.0, 1.0))
+        self.assertEqual(out["matcher"]["1"]["streck"], {"1": 0.62, "X": 0.23, "2": 0.15})
+        self.assertEqual(out["utdelning"]["13"], {"kr": 399293.0, "vinnare": 18})
+        self.assertEqual(out["utdelning"]["10"]["kr"], 99.0)
+        # Utan klart resultat (eller med bara nollor) skickas ingen utdelning.
+        self.assertNotIn("utdelning", live.build(raw))
+        self.assertNotIn("utdelning", live.build(raw, {"distribution": [{"name": "13 rätt", "winners": 0, "amount": "0,00"}]}))
+        self.assertFalse(live.all_ended({"drawEvents": [event(1, "SecondHalf", current=(0, 0))]}))
+
+
 class WindowTest(unittest.TestCase):
     def test_window(self):
         raw = {"drawEvents": [event(1, "NotStarted")]}
@@ -42,9 +63,9 @@ class WriteTest(unittest.TestCase):
         current = {"drawNumber": 2, "drawEvents": [event(1, "FirstHalf", start=now, current=(0, 1))]}
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "live.json"
-            self.assertIsNone(live.write(path, draws=[old]))
+            self.assertIsNone(live.write(path, draws=[old], result=lambda raw: None))
             self.assertFalse(path.exists())
-            self.assertEqual(live.write(path, draws=[old, current]), 2)
+            self.assertEqual(live.write(path, draws=[old, current], result=lambda raw: None), 2)
             data = json.loads(path.read_text(encoding="utf-8"))
         self.assertEqual(data["omgang"], 2)
         self.assertEqual(data["matcher"]["1"]["utfall"], "2")

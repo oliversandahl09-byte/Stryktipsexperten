@@ -45,6 +45,16 @@ Sidan visar ställningen per match, markerar om ditt system täcker den och
 räknar hur många rätt du har just nu. Svenska Spels API går inte att anropa
 direkt från webbsidan (CORS), därav omvägen via GitHub Actions.
 
+Under liveresultaten visas **utdelningen**. Medan omgången pågår är det en
+förväntad utdelning per rad för 10–13 rätt om ställningarna står sig (matcher
+som inte har startat räknas med det mest troliga tecknet). Den räknas ur
+omsättningen och svenska folkets streck: Svenska Spel delar ut 65 % av
+omsättningen (40 % till 13 rätt, 15 % till 12, 12 % till 11 och 25 % till 10),
+och antalet vinnare uppskattas som om varje spelad rad följde strecken. Det är
+en grov prognos, ofta inom en faktor två för 13 rätt. När alla matcher är slut
+och Svenska Spel har räknat klart visas den faktiska utdelningen och antalet
+vinnare i stället. Båda delarna visar också vad ditt system skulle ge.
+
 För ställningar varje minut finns en liten Cloudflare Worker i
 `cloudflare/live-worker.js` som hämtar omgången från Svenska Spel åt sidan.
 Lägg upp den i Cloudflare (Workers & Pages → Create → Worker, klistra in koden,
