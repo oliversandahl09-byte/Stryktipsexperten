@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <!--START-->
-<title>Stryktipsexperten</title>
+<title>Trettonrätt – Stryktipset</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,6 +58,7 @@ body {
 header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; }
 h1 { color: var(--on-page); font: 800 clamp(30px, 6vw, 48px)/1 var(--font-display); letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
 h1 span { color: var(--accent-ink); background: var(--accent); border-radius: 8px; padding: 0 0.18em 0.04em; margin-left: 0.06em; }
+.tagline { color: var(--on-page); font: 700 clamp(15px, 2.4vw, 19px)/1 var(--font-display); letter-spacing: 0.14em; text-transform: uppercase; margin: 10px 0 0; opacity: 0.85; }
 .meta { color: var(--on-page-muted); font-size: 14px; display: flex; flex-wrap: wrap; gap: 4px 16px; }
 .meta b { color: var(--on-page); font-weight: 600; }
 h2 { font: 700 13px/1.2 var(--font-body); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0; }
@@ -201,7 +202,10 @@ footer { font-size: 13px; color: var(--on-page-muted); max-width: 70ch; }
 <body>
 <div class="wrap">
   <header>
-    <h1>Stryktips<span>experten</span></h1>
+    <div class="brand">
+      <h1>Tretton<span>rätt</span></h1>
+      <p class="tagline">Stryktipset</p>
+    </div>
     <div class="meta" id="meta"></div>
   </header>
 
@@ -694,7 +698,7 @@ Promise.all([fetchData(), fetchH2H(), fetchTables()]).then(([d, ib, tb]) => {
   setInterval(refreshLive, 60000);
   $("league-tabs").onclick = e => { const b = e.target.closest("button"); if (b) { state.league = b.dataset.league; renderTables(); save(); } };
 }).catch(() => {
-  document.querySelector(".wrap").innerHTML = `<div class="error"><h1>Stryktips<span>experten</span></h1>
+  document.querySelector(".wrap").innerHTML = `<div class="error"><h1>Tretton<span>rätt</span></h1>
     <p>Veckans förslag kunde inte laddas. Det skrivs av GitHub Actions torsdag till lördag; kör <b>Veckans stryktips</b> under Actions om det saknas.</p></div>`;
 });
 </script>
