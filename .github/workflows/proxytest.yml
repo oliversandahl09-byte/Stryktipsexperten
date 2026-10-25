@@ -1,0 +1,11 @@
+name: Proxytest (tillfällig)
+on:
+  push:
+    branches: [claude/project-thread-izb80s]
+    paths: [".github/workflows/proxytest.yml"]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -sS -D - "https://stryktips-live.persandahl.workers.dev/?omgang=4976" -H "Origin: https://oliversandahl09-byte.github.io" | head -c 1500
