@@ -28,7 +28,16 @@ Hämtar veckans Stryktips-kupong från Svenska Spel och föreslår ett system
 och värde per match. Du väljer system (max antal rader, eller exakt antal halv-
 och helgarderingar) och spelstil, och förslaget räknas om direkt i webbläsaren
 med samma metod som `kupong.py`. Tryck på ett tecken för att låsa egna val, så
-fylls resten av systemet i runt dem.
+fylls resten av systemet i runt dem. Lägger du till ett tecken växer systemet
+i stället för att andra garderingar plockas bort: 64 rader och en halvgardering
+till blir 128 rader, en halv som blir hel ger ×1,5.
+
+Med **R-system** väljer du halv- och helgarderingar som vanligt, och systemet
+krymps till färre rader med garanti för 12 eller 11 rätt om alla spikar och
+garderingar sitter (till exempel 7 halvgarderingar: 128 rader blir 16). Raderna
+väljs i webbläsaren, och chanserna för 10–13 rätt räknas på de reducerade raderna.
+Filen till Svenska Spel innehåller då bara de raderna. Fulla system upp till
+30 000 rader kan reduceras.
 
 Sidan visar också **inbördes möten** mellan lagen (senaste tio säsongerna, från
 [football-data.co.uk](https://www.football-data.co.uk), ingen nyckel behövs).

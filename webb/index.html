@@ -125,8 +125,9 @@ h2 { font: 700 13px/1.2 var(--font-body); text-transform: uppercase; letter-spac
   background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
 @media (max-width: 860px) { .panel { position: static; } }
 
-.seg { display: grid; grid-template-columns: 1fr 1fr; background: var(--soft); border-radius: 8px; padding: 3px; gap: 3px; }
+.seg { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); background: var(--soft); border-radius: 8px; padding: 3px; gap: 3px; }
 .seg button { border: 0; background: transparent; color: var(--muted); font: 600 14px var(--font-body); padding: 8px; border-radius: 6px; cursor: pointer; }
+.panel .seg button { font-size: 13px; padding: 8px 4px; }
 .seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgb(0 0 0 / 0.12); }
 .group { display: grid; gap: 10px; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -258,7 +259,8 @@ footer { font-size: 13px; color: var(--on-page-muted); max-width: 70ch; }
         <h2>System</h2>
         <div class="seg" role="group" aria-label="Typ av system">
           <button type="button" id="mode-budget" aria-pressed="true">Max rader</button>
-          <button type="button" id="mode-exakt" aria-pressed="false">Egna garderingar</button>
+          <button type="button" id="mode-exakt" aria-pressed="false">Garderingar</button>
+          <button type="button" id="mode-rsys" aria-pressed="false">R-system</button>
         </div>
       </div>
 
@@ -276,6 +278,13 @@ footer { font-size: 13px; color: var(--on-page-muted); max-width: 70ch; }
           <span class="lbl">Helgarderingar <small>alla tre tecken, ×3 rader</small></span>
           <span class="ctl"><button type="button" id="hel-minus" aria-label="Färre helgarderingar">−</button><output id="hel"></output><button type="button" id="hel-plus" aria-label="Fler helgarderingar">+</button></span>
         </div>
+        <div class="group" id="rsys-box" hidden>
+          <div class="seg" role="group" aria-label="Garanti">
+            <button type="button" id="garanti-12" aria-pressed="true">Garanti 12 rätt</button>
+            <button type="button" id="garanti-11" aria-pressed="false">Garanti 11 rätt</button>
+          </div>
+          <p class="hint" id="rsys-hint"></p>
+        </div>
       </div>
 
       <div class="group">
@@ -291,7 +300,7 @@ footer { font-size: 13px; color: var(--on-page-muted); max-width: 70ch; }
       </div>
 
       <div class="sum" aria-live="polite">
-        <div class="stat big"><div class="k">Rader</div><div class="v" id="s-rows"></div></div>
+        <div class="stat big"><div class="k" id="s-rows-k">Rader</div><div class="v" id="s-rows"></div></div>
         <div class="stat big"><div class="k">Kostnad</div><div class="v" id="s-cost"></div></div>
         <div class="stat"><div class="k">Spikar / halv / hel</div><div class="v" id="s-mix"></div></div>
         <div class="stat"><div class="k">Väntade rätt</div><div class="v" id="s-exp"></div></div>
@@ -351,7 +360,7 @@ const pct = (x, d = 0) => (x * 100).toLocaleString("sv-SE", { minimumFractionDig
 const $ = id => document.getElementById(id);
 
 let data;
-const state = { mode: "budget", budget: 64, halv: 6, hel: 0, risk: 0.5, h2hw: 0.15, locks: {} };
+const state = { mode: "budget", budget: 64, halv: 6, hel: 0, garanti: 12, risk: 0.5, h2hw: 0.15, locks: {} };
 let base, h2h = {};
 
 // Väger ihop oddsens sannolikhet med utfallen i inbördes möten. Få möten ger mindre vikt,
@@ -415,6 +424,150 @@ function buildSystem(matches, { budget, exact, risk, locks }) {
   return { covers: best.covers, halv: best.halv, hel: best.hel, rows: 2 ** best.halv * 3 ** best.hel };
 }
 
+// R-system: väljer så få rader som möjligt ur det fulla systemet så att varje rad i det
+// ligger högst `radius` tecken från en vald rad. Sitter alla spikar och garderingar har
+// man då minst 13 - radius rätt. Raderna kodas som tal i blandad bas (2 eller 3 tecken per
+// garderad match). Girig täckning: ta den rad som täcker flest otäckta rader, om och om igen.
+// Lika bra rader väljs i talordning, och för små system provas några fler omgångar med
+// slumpad (men alltid samma) ordning. Den minsta lösningen behålls.
+const R_MAX = 30000;
+function coverCode(sizes, radius, seed) {
+  const n = sizes.length, mult = [];
+  let N = 1;
+  for (const s of sizes) { mult.push(N); N *= s; }
+  const digit = (x, j) => Math.floor(x / mult[j]) % sizes[j];
+  const ball = x => {
+    const out = [x];
+    const step = (y, from, left) => {
+      for (let j = from; j < n; j++) {
+        const d = digit(y, j);
+        for (let v = 0; v < sizes[j]; v++) {
+          if (v === d) continue;
+          const z = y + (v - d) * mult[j];
+          out.push(z);
+          if (left > 1) step(z, j + 1, left - 1);
+        }
+      }
+    };
+    if (radius > 0) step(x, 0, radius);
+    return out;
+  };
+  const balls = Array.from({ length: N }, (_, x) => ball(x));
+  const covered = new Uint8Array(N), gain = new Int32Array(N);
+  balls.forEach((b, x) => { gain[x] = b.length; });
+  let r = seed;
+  const rnd = () => (r = (r * 1103515245 + 12345) % 2147483648) / 2147483648;
+  const code = [];
+  for (let left = N; left;) {
+    let best = 0, ties = 1;
+    for (let x = 1; x < N; x++) {
+      if (gain[x] > gain[best]) { best = x; ties = 1; }
+      else if (seed && gain[x] === gain[best] && rnd() * ++ties < 1) best = x;
+    }
+    code.push(best);
+    for (const y of balls[best]) {
+      if (covered[y]) continue;
+      covered[y] = 1; left--;
+      for (const z of balls[y]) gain[z]--;
+    }
+  }
+  return code;
+}
+
+const codeCache = new Map();
+function reducedCode(sizes, radius) {
+  const key = sizes.join("") + "/" + radius;
+  if (!codeCache.has(key)) {
+    const N = sizes.reduce((a, b) => a * b, 1);
+    const tries = N <= 2000 ? 8 : 0;
+    let best = coverCode(sizes, radius, 0);
+    for (let s = 1; s <= tries; s++) {
+      const c = coverCode(sizes, radius, s);
+      if (c.length < best.length) best = c;
+    }
+    codeCache.set(key, best);
+  }
+  return codeCache.get(key);
+}
+
+const garderade = covers => covers.map((c, i) => i).filter(i => covers[i].length > 1)
+  .sort((a, b) => covers[b].length - covers[a].length || a - b);
+
+// Raderna i ett R-system för de valda tecknen, eller null om det fulla systemet är för stort.
+function reduceSystem(covers, garanti) {
+  // Helgarderingarna först, så att samma antal halv och hel alltid ger samma (sparade) kod.
+  const pos = garderade(covers), sizes = pos.map(i => covers[i].length);
+  const full = sizes.reduce((a, b) => a * b, 1);
+  if (full > R_MAX) return null;
+  const code = reducedCode(sizes, covers.length - garanti);
+  const rows = code.map(x => {
+    const row = covers.map(c => c[0]);
+    pos.forEach((i, j) => { row[i] = covers[i][x % sizes[j]]; x = Math.floor(x / sizes[j]); });
+    return row;
+  });
+  return { rows, full };
+}
+
+// Avståndet (antal tecken som skiljer) från varje utfall till närmaste rad i ett R-system.
+// Varje garderad match får ett extra "tecken" för utfall utanför garderingen, och en
+// bredden-först-sökning från systemets rader ger avståndet. Beror bara på koden, så sparas.
+const distCache = new Map();
+function codeDistances(sizes, radius) {
+  const key = sizes.join("") + "/" + radius;
+  if (distCache.has(key)) return distCache.get(key);
+  const alpha = sizes.map(s => s + 1), mult = [];
+  let M = 1;
+  for (const a of alpha) { mult.push(M); M *= a; }
+  const dist = new Uint8Array(M).fill(255);
+  let queue = [];
+  for (let x of reducedCode(sizes, radius)) {
+    let e = 0;
+    sizes.forEach((s, j) => { e += (x % s) * mult[j]; x = Math.floor(x / s); });
+    if (dist[e] === 255) { dist[e] = 0; queue.push(e); }
+  }
+  for (let d = 1; queue.length; d++) {
+    const next = [];
+    for (const x of queue) {
+      for (let j = 0; j < alpha.length; j++) {
+        const v = Math.floor(x / mult[j]) % alpha[j];
+        for (let w = 0; w < alpha[j]; w++) {
+          const z = x + (w - v) * mult[j];
+          if (dist[z] === 255) { dist[z] = d; next.push(z); }
+        }
+      }
+    }
+    queue = next;
+  }
+  distCache.set(key, dist);
+  return dist;
+}
+
+// Fördelning av antal rätt på systemets bästa rad i ett R-system. Spikarna läggs på efteråt.
+function reducedDist(matches, covers, garanti) {
+  const pos = garderade(covers);
+  const n = covers.length, g = pos.length;
+  const dist = codeDistances(pos.map(i => covers[i].length), n - garanti);
+  // Sannolikheten för varje utfall, byggd upp match för match: tecknen i garderingen, sist allt utanför den.
+  let prob = new Float64Array([1]);
+  for (const i of pos) {
+    const p = covers[i].map(o => matches[i].sannolikhet[o]);
+    p.push(Math.max(0, 1 - p.reduce((a, b) => a + b, 0)));
+    const next = new Float64Array(prob.length * p.length);
+    p.forEach((q, v) => { const off = v * prob.length; for (let x = 0; x < prob.length; x++) next[off + x] = prob[x] * q; });
+    prob = next;
+  }
+  let poly = new Array(g + 1).fill(0);  // poly[k] = chansen för k rätt bland de garderade
+  for (let x = 0; x < prob.length; x++) poly[g - dist[x]] += prob[x];
+  for (let i = 0; i < n; i++) {
+    if (covers[i].length !== 1) continue;
+    const p = matches[i].sannolikhet[covers[i][0]];
+    const next = new Array(poly.length + 1).fill(0);
+    poly.forEach((c, k) => { next[k] += c * (1 - p); next[k + 1] += c * p; });
+    poly = next;
+  }
+  return poly;
+}
+
 // Fördelning av antal rätt på systemets bästa rad (varje match träffas med sin täckta sannolikhet).
 function correctDist(hits) {
   let poly = [1];
@@ -455,16 +608,25 @@ function renderLikely() {
 function render() {
   data.matcher = base.map(withH2H);
   renderLikely();
-  const exact = state.mode === "exakt" ? { halv: state.halv, hel: state.hel } : null;
+  const exact = state.mode !== "budget" ? { halv: state.halv, hel: state.hel } : null;
   const sys = buildSystem(data.matcher, { budget: state.budget, exact, risk: state.risk, locks: state.locks });
+  const rsys = sys && state.mode === "rsys" ? reduceSystem(sys.covers, state.garanti) : null;
   const warn = $("warn");
-  warn.hidden = !!sys;
+  warn.hidden = !!sys && (state.mode !== "rsys" || !!rsys);
   if (!sys) warn.textContent = "Dina låsta val ryms inte i systemet. Öka antalet rader eller rensa några val.";
+  else if (state.mode === "rsys" && !rsys) warn.textContent = `Det fulla systemet har ${sys.rows.toLocaleString("sv-SE")} rader. R-system räknas här upp till ${R_MAX.toLocaleString("sv-SE")}, så ta bort någon gardering.`;
 
   $("mode-budget").setAttribute("aria-pressed", state.mode === "budget");
   $("mode-exakt").setAttribute("aria-pressed", state.mode === "exakt");
+  $("mode-rsys").setAttribute("aria-pressed", state.mode === "rsys");
   $("budget-box").hidden = state.mode !== "budget";
-  $("exakt-box").hidden = state.mode !== "exakt";
+  $("exakt-box").hidden = state.mode === "budget";
+  $("rsys-box").hidden = state.mode !== "rsys";
+  $("garanti-12").setAttribute("aria-pressed", state.garanti === 12);
+  $("garanti-11").setAttribute("aria-pressed", state.garanti === 11);
+  $("rsys-hint").textContent = rsys
+    ? `Det fulla systemet på ${sys.rows.toLocaleString("sv-SE")} rader blir ${rsys.rows.length.toLocaleString("sv-SE")}. Sitter alla spikar och garderingar har du minst ${state.garanti} rätt.`
+    : "Välj garderingar ovan. Systemet krymps till färre rader med garanti för 12 eller 11 rätt.";
   document.querySelectorAll("#budget-chips button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.b === state.budget));
   $("budget").value = state.budget;
   $("halv").textContent = state.halv;
@@ -479,13 +641,16 @@ function render() {
 
   const covers = sys ? sys.covers : data.matcher.map(() => []);
   const hits = data.matcher.map((m, i) => covers[i].reduce((s, o) => s + m.sannolikhet[o], 0));
-  const dist = correctDist(hits);
-  $("s-rows").textContent = sys ? sys.rows.toLocaleString("sv-SE") : "–";
-  $("s-cost").textContent = sys ? sys.rows.toLocaleString("sv-SE") + " kr" : "–";
+  const dist = rsys ? reducedDist(data.matcher, covers, state.garanti) : correctDist(hits);
+  const ok = sys && (state.mode !== "rsys" || rsys);
+  const rows = rsys ? rsys.rows.length : sys ? sys.rows : 0;
+  $("s-rows-k").textContent = rsys ? `Rader (av ${sys.rows.toLocaleString("sv-SE")})` : "Rader";
+  $("s-rows").textContent = ok ? rows.toLocaleString("sv-SE") : "–";
+  $("s-cost").textContent = ok ? rows.toLocaleString("sv-SE") + " kr" : "–";
   const spikar = covers.filter(c => c.length === 1).length;
   $("s-mix").textContent = sys ? `${spikar} / ${sys.halv} / ${sys.hel}` : "–";
-  $("s-exp").textContent = sys ? hits.reduce((a, b) => a + b, 0).toLocaleString("sv-SE", { maximumFractionDigits: 1 }) : "–";
-  [13, 12, 11, 10].forEach(k => $("p" + k).textContent = sys ? fmtChance(atLeast(dist, k)) : "–");
+  $("s-exp").textContent = ok ? dist.reduce((a, p, k) => a + p * k, 0).toLocaleString("sv-SE", { maximumFractionDigits: 1 }) : "–";
+  [13, 12, 11, 10].forEach(k => $("p" + k).textContent = ok ? fmtChance(atLeast(dist, k)) : "–");
 
   $("matches").innerHTML = data.matcher.map((m, i) => {
     const cover = covers[i], top = topSign(m), locked = !!state.locks[m.nr];
@@ -511,6 +676,8 @@ function render() {
     </div>`;
   }).join("");
   window.currentCovers = covers;
+  window.currentSys = sys;
+  window.currentRows = !ok ? null : rsys ? rsys.rows : expandRows(covers);
   renderLive();
   save();
 }
@@ -584,7 +751,23 @@ function toggleSign(nr, o) {
   set.has(o) ? set.delete(o) : set.add(o);
   const next = OUT.filter(x => set.has(x)).join("");
   if (next) state.locks[nr] = next; else delete state.locks[nr];
+  if (next && current.length) resize(current.length, next.length);
   render();
+}
+
+// Ett tecken till eller från i en match ändrar systemets storlek i stället för att resten
+// av kupongen får ge plats: 64 rader och en ny halvgardering blir 128 rader.
+function resize(from, to) {
+  const sys = window.currentSys;
+  if (state.mode === "budget") {
+    if (sys) state.budget = Math.max(1, Math.round(sys.rows * to / from));
+    return;
+  }
+  const count = { 1: 0, 2: state.halv, 3: state.hel };
+  if (sys) { count[2] = sys.halv; count[3] = sys.hel; }
+  count[from]--; count[to]++;
+  state.halv = Math.max(0, count[2]);
+  state.hel = Math.max(0, count[3]);
 }
 
 function toast(msg) {
@@ -596,6 +779,9 @@ function toast(msg) {
 function bind() {
   $("mode-budget").onclick = () => { state.mode = "budget"; render(); };
   $("mode-exakt").onclick = () => { state.mode = "exakt"; render(); };
+  $("mode-rsys").onclick = () => { state.mode = "rsys"; render(); };
+  $("garanti-12").onclick = () => { state.garanti = 12; render(); };
+  $("garanti-11").onclick = () => { state.garanti = 11; render(); };
   $("budget-chips").onclick = e => { const b = e.target.closest("button"); if (b) { state.budget = +b.dataset.b; render(); } };
   $("budget").onchange = e => { const v = Math.max(1, Math.floor(+e.target.value || 1)); state.budget = v; render(); };
   const step = (key, d) => () => { state[key] = Math.max(0, state[key] + d); render(); };
@@ -614,6 +800,7 @@ function bind() {
   $("copy").onclick = () => {
     const text = `${SPEL_NAMN} omgång ${data.omgang}\n` +
       data.matcher.map((m, i) => `${String(m.nr).padStart(2)}. ${(window.currentCovers[i].join("") || "-").padEnd(3)}  ${m.match}`).join("\n") +
+      (state.mode === "rsys" && window.currentRows ? `\nR-system med garanti för ${state.garanti} rätt` : "") +
       `\n${$("s-rows").textContent} rader, ${$("s-cost").textContent}`;
     const done = () => toast("Systemet är kopierat");
     navigator.clipboard?.writeText(text).then(done, () => fallbackCopy(text, done)) ?? fallbackCopy(text, done);
@@ -626,20 +813,21 @@ function expandRows(covers) {
 
 // Svenska Spels format för externa spel: produktnamnet på första raden,
 // sedan en rad per enkelrad som börjar med E.
-function externalFile(covers) {
-  return [SPEL_NAMN, ...expandRows(covers).map(r => "E," + r.join(","))].join("\n") + "\n";
+// Ett R-system lämnas in som sina reducerade enkelrader.
+function externalFile(rows) {
+  return [SPEL_NAMN, ...rows.map(r => "E," + r.join(","))].join("\n") + "\n";
 }
 
 function download() {
-  const covers = window.currentCovers;
-  if (!covers || covers.some(c => !c.length)) { toast("Systemet är inte komplett"); return; }
-  const blob = new Blob([externalFile(covers)], { type: "text/plain" });
+  const rows = window.currentRows;
+  if (!rows) { toast("Systemet är inte komplett"); return; }
+  const blob = new Blob([externalFile(rows)], { type: "text/plain" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
   a.download = `${SPEL}_${data.omgang}.txt`;
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(a.href), 1000);
-  toast(`Filen med ${expandRows(covers).length} rader är nedladdad`);
+  toast(`Filen med ${rows.length} rader är nedladdad`);
 }
 
 function fallbackCopy(text, done) {
