@@ -3,9 +3,11 @@
 import json
 from pathlib import Path
 
-from .svenskaspel import OUTCOMES
+from .svenskaspel import OUTCOMES, SPEL, SPEL_NAMN
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "forslag"
+if SPEL != "stryktipset":
+    OUT_DIR = OUT_DIR / SPEL
 
 
 def _pct(x):
@@ -18,7 +20,7 @@ def _cover_label(cover):
 
 def to_markdown(draw, system, risk):
     lines = [
-        f"# Stryktipset omgång {draw.number}",
+        f"# {SPEL_NAMN} omgång {draw.number}",
         "",
         f"Spelstopp: {draw.close_time or 'okänt'}  ",
         f"System: **{system.rows} rader** ({system.rows} kr), risknivå {risk}  ",

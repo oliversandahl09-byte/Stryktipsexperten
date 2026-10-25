@@ -44,6 +44,15 @@ jobs:
         run: |
           python -m stryktips forslag --rader "${{ inputs.rader || '64' }}" --risk "${{ inputs.risk || '0.5' }}" || echo "Ingen öppen omgång just nu"
           if [ -f forslag/SENASTE.md ]; then cat forslag/SENASTE.md >> "$GITHUB_STEP_SUMMARY"; fi
+      - name: Europatipset
+        env:
+          SPEL: europatipset
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          python -m stryktips hamta || echo "Kunde inte hämta Europatipset"
+          python -m stryktips inbordes || echo "Inga inbördes möten för Europatipset"
+          python -m stryktips tabell || echo "Inga tabeller för Europatipset"
+          python -m stryktips forslag --rader "${{ inputs.rader || '64' }}" --risk "${{ inputs.risk || '0.5' }}" || echo "Ingen öppen Europatipset-omgång just nu"
       - name: Spara i repot
         run: |
           git config user.name "stryktipsexperten"
