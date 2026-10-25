@@ -4,6 +4,7 @@
 // så webbsidan frågar den här i stället: /?omgang=4976 hämtar omgången från
 // Svenska Spel och svarar i samma format som live.json (se stryktips/live.py).
 // Lägg till &spel=europatipset för Europatipset.
+// När alla matcher är slut hämtas också utdelningen för 10–13 rätt.
 // Svaren sparas en halv minut så att Svenska Spel inte får ett anrop per besökare.
 
 const SOURCE = "https://api.spela.svenskaspel.se/draw/1/";
@@ -16,6 +17,8 @@ const HEADERS = {
   "Content-Type": "application/json; charset=utf-8",
   "Cache-Control": `public, max-age=${CACHE_SECONDS}`,
 };
+
+const num = v => (v === undefined || v === null || v === "" ? NaN : parseFloat(String(v).replace(/\s/g, "").replace(",", ".")));
 
 function score(match) {
   const results = match.result || [];
@@ -37,6 +40,8 @@ export function matchState(event) {
   else if (status === "Postponed" || status === "Cancelled" || event.cancelled) lage = "inställd";
   else if (status === "Interrupted") lage = "avbruten";
   const out = { lage, status: match.status || "", start: match.matchStart };
+  const f = event.svenskaFolket;
+  if (f && [f.one, f.x, f.two].every(v => !isNaN(num(v)))) out.streck = { 1: num(f.one) / 100, X: num(f.x) / 100, 2: num(f.two) / 100 };
   const s = score(match);
   if (s && lage !== "ej startad") {
     out.mal = s;
@@ -45,10 +50,28 @@ export function matchState(event) {
   return out;
 }
 
-export function build(draw) {
+export function payouts(result) {
+  const out = {};
+  for (const item of (result && result.distribution) || []) {
+    const m = String(item.name || item.description || "").match(/\d+/);
+    const kr = num(item.amount);
+    if (m && !isNaN(kr)) out[m[0]] = { kr, vinnare: item.winners };
+  }
+  return Object.values(out).some(v => v.kr || v.vinnare) ? out : null;
+}
+
+export const allEnded = draw =>
+  (draw.drawEvents || []).length > 0 && draw.drawEvents.every(ev => ["slut", "inställd"].includes(matchState(ev).lage));
+
+export function build(draw, result) {
   const matcher = {};
   for (const ev of draw.drawEvents || []) matcher[String(ev.eventNumber)] = matchState(ev);
-  return { omgang: draw.drawNumber, hamtad: new Date().toISOString().slice(0, 19) + "+00:00", matcher };
+  const out = { omgang: draw.drawNumber, hamtad: new Date().toISOString().slice(0, 19) + "+00:00", matcher };
+  const sale = num(draw.currentNetSale), price = num(draw.rowPrice);
+  if (sale) { out.omsattning = sale; out.radpris = price || 1; }
+  const utdelning = payouts(result);
+  if (utdelning) out.utdelning = utdelning;
+  return out;
 }
 
 const reply = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: HEADERS });
@@ -70,7 +93,16 @@ export default {
     const upstream = await fetch(`${SOURCE}${spel}/draws/${nr}`, { headers: { "User-Agent": "stryktipsexperten-live" } });
     if (!upstream.ok) return reply({ fel: `Svenska Spel svarade ${upstream.status}` }, 502);
     const data = await upstream.json();
-    const response = reply(build(data.draw || data));
+    const draw = data.draw || data;
+    let result = null;
+    if (allEnded(draw)) {
+      // Resultatet publiceras en stund efter sista matchen, så ett fel här är väntat.
+      try {
+        const r = await fetch(`${SOURCE}${spel}/draws/${nr}/result`, { headers: { "User-Agent": "stryktipsexperten-live" } });
+        if (r.ok) { const j = await r.json(); result = j.result || j; }
+      } catch (e) {}
+    }
+    const response = reply(build(draw, result));
     ctx.waitUntil(cache.put(key, response.clone()));
     return response;
   },

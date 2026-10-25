@@ -7,6 +7,7 @@ resultatet publiceras som live.json bredvid sidan.
 """
 
 import json
+import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -60,6 +61,9 @@ def match_state(event):
     else:
         state = "pågår"
     out = {"lage": state, "status": match.get("status") or "", "start": match.get("matchStart")}
+    streck = ss._triplet(event.get("svenskaFolket"))
+    if streck:
+        out["streck"] = {k: v / 100 for k, v in streck.items()}
     if score and state != "ej startad":
         hg, ag = score
         out["mal"] = score
@@ -67,12 +71,46 @@ def match_state(event):
     return out
 
 
-def build(raw_draw):
-    return {
+def payouts(raw_result):
+    """Utdelning per rad och antal vinnare för 10–13 rätt, när Svenska Spel har räknat klart."""
+    out = {}
+    for item in (raw_result or {}).get("distribution") or []:
+        m = re.search(r"(\d+)", str(item.get("name") or item.get("description") or ""))
+        amount = ss.to_float(item.get("amount"))
+        if m and amount is not None:
+            out[m.group(1)] = {"kr": amount, "vinnare": item.get("winners")}
+    return out if any(v["kr"] or v["vinnare"] for v in out.values()) else {}
+
+
+def all_ended(raw_draw):
+    events = raw_draw.get("drawEvents", [])
+    return bool(events) and all(match_state(ev)["lage"] in {"slut", "inställd"} for ev in events)
+
+
+def build(raw_draw, raw_result=None):
+    out = {
         "omgang": raw_draw.get("drawNumber"),
         "hamtad": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "matcher": {str(ev.get("eventNumber")): match_state(ev) for ev in raw_draw.get("drawEvents", [])},
     }
+    # Omsättningen behövs för att räkna förväntad utdelning på webbsidan.
+    sale, price = ss.to_float(raw_draw.get("currentNetSale")), ss.to_float(raw_draw.get("rowPrice"))
+    if sale:
+        out["omsattning"] = sale
+        out["radpris"] = price or 1.0
+    utdelning = payouts(raw_result)
+    if utdelning:
+        out["utdelning"] = utdelning
+    return out
+
+
+def _result(raw_draw):
+    if not all_ended(raw_draw):
+        return None
+    try:
+        return ss.fetch_result(raw_draw.get("drawNumber"))
+    except Exception:
+        return None  # Resultatet publiceras en stund efter sista matchen.
 
 
 def candidates():
@@ -87,13 +125,13 @@ def candidates():
         yield ss.fetch_draw(saved[-1])
 
 
-def write(out_path, force=False, draws=None):
+def write(out_path, force=False, draws=None, result=_result):
     """Skriver live.json för den omgång som spelas nu. Returnerar omgångsnumret,
     eller None om ingen match är aktuell (då skrivs ingenting)."""
     for raw in draws if draws is not None else candidates():
         if raw and (force or in_live_window(raw)):
             out_path = Path(out_path)
             out_path.parent.mkdir(parents=True, exist_ok=True)
-            out_path.write_text(json.dumps(build(raw), ensure_ascii=False, indent=1), encoding="utf-8")
+            out_path.write_text(json.dumps(build(raw, result(raw)), ensure_ascii=False, indent=1), encoding="utf-8")
             return raw.get("drawNumber")
     return None
