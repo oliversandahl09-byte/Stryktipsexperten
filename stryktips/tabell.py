@@ -13,10 +13,13 @@ from .inbordes import BASE, _get, parse_csv, season_codes
 from .rapport import OUT_DIR
 from .svenskaspel import SPEL
 
-# Europatipset har oftast matcher från de stora ligorna på kontinenten.
+# Europatipset har oftast matcher från England och de stora ligorna på kontinenten.
 LEAGUES = {
     "stryktipset": {"E0": "Premier League", "E1": "Championship", "E2": "League One"},
-    "europatipset": {"SP1": "La Liga", "I1": "Serie A", "D1": "Bundesliga", "F1": "Ligue 1"},
+    "europatipset": {
+        "E0": "Premier League", "E1": "Championship",
+        "SP1": "La Liga", "I1": "Serie A", "D1": "Bundesliga", "F1": "Ligue 1",
+    },
 }.get(SPEL, {})
 
 

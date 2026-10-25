@@ -37,7 +37,7 @@ class SpelTest(unittest.TestCase):
         self.assertEqual(Path(s["raw"]), ROOT / "data" / "raw" / "europatipset")
         self.assertEqual(Path(s["ut"]), ROOT / "forslag" / "europatipset")
         self.assertEqual(s["namn"], "Europatipset")
-        self.assertIn("SP1", s["serier"])
+        self.assertEqual(s["serier"][:3], ["E0", "E1", "SP1"])
 
 
 if __name__ == "__main__":
