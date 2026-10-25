@@ -6,7 +6,7 @@ name: Webbsidan
 on:
   push:
     branches: [main]
-    paths: ["webb/**", "forslag/senaste.json", "forslag/inbordes.json", "forslag/tabeller.json", ".github/workflows/webb.yml"]
+    paths: ["webb/**", "forslag/senaste.json", "forslag/inbordes.json", "forslag/tabeller.json", "forslag/europatipset/**", ".github/workflows/webb.yml"]
   # Veckans förslag pushas av en annan workflow med GITHUB_TOKEN, vilket inte
   # startar push-triggern. Därför publiceras sidan också när den är klar.
   workflow_run:

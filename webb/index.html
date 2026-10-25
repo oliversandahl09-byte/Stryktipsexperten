@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <!--START-->
 <title>Trettonrätt – Stryktipset</title>
+<script>
+// Stryktipset i roten, Europatipset med ?spel=europatipset. Samma sida, egna data och färger.
+window.SPEL = new URLSearchParams(location.search).get("spel") === "europatipset" ? "europatipset" : "stryktipset";
+window.SPEL_NAMN = window.SPEL === "europatipset" ? "Europatipset" : "Stryktipset";
+document.documentElement.dataset.spel = window.SPEL;
+document.title = "Trettonrätt – " + window.SPEL_NAMN;
+</script>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,14 +48,34 @@
   --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --font-body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
   --font-data: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --brand: var(--accent);
+  --brand-ink: var(--accent-ink);
   --r: 10px;
   color-scheme: light;
+}
+/* Europatipset: Svenska Spels gröna i stället för blått, gult som märkfärg. */
+:root[data-spel="europatipset"] {
+  --page: #0b6b3a;
+  --page-deep: #054a27;
+  --on-page-muted: #bfe3cc;
+  --soft: #edf6f0;
+  --ink: #0c2e1c;
+  --muted: #55705f;
+  --line: #cfe3d6;
+  --mark: #0a7a40;
+  --bar: #a5dcb9;
+  --mark-light: #36a368;
+  --bar-on: #04431f;
+  --hero: #054a27;
+  --hero-tile: #0f5e35;
+  --brand: #ffd200;
+  --brand-ink: #0c2e1c;
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 body {
   margin: 0; background: linear-gradient(180deg, var(--page) 0, var(--page-deep) 900px) var(--page-deep); color: var(--ink);
-  border-top: 5px solid var(--accent);
+  border-top: 5px solid var(--brand);
   font: 15px/1.5 var(--font-body);
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
@@ -57,7 +84,13 @@ body {
 .wrap { max-width: 1440px; margin: 0 auto; display: grid; gap: 24px; }
 header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; }
 h1 { color: var(--on-page); font: 800 clamp(30px, 6vw, 48px)/1 var(--font-display); letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
-h1 span { color: var(--accent-ink); background: var(--accent); border-radius: 8px; padding: 0 0.18em 0.04em; margin-left: 0.06em; }
+h1 span { color: var(--brand-ink); background: var(--brand); border-radius: 8px; padding: 0 0.18em 0.04em; margin-left: 0.06em; }
+.games { display: flex; gap: 6px; margin: 0 0 4px; }
+.games a { color: var(--on-page); text-decoration: none; font: 700 14px var(--font-body); padding: 7px 14px; border-radius: 999px;
+  border: 1.5px solid rgb(255 255 255 / 0.35); }
+.games a:hover { border-color: var(--on-page); }
+.games a[aria-current="page"] { background: var(--on-page); color: var(--page-deep); border-color: var(--on-page); }
+.games a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .tagline { color: var(--on-page); font: 700 clamp(15px, 2.4vw, 19px)/1 var(--font-display); letter-spacing: 0.14em; text-transform: uppercase; margin: 10px 0 0; opacity: 0.85; }
 .meta { color: var(--on-page-muted); font-size: 14px; display: flex; flex-wrap: wrap; gap: 4px 16px; }
 .meta b { color: var(--on-page); font-weight: 600; }
@@ -201,10 +234,14 @@ footer { font-size: 13px; color: var(--on-page-muted); max-width: 70ch; }
 </head>
 <body>
 <div class="wrap">
+  <nav class="games" aria-label="Spel">
+    <a href="./" data-spel="stryktipset">Stryktipset</a>
+    <a href="./?spel=europatipset" data-spel="europatipset">Europatipset</a>
+  </nav>
   <header>
     <div class="brand">
       <h1>Tretton<span>rätt</span></h1>
-      <p class="tagline">Stryktipset</p>
+      <p class="tagline" id="tagline">Stryktipset</p>
     </div>
     <div class="meta" id="meta"></div>
   </header>
@@ -275,7 +312,7 @@ footer { font-size: 13px; color: var(--on-page-muted); max-width: 70ch; }
       </div>
       <div class="group export">
         <button type="button" class="btn primary" id="download">Ladda ner fil till Svenska Spel</button>
-        <p class="hint">Filen innehåller systemet som enkelrader. Lämna in den under <b>Externa</b> på Stryktipset hos Svenska Spel och kontrollera att antalet rader stämmer innan du betalar.</p>
+        <p class="hint">Filen innehåller systemet som enkelrader. Lämna in den under <b>Externa</b> på <span class="spel-namn">Stryktipset</span> hos Svenska Spel och kontrollera att antalet rader stämmer innan du betalar.</p>
       </div>
     </aside>
 
@@ -337,10 +374,10 @@ function withH2H(m) {
 }
 
 function load() {
-  try { Object.assign(state, JSON.parse(localStorage.getItem("stryktips-val") || "{}")); } catch (e) {}
+  try { Object.assign(state, JSON.parse(localStorage.getItem(STORE) || "{}")); } catch (e) {}
 }
 function save() {
-  try { localStorage.setItem("stryktips-val", JSON.stringify({ ...state, omgang: data.omgang })); } catch (e) {}
+  try { localStorage.setItem(STORE, JSON.stringify({ ...state, omgang: data.omgang })); } catch (e) {}
 }
 
 // Samma poäng som stryktips/kupong.py: logaritmen av träffchans och spelvärde, vägda med risk.
@@ -513,8 +550,8 @@ const LIVE_PROXY = "https://stryktips-live.persandahl.workers.dev/";
 let liveFromProxy = false;
 
 async function fetchLive() {
-  const urls = ["live.json?t=" + Date.now(), "../forslag/live.json"];
-  if (LIVE_PROXY) urls.unshift(`${LIVE_PROXY}?omgang=${data.omgang}`);
+  const urls = dataUrls("live.json", "?t=" + Date.now());
+  if (LIVE_PROXY) urls.unshift(`${LIVE_PROXY}?omgang=${data.omgang}&spel=${SPEL}`);
   for (const url of urls) {
     try {
       const r = await fetch(url, { cache: "no-store" });
@@ -577,7 +614,7 @@ function bind() {
     if (s) toggleSign(+s.dataset.nr, s.dataset.o);
   };
   $("copy").onclick = () => {
-    const text = `Stryktipset omgång ${data.omgang}\n` +
+    const text = `${SPEL_NAMN} omgång ${data.omgang}\n` +
       data.matcher.map((m, i) => `${String(m.nr).padStart(2)}. ${(window.currentCovers[i].join("") || "-").padEnd(3)}  ${m.match}`).join("\n") +
       `\n${$("s-rows").textContent} rader, ${$("s-cost").textContent}`;
     const done = () => toast("Systemet är kopierat");
@@ -592,7 +629,7 @@ function expandRows(covers) {
 // Svenska Spels format för externa spel: produktnamnet på första raden,
 // sedan en rad per enkelrad som börjar med E.
 function externalFile(covers) {
-  return ["Stryktipset", ...expandRows(covers).map(r => "E," + r.join(","))].join("\n") + "\n";
+  return [SPEL_NAMN, ...expandRows(covers).map(r => "E," + r.join(","))].join("\n") + "\n";
 }
 
 function download() {
@@ -601,7 +638,7 @@ function download() {
   const blob = new Blob([externalFile(covers)], { type: "text/plain" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
-  a.download = `stryktipset_${data.omgang}.txt`;
+  a.download = `${SPEL}_${data.omgang}.txt`;
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   toast(`Filen med ${expandRows(covers).length} rader är nedladdad`);
@@ -614,9 +651,22 @@ function fallbackCopy(text, done) {
   ta.remove();
 }
 
+// Var spelets filer ligger: på sidan (Europatipset i en undermapp) och i repot vid lokal körning.
+const DIR = SPEL === "stryktipset" ? "" : SPEL + "/";
+const dataUrls = (name, query = "") => [DIR + name + query, "../forslag/" + DIR + name];
+const STORE = SPEL === "stryktipset" ? "stryktips-val" : SPEL + "-val";
+
+function setupGame() {
+  $("tagline").textContent = SPEL_NAMN;
+  document.querySelectorAll(".spel-namn").forEach(el => { el.textContent = SPEL_NAMN; });
+  document.querySelectorAll(".games a").forEach(a => {
+    if (a.dataset.spel === SPEL) a.setAttribute("aria-current", "page");
+  });
+}
+
 async function fetchData() {
   if (window.STRYKTIPS_DATA) return window.STRYKTIPS_DATA;
-  for (const url of ["senaste.json", "../forslag/senaste.json"]) {
+  for (const url of dataUrls("senaste.json")) {
     try { const r = await fetch(url, { cache: "no-store" }); if (r.ok) return await r.json(); } catch (e) {}
   }
   throw new Error("Hittade inget förslag");
@@ -626,17 +676,22 @@ let tables = null;
 
 async function fetchTables() {
   if (window.STRYKTIPS_TABELLER) return window.STRYKTIPS_TABELLER;
-  for (const url of ["tabeller.json", "../forslag/tabeller.json"]) {
+  for (const url of dataUrls("tabeller.json")) {
     try { const r = await fetch(url, { cache: "no-store" }); if (r.ok) return await r.json(); } catch (e) {}
   }
   return null;
 }
 
-// Zoner: Premier League topp 4 och 3 sist, Championship 2 upp, 3–6 kval och 3 sist,
-// League One som Championship men 4 sist.
+// Zoner: högstaligorna topp 4 (Champions League) och 3 sist, Bundesliga och Ligue 1
+// 2 sist plus kvalplats. Championship och League One 2 upp, 3–6 playoff och 3 resp. 4 sist.
+const TOP_LEAGUES = ["E0", "SP1", "I1", "D1", "F1"];
+const RELEGATION_PLAYOFF = ["D1", "F1"];
 function zone(code, plac, n) {
-  if (plac > n - (code === "E2" ? 4 : 3)) return "z-down";
-  if (code === "E0") return plac <= 4 ? "z-top" : "";
+  if (RELEGATION_PLAYOFF.includes(code)) {
+    if (plac > n - 2) return "z-down";
+    if (plac === n - 2) return "z-play";
+  } else if (plac > n - (code === "E2" ? 4 : 3)) return "z-down";
+  if (TOP_LEAGUES.includes(code)) return plac <= 4 ? "z-top" : "";
   return plac <= 2 ? "z-top" : plac <= 6 ? "z-play" : "";
 }
 
@@ -668,20 +723,23 @@ function renderTables() {
         <td>${r.s}</td><td>${r.v}</td><td>${r.o}</td><td>${r.f}</td><td>${diff > 0 ? "+" : ""}${diff}</td><td class="pts">${r.p}</td></tr>`;
     }).join("") + `</tbody></table>`;
   const updated = league.senaste_match ? new Date(league.senaste_match).toLocaleDateString("sv-SE", { day: "numeric", month: "long" }) : "okänt";
-  const legend = state.league === "E0"
-    ? `<span><i style="background:var(--mark)"></i>Champions League</span><span><i style="background:var(--accent)"></i>Nedflyttning</span>`
+  const legend = TOP_LEAGUES.includes(state.league)
+    ? `<span><i style="background:var(--mark)"></i>Champions League</span>` +
+      (RELEGATION_PLAYOFF.includes(state.league) ? `<span><i style="background:var(--bar)"></i>Kval</span>` : "") +
+      `<span><i style="background:var(--accent)"></i>Nedflyttning</span>`
     : `<span><i style="background:var(--mark)"></i>Uppflyttning</span><span><i style="background:var(--bar)"></i>Playoff</span><span><i style="background:var(--accent)"></i>Nedflyttning</span>`;
   $("league-hint").innerHTML = `${legend}<br>Gula rader är lag på kupongen, siffran är matchnumret. Matcher spelade till och med ${updated}.`;
 }
 
 async function fetchH2H() {
   if (window.STRYKTIPS_INBORDES) return window.STRYKTIPS_INBORDES;
-  for (const url of ["inbordes.json", "../forslag/inbordes.json"]) {
+  for (const url of dataUrls("inbordes.json")) {
     try { const r = await fetch(url, { cache: "no-store" }); if (r.ok) return await r.json(); } catch (e) {}
   }
   return null;
 }
 
+setupGame();
 Promise.all([fetchData(), fetchH2H(), fetchTables()]).then(([d, ib, tb]) => {
   tables = tb;
   data = d;
@@ -692,14 +750,17 @@ Promise.all([fetchData(), fetchH2H(), fetchTables()]).then(([d, ib, tb]) => {
   state.risk = data.risk ?? state.risk;
   load();
   // Låsta val gäller bara den omgång de gjordes för.
-  try { if (JSON.parse(localStorage.getItem("stryktips-val") || "{}").omgang !== data.omgang) state.locks = {}; } catch (e) {}
+  try { if (JSON.parse(localStorage.getItem(STORE) || "{}").omgang !== data.omgang) state.locks = {}; } catch (e) {}
   renderStatic(); bind(); render(); renderTables();
   refreshLive();
   setInterval(refreshLive, 60000);
   $("league-tabs").onclick = e => { const b = e.target.closest("button"); if (b) { state.league = b.dataset.league; renderTables(); save(); } };
 }).catch(() => {
+  // Behåll spelflikarna så att man kan byta till det andra spelet.
+  const nav = document.querySelector(".games");
   document.querySelector(".wrap").innerHTML = `<div class="error"><h1>Tretton<span>rätt</span></h1>
-    <p>Veckans förslag kunde inte laddas. Det skrivs av GitHub Actions torsdag till lördag; kör <b>Veckans stryktips</b> under Actions om det saknas.</p></div>`;
+    <p>Veckans förslag för ${SPEL_NAMN} kunde inte laddas. Det skrivs av GitHub Actions torsdag till lördag; kör <b>Veckans stryktips</b> under Actions om det saknas.</p></div>`;
+  document.querySelector(".wrap").prepend(nav);
 });
 </script>
 <!--END-BODY-->

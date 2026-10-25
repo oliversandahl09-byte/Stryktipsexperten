@@ -3,9 +3,11 @@
 // Svenska Spels API tillåter inte anrop direkt från en annan webbplats (CORS),
 // så webbsidan frågar den här i stället: /?omgang=4976 hämtar omgången från
 // Svenska Spel och svarar i samma format som live.json (se stryktips/live.py).
+// Lägg till &spel=europatipset för Europatipset.
 // Svaren sparas en halv minut så att Svenska Spel inte får ett anrop per besökare.
 
-const SOURCE = "https://api.spela.svenskaspel.se/draw/1/stryktipset/draws/";
+const SOURCE = "https://api.spela.svenskaspel.se/draw/1/";
+const GAMES = ["stryktipset", "europatipset"];
 const CACHE_SECONDS = 30;
 const ENDED = new Set(["Ended", "EndedAfterExtratime", "EndedAfterPenalties", "Fulltime"]);
 const HEADERS = {
@@ -54,15 +56,18 @@ const reply = (body, status = 200) => new Response(JSON.stringify(body), { statu
 export default {
   async fetch(request, env, ctx) {
     if (request.method === "OPTIONS") return new Response(null, { headers: HEADERS });
-    const nr = new URL(request.url).searchParams.get("omgang") || "";
+    const params = new URL(request.url).searchParams;
+    const nr = params.get("omgang") || "";
+    const spel = params.get("spel") || "stryktipset";
     if (!/^\d{1,6}$/.test(nr)) return reply({ fel: "ange ?omgang=<nummer>" }, 400);
+    if (!GAMES.includes(spel)) return reply({ fel: `okänt spel, välj ${GAMES.join(" eller ")}` }, 400);
 
     const cache = caches.default;
-    const key = new Request(`https://live.cache/${nr}`);
+    const key = new Request(`https://live.cache/${spel}/${nr}`);
     const cached = await cache.match(key);
     if (cached) return cached;
 
-    const upstream = await fetch(SOURCE + nr, { headers: { "User-Agent": "stryktipsexperten-live" } });
+    const upstream = await fetch(`${SOURCE}${spel}/draws/${nr}`, { headers: { "User-Agent": "stryktipsexperten-live" } });
     if (!upstream.ok) return reply({ fel: `Svenska Spel svarade ${upstream.status}` }, 502);
     const data = await upstream.json();
     const response = reply(build(data.draw || data));

@@ -34,8 +34,9 @@ jobs:
       - name: Pågår någon match?
         id: live
         run: |
-          python -m stryktips live --ut /tmp/live.json
-          if [ -f /tmp/live.json ]; then echo "pagar=true" >> "$GITHUB_OUTPUT"; fi
+          python -m stryktips live --ut /tmp/live.json || true
+          SPEL=europatipset python -m stryktips live --ut /tmp/europatipset-live.json || true
+          if [ -f /tmp/live.json ] || [ -f /tmp/europatipset-live.json ]; then echo "pagar=true" >> "$GITHUB_OUTPUT"; fi
       - name: Bygg sidan
         if: steps.live.outputs.pagar == 'true'
         run: sh webb/bygg.sh

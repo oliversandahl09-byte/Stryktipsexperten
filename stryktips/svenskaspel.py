@@ -5,14 +5,21 @@ efter att Svenska Spel slutat visa dem för gamla omgångar.
 """
 
 import json
+import os
 import re
 import time
 import urllib.request
 from dataclasses import dataclass, field
 from pathlib import Path
 
-BASE_URL = "https://api.spela.svenskaspel.se/draw/1/stryktipset"
+# Vilket spel som hämtas. Europatipset har samma API och samma kupongformat,
+# så allt annat fungerar likadant. Andra spel än Stryktipset sparas i egna mappar.
+SPEL = os.environ.get("SPEL", "stryktipset").strip().lower() or "stryktipset"
+SPEL_NAMN = {"stryktipset": "Stryktipset", "europatipset": "Europatipset"}.get(SPEL, SPEL.capitalize())
+BASE_URL = f"https://api.spela.svenskaspel.se/draw/1/{SPEL}"
 RAW_DIR = Path(__file__).resolve().parent.parent / "data" / "raw"
+if SPEL != "stryktipset":
+    RAW_DIR = RAW_DIR / SPEL
 OUTCOMES = ("1", "X", "2")
 
 
