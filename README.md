@@ -45,6 +45,12 @@ Sidan visar ställningen per match, markerar om ditt system täcker den och
 räknar hur många rätt du har just nu. Svenska Spels API går inte att anropa
 direkt från webbsidan (CORS), därav omvägen via GitHub Actions.
 
+För ställningar varje minut finns en liten Cloudflare Worker i
+`cloudflare/live-worker.js` som hämtar omgången från Svenska Spel åt sidan.
+Lägg upp den i Cloudflare (Workers & Pages → Create → Worker, klistra in koden,
+Deploy) och skriv dess adress i `LIVE_PROXY` i `webb/index.html`. Svarar den
+inte används live.json som vanligt.
+
 Sidan publiceras med GitHub Pages av `.github/workflows/webb.yml`, varje gång
 veckans förslag har skrivits. Slå på det under **Settings → Pages → Source:
 GitHub Actions**. Lokalt: `python -m http.server` i repots rot och öppna

@@ -499,12 +499,23 @@ function renderLive() {
   const ongoing = started.filter(([, s]) => s.lage === "pågår").length;
   const time = new Date(live.hamtad).toLocaleTimeString("sv-SE", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Stockholm" });
   bar.innerHTML = `<span class="dot" aria-hidden="true"></span><b>Live: ${hits} av ${started.length} rätt just nu</b>
-    <span class="muted">${ongoing ? `${ongoing} matcher pågår` : "Alla startade matcher är klara"} · uppdaterad ${time} · hämtas var tionde minut</span>`;
+    <span class="muted">${ongoing ? `${ongoing} ${ongoing === 1 ? "match" : "matcher"} pågår` : "Alla startade matcher är klara"} · uppdaterad ${time} · ${liveFromProxy ? "hämtas varje minut" : "hämtas var tionde minut"}</span>`;
 }
 
+// Adressen till Cloudflare-proxyn (cloudflare/live-worker.js). Den ger ställningar
+// inom någon minut. Utan den, eller om den inte svarar, används live.json som
+// GitHub Actions publicerar var tionde minut.
+const LIVE_PROXY = "https://stryktips-live.persandahl.workers.dev/";
+let liveFromProxy = false;
+
 async function fetchLive() {
-  for (const url of ["live.json?t=" + Date.now(), "../forslag/live.json"]) {
-    try { const r = await fetch(url, { cache: "no-store" }); if (r.ok) return await r.json(); } catch (e) {}
+  const urls = ["live.json?t=" + Date.now(), "../forslag/live.json"];
+  if (LIVE_PROXY) urls.unshift(`${LIVE_PROXY}?omgang=${data.omgang}`);
+  for (const url of urls) {
+    try {
+      const r = await fetch(url, { cache: "no-store" });
+      if (r.ok) { liveFromProxy = url.startsWith(LIVE_PROXY || "-"); return await r.json(); }
+    } catch (e) {}
   }
   return null;
 }
