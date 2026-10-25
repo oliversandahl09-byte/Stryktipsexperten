@@ -1,0 +1,135 @@
+{
+ "hamtad": "2026-10-25T09:20:25+00:00",
+ "matcher": {
+  "1": {
+   "sannolikhet": {
+    "1": 0.3292050157514361,
+    "X": 0.30168633022422636,
+    "2": 0.3691086540243375
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 24,
+   "match": "Sunderland - Leeds United"
+  },
+  "2": {
+   "sannolikhet": {
+    "1": 0.45671734848592194,
+    "X": 0.25202278556347507,
+    "2": 0.29125986595060294
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 24,
+   "match": "Liverpool - Brighton and Hove Albion"
+  },
+  "3": {
+   "sannolikhet": {
+    "1": 0.4230534435873245,
+    "X": 0.2680503912536767,
+    "2": 0.3088961651589988
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 24,
+   "match": "Manchester United - Bournemouth"
+  },
+  "4": {
+   "sannolikhet": {
+    "1": 0.33208356454056,
+    "X": 0.26584831806115866,
+    "2": 0.4020681173982813
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 24,
+   "match": "Crystal Palace - Newcastle United"
+  },
+  "5": {
+   "sannolikhet": {
+    "1": 0.1844459188322848,
+    "X": 0.23221608486079026,
+    "2": 0.583337996306925
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 24,
+   "match": "Hull City - Brentford"
+  },
+  "6": {
+   "sannolikhet": {
+    "1": 0.5854388511387137,
+    "X": 0.16234858897123994,
+    "2": 0.2522125598900464
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 20,
+   "match": "Barcelona - Real Madrid"
+  },
+  "7": {
+   "sannolikhet": {
+    "1": 0.29487699926930255,
+    "X": 0.27644718681497116,
+    "2": 0.4286758139157262
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 20,
+   "match": "Celta Vigo - Real Betis"
+  },
+  "8": {
+   "sannolikhet": {
+    "1": 0.15401365565602512,
+    "X": 0.22598265362613032,
+    "2": 0.6200036907178447
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 23,
+   "match": "Lecce - Juventus"
+  },
+  "9": {
+   "sannolikhet": {
+    "1": 0.21213257348530298,
+    "X": 0.26214757048590287,
+    "2": 0.5257198560287942
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 23,
+   "match": "Udinese - AC Milan"
+  },
+  "10": {
+   "sannolikhet": {
+    "1": 0.44374956972922835,
+    "X": 0.29359865791752565,
+    "2": 0.26265177235324594
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 23,
+   "match": "Genoa - Venezia"
+  },
+  "11": {
+   "sannolikhet": {
+    "1": 0.18220550147047468,
+    "X": 0.18900688561180873,
+    "2": 0.6287876129177166
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 22,
+   "match": "SC Freiburg - Bayern Munich"
+  },
+  "12": {
+   "sannolikhet": {
+    "1": 0.49094981779278524,
+    "X": 0.2753769516231487,
+    "2": 0.23367323058406603
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 21,
+   "match": "AS Monaco - Lille"
+  },
+  "13": {
+   "sannolikhet": {
+    "1": 0.13781223083548666,
+    "X": 0.19896640826873385,
+    "2": 0.6632213608957795
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 21,
+   "match": "Mjällby AIF - Hammarby IF"
+  }
+ }
+}

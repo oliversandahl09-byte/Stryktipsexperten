@@ -1,0 +1,1807 @@
+{
+ "productName": "Europatipset",
+ "userProduct": "Europatipset",
+ "seasonLastDraw": false,
+ "productId": 2,
+ "currentNetSale": "2578852,00",
+ "regCloseDescription": "Europatipset v 43, stänger 2026-10-25 14:59",
+ "extraInfo": null,
+ "drawNumber": 2619,
+ "betIndex": 0,
+ "drawState": "Open",
+ "drawStateId": 2,
+ "regBetDisabled": "NotDisabled",
+ "regOpenTime": "2026-10-21T22:00:00+02:00",
+ "regCloseTime": "2026-10-25T14:59:00+01:00",
+ "cancelCloseTime": "2026-10-25T15:00:00+01:00",
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "drawComment": "Europatipset v. 2026-43",
+ "bombenDrawNum": 1878,
+ "relatedDraws": [
+  {
+   "productId": 24,
+   "drawNumber": 1878,
+   "regCloseTime": "2026-10-25T14:59:00+01:00"
+  }
+ ],
+ "rowPrice": "1,00",
+ "fund": null,
+ "drawEvents": [
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Sunderlan - Leeds",
+   "extraInfo": null,
+   "eventNumber": 1,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 96431,
+    "matchStart": "2026-10-25T17:30:00+01:00",
+    "status": "Inte startat",
+    "statusId": 0,
+    "sportEventStatus": "NotStarted",
+    "statusTime": "2026-10-19T10:41:21+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 129,
+      "type": "home",
+      "name": "Sunderland",
+      "shortName": "SUN",
+      "mediumName": "Sunderlan",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     },
+     {
+      "id": 82,
+      "type": "away",
+      "name": "Leeds",
+      "shortName": "LU",
+      "mediumName": "Leeds",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 1,
+     "name": "Premier League",
+     "country": {
+      "id": 2,
+      "name": "England",
+      "isoCode": "ENG"
+     }
+    },
+    "result": []
+   },
+   "odds": {
+    "one": "3,00",
+    "x": "3,25",
+    "two": "2,63"
+   },
+   "favouriteOdds": {
+    "one": "32.64",
+    "x": "30.13",
+    "two": "37.23"
+   },
+   "startOdds": {
+    "one": "2,95",
+    "x": "3,35",
+    "two": "2,55"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-25T10:19:52.804+01:00",
+    "distributionRefDate": "2026-10-25T09:18:57.84+01:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": "3,00",
+       "favouriteOdds": "32,64",
+       "startOdds": "2,95"
+      },
+      "distribution": {
+       "distribution": "27",
+       "refDistribution": "27"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": "3,25",
+       "favouriteOdds": "30,13",
+       "startOdds": "3,35"
+      },
+      "distribution": {
+       "distribution": "29",
+       "refDistribution": "29"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": "2,63",
+       "favouriteOdds": "37,23",
+       "startOdds": "2,55"
+      },
+      "distribution": {
+       "distribution": "44",
+       "refDistribution": "44"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "27",
+    "x": "29",
+    "two": "44",
+    "date": "2026-10-25T10:19:52.804+01:00",
+    "refOne": "27",
+    "refX": "29",
+    "refTwo": "44",
+    "refDate": "2026-10-25T09:18:57.84+01:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72221350"
+    },
+    {
+     "provider": "Kambi",
+     "type": "Normal",
+     "id": "1028072814"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Liverpool - Brighton",
+   "extraInfo": null,
+   "eventNumber": 2,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 96432,
+    "matchStart": "2026-10-25T15:00:00+01:00",
+    "status": "Inte startat",
+    "statusId": 0,
+    "sportEventStatus": "NotStarted",
+    "statusTime": "2026-10-19T10:41:21+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 41,
+      "type": "home",
+      "name": "Liverpool",
+      "shortName": "LFC",
+      "mediumName": "Liverpool",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     },
+     {
+      "id": 5,
+      "type": "away",
+      "name": "Brighton",
+      "shortName": "BHA",
+      "mediumName": "Brighton",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 1,
+     "name": "Premier League",
+     "country": {
+      "id": 2,
+      "name": "England",
+      "isoCode": "ENG"
+     }
+    },
+    "result": []
+   },
+   "odds": {
+    "one": "2,16",
+    "x": "3,90",
+    "two": "3,20"
+   },
+   "favouriteOdds": {
+    "one": "44.87",
+    "x": "24.85",
+    "two": "30.28"
+   },
+   "startOdds": {
+    "one": "2,20",
+    "x": "3,95",
+    "two": "3,20"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-25T10:19:52.804+01:00",
+    "distributionRefDate": "2026-10-25T09:18:57.84+01:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": "2,16",
+       "favouriteOdds": "44,87",
+       "startOdds": "2,20"
+      },
+      "distribution": {
+       "distribution": "51",
+       "refDistribution": "52"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": "3,90",
+       "favouriteOdds": "24,85",
+       "startOdds": "3,95"
+      },
+      "distribution": {
+       "distribution": "23",
+       "refDistribution": "22"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": "3,20",
+       "favouriteOdds": "30,28",
+       "startOdds": "3,20"
+      },
+      "distribution": {
+       "distribution": "26",
+       "refDistribution": "26"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "51",
+    "x": "23",
+    "two": "26",
+    "date": "2026-10-25T10:19:52.804+01:00",
+    "refOne": "52",
+    "refX": "22",
+    "refTwo": "26",
+    "refDate": "2026-10-25T09:18:57.84+01:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72221346"
+    },
+    {
+     "provider": "Kambi",
+     "type": "Normal",
+     "id": "1028072739"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Man Utd - Bournemou",
+   "extraInfo": null,
+   "eventNumber": 3,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 96428,
+    "matchStart": "2026-10-25T15:00:00+01:00",
+    "status": "Inte startat",
+    "statusId": 0,
+    "sportEventStatus": "NotStarted",
+    "statusTime": "2026-10-19T10:41:20+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 85,
+      "type": "home",
+      "name": "Manchester United",
+      "shortName": "MNU",
+      "mediumName": "Man Utd",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     },
+     {
+      "id": 64,
+      "type": "away",
+      "name": "Bournemouth",
+      "shortName": "BRN",
+      "mediumName": "Bournemou",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 1,
+     "name": "Premier League",
+     "country": {
+      "id": 2,
+      "name": "England",
+      "isoCode": "ENG"
+     }
+    },
+    "result": []
+   },
+   "odds": {
+    "one": "2,30",
+    "x": "3,65",
+    "two": "3,10"
+   },
+   "favouriteOdds": {
+    "one": "42.16",
+    "x": "26.56",
+    "two": "31.28"
+   },
+   "startOdds": {
+    "one": "1,98",
+    "x": "3,95",
+    "two": "3,80"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-25T10:19:52.804+01:00",
+    "distributionRefDate": "2026-10-25T09:18:57.84+01:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": "2,30",
+       "favouriteOdds": "42,16",
+       "startOdds": "1,98"
+      },
+      "distribution": {
+       "distribution": "50",
+       "refDistribution": "50"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": "3,65",
+       "favouriteOdds": "26,56",
+       "startOdds": "3,95"
+      },
+      "distribution": {
+       "distribution": "25",
+       "refDistribution": "25"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": "3,10",
+       "favouriteOdds": "31,28",
+       "startOdds": "3,80"
+      },
+      "distribution": {
+       "distribution": "25",
+       "refDistribution": "25"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "50",
+    "x": "25",
+    "two": "25",
+    "date": "2026-10-25T10:19:52.804+01:00",
+    "refOne": "50",
+    "refX": "25",
+    "refTwo": "25",
+    "refDate": "2026-10-25T09:18:57.84+01:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72221348"
+    },
+    {
+     "provider": "Kambi",
+     "type": "Normal",
+     "id": "1028072804"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Crystal P - Newcastle",
+   "extraInfo": null,
+   "eventNumber": 4,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 96429,
+    "matchStart": "2026-10-25T15:00:00+01:00",
+    "status": "Inte startat",
+    "statusId": 0,
+    "sportEventStatus": "NotStarted",
+    "statusTime": "2026-10-19T10:41:20+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 87,
+      "type": "home",
+      "name": "Crystal Palace",
+      "shortName": "PAL",
+      "mediumName": "Crystal P",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     },
+     {
+      "id": 88,
+      "type": "away",
+      "name": "Newcastle",
+      "shortName": "NEW",
+      "mediumName": "Newcastle",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 1,
+     "name": "Premier League",
+     "country": {
+      "id": 2,
+      "name": "England",
+      "isoCode": "ENG"
+     }
+    },
+    "result": []
+   },
+   "odds": {
+    "one": "2,95",
+    "x": "3,75",
+    "two": "2,40"
+   },
+   "favouriteOdds": {
+    "one": "33.16",
+    "x": "26.08",
+    "two": "40.76"
+   },
+   "startOdds": {
+    "one": "2,95",
+    "x": "3,75",
+    "two": "2,38"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-25T10:19:52.804+01:00",
+    "distributionRefDate": "2026-10-25T09:18:57.84+01:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": "2,95",
+       "favouriteOdds": "33,16",
+       "startOdds": "2,95"
+      },
+      "distribution": {
+       "distribution": "31",
+       "refDistribution": "31"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": "3,75",
+       "favouriteOdds": "26,08",
+       "startOdds": "3,75"
+      },
+      "distribution": {
+       "distribution": "25",
+       "refDistribution": "25"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": "2,40",
+       "favouriteOdds": "40,76",
+       "startOdds": "2,38"
+      },
+      "distribution": {
+       "distribution": "44",
+       "refDistribution": "44"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "31",
+    "x": "25",
+    "two": "44",
+    "date": "2026-10-25T10:19:52.804+01:00",
+    "refOne": "31",
+    "refX": "25",
+    "refTwo": "44",
+    "refDate": "2026-10-25T09:18:57.84+01:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72221340"
+    },
+    {
+     "provider": "Kambi",
+     "type": "Normal",
+     "id": "1028072735"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Hull - Brentford",
+   "extraInfo": null,
+   "eventNumber": 5,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 96430,
+    "matchStart": "2026-10-25T15:00:00+01:00",
+    "status": "Inte startat",
+    "statusId": 0,
+    "sportEventStatus": "NotStarted",
+    "statusTime": "2026-10-19T10:41:20+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 92,
+      "type": "home",
+      "name": "Hull",
+      "shortName": "HUL",
+      "mediumName": "Hull",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     },
+     {
+      "id": 80,
+      "type": "away",
+      "name": "Brentford",
+      "shortName": "BRE",
+      "mediumName": "Brentford",
+      "countryId": 2,
+      "countryName": "England",
+      "isoCode": "ENG"
+     }
+    ],
+    "league": {
+     "id": 1,
+     "name": "Premier League",
+     "country": {
+      "id": 2,
+      "name": "England",
+      "isoCode": "ENG"
+     }
+    },
+    "result": []
+   },
+   "odds": {
+    "one": "5,00",
+    "x": "4,20",
+    "two": "1,70"
+   },
+   "favouriteOdds": {
+    "one": "19.49",
+    "x": "23.20",
+    "two": "57.31"
+   },
+   "startOdds": {
+    "one": "4,90",
+    "x": "4,10",
+    "two": "1,73"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-25T10:19:52.804+01:00",
+    "distributionRefDate": "2026-10-25T09:18:57.84+01:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": "5,00",
+       "favouriteOdds": "19,49",
+       "startOdds": "4,90"
+      },
+      "distribution": {
+       "distribution": "14",
+       "refDistribution": "15"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": "4,20",
+       "favouriteOdds": "23,20",
+       "startOdds": "4,10"
+      },
+      "distribution": {
+       "distribution": "22",
+       "refDistribution": "21"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": "1,70",
+       "favouriteOdds": "57,31",
+       "startOdds": "1,73"
+      },
+      "distribution": {
+       "distribution": "64",
+       "refDistribution": "64"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "14",
+    "x": "22",
+    "two": "64",
+    "date": "2026-10-25T10:19:52.804+01:00",
+    "refOne": "15",
+    "refX": "21",
+    "refTwo": "64",
+    "refDate": "2026-10-25T09:18:57.84+01:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72221342"
+    },
+    {
+     "provider": "Kambi",
+     "type": "Normal",
+     "id": "1028072732"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Barcelona - R. Madrid",
+   "extraInfo": null,
+   "eventNumber": 6,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 96438,
+    "matchStart": "2026-10-25T21:00:00+01:00",
+    "status": "Inte startat",
+    "statusId": 0,
+    "sportEventStatus": "NotStarted",
+    "statusTime": "2026-10-19T10:42:57+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 50,
+      "type": "home",
+      "name": "Barcelona",
+      "shortName": "BAR",
+      "mediumName": "Barcelona",
+      "countryId": 10,
+      "countryName": "Spanien",
+      "isoCode": "ESP"
+     },
+     {
+      "id": 72,
+      "type": "away",
+      "name": "Real Madrid",
+      "shortName": "RMA",
+      "mediumName": "R. Madrid",
+      "countryId": 10,
+      "countryName": "Spanien",
+      "isoCode": "ESP"
+     }
+    ],
+    "league": {
+     "id": 19,
+     "name": "La Liga",
+     "country": {
+      "id": 10,
+      "name": "Spanien",
+      "isoCode": "ESP"
+     }
+    },
+    "result": []
+   },
+   "odds": {
+    "one": "1,68",
+    "x": "5,60",
+    "two": "3,85"
+   },
+   "favouriteOdds": {
+    "one": "57.59",
+    "x": "17.28",
+    "two": "25.13"
+   },
+   "startOdds": {
+    "one": "1,63",
+    "x": "6,00",
+    "two": "4,20"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-25T10:19:52.804+01:00",
+    "distributionRefDate": "2026-10-25T09:18:57.84+01:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": "1,68",
+       "favouriteOdds": "57,59",
+       "startOdds": "1,63"
+      },
+      "distribution": {
+       "distribution": "63",
+       "refDistribution": "63"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": "5,60",
+       "favouriteOdds": "17,28",
+       "startOdds": "6,00"
+      },
+      "distribution": {
+       "distribution": "19",
+       "refDistribution": "19"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": "3,85",
+       "favouriteOdds": "25,13",
+       "startOdds": "4,20"
+      },
+      "distribution": {
+       "distribution": "18",
+       "refDistribution": "18"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "63",
+    "x": "19",
+    "two": "18",
+    "date": "2026-10-25T10:19:52.804+01:00",
+    "refOne": "63",
+    "refX": "19",
+    "refTwo": "18",
+    "refDate": "2026-10-25T09:18:57.84+01:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72478654"
+    },
+    {
+     "provider": "Kambi",
+     "type": "Normal",
+     "id": "1028209185"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Celta Vig - Real Beti",
+   "extraInfo": null,
+   "eventNumber": 7,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 96440,
+    "matchStart": "2026-10-25T16:15:00+01:00",
+    "status": "Inte startat",
+    "statusId": 0,
+    "sportEventStatus": "NotStarted",
+    "statusTime": "2026-10-19T10:42:58+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 242,
+      "type": "home",
+      "name": "Celta de Vigo",
+      "shortName": "CDV",
+      "mediumName": "Celta Vig",
+      "countryId": 10,
+      "countryName": "Spanien",
+      "isoCode": "ESP"
+     },
+     {
+      "id": 233,
+      "type": "away",
+      "name": "Real Betis",
+      "shortName": "RBB",
+      "mediumName": "Real Beti",
+      "countryId": 10,
+      "countryName": "Spanien",
+      "isoCode": "ESP"
+     }
+    ],
+    "league": {
+     "id": 19,
+     "name": "La Liga",
+     "country": {
+      "id": 10,
+      "name": "Spanien",
+      "isoCode": "ESP"
+     }
+    },
+    "result": []
+   },
+   "odds": {
+    "one": "3,30",
+    "x": "3,65",
+    "two": "2,25"
+   },
+   "favouriteOdds": {
+    "one": "29.67",
+    "x": "26.82",
+    "two": "43.51"
+   },
+   "startOdds": {
+    "one": "2,85",
+    "x": "3,50",
+    "two": "2,63"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-25T10:19:52.804+01:00",
+    "distributionRefDate": "2026-10-25T09:18:57.84+01:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": "3,30",
+       "favouriteOdds": "29,67",
+       "startOdds": "2,85"
+      },
+      "distribution": {
+       "distribution": "27",
+       "refDistribution": "27"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": "3,65",
+       "favouriteOdds": "26,82",
+       "startOdds": "3,50"
+      },
+      "distribution": {
+       "distribution": "32",
+       "refDistribution": "32"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": "2,25",
+       "favouriteOdds": "43,51",
+       "startOdds": "2,63"
+      },
+      "distribution": {
+       "distribution": "41",
+       "refDistribution": "41"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "27",
+    "x": "32",
+    "two": "41",
+    "date": "2026-10-25T10:19:52.804+01:00",
+    "refOne": "27",
+    "refX": "32",
+    "refTwo": "41",
+    "refDate": "2026-10-25T09:18:57.84+01:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72478652"
+    },
+    {
+     "provider": "Kambi",
+     "type": "Normal",
+     "id": "1028209183"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Lecce - Juventus",
+   "extraInfo": null,
+   "eventNumber": 8,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 96435,
+    "matchStart": "2026-10-25T18:00:00+01:00",
+    "status": "Inte startat",
+    "statusId": 0,
+    "sportEventStatus": "NotStarted",
+    "statusTime": "2026-10-19T10:41:59+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 1061,
+      "type": "home",
+      "name": "Lecce",
+      "shortName": "LEC",
+      "mediumName": "Lecce",
+      "countryId": 25,
+      "countryName": "Italien",
+      "isoCode": "ITA"
+     },
+     {
+      "id": 173,
+      "type": "away",
+      "name": "Juventus",
+      "shortName": "JUV",
+      "mediumName": "Juventus",
+      "countryId": 25,
+      "countryName": "Italien",
+      "isoCode": "ITA"
+     }
+    ],
+    "league": {
+     "id": 20,
+     "name": "Serie A",
+     "country": {
+      "id": 25,
+      "name": "Italien",
+      "isoCode": "ITA"
+     }
+    },
+    "result": []
+   },
+   "odds": {
+    "one": "7,50",
+    "x": "4,40",
+    "two": "1,50"
+   },
+   "favouriteOdds": {
+    "one": "12.98",
+    "x": "22.12",
+    "two": "64.90"
+   },
+   "startOdds": {
+    "one": "8,50",
+    "x": "4,60",
+    "two": "1,46"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-25T10:19:52.804+01:00",
+    "distributionRefDate": "2026-10-25T09:18:57.84+01:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": "7,50",
+       "favouriteOdds": "12,98",
+       "startOdds": "8,50"
+      },
+      "distribution": {
+       "distribution": "8",
+       "refDistribution": "9"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": "4,40",
+       "favouriteOdds": "22,12",
+       "startOdds": "4,60"
+      },
+      "distribution": {
+       "distribution": "19",
+       "refDistribution": "19"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": "1,50",
+       "favouriteOdds": "64,90",
+       "startOdds": "1,46"
+      },
+      "distribution": {
+       "distribution": "73",
+       "refDistribution": "72"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "8",
+    "x": "19",
+    "two": "73",
+    "date": "2026-10-25T10:19:52.804+01:00",
+    "refOne": "9",
+    "refX": "19",
+    "refTwo": "72",
+    "refDate": "2026-10-25T09:18:57.84+01:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "71945338"
+    },
+    {
+     "provider": "Kambi",
+     "type": "Normal",
+     "id": "1027911685"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Udinese - Milan",
+   "extraInfo": null,
+   "eventNumber": 9,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 96437,
+    "matchStart": "2026-10-25T20:45:00+01:00",
+    "status": "Inte startat",
+    "statusId": 0,
+    "sportEventStatus": "NotStarted",
+    "statusTime": "2026-10-19T10:42:00+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 351,
+      "type": "home",
+      "name": "Udinese",
+      "shortName": "UDI",
+      "mediumName": "Udinese",
+      "countryId": 25,
+      "countryName": "Italien",
+      "isoCode": "ITA"
+     },
+     {
+      "id": 194,
+      "type": "away",
+      "name": "Milan",
+      "shortName": "MIL",
+      "mediumName": "Milan",
+      "countryId": 25,
+      "countryName": "Italien",
+      "isoCode": "ITA"
+     }
+    ],
+    "league": {
+     "id": 20,
+     "name": "Serie A",
+     "country": {
+      "id": 25,
+      "name": "Italien",
+      "isoCode": "ITA"
+     }
+    },
+    "result": []
+   },
+   "odds": {
+    "one": "4,80",
+    "x": "3,75",
+    "two": "1,82"
+   },
+   "favouriteOdds": {
+    "one": "20.34",
+    "x": "26.03",
+    "two": "53.63"
+   },
+   "startOdds": {
+    "one": "5,40",
+    "x": "4,00",
+    "two": "1,71"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-25T10:19:52.804+01:00",
+    "distributionRefDate": "2026-10-25T09:18:57.84+01:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": "4,80",
+       "favouriteOdds": "20,34",
+       "startOdds": "5,40"
+      },
+      "distribution": {
+       "distribution": "14",
+       "refDistribution": "14"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": "3,75",
+       "favouriteOdds": "26,03",
+       "startOdds": "4,00"
+      },
+      "distribution": {
+       "distribution": "21",
+       "refDistribution": "20"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": "1,82",
+       "favouriteOdds": "53,63",
+       "startOdds": "1,71"
+      },
+      "distribution": {
+       "distribution": "65",
+       "refDistribution": "66"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "14",
+    "x": "21",
+    "two": "65",
+    "date": "2026-10-25T10:19:52.804+01:00",
+    "refOne": "14",
+    "refX": "20",
+    "refTwo": "66",
+    "refDate": "2026-10-25T09:18:57.84+01:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "71945344"
+    },
+    {
+     "provider": "Kambi",
+     "type": "Normal",
+     "id": "1027911611"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Genoa - Venezia",
+   "extraInfo": null,
+   "eventNumber": 10,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 96434,
+    "matchStart": "2026-10-25T15:00:00+01:00",
+    "status": "Inte startat",
+    "statusId": 0,
+    "sportEventStatus": "NotStarted",
+    "statusTime": "2026-10-19T10:41:59+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 231,
+      "type": "home",
+      "name": "Genoa",
+      "shortName": "GEN",
+      "mediumName": "Genoa",
+      "countryId": 25,
+      "countryName": "Italien",
+      "isoCode": "ITA"
+     },
+     {
+      "id": 410,
+      "type": "away",
+      "name": "Venezia",
+      "shortName": "VEN",
+      "mediumName": "Venezia",
+      "countryId": 25,
+      "countryName": "Italien",
+      "isoCode": "ITA"
+     }
+    ],
+    "league": {
+     "id": 20,
+     "name": "Serie A",
+     "country": {
+      "id": 25,
+      "name": "Italien",
+      "isoCode": "ITA"
+     }
+    },
+    "result": []
+   },
+   "odds": {
+    "one": "2,17",
+    "x": "3,45",
+    "two": "3,45"
+   },
+   "favouriteOdds": {
+    "one": "44.29",
+    "x": "27.86",
+    "two": "27.86"
+   },
+   "startOdds": {
+    "one": "2,16",
+    "x": "3,55",
+    "two": "3,45"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-25T10:19:52.804+01:00",
+    "distributionRefDate": "2026-10-25T09:18:57.84+01:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": "2,17",
+       "favouriteOdds": "44,29",
+       "startOdds": "2,16"
+      },
+      "distribution": {
+       "distribution": "57",
+       "refDistribution": "58"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": "3,45",
+       "favouriteOdds": "27,86",
+       "startOdds": "3,55"
+      },
+      "distribution": {
+       "distribution": "25",
+       "refDistribution": "25"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": "3,45",
+       "favouriteOdds": "27,86",
+       "startOdds": "3,45"
+      },
+      "distribution": {
+       "distribution": "18",
+       "refDistribution": "17"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "57",
+    "x": "25",
+    "two": "18",
+    "date": "2026-10-25T10:19:52.804+01:00",
+    "refOne": "58",
+    "refX": "25",
+    "refTwo": "17",
+    "refDate": "2026-10-25T09:18:57.84+01:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "71945332"
+    },
+    {
+     "provider": "Kambi",
+     "type": "Normal",
+     "id": "1027911694"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Freiburg - Bayern Mü",
+   "extraInfo": null,
+   "eventNumber": 11,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 96442,
+    "matchStart": "2026-10-25T17:30:00+01:00",
+    "status": "Inte startat",
+    "statusId": 0,
+    "sportEventStatus": "NotStarted",
+    "statusTime": "2026-10-19T10:43:33+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 350,
+      "type": "home",
+      "name": "Freiburg",
+      "shortName": "SCF",
+      "mediumName": "Freiburg",
+      "countryId": 21,
+      "countryName": "Tyskland",
+      "isoCode": "DEU"
+     },
+     {
+      "id": 66,
+      "type": "away",
+      "name": "Bayern München",
+      "shortName": "BMÜ",
+      "mediumName": "Bayern Mü",
+      "countryId": 21,
+      "countryName": "Tyskland",
+      "isoCode": "DEU"
+     }
+    ],
+    "league": {
+     "id": 14,
+     "name": "Bundesliga",
+     "country": {
+      "id": 21,
+      "name": "Tyskland",
+      "isoCode": "DEU"
+     }
+    },
+    "result": []
+   },
+   "odds": {
+    "one": "6,00",
+    "x": "5,25",
+    "two": "1,50"
+   },
+   "favouriteOdds": {
+    "one": "16.28",
+    "x": "18.60",
+    "two": "65.12"
+   },
+   "startOdds": {
+    "one": "7,50",
+    "x": "6,00",
+    "two": "1,38"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-25T10:19:52.804+01:00",
+    "distributionRefDate": "2026-10-25T09:18:57.84+01:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": "6,00",
+       "favouriteOdds": "16,28",
+       "startOdds": "7,50"
+      },
+      "distribution": {
+       "distribution": "9",
+       "refDistribution": "8"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": "5,25",
+       "favouriteOdds": "18,60",
+       "startOdds": "6,00"
+      },
+      "distribution": {
+       "distribution": "13",
+       "refDistribution": "13"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": "1,50",
+       "favouriteOdds": "65,12",
+       "startOdds": "1,38"
+      },
+      "distribution": {
+       "distribution": "78",
+       "refDistribution": "79"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "9",
+    "x": "13",
+    "two": "78",
+    "date": "2026-10-25T10:19:52.804+01:00",
+    "refOne": "8",
+    "refX": "13",
+    "refTwo": "79",
+    "refDate": "2026-10-25T09:18:57.84+01:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72513264"
+    },
+    {
+     "provider": "Kambi",
+     "type": "Normal",
+     "id": "1028230591"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Monaco - Lille",
+   "extraInfo": null,
+   "eventNumber": 12,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 96447,
+    "matchStart": "2026-10-25T15:00:00+01:00",
+    "status": "Inte startat",
+    "statusId": 0,
+    "sportEventStatus": "NotStarted",
+    "statusTime": "2026-10-19T10:44:41+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 224,
+      "type": "home",
+      "name": "Monaco",
+      "shortName": "ASM",
+      "mediumName": "Monaco",
+      "countryId": 22,
+      "countryName": "Frankrike",
+      "isoCode": "FRA"
+     },
+     {
+      "id": 266,
+      "type": "away",
+      "name": "Lille",
+      "shortName": "LIL",
+      "mediumName": "Lille",
+      "countryId": 22,
+      "countryName": "Frankrike",
+      "isoCode": "FRA"
+     }
+    ],
+    "league": {
+     "id": 18,
+     "name": "Ligue 1",
+     "country": {
+      "id": 22,
+      "name": "Frankrike",
+      "isoCode": "FRA"
+     }
+    },
+    "result": []
+   },
+   "odds": {
+    "one": "1,98",
+    "x": "3,65",
+    "two": "4,00"
+   },
+   "favouriteOdds": {
+    "one": "49.08",
+    "x": "26.62",
+    "two": "24.29"
+   },
+   "startOdds": {
+    "one": "2,18",
+    "x": "3,50",
+    "two": "3,60"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-25T10:19:52.804+01:00",
+    "distributionRefDate": "2026-10-25T09:18:57.84+01:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": "1,98",
+       "favouriteOdds": "49,08",
+       "startOdds": "2,18"
+      },
+      "distribution": {
+       "distribution": "63",
+       "refDistribution": "62"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": "3,65",
+       "favouriteOdds": "26,62",
+       "startOdds": "3,50"
+      },
+      "distribution": {
+       "distribution": "23",
+       "refDistribution": "24"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": "4,00",
+       "favouriteOdds": "24,29",
+       "startOdds": "3,60"
+      },
+      "distribution": {
+       "distribution": "14",
+       "refDistribution": "14"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "63",
+    "x": "23",
+    "two": "14",
+    "date": "2026-10-25T10:19:52.804+01:00",
+    "refOne": "62",
+    "refX": "24",
+    "refTwo": "14",
+    "refDate": "2026-10-25T09:18:57.84+01:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "72036248"
+    },
+    {
+     "provider": "Kambi",
+     "type": "Normal",
+     "id": "1027973895"
+    }
+   ]
+  },
+  {
+   "cancelled": false,
+   "eventComment": "",
+   "eventDescription": "Mjällby - Hammarby",
+   "extraInfo": null,
+   "eventNumber": 13,
+   "eventTypeId": 1,
+   "participantType": "Team",
+   "match": {
+    "matchId": 96304,
+    "matchStart": "2026-10-25T16:30:00+01:00",
+    "status": "Inte startat",
+    "statusId": 0,
+    "sportEventStatus": "NotStarted",
+    "statusTime": "2026-10-18T14:18:47+02:00",
+    "coverage": 0,
+    "participants": [
+     {
+      "id": 270,
+      "type": "home",
+      "name": "Mjällby",
+      "shortName": "MJÄ",
+      "mediumName": "Mjällby",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     },
+     {
+      "id": 269,
+      "type": "away",
+      "name": "Hammarby",
+      "shortName": "HAM",
+      "mediumName": "Hammarby",
+      "countryId": 30,
+      "countryName": "Sverige",
+      "isoCode": "SWE"
+     }
+    ],
+    "league": {
+     "id": 25,
+     "name": "Allsvenskan",
+     "country": {
+      "id": 30,
+      "name": "Sverige",
+      "isoCode": "SWE"
+     }
+    },
+    "result": []
+   },
+   "odds": {
+    "one": "6,75",
+    "x": "4,70",
+    "two": "1,48"
+   },
+   "favouriteOdds": {
+    "one": "14.29",
+    "x": "20.53",
+    "two": "65.18"
+   },
+   "startOdds": {
+    "one": "6,75",
+    "x": "4,70",
+    "two": "1,48"
+   },
+   "betMetrics": {
+    "eventTypeId": 1,
+    "eventType": "1X2",
+    "eventSubTypeId": 2,
+    "eventSubType": "Fulltid",
+    "distributionDate": "2026-10-25T10:19:52.804+01:00",
+    "distributionRefDate": "2026-10-25T09:18:57.84+01:00",
+    "values": [
+     {
+      "outcome": "1",
+      "odds": {
+       "odds": "6,75",
+       "favouriteOdds": "14,29",
+       "startOdds": "6,75"
+      },
+      "distribution": {
+       "distribution": "11",
+       "refDistribution": "12"
+      }
+     },
+     {
+      "outcome": "X",
+      "odds": {
+       "odds": "4,70",
+       "favouriteOdds": "20,53",
+       "startOdds": "4,70"
+      },
+      "distribution": {
+       "distribution": "19",
+       "refDistribution": "19"
+      }
+     },
+     {
+      "outcome": "2",
+      "odds": {
+       "odds": "1,48",
+       "favouriteOdds": "65,18",
+       "startOdds": "1,48"
+      },
+      "distribution": {
+       "distribution": "70",
+       "refDistribution": "69"
+      }
+     }
+    ]
+   },
+   "complementaryBetMetrics": [],
+   "outcomes": null,
+   "svenskaFolket": {
+    "one": "11",
+    "x": "19",
+    "two": "70",
+    "date": "2026-10-25T10:19:52.804+01:00",
+    "refOne": "12",
+    "refX": "19",
+    "refTwo": "69",
+    "refDate": "2026-10-25T09:18:57.84+01:00"
+   },
+   "tioTidningarsTips": null,
+   "providerIds": [
+    {
+     "provider": "BetRadar",
+     "type": "Normal",
+     "id": "67126828"
+    },
+    {
+     "provider": "Kambi",
+     "type": "Normal",
+     "id": "1026062461"
+    }
+   ]
+  }
+ ],
+ "retailerOpenTime": "2026-10-21T22:00:00+02:00",
+ "retailerCloseTime": "2026-10-25T14:59:00+01:00",
+ "retailerCancelCloseTime": "2026-10-25T15:00:00+01:00",
+ "lastDateWithoutTimeOfDay": "2026-10-26T00:00:00+01:00"
+}
