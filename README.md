@@ -1,4 +1,4 @@
-# Stryktipsexperten
+# Trettonrätt
 
 Hämtar veckans Stryktips-kupong från Svenska Spel och föreslår ett system
 (spikar, halv- och helgarderingar) inom din budget.
