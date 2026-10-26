@@ -1,0 +1,135 @@
+{
+ "hamtad": "2026-10-26T06:27:05+00:00",
+ "matcher": {
+  "1": {
+   "sannolikhet": {
+    "1": 0.4947569760028216,
+    "X": 0.24865363484677888,
+    "2": 0.25658938915039947
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 24,
+   "match": "Aston Villa - Fulham"
+  },
+  "2": {
+   "sannolikhet": {
+    "1": 0.6229057193575536,
+    "X": 0.2049902048841206,
+    "2": 0.17210407575832584
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 24,
+   "match": "Tottenham Hotspur - Crystal Palace"
+  },
+  "3": {
+   "sannolikhet": {
+    "1": 0.5746728713986577,
+    "X": 0.21406883014406763,
+    "2": 0.2112582984572746
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 24,
+   "match": "Manchester City - Brighton and Hove Albion"
+  },
+  "4": {
+   "sannolikhet": {
+    "1": 0.4518573880106955,
+    "X": 0.2802825537225764,
+    "2": 0.2678600582667281
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 24,
+   "match": "Bournemouth - Leeds United"
+  },
+  "5": {
+   "sannolikhet": {
+    "1": 0.3184795250045908,
+    "X": 0.2814470220970802,
+    "2": 0.40007345289832896
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 24,
+   "match": "Coventry City - Sunderland"
+  },
+  "6": {
+   "sannolikhet": {
+    "1": 0.4851787676588825,
+    "X": 0.24884168753638566,
+    "2": 0.2659795448047318
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 24,
+   "match": "Brentford - Nottingham Forest"
+  },
+  "7": {
+   "sannolikhet": {
+    "1": 0.3599936347511537,
+    "X": 0.28398324852803614,
+    "2": 0.35602311672081005
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 24,
+   "match": "Hull City - Ipswich Town"
+  },
+  "8": {
+   "sannolikhet": {
+    "1": 0.33684891822658564,
+    "X": 0.2626122420333987,
+    "2": 0.4005388397400157
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 21,
+   "match": "Bolton Wanderers - Bristol City"
+  },
+  "9": {
+   "sannolikhet": {
+    "1": 0.46348350897916246,
+    "X": 0.27620383529281484,
+    "2": 0.2603126557280227
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 21,
+   "match": "Burnley - Portsmouth"
+  },
+  "10": {
+   "sannolikhet": {
+    "1": 0.567217205080185,
+    "X": 0.24103122963967147,
+    "2": 0.1917515652801435
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 21,
+   "match": "Millwall - Derby County"
+  },
+  "11": {
+   "sannolikhet": {
+    "1": 0.5455499737572168,
+    "X": 0.23266101821998952,
+    "2": 0.22178900802279375
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 21,
+   "match": "Southampton - Queens Park Rangers"
+  },
+  "12": {
+   "sannolikhet": {
+    "1": 0.5383876431478626,
+    "X": 0.25472103546780595,
+    "2": 0.20689132138433147
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 21,
+   "match": "Swansea City - Blackburn Rovers"
+  },
+  "13": {
+   "sannolikhet": {
+    "1": 0.6156585409768832,
+    "X": 0.21258164867811663,
+    "2": 0.17175981034500007
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 21,
+   "match": "West Ham United - West Bromwich Albion"
+  }
+ }
+}
