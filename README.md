@@ -58,7 +58,7 @@ Sidan visar ställningen per match, markerar om ditt system täcker den och
 räknar hur många rätt du har just nu. Svenska Spels API går inte att anropa
 direkt från webbsidan (CORS), därav omvägen via GitHub Actions.
 
-Under liveresultaten visas **utdelningen**. Medan omgången pågår är det en
+Längst ner på sidan visas **utdelningen** när omgången har börjat. Medan omgången pågår är det en
 förväntad utdelning per rad för 10–13 rätt om ställningarna står sig (matcher
 som inte har startat räknas med det mest troliga tecknet). Den räknas ur
 omsättningen och svenska folkets streck: Svenska Spel delar ut 65 % av

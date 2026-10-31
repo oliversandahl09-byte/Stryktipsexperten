@@ -228,8 +228,14 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--focus); out
 @keyframes pulse { 50% { opacity: 0.3; } }
 .livebar b { font: 700 15px var(--font-display); }
 .livebar .muted { color: var(--muted); font-size: 13px; }
-.livebar .payout { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; }
-.livebar .payout b { font: 700 13px var(--font-data); }
+.payout { background: var(--surface); color: var(--ink); border-radius: 14px; padding: 18px 20px; display: grid; gap: 10px; }
+.payout p { margin: 0; font-size: 13px; color: var(--muted); }
+.payout-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; }
+.payout-grid div { background: var(--soft); border-radius: 8px; padding: 8px 10px; display: grid; gap: 2px; font-size: 13px; }
+.payout-grid b { font: 700 16px var(--font-data); }
+.payout-grid small { color: var(--muted); font-size: 12px; }
+.payout .mine { font-size: 14px; }
+.payout .mine b { font-family: var(--font-data); }
 .live { display: inline-block; margin-left: 8px; padding: 1px 7px; border-radius: 5px; font: 700 12px/18px var(--font-data);
   background: var(--soft); color: var(--ink); vertical-align: 1px; }
 .live.hit { background: var(--ok); color: var(--ok-ink); }
@@ -414,6 +420,11 @@ footer { font-size: 13px; color: var(--on-page-muted); max-width: 70ch; }
       <p class="hint" id="league-hint"></p>
     </aside>
   </div>
+
+  <section class="payout" id="payout" aria-labelledby="payout-h" aria-live="polite" hidden>
+    <h2 id="payout-h">Utdelning</h2>
+    <div id="payout-body"></div>
+  </section>
 
   <footer>
     Sannolikheterna kommer från oddsen med spelbolagets marginal borträknad. <b>Värde</b> är sannolikhet delat med svenska folkets streck;
@@ -883,6 +894,7 @@ function renderLive() {
   const bar = $("livebar");
   const started = live ? Object.entries(live.matcher).filter(([, s]) => s.utfall) : [];
   bar.hidden = !started.length;
+  renderPayout(started.length > 0, window.currentRows || []);
   if (!started.length) return;
   const covers = window.currentCovers || [];
   const idx = nr => data.matcher.findIndex(m => String(m.nr) === nr);
@@ -892,8 +904,7 @@ function renderLive() {
   const latest = [...goalNrs].filter(isGoal).map(nr => data.matcher[idx(nr)]).filter(Boolean).map(m => `${m.nr}. ${m.match}`).join(", ");
   bar.innerHTML = `<span class="dot" aria-hidden="true"></span><b>Live: ${hits} av ${started.length} rätt just nu</b>
     ${latest ? `<span>Senaste mål: <b>${latest}</b></span>` : ""}
-    <span class="muted">${ongoing ? `${ongoing} ${ongoing === 1 ? "match" : "matcher"} pågår` : "Alla startade matcher är klara"} · uppdaterad ${time} · ${liveFromProxy ? "hämtas varje minut" : "hämtas var tionde minut"}</span>
-    ${payoutLine(window.currentRows)}`;
+    <span class="muted">${ongoing ? `${ongoing} ${ongoing === 1 ? "match" : "matcher"} pågår` : "Alla startade matcher är klara"} · uppdaterad ${time} · ${liveFromProxy ? "hämtas varje minut" : "hämtas var tionde minut"}</span>`;
 }
 
 // Svenska Spel delar ut 65 % av omsättningen: 40 % till 13 rätt, 15 % till 12, 12 % till 11 och
@@ -926,26 +937,31 @@ function systemHits(rows, row) {
   return n;
 }
 
-function payoutLine(rows) {
-  const done = live.utdelning && Object.values(live.matcher).every(s => s.lage === "slut" || s.lage === "inställd");
-  if (!done && !live.omsattning) return "";
+// Visas längst ner på sidan när minst en match har startat.
+function renderPayout(started, rows) {
+  const box = $("payout");
+  const done = started && live.utdelning && Object.values(live.matcher).every(s => s.lage === "slut" || s.lage === "inställd");
+  box.hidden = !started || (!done && !live.omsattning);
+  if (box.hidden) return;
   // Matcher som inte har startat räknas med det mest troliga tecknet.
   const row = data.matcher.map(m => liveOutcome(m.nr) || topSign(m));
   const each = done ? Object.fromEntries([13, 12, 11, 10].map(k => [k, (live.utdelning[k] || {}).kr || 0])) : forecast(row);
   const parts = [13, 12, 11, 10].map(k => {
     const w = done && live.utdelning[k] ? live.utdelning[k].vinnare : null;
-    return `<span>${k} rätt <b>${each[k] ? kr(each[k]) : "ingen utdelning"}</b>${w != null ? ` <span class="muted">(${w.toLocaleString("sv-SE")} vinnare)</span>` : ""}</span>`;
+    return `<div>${k} rätt <b>${each[k] ? kr(each[k]) : "ingen utdelning"}</b>${w != null ? `<small>${w.toLocaleString("sv-SE")} vinnare</small>` : ""}</div>`;
   });
   let mine = "";
-  if (rows && rows.length) {
+  if (rows.length) {
     const n = systemHits(rows, row);
     const won = [13, 12, 11, 10].filter(k => n[k]);
     const total = won.reduce((a, k) => a + n[k] * each[k], 0);
-    mine = `<span>Ditt system: <b>${won.length ? won.map(k => `${n[k]} × ${k} rätt`).join(", ") + " = " + kr(total) : "ingen vinst"}</b></span>`;
+    mine = `<p class="mine">Ditt system: <b>${won.length ? won.map(k => `${n[k]} × ${k} rätt`).join(", ") + " = " + kr(total) : "ingen vinst"}</b></p>`;
   }
   const notStarted = data.matcher.some(m => !liveOutcome(m.nr));
-  const label = done ? "Utdelning:" : `Förväntad utdelning om ställningarna står sig${notStarted ? " (ej startade matcher med mest troliga tecknet)" : ""}:`;
-  return `<div class="payout"><span class="muted">${label}</span>${parts.join("")}${mine}</div>`;
+  $("payout-h").textContent = done ? "Utdelning" : "Förväntad utdelning";
+  const note = done ? "Svenska Spels utdelning per rad." :
+    `Om ställningarna står sig${notStarted ? ", med mest troliga tecknet i matcher som inte har startat" : ""}. En grov uppskattning ur omsättning och streck.`;
+  $("payout-body").innerHTML = `<div class="payout-grid">${parts.join("")}</div>${mine}<p>${note}</p>`;
 }
 
 // Adressen till Cloudflare-proxyn (cloudflare/live-worker.js). Den ger ställningar
