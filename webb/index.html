@@ -538,7 +538,7 @@ function render() {
         aria-pressed="${on}" aria-label="Match ${m.nr}, ${o}: ${pct(p)}, värde ${m.varde[o].toFixed(2)}">
         <span class="fill" style="height:${Math.round(p * 100)}%"></span><span class="s">${o}</span><span class="p">${Math.round(p * 100)}%</span></button>`;
     }).join("");
-    return `<div class="match${locked ? " locked" : ""}${goalNrs.has(String(m.nr)) ? " goal" : ""}">
+    return `<div class="match${locked ? " locked" : ""}${isGoal(m.nr) ? " goal" : ""}">
       <span class="nr">${m.nr}</span>
       <div class="teams"><div class="name">${m.match}${liveBadge(m.nr, cover)}</div><div class="sub"><span>${sub}</span></div></div>
       <div class="signs">${signs}</div>
@@ -558,6 +558,12 @@ const GOAL_STORE = "stryktips-mal-" + SPEL;
 let goalNrs = new Set();
 
 function goals(s) { return s && s.mal ? s.mal[0] + s.mal[1] : 0; }
+
+// Bara pågående matcher blinkar; en slutspelad match visas lugnt med "Slut".
+function isGoal(nr) {
+  const s = live && live.matcher[nr];
+  return goalNrs.has(String(nr)) && !!s && s.lage === "pågår";
+}
 
 function trackGoals(prev, next) {
   let saved = {};
@@ -580,8 +586,9 @@ function liveBadge(nr, cover) {
   if (!s || s.lage === "ej startad") return "";
   const score = s.mal ? `${s.mal[0]}–${s.mal[1]}` : "";
   const cls = s.utfall ? (cover.includes(s.utfall) ? " hit" : " miss") : "";
-  const goal = goalNrs.has(String(nr)) ? " goal" : "";
-  return `<span class="live${cls}${goal}"${goal ? ' title="Senaste målet"' : ""}>${score}<small>${s.status}</small></span>`;
+  const goal = isGoal(nr) ? " goal" : "";
+  const status = s.lage === "slut" ? "Slut" : s.status;
+  return `<span class="live${cls}${goal}"${goal ? ' title="Senaste målet"' : ""}>${score}<small>${status}</small></span>`;
 }
 
 function renderLive() {
@@ -594,7 +601,7 @@ function renderLive() {
   const hits = started.filter(([nr, s]) => (covers[idx(nr)] || []).includes(s.utfall)).length;
   const ongoing = started.filter(([, s]) => s.lage === "pågår").length;
   const time = new Date(live.hamtad).toLocaleTimeString("sv-SE", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Stockholm" });
-  const latest = [...goalNrs].map(nr => data.matcher[idx(nr)]).filter(Boolean).map(m => `${m.nr}. ${m.match}`).join(", ");
+  const latest = [...goalNrs].filter(isGoal).map(nr => data.matcher[idx(nr)]).filter(Boolean).map(m => `${m.nr}. ${m.match}`).join(", ");
   bar.innerHTML = `<span class="dot" aria-hidden="true"></span><b>Live: ${hits} av ${started.length} rätt just nu</b>
     ${latest ? `<span>Senaste mål: <b>${latest}</b></span>` : ""}
     <span class="muted">${ongoing ? `${ongoing} ${ongoing === 1 ? "match" : "matcher"} pågår` : "Alla startade matcher är klara"} · uppdaterad ${time} · ${liveFromProxy ? "hämtas varje minut" : "hämtas var tionde minut"}</span>`;
