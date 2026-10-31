@@ -1,1473 +1,505 @@
 {
- "omgang": 2619,
+ "omgang": 2621,
  "kalla": "football-data.co.uk",
  "matcher": {
   "1": {
    "lag": [
-    "Sunderland",
-    "Leeds"
+    "Liverpool",
+    "Arsenal"
    ],
    "moten": [
     {
-     "datum": "2026-03-03",
-     "hemma": "Leeds",
-     "borta": "Sunderland",
+     "datum": "2026-01-08",
+     "hemma": "Arsenal",
+     "borta": "Liverpool",
      "mal": [
       0,
+      0
+     ],
+     "serie": "E0",
+     "utfall": "X",
+     "samma_plan": false
+    },
+    {
+     "datum": "2025-08-31",
+     "hemma": "Liverpool",
+     "borta": "Arsenal",
+     "mal": [
+      1,
+      0
+     ],
+     "serie": "E0",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2025-05-11",
+     "hemma": "Liverpool",
+     "borta": "Arsenal",
+     "mal": [
+      2,
+      2
+     ],
+     "serie": "E0",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2024-10-27",
+     "hemma": "Arsenal",
+     "borta": "Liverpool",
+     "mal": [
+      2,
+      2
+     ],
+     "serie": "E0",
+     "utfall": "X",
+     "samma_plan": false
+    },
+    {
+     "datum": "2024-02-04",
+     "hemma": "Arsenal",
+     "borta": "Liverpool",
+     "mal": [
+      3,
       1
+     ],
+     "serie": "E0",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2023-12-23",
+     "hemma": "Liverpool",
+     "borta": "Arsenal",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "E0",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2023-04-09",
+     "hemma": "Liverpool",
+     "borta": "Arsenal",
+     "mal": [
+      2,
+      2
+     ],
+     "serie": "E0",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2022-10-09",
+     "hemma": "Arsenal",
+     "borta": "Liverpool",
+     "mal": [
+      3,
+      2
+     ],
+     "serie": "E0",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2022-03-16",
+     "hemma": "Arsenal",
+     "borta": "Liverpool",
+     "mal": [
+      0,
+      2
      ],
      "serie": "E0",
      "utfall": "1",
      "samma_plan": false
     },
     {
-     "datum": "2025-12-28",
-     "hemma": "Sunderland",
-     "borta": "Leeds",
+     "datum": "2021-11-20",
+     "hemma": "Liverpool",
+     "borta": "Arsenal",
      "mal": [
-      1,
-      1
+      4,
+      0
      ],
      "serie": "E0",
-     "utfall": "X",
-     "samma_plan": true
-    },
-    {
-     "datum": "2025-02-17",
-     "hemma": "Leeds",
-     "borta": "Sunderland",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "E1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-10-04",
-     "hemma": "Sunderland",
-     "borta": "Leeds",
-     "mal": [
-      2,
-      2
-     ],
-     "serie": "E1",
-     "utfall": "X",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-04-09",
-     "hemma": "Leeds",
-     "borta": "Sunderland",
-     "mal": [
-      0,
-      0
-     ],
-     "serie": "E1",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2023-12-12",
-     "hemma": "Sunderland",
-     "borta": "Leeds",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "E1",
      "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2018-04-07",
-     "hemma": "Leeds",
-     "borta": "Sunderland",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "E1",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2017-08-19",
-     "hemma": "Sunderland",
-     "borta": "Leeds",
-     "mal": [
-      0,
-      2
-     ],
-     "serie": "E1",
-     "utfall": "2",
      "samma_plan": true
     }
    ],
    "summering": {
-    "1": 2,
-    "X": 4,
+    "1": 3,
+    "X": 5,
     "2": 2
    }
   },
   "2": {
    "lag": [
-    "Liverpool",
-    "Brighton"
+    "Juventus",
+    "Napoli"
    ],
    "moten": [
     {
-     "datum": "2026-03-21",
-     "hemma": "Brighton",
-     "borta": "Liverpool",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2025-12-13",
-     "hemma": "Liverpool",
-     "borta": "Brighton",
-     "mal": [
-      2,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2025-05-19",
-     "hemma": "Brighton",
-     "borta": "Liverpool",
-     "mal": [
-      3,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-11-02",
-     "hemma": "Liverpool",
-     "borta": "Brighton",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-03-31",
-     "hemma": "Liverpool",
-     "borta": "Brighton",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-10-08",
-     "hemma": "Brighton",
-     "borta": "Liverpool",
-     "mal": [
-      2,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2023-01-14",
-     "hemma": "Brighton",
-     "borta": "Liverpool",
+     "datum": "2026-01-25",
+     "hemma": "Juventus",
+     "borta": "Napoli",
      "mal": [
       3,
       0
      ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2022-10-01",
-     "hemma": "Liverpool",
-     "borta": "Brighton",
-     "mal": [
-      3,
-      3
-     ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": true
-    },
-    {
-     "datum": "2022-03-12",
-     "hemma": "Brighton",
-     "borta": "Liverpool",
-     "mal": [
-      0,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2021-10-30",
-     "hemma": "Liverpool",
-     "borta": "Brighton",
-     "mal": [
-      2,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": true
-    }
-   ],
-   "summering": {
-    "1": 4,
-    "X": 3,
-    "2": 3
-   }
-  },
-  "3": {
-   "lag": [
-    "Man United",
-    "Bournemouth"
-   ],
-   "moten": [
-    {
-     "datum": "2026-03-20",
-     "hemma": "Bournemouth",
-     "borta": "Man United",
-     "mal": [
-      2,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2025-12-15",
-     "hemma": "Man United",
-     "borta": "Bournemouth",
-     "mal": [
-      4,
-      4
-     ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": true
-    },
-    {
-     "datum": "2025-04-27",
-     "hemma": "Bournemouth",
-     "borta": "Man United",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-12-22",
-     "hemma": "Man United",
-     "borta": "Bournemouth",
-     "mal": [
-      0,
-      3
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-04-13",
-     "hemma": "Bournemouth",
-     "borta": "Man United",
-     "mal": [
-      2,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2023-12-09",
-     "hemma": "Man United",
-     "borta": "Bournemouth",
-     "mal": [
-      0,
-      3
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-05-20",
-     "hemma": "Bournemouth",
-     "borta": "Man United",
-     "mal": [
-      0,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2023-01-03",
-     "hemma": "Man United",
-     "borta": "Bournemouth",
-     "mal": [
-      3,
-      0
-     ],
-     "serie": "E0",
+     "serie": "I1",
      "utfall": "1",
      "samma_plan": true
     },
     {
-     "datum": "2020-07-04",
-     "hemma": "Man United",
-     "borta": "Bournemouth",
-     "mal": [
-      5,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2019-11-02",
-     "hemma": "Bournemouth",
-     "borta": "Man United",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": false
-    }
-   ],
-   "summering": {
-    "1": 3,
-    "X": 4,
-    "2": 3
-   }
-  },
-  "4": {
-   "lag": [
-    "Crystal Palace",
-    "Newcastle"
-   ],
-   "moten": [
-    {
-     "datum": "2026-04-12",
-     "hemma": "Crystal Palace",
-     "borta": "Newcastle",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2026-01-04",
-     "hemma": "Newcastle",
-     "borta": "Crystal Palace",
-     "mal": [
-      2,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2025-04-16",
-     "hemma": "Newcastle",
-     "borta": "Crystal Palace",
-     "mal": [
-      5,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-11-30",
-     "hemma": "Crystal Palace",
-     "borta": "Newcastle",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-04-24",
-     "hemma": "Crystal Palace",
-     "borta": "Newcastle",
-     "mal": [
-      2,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-10-21",
-     "hemma": "Newcastle",
-     "borta": "Crystal Palace",
-     "mal": [
-      4,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2023-01-21",
-     "hemma": "Crystal Palace",
-     "borta": "Newcastle",
-     "mal": [
-      0,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": true
-    },
-    {
-     "datum": "2022-09-03",
-     "hemma": "Newcastle",
-     "borta": "Crystal Palace",
-     "mal": [
-      0,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2022-04-20",
-     "hemma": "Newcastle",
-     "borta": "Crystal Palace",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2021-10-23",
-     "hemma": "Crystal Palace",
-     "borta": "Newcastle",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": true
-    }
-   ],
-   "summering": {
-    "1": 2,
-    "X": 4,
-    "2": 4
-   }
-  },
-  "5": {
-   "lag": [
-    "Hull",
-    "Brentford"
-   ],
-   "moten": [
-    {
-     "datum": "2020-02-01",
-     "hemma": "Hull",
-     "borta": "Brentford",
-     "mal": [
-      1,
-      5
-     ],
-     "serie": "E1",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2019-08-17",
-     "hemma": "Brentford",
-     "borta": "Hull",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "E1",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2019-02-23",
-     "hemma": "Brentford",
-     "borta": "Hull",
-     "mal": [
-      5,
-      1
-     ],
-     "serie": "E1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2018-12-15",
-     "hemma": "Hull",
-     "borta": "Brentford",
-     "mal": [
-      2,
-      0
-     ],
-     "serie": "E1",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2018-05-06",
-     "hemma": "Brentford",
-     "borta": "Hull",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "E1",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2017-12-09",
-     "hemma": "Hull",
-     "borta": "Brentford",
-     "mal": [
-      3,
-      2
-     ],
-     "serie": "E1",
-     "utfall": "1",
-     "samma_plan": true
-    }
-   ],
-   "summering": {
-    "1": 2,
-    "X": 2,
-    "2": 2
-   }
-  },
-  "6": {
-   "lag": [
-    "Barcelona",
-    "Real Madrid"
-   ],
-   "moten": [
-    {
-     "datum": "2026-05-10",
-     "hemma": "Barcelona",
-     "borta": "Real Madrid",
-     "mal": [
-      2,
-      0
-     ],
-     "serie": "SP1",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2025-10-26",
-     "hemma": "Real Madrid",
-     "borta": "Barcelona",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "SP1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2025-05-11",
-     "hemma": "Barcelona",
-     "borta": "Real Madrid",
-     "mal": [
-      4,
-      3
-     ],
-     "serie": "SP1",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-10-26",
-     "hemma": "Real Madrid",
-     "borta": "Barcelona",
-     "mal": [
-      0,
-      4
-     ],
-     "serie": "SP1",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-04-21",
-     "hemma": "Real Madrid",
-     "borta": "Barcelona",
-     "mal": [
-      3,
-      2
-     ],
-     "serie": "SP1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2023-10-28",
-     "hemma": "Barcelona",
-     "borta": "Real Madrid",
-     "mal": [
-      1,
-      2
-     ],
-     "serie": "SP1",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-03-19",
-     "hemma": "Barcelona",
-     "borta": "Real Madrid",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "SP1",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2022-10-16",
-     "hemma": "Real Madrid",
-     "borta": "Barcelona",
-     "mal": [
-      3,
-      1
-     ],
-     "serie": "SP1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2022-03-20",
-     "hemma": "Real Madrid",
-     "borta": "Barcelona",
-     "mal": [
-      0,
-      4
-     ],
-     "serie": "SP1",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2021-10-24",
-     "hemma": "Barcelona",
-     "borta": "Real Madrid",
-     "mal": [
-      1,
-      2
-     ],
-     "serie": "SP1",
-     "utfall": "2",
-     "samma_plan": true
-    }
-   ],
-   "summering": {
-    "1": 5,
-    "X": 0,
-    "2": 5
-   }
-  },
-  "7": {
-   "lag": [
-    "Celta",
-    "Betis"
-   ],
-   "moten": [
-    {
-     "datum": "2026-03-15",
-     "hemma": "Betis",
-     "borta": "Celta",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "SP1",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2025-08-27",
-     "hemma": "Celta",
-     "borta": "Betis",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "SP1",
-     "utfall": "X",
-     "samma_plan": true
-    },
-    {
-     "datum": "2025-02-08",
-     "hemma": "Celta",
-     "borta": "Betis",
-     "mal": [
-      3,
-      2
-     ],
-     "serie": "SP1",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-11-10",
-     "hemma": "Betis",
-     "borta": "Celta",
-     "mal": [
-      2,
-      2
-     ],
-     "serie": "SP1",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-04-12",
-     "hemma": "Betis",
-     "borta": "Celta",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "SP1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-01-03",
-     "hemma": "Celta",
-     "borta": "Betis",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "SP1",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-02-04",
-     "hemma": "Betis",
-     "borta": "Celta",
-     "mal": [
-      3,
-      4
-     ],
-     "serie": "SP1",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2022-10-02",
-     "hemma": "Celta",
-     "borta": "Betis",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "SP1",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2022-03-20",
-     "hemma": "Celta",
-     "borta": "Betis",
-     "mal": [
-      0,
-      0
-     ],
-     "serie": "SP1",
-     "utfall": "X",
-     "samma_plan": true
-    },
-    {
-     "datum": "2022-01-02",
-     "hemma": "Betis",
-     "borta": "Celta",
-     "mal": [
-      0,
-      2
-     ],
-     "serie": "SP1",
-     "utfall": "1",
-     "samma_plan": false
-    }
-   ],
-   "summering": {
-    "1": 5,
-    "X": 4,
-    "2": 1
-   }
-  },
-  "8": {
-   "lag": [
-    "Lecce",
-    "Juventus"
-   ],
-   "moten": [
-    {
-     "datum": "2026-05-09",
-     "hemma": "Lecce",
+     "datum": "2025-12-07",
+     "hemma": "Napoli",
      "borta": "Juventus",
      "mal": [
-      0,
-      1
-     ],
-     "serie": "I1",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2026-01-03",
-     "hemma": "Juventus",
-     "borta": "Lecce",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "I1",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2025-04-12",
-     "hemma": "Juventus",
-     "borta": "Lecce",
-     "mal": [
       2,
       1
      ],
      "serie": "I1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-12-01",
-     "hemma": "Lecce",
-     "borta": "Juventus",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "I1",
-     "utfall": "X",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-01-21",
-     "hemma": "Lecce",
-     "borta": "Juventus",
-     "mal": [
-      0,
-      3
-     ],
-     "serie": "I1",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-09-26",
-     "hemma": "Juventus",
-     "borta": "Lecce",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "I1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2023-05-03",
-     "hemma": "Juventus",
-     "borta": "Lecce",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "I1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2022-10-29",
-     "hemma": "Lecce",
-     "borta": "Juventus",
-     "mal": [
-      0,
-      1
-     ],
-     "serie": "I1",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2020-06-26",
-     "hemma": "Juventus",
-     "borta": "Lecce",
-     "mal": [
-      4,
-      0
-     ],
-     "serie": "I1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2019-10-26",
-     "hemma": "Lecce",
-     "borta": "Juventus",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "I1",
-     "utfall": "X",
-     "samma_plan": true
-    }
-   ],
-   "summering": {
-    "1": 0,
-    "X": 3,
-    "2": 7
-   }
-  },
-  "9": {
-   "lag": [
-    "Udinese",
-    "Milan"
-   ],
-   "moten": [
-    {
-     "datum": "2026-04-11",
-     "hemma": "Milan",
-     "borta": "Udinese",
-     "mal": [
-      0,
-      3
-     ],
-     "serie": "I1",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2025-09-20",
-     "hemma": "Udinese",
-     "borta": "Milan",
-     "mal": [
-      0,
-      3
-     ],
-     "serie": "I1",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2025-04-11",
-     "hemma": "Udinese",
-     "borta": "Milan",
-     "mal": [
-      0,
-      4
-     ],
-     "serie": "I1",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-10-19",
-     "hemma": "Milan",
-     "borta": "Udinese",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "I1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-01-20",
-     "hemma": "Udinese",
-     "borta": "Milan",
-     "mal": [
-      2,
-      3
-     ],
-     "serie": "I1",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-11-04",
-     "hemma": "Milan",
-     "borta": "Udinese",
-     "mal": [
-      0,
-      1
-     ],
-     "serie": "I1",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2023-03-18",
-     "hemma": "Udinese",
-     "borta": "Milan",
-     "mal": [
-      3,
-      1
-     ],
-     "serie": "I1",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2022-08-13",
-     "hemma": "Milan",
-     "borta": "Udinese",
-     "mal": [
-      4,
-      2
-     ],
-     "serie": "I1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2022-02-25",
-     "hemma": "Milan",
-     "borta": "Udinese",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "I1",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2021-12-11",
-     "hemma": "Udinese",
-     "borta": "Milan",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "I1",
-     "utfall": "X",
-     "samma_plan": true
-    }
-   ],
-   "summering": {
-    "1": 3,
-    "X": 2,
-    "2": 5
-   }
-  },
-  "10": {
-   "lag": [
-    "Genoa",
-    "Venezia"
-   ],
-   "moten": [
-    {
-     "datum": "2025-02-17",
-     "hemma": "Genoa",
-     "borta": "Venezia",
-     "mal": [
-      2,
-      0
-     ],
-     "serie": "I1",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-09-21",
-     "hemma": "Venezia",
-     "borta": "Genoa",
-     "mal": [
-      2,
-      0
-     ],
-     "serie": "I1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2023-01-16",
-     "hemma": "Genoa",
-     "borta": "Venezia",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "I2",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2022-08-14",
-     "hemma": "Venezia",
-     "borta": "Genoa",
-     "mal": [
-      1,
-      2
-     ],
-     "serie": "I2",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2022-02-20",
-     "hemma": "Venezia",
-     "borta": "Genoa",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "I1",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2021-10-31",
-     "hemma": "Genoa",
-     "borta": "Venezia",
-     "mal": [
-      0,
-      0
-     ],
-     "serie": "I1",
-     "utfall": "X",
-     "samma_plan": true
-    }
-   ],
-   "summering": {
-    "1": 3,
-    "X": 2,
-    "2": 1
-   }
-  },
-  "11": {
-   "lag": [
-    "Freiburg",
-    "Bayern Munich"
-   ],
-   "moten": [
-    {
-     "datum": "2026-04-04",
-     "hemma": "Freiburg",
-     "borta": "Bayern Munich",
-     "mal": [
-      2,
-      3
-     ],
-     "serie": "D1",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2025-11-22",
-     "hemma": "Bayern Munich",
-     "borta": "Freiburg",
-     "mal": [
-      6,
-      2
-     ],
-     "serie": "D1",
      "utfall": "2",
      "samma_plan": false
     },
     {
      "datum": "2025-01-25",
-     "hemma": "Freiburg",
-     "borta": "Bayern Munich",
-     "mal": [
-      1,
-      2
-     ],
-     "serie": "D1",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-09-01",
-     "hemma": "Bayern Munich",
-     "borta": "Freiburg",
+     "hemma": "Napoli",
+     "borta": "Juventus",
      "mal": [
       2,
-      0
+      1
      ],
-     "serie": "D1",
+     "serie": "I1",
      "utfall": "2",
      "samma_plan": false
     },
     {
-     "datum": "2024-03-01",
-     "hemma": "Freiburg",
-     "borta": "Bayern Munich",
+     "datum": "2024-09-21",
+     "hemma": "Juventus",
+     "borta": "Napoli",
      "mal": [
-      2,
-      2
+      0,
+      0
      ],
-     "serie": "D1",
+     "serie": "I1",
      "utfall": "X",
      "samma_plan": true
     },
     {
-     "datum": "2023-10-08",
-     "hemma": "Bayern Munich",
-     "borta": "Freiburg",
-     "mal": [
-      3,
-      0
-     ],
-     "serie": "D1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2023-04-08",
-     "hemma": "Freiburg",
-     "borta": "Bayern Munich",
-     "mal": [
-      0,
-      1
-     ],
-     "serie": "D1",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2022-10-16",
-     "hemma": "Bayern Munich",
-     "borta": "Freiburg",
-     "mal": [
-      5,
-      0
-     ],
-     "serie": "D1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2022-04-02",
-     "hemma": "Freiburg",
-     "borta": "Bayern Munich",
-     "mal": [
-      1,
-      4
-     ],
-     "serie": "D1",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2021-11-06",
-     "hemma": "Bayern Munich",
-     "borta": "Freiburg",
+     "datum": "2024-03-03",
+     "hemma": "Napoli",
+     "borta": "Juventus",
      "mal": [
       2,
       1
      ],
-     "serie": "D1",
+     "serie": "I1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2023-12-08",
+     "hemma": "Juventus",
+     "borta": "Napoli",
+     "mal": [
+      1,
+      0
+     ],
+     "serie": "I1",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2023-04-23",
+     "hemma": "Juventus",
+     "borta": "Napoli",
+     "mal": [
+      0,
+      1
+     ],
+     "serie": "I1",
+     "utfall": "2",
+     "samma_plan": true
+    },
+    {
+     "datum": "2023-01-13",
+     "hemma": "Napoli",
+     "borta": "Juventus",
+     "mal": [
+      5,
+      1
+     ],
+     "serie": "I1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2022-01-06",
+     "hemma": "Juventus",
+     "borta": "Napoli",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "I1",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2021-09-11",
+     "hemma": "Napoli",
+     "borta": "Juventus",
+     "mal": [
+      2,
+      1
+     ],
+     "serie": "I1",
      "utfall": "2",
      "samma_plan": false
     }
    ],
    "summering": {
-    "1": 0,
-    "X": 1,
-    "2": 9
+    "1": 2,
+    "X": 2,
+    "2": 6
    }
   },
-  "12": {
+  "3": {
    "lag": [
-    "Monaco",
-    "Lille"
+    "Lazio",
+    "Cagliari"
    ],
    "moten": [
     {
-     "datum": "2026-05-10",
-     "hemma": "Monaco",
-     "borta": "Lille",
+     "datum": "2026-02-21",
+     "hemma": "Cagliari",
+     "borta": "Lazio",
      "mal": [
       0,
-      1
-     ],
-     "serie": "F1",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2025-08-24",
-     "hemma": "Lille",
-     "borta": "Monaco",
-     "mal": [
-      1,
       0
      ],
-     "serie": "F1",
-     "utfall": "2",
+     "serie": "I1",
+     "utfall": "X",
      "samma_plan": false
     },
     {
-     "datum": "2025-02-22",
-     "hemma": "Lille",
-     "borta": "Monaco",
+     "datum": "2025-11-03",
+     "hemma": "Lazio",
+     "borta": "Cagliari",
      "mal": [
       2,
-      1
-     ],
-     "serie": "F1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-10-18",
-     "hemma": "Monaco",
-     "borta": "Lille",
-     "mal": [
-      0,
       0
      ],
-     "serie": "F1",
-     "utfall": "X",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-04-24",
-     "hemma": "Monaco",
-     "borta": "Lille",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "F1",
+     "serie": "I1",
      "utfall": "1",
      "samma_plan": true
     },
     {
-     "datum": "2023-10-29",
-     "hemma": "Lille",
-     "borta": "Monaco",
+     "datum": "2025-02-03",
+     "hemma": "Cagliari",
+     "borta": "Lazio",
      "mal": [
-      2,
-      0
+      1,
+      2
      ],
-     "serie": "F1",
-     "utfall": "2",
+     "serie": "I1",
+     "utfall": "1",
      "samma_plan": false
     },
     {
-     "datum": "2023-05-14",
-     "hemma": "Monaco",
-     "borta": "Lille",
+     "datum": "2024-11-04",
+     "hemma": "Lazio",
+     "borta": "Cagliari",
      "mal": [
-      0,
-      0
+      2,
+      1
      ],
-     "serie": "F1",
-     "utfall": "X",
+     "serie": "I1",
+     "utfall": "1",
      "samma_plan": true
     },
     {
-     "datum": "2022-10-23",
-     "hemma": "Lille",
-     "borta": "Monaco",
+     "datum": "2024-02-10",
+     "hemma": "Cagliari",
+     "borta": "Lazio",
      "mal": [
-      4,
+      1,
       3
      ],
-     "serie": "F1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2022-05-06",
-     "hemma": "Lille",
-     "borta": "Monaco",
-     "mal": [
-      1,
-      2
-     ],
-     "serie": "F1",
+     "serie": "I1",
      "utfall": "1",
      "samma_plan": false
     },
     {
-     "datum": "2021-11-19",
-     "hemma": "Monaco",
-     "borta": "Lille",
+     "datum": "2023-12-02",
+     "hemma": "Lazio",
+     "borta": "Cagliari",
+     "mal": [
+      1,
+      0
+     ],
+     "serie": "I1",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2022-03-05",
+     "hemma": "Cagliari",
+     "borta": "Lazio",
+     "mal": [
+      0,
+      3
+     ],
+     "serie": "I1",
+     "utfall": "1",
+     "samma_plan": false
+    },
+    {
+     "datum": "2021-09-19",
+     "hemma": "Lazio",
+     "borta": "Cagliari",
      "mal": [
       2,
       2
      ],
-     "serie": "F1",
+     "serie": "I1",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2021-02-07",
+     "hemma": "Lazio",
+     "borta": "Cagliari",
+     "mal": [
+      1,
+      0
+     ],
+     "serie": "I1",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2020-09-26",
+     "hemma": "Cagliari",
+     "borta": "Lazio",
+     "mal": [
+      0,
+      2
+     ],
+     "serie": "I1",
+     "utfall": "1",
+     "samma_plan": false
+    }
+   ],
+   "summering": {
+    "1": 8,
+    "X": 2,
+    "2": 0
+   }
+  },
+  "4": {
+   "lag": [
+    "Lecce",
+    "Genoa"
+   ],
+   "moten": [
+    {
+     "datum": "2026-05-24",
+     "hemma": "Lecce",
+     "borta": "Genoa",
+     "mal": [
+      1,
+      0
+     ],
+     "serie": "I1",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2025-08-23",
+     "hemma": "Genoa",
+     "borta": "Lecce",
+     "mal": [
+      0,
+      0
+     ],
+     "serie": "I1",
+     "utfall": "X",
+     "samma_plan": false
+    },
+    {
+     "datum": "2025-03-14",
+     "hemma": "Genoa",
+     "borta": "Lecce",
+     "mal": [
+      2,
+      1
+     ],
+     "serie": "I1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2025-01-05",
+     "hemma": "Lecce",
+     "borta": "Genoa",
+     "mal": [
+      0,
+      0
+     ],
+     "serie": "I1",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2024-01-28",
+     "hemma": "Genoa",
+     "borta": "Lecce",
+     "mal": [
+      2,
+      1
+     ],
+     "serie": "I1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2023-09-22",
+     "hemma": "Lecce",
+     "borta": "Genoa",
+     "mal": [
+      1,
+      0
+     ],
+     "serie": "I1",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2020-07-19",
+     "hemma": "Genoa",
+     "borta": "Lecce",
+     "mal": [
+      2,
+      1
+     ],
+     "serie": "I1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2019-12-08",
+     "hemma": "Lecce",
+     "borta": "Genoa",
+     "mal": [
+      2,
+      2
+     ],
+     "serie": "I1",
      "utfall": "X",
      "samma_plan": true
     }
@@ -1475,31 +507,480 @@
    "summering": {
     "1": 2,
     "X": 3,
-    "2": 5
+    "2": 3
    }
   },
-  "13": {
+  "5": {
    "lag": [
-    "Mjallby",
-    "Hammarby"
+    "Frosinone",
+    "Torino"
    ],
    "moten": [
     {
-     "datum": "2026-04-04",
-     "hemma": "Hammarby",
-     "borta": "Mjallby",
+     "datum": "2024-04-21",
+     "hemma": "Torino",
+     "borta": "Frosinone",
+     "mal": [
+      0,
+      0
+     ],
+     "serie": "I1",
+     "utfall": "X",
+     "samma_plan": false
+    },
+    {
+     "datum": "2023-12-10",
+     "hemma": "Frosinone",
+     "borta": "Torino",
+     "mal": [
+      0,
+      0
+     ],
+     "serie": "I1",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2019-03-10",
+     "hemma": "Frosinone",
+     "borta": "Torino",
+     "mal": [
+      1,
+      2
+     ],
+     "serie": "I1",
+     "utfall": "2",
+     "samma_plan": true
+    },
+    {
+     "datum": "2018-10-05",
+     "hemma": "Torino",
+     "borta": "Frosinone",
+     "mal": [
+      3,
+      2
+     ],
+     "serie": "I1",
+     "utfall": "2",
+     "samma_plan": false
+    }
+   ],
+   "summering": {
+    "1": 0,
+    "X": 2,
+    "2": 2
+   }
+  },
+  "7": {
+   "lag": [
+    "Ath Bilbao",
+    "Sociedad"
+   ],
+   "moten": [
+    {
+     "datum": "2026-02-01",
+     "hemma": "Ath Bilbao",
+     "borta": "Sociedad",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "SP1",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2025-11-01",
+     "hemma": "Sociedad",
+     "borta": "Ath Bilbao",
+     "mal": [
+      3,
+      2
+     ],
+     "serie": "SP1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2025-05-04",
+     "hemma": "Sociedad",
+     "borta": "Ath Bilbao",
+     "mal": [
+      0,
+      0
+     ],
+     "serie": "SP1",
+     "utfall": "X",
+     "samma_plan": false
+    },
+    {
+     "datum": "2024-11-24",
+     "hemma": "Ath Bilbao",
+     "borta": "Sociedad",
+     "mal": [
+      1,
+      0
+     ],
+     "serie": "SP1",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2024-01-13",
+     "hemma": "Ath Bilbao",
+     "borta": "Sociedad",
+     "mal": [
+      2,
+      1
+     ],
+     "serie": "SP1",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2023-09-30",
+     "hemma": "Sociedad",
+     "borta": "Ath Bilbao",
      "mal": [
       3,
       0
+     ],
+     "serie": "SP1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2023-04-15",
+     "hemma": "Ath Bilbao",
+     "borta": "Sociedad",
+     "mal": [
+      2,
+      0
+     ],
+     "serie": "SP1",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2023-01-14",
+     "hemma": "Sociedad",
+     "borta": "Ath Bilbao",
+     "mal": [
+      3,
+      1
+     ],
+     "serie": "SP1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2022-02-20",
+     "hemma": "Ath Bilbao",
+     "borta": "Sociedad",
+     "mal": [
+      4,
+      0
+     ],
+     "serie": "SP1",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2021-10-31",
+     "hemma": "Sociedad",
+     "borta": "Ath Bilbao",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "SP1",
+     "utfall": "X",
+     "samma_plan": false
+    }
+   ],
+   "summering": {
+    "1": 4,
+    "X": 3,
+    "2": 3
+   }
+  },
+  "8": {
+   "lag": [
+    "Elche",
+    "Valencia"
+   ],
+   "moten": [
+    {
+     "datum": "2026-04-11",
+     "hemma": "Elche",
+     "borta": "Valencia",
+     "mal": [
+      1,
+      0
+     ],
+     "serie": "SP1",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2026-01-10",
+     "hemma": "Valencia",
+     "borta": "Elche",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "SP1",
+     "utfall": "X",
+     "samma_plan": false
+    },
+    {
+     "datum": "2023-04-23",
+     "hemma": "Elche",
+     "borta": "Valencia",
+     "mal": [
+      0,
+      2
+     ],
+     "serie": "SP1",
+     "utfall": "2",
+     "samma_plan": true
+    },
+    {
+     "datum": "2022-10-15",
+     "hemma": "Valencia",
+     "borta": "Elche",
+     "mal": [
+      2,
+      2
+     ],
+     "serie": "SP1",
+     "utfall": "X",
+     "samma_plan": false
+    },
+    {
+     "datum": "2022-03-19",
+     "hemma": "Elche",
+     "borta": "Valencia",
+     "mal": [
+      0,
+      1
+     ],
+     "serie": "SP1",
+     "utfall": "2",
+     "samma_plan": true
+    },
+    {
+     "datum": "2021-12-11",
+     "hemma": "Valencia",
+     "borta": "Elche",
+     "mal": [
+      2,
+      1
+     ],
+     "serie": "SP1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2021-01-30",
+     "hemma": "Valencia",
+     "borta": "Elche",
+     "mal": [
+      1,
+      0
+     ],
+     "serie": "SP1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2020-10-23",
+     "hemma": "Elche",
+     "borta": "Valencia",
+     "mal": [
+      2,
+      1
+     ],
+     "serie": "SP1",
+     "utfall": "1",
+     "samma_plan": true
+    }
+   ],
+   "summering": {
+    "1": 2,
+    "X": 2,
+    "2": 4
+   }
+  },
+  "9": {
+   "lag": [
+    "Hacken",
+    "Goteborg"
+   ],
+   "moten": [
+    {
+     "datum": "2026-04-11",
+     "hemma": "Goteborg",
+     "borta": "Hacken",
+     "mal": [
+      0,
+      2
+     ],
+     "serie": "Allsvenskan",
+     "utfall": "1",
+     "samma_plan": false
+    },
+    {
+     "datum": "2025-09-15",
+     "hemma": "Hacken",
+     "borta": "Goteborg",
+     "mal": [
+      1,
+      2
+     ],
+     "serie": "Allsvenskan",
+     "utfall": "2",
+     "samma_plan": true
+    },
+    {
+     "datum": "2025-04-20",
+     "hemma": "Goteborg",
+     "borta": "Hacken",
+     "mal": [
+      2,
+      3
+     ],
+     "serie": "Allsvenskan",
+     "utfall": "1",
+     "samma_plan": false
+    },
+    {
+     "datum": "2024-09-15",
+     "hemma": "Hacken",
+     "borta": "Goteborg",
+     "mal": [
+      3,
+      3
+     ],
+     "serie": "Allsvenskan",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2024-04-24",
+     "hemma": "Goteborg",
+     "borta": "Hacken",
+     "mal": [
+      0,
+      1
+     ],
+     "serie": "Allsvenskan",
+     "utfall": "1",
+     "samma_plan": false
+    },
+    {
+     "datum": "2023-08-27",
+     "hemma": "Goteborg",
+     "borta": "Hacken",
+     "mal": [
+      4,
+      2
      ],
      "serie": "Allsvenskan",
      "utfall": "2",
      "samma_plan": false
     },
     {
-     "datum": "2025-05-22",
-     "hemma": "Hammarby",
-     "borta": "Mjallby",
+     "datum": "2023-05-29",
+     "hemma": "Hacken",
+     "borta": "Goteborg",
+     "mal": [
+      4,
+      1
+     ],
+     "serie": "Allsvenskan",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2022-10-30",
+     "hemma": "Goteborg",
+     "borta": "Hacken",
+     "mal": [
+      0,
+      4
+     ],
+     "serie": "Allsvenskan",
+     "utfall": "1",
+     "samma_plan": false
+    },
+    {
+     "datum": "2022-04-17",
+     "hemma": "Hacken",
+     "borta": "Goteborg",
+     "mal": [
+      0,
+      2
+     ],
+     "serie": "Allsvenskan",
+     "utfall": "2",
+     "samma_plan": true
+    },
+    {
+     "datum": "2021-08-29",
+     "hemma": "Hacken",
+     "borta": "Goteborg",
+     "mal": [
+      3,
+      2
+     ],
+     "serie": "Allsvenskan",
+     "utfall": "1",
+     "samma_plan": true
+    }
+   ],
+   "summering": {
+    "1": 6,
+    "X": 1,
+    "2": 3
+   }
+  },
+  "10": {
+   "lag": [
+    "Elfsborg",
+    "Orgryte"
+   ],
+   "moten": [
+    {
+     "datum": "2026-05-29",
+     "hemma": "Orgryte",
+     "borta": "Elfsborg",
+     "mal": [
+      2,
+      2
+     ],
+     "serie": "Allsvenskan",
+     "utfall": "X",
+     "samma_plan": false
+    }
+   ],
+   "summering": {
+    "1": 0,
+    "X": 1,
+    "2": 0
+   }
+  },
+  "11": {
+   "lag": [
+    "Vasteras SK",
+    "Brommapojkarna"
+   ],
+   "moten": [
+    {
+     "datum": "2026-04-26",
+     "hemma": "Brommapojkarna",
+     "borta": "Vasteras SK",
      "mal": [
       1,
       2
@@ -1509,106 +990,204 @@
      "samma_plan": false
     },
     {
-     "datum": "2025-04-18",
-     "hemma": "Mjallby",
-     "borta": "Hammarby",
+     "datum": "2024-09-30",
+     "hemma": "Brommapojkarna",
+     "borta": "Vasteras SK",
      "mal": [
-      3,
+      2,
       1
      ],
      "serie": "Allsvenskan",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-07-28",
-     "hemma": "Hammarby",
-     "borta": "Mjallby",
-     "mal": [
-      3,
-      0
-     ],
-     "serie": "Allsvenskan",
      "utfall": "2",
      "samma_plan": false
     },
     {
-     "datum": "2024-05-15",
-     "hemma": "Mjallby",
-     "borta": "Hammarby",
+     "datum": "2024-05-26",
+     "hemma": "Vasteras SK",
+     "borta": "Brommapojkarna",
      "mal": [
-      3,
-      0
-     ],
-     "serie": "Allsvenskan",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-08-27",
-     "hemma": "Mjallby",
-     "borta": "Hammarby",
-     "mal": [
-      0,
-      3
-     ],
-     "serie": "Allsvenskan",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-05-09",
-     "hemma": "Hammarby",
-     "borta": "Mjallby",
-     "mal": [
-      0,
-      0
+      1,
+      1
      ],
      "serie": "Allsvenskan",
      "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2022-10-16",
-     "hemma": "Mjallby",
-     "borta": "Hammarby",
-     "mal": [
-      0,
-      3
-     ],
-     "serie": "Allsvenskan",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2022-04-15",
-     "hemma": "Hammarby",
-     "borta": "Mjallby",
-     "mal": [
-      2,
-      0
-     ],
-     "serie": "Allsvenskan",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2021-11-01",
-     "hemma": "Mjallby",
-     "borta": "Hammarby",
-     "mal": [
-      2,
-      0
-     ],
-     "serie": "Allsvenskan",
-     "utfall": "1",
      "samma_plan": true
     }
    ],
    "summering": {
-    "1": 4,
+    "1": 1,
     "X": 1,
-    "2": 5
+    "2": 1
+   }
+  },
+  "12": {
+   "lag": [
+    "Paris FC",
+    "Monaco"
+   ],
+   "moten": [
+    {
+     "datum": "2026-04-10",
+     "hemma": "Paris FC",
+     "borta": "Monaco",
+     "mal": [
+      4,
+      1
+     ],
+     "serie": "F1",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2025-11-01",
+     "hemma": "Monaco",
+     "borta": "Paris FC",
+     "mal": [
+      0,
+      1
+     ],
+     "serie": "F1",
+     "utfall": "1",
+     "samma_plan": false
+    }
+   ],
+   "summering": {
+    "1": 2,
+    "X": 0,
+    "2": 0
+   }
+  },
+  "13": {
+   "lag": [
+    "Union Berlin",
+    "FC Koln"
+   ],
+   "moten": [
+    {
+     "datum": "2026-05-02",
+     "hemma": "Union Berlin",
+     "borta": "FC Koln",
+     "mal": [
+      2,
+      2
+     ],
+     "serie": "D1",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2025-12-20",
+     "hemma": "FC Koln",
+     "borta": "Union Berlin",
+     "mal": [
+      0,
+      1
+     ],
+     "serie": "D1",
+     "utfall": "1",
+     "samma_plan": false
+    },
+    {
+     "datum": "2024-05-11",
+     "hemma": "FC Koln",
+     "borta": "Union Berlin",
+     "mal": [
+      3,
+      2
+     ],
+     "serie": "D1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2023-12-20",
+     "hemma": "Union Berlin",
+     "borta": "FC Koln",
+     "mal": [
+      2,
+      0
+     ],
+     "serie": "D1",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2023-03-04",
+     "hemma": "Union Berlin",
+     "borta": "FC Koln",
+     "mal": [
+      0,
+      0
+     ],
+     "serie": "D1",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2022-09-11",
+     "hemma": "FC Koln",
+     "borta": "Union Berlin",
+     "mal": [
+      0,
+      1
+     ],
+     "serie": "D1",
+     "utfall": "1",
+     "samma_plan": false
+    },
+    {
+     "datum": "2022-04-01",
+     "hemma": "Union Berlin",
+     "borta": "FC Koln",
+     "mal": [
+      1,
+      0
+     ],
+     "serie": "D1",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2021-11-07",
+     "hemma": "FC Koln",
+     "borta": "Union Berlin",
+     "mal": [
+      2,
+      2
+     ],
+     "serie": "D1",
+     "utfall": "X",
+     "samma_plan": false
+    },
+    {
+     "datum": "2021-03-13",
+     "hemma": "Union Berlin",
+     "borta": "FC Koln",
+     "mal": [
+      2,
+      1
+     ],
+     "serie": "D1",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2020-11-22",
+     "hemma": "FC Koln",
+     "borta": "Union Berlin",
+     "mal": [
+      1,
+      2
+     ],
+     "serie": "D1",
+     "utfall": "1",
+     "samma_plan": false
+    }
+   ],
+   "summering": {
+    "1": 6,
+    "X": 3,
+    "2": 1
    }
   }
  }

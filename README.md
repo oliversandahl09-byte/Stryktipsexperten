@@ -64,6 +64,22 @@ Lägg upp den i Cloudflare (Workers & Pages → Create → Worker, klistra in ko
 Deploy) och skriv dess adress i `LIVE_PROXY` i `webb/index.html`. Svarar den
 inte används live.json som vanligt.
 
+**Inloggning och sparade tips:** utan inloggning sparas dina val bara i
+webbläsaren. Med ett gratis Supabase-projekt kan besökare logga in med en
+länk till sin e-post, och då sparas tipset per omgång i databasen så att det
+syns på alla enheter, tillsammans med de senaste omgångarnas tips.
+
+1. Skapa ett projekt på [supabase.com](https://supabase.com).
+2. Kör `supabase/tips.sql` under **SQL Editor**. Den skapar tabellen `tips`
+   och ser till att varje användare bara kan läsa och ändra sina egna tips.
+3. Under **Authentication → URL Configuration**: sätt Site URL till sidans
+   adress och lägg till både den och `…/?spel=europatipset` som Redirect URLs.
+4. Skriv projektets URL och anon-nyckel (**Project Settings → API**) i
+   `SUPABASE_URL` och `SUPABASE_KEY` i `webb/index.html`. Anon-nyckeln är
+   gjord för att ligga publikt; skyddet sitter i databasens regler.
+
+Är de tomma visas ingen inloggning och sidan fungerar som förut.
+
 Sidan publiceras med GitHub Pages av `.github/workflows/webb.yml`, varje gång
 veckans förslag har skrivits. Slå på det under **Settings → Pages → Source:
 GitHub Actions**. Lokalt: `python -m http.server` i repots rot och öppna

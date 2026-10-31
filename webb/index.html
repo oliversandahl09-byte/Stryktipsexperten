@@ -122,8 +122,9 @@ h2 { font: 700 13px/1.2 var(--font-body); text-transform: uppercase; letter-spac
 .tables .hint span { display: inline-flex; align-items: center; gap: 4px; margin-right: 10px; }
 .tables .hint i { width: 3px; height: 12px; display: inline-block; }
 .panel { box-shadow: 0 2px 8px rgb(0 0 0 / 0.25); position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); display: grid; gap: 20px;
+  max-height: calc(100vh - 32px); overflow-y: auto;
   background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
-@media (max-width: 860px) { .panel { position: static; } }
+@media (max-width: 860px) { .panel { position: static; max-height: none; } }
 
 .seg { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); background: var(--soft); border-radius: 8px; padding: 3px; gap: 3px; }
 .seg button { border: 0; background: transparent; color: var(--muted); font: 600 14px var(--font-body); padding: 8px; border-radius: 6px; cursor: pointer; }
@@ -244,6 +245,16 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--focus); out
 footer { font-size: 13px; color: var(--on-page-muted); max-width: 70ch; }
 .toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--accent); color: var(--accent-ink);
   padding: 10px 16px; border-radius: 8px; font-weight: 600; font-size: 14px; }
+.konto { padding-top: 16px; border-top: 1px solid var(--line); }
+.konto form { display: grid; gap: 8px; }
+.konto input[type="email"] { width: 100%; font: 500 14px var(--font-body); padding: 8px 10px; border: 1px solid var(--line);
+  border-radius: 6px; background: var(--soft); color: var(--ink); }
+.konto .who { overflow-wrap: anywhere; }
+.historik { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.historik li { background: var(--soft); border-radius: 8px; padding: 6px 10px; font-size: 12px; color: var(--muted); }
+.historik li b { color: var(--ink); font-size: 13px; }
+.historik li.nu { box-shadow: inset 3px 0 0 var(--mark); }
+.historik .rad { display: block; font: 600 12px var(--font-data); color: var(--ink); overflow-wrap: anywhere; }
 .error h1 { color: var(--ink); }
 .error { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
 @media (prefers-reduced-motion: no-preference) { .sign { transition: background-color .15s, border-color .15s; } }
@@ -357,6 +368,21 @@ footer { font-size: 13px; color: var(--on-page-muted); max-width: 70ch; }
         <button type="button" class="btn primary" id="download">Ladda ner fil till Svenska Spel</button>
         <p class="hint">Filen innehåller systemet som enkelrader. Lämna in den under <b>Externa</b> på <span class="spel-namn">Stryktipset</span> hos Svenska Spel och kontrollera att antalet rader stämmer innan du betalar.</p>
       </div>
+
+      <div class="group konto" id="konto" hidden>
+        <h2>Mina tips</h2>
+        <form id="login-form">
+          <p class="hint">Logga in för att spara ditt tips och se det på alla dina enheter.</p>
+          <label class="hint" for="login-email">E-postadress</label>
+          <input type="email" id="login-email" required autocomplete="email" placeholder="namn@exempel.se">
+          <button type="submit" class="btn primary">Skicka inloggningslänk</button>
+        </form>
+        <div id="konto-in" class="group" hidden>
+          <p class="hint who">Inloggad som <b id="konto-email"></b>. <span id="konto-status"></span></p>
+          <ul class="historik" id="historik"></ul>
+          <button type="button" class="btn" id="logout">Logga ut</button>
+        </div>
+      </div>
     </aside>
 
     <main class="coupon" aria-label="Kupong">
@@ -421,6 +447,7 @@ function load() {
 }
 function save() {
   try { localStorage.setItem(STORE, JSON.stringify({ ...state, omgang: data.omgang })); } catch (e) {}
+  if (user) queueSync();
 }
 
 // Samma poäng som stryktips/kupong.py: logaritmen av träffchans och spelvärde, vägda med risk.
@@ -853,6 +880,105 @@ async function refreshLive() {
   render();
 }
 
+// Inloggning och sparade tips med Supabase (se supabase/tips.sql). Utan adress
+// och nyckel syns ingen inloggning och valen sparas bara i webbläsaren som förut.
+// Nyckeln är projektets publika nyckel (publishable/anon); behörigheterna sitter i databasen.
+const SUPABASE_URL = "https://swyeixpqneymobdaaggr.supabase.co";
+const SUPABASE_KEY = "sb_publishable_q2Xn5q8dcFKPS4HPrDsXGQ_CwCu8fr2";
+const SUPABASE_JS = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.79.0/dist/umd/supabase.js";
+const SYNC_KEYS = ["mode", "budget", "halv", "hel", "risk", "h2hw", "locks"];
+let db = null, user = null, synced = null;
+
+function loadScript(src) {
+  return new Promise((ok, fail) => {
+    const s = document.createElement("script");
+    s.src = src; s.onload = ok; s.onerror = fail;
+    document.head.appendChild(s);
+  });
+}
+
+async function setupKonto() {
+  if (!SUPABASE_URL || !SUPABASE_KEY) return;
+  try { await loadScript(SUPABASE_JS); } catch (e) { return; }
+  db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+  $("konto").hidden = false;
+  $("login-form").onsubmit = async e => {
+    e.preventDefault();
+    const btn = e.target.querySelector("button");
+    btn.disabled = true;
+    const { error } = await db.auth.signInWithOtp({
+      email: $("login-email").value.trim(),
+      options: { emailRedirectTo: location.origin + location.pathname + location.search },
+    });
+    btn.disabled = false;
+    toast(error ? "Kunde inte skicka länken" : "Kolla din e-post och klicka på länken");
+  };
+  $("logout").onclick = async () => { await db.auth.signOut(); toast("Utloggad"); };
+  // Supabase rekommenderar att inte vänta på egna anrop inne i lyssnaren.
+  db.auth.onAuthStateChange((event, session) => setTimeout(() => setUser(session ? session.user : null)));
+}
+
+async function setUser(u) {
+  if ((u && u.id) === (user && user.id)) return;
+  user = u; synced = null;
+  $("login-form").hidden = !!u;
+  $("konto-in").hidden = !u;
+  if (!u) return;
+  $("konto-email").textContent = u.email || "";
+  status("Hämtar dina tips …");
+  const { data: rows, error } = await db.from("tips").select("val").eq("spel", SPEL).eq("omgang", data.omgang).limit(1);
+  if (error) { status("Kunde inte hämta dina tips."); return; }
+  if (rows.length) {
+    // Det sparade tipset vinner över det som råkar ligga i den här webbläsaren.
+    for (const k of SYNC_KEYS) if (k in rows[0].val) state[k] = rows[0].val[k];
+    synced = syncPayload();
+    render();
+  } else {
+    sync();
+  }
+  loadHistorik();
+}
+
+function syncPayload() {
+  const covers = window.currentCovers || [];
+  return JSON.stringify({
+    user_id: user.id, spel: SPEL, omgang: data.omgang,
+    val: Object.fromEntries(SYNC_KEYS.map(k => [k, state[k]])),
+    kupong: covers.map(c => c.join("")),
+    rader: covers.reduce((n, c) => n * c.length, 1),
+  });
+}
+
+function queueSync() {
+  clearTimeout(queueSync.t);
+  queueSync.t = setTimeout(sync, 1200);
+}
+
+async function sync() {
+  if (!user) return;
+  const payload = syncPayload();
+  if (payload === synced) return;
+  status("Sparar …");
+  const { error } = await db.from("tips").upsert({ ...JSON.parse(payload), uppdaterad: new Date().toISOString() });
+  if (error) { status("Kunde inte spara tipset."); return; }
+  synced = payload;
+  status("Tipset är sparat.");
+  loadHistorik();
+}
+
+function status(text) { $("konto-status").textContent = text; }
+
+async function loadHistorik() {
+  const { data: rows, error } = await db.from("tips").select("omgang, kupong, rader, uppdaterad")
+    .eq("spel", SPEL).order("omgang", { ascending: false }).limit(10);
+  if (error || !user) return;
+  $("historik").innerHTML = rows.map(r => {
+    const dag = new Date(r.uppdaterad).toLocaleDateString("sv-SE", { day: "numeric", month: "short" });
+    return `<li class="${r.omgang === data.omgang ? "nu" : ""}"><b>Omgång ${r.omgang}</b>${r.omgang === data.omgang ? " · denna vecka" : ""}
+      · ${r.rader} rader · sparad ${dag}<span class="rad">${(r.kupong || []).map(c => c || "-").join(" ")}</span></li>`;
+  }).join("") || `<li>Inga sparade tips än.</li>`;
+}
+
 function h2hLine(nr) {
   const info = h2h[nr];
   if (!info) return "";
@@ -1072,6 +1198,7 @@ Promise.all([fetchData(), fetchH2H(), fetchTables()]).then(([d, ib, tb]) => {
   renderStatic(); bind(); render(); renderTables();
   refreshLive();
   setInterval(refreshLive, 60000);
+  setupKonto();
   $("league-tabs").onclick = e => { const b = e.target.closest("button"); if (b) { state.league = b.dataset.league; renderTables(); save(); } };
 }).catch(() => {
   // Behåll spelflikarna så att man kan byta till det andra spelet.
