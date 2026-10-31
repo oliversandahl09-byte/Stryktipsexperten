@@ -213,6 +213,14 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--focus); out
 .live.hit { background: var(--ok); color: var(--ok-ink); }
 .live.miss { background: var(--accent); color: var(--accent-ink); }
 .live small { font: 500 11px var(--font-body); margin-left: 4px; }
+.match.goal { border-color: var(--accent); box-shadow: inset 4px 0 0 var(--accent), 0 1px 3px rgb(0 0 0 / 0.18); }
+.live.goal { outline: 2px solid var(--accent); outline-offset: 1px; }
+@media (prefers-reduced-motion: no-preference) {
+  .live.goal { animation: goalblink 1s steps(1, end) infinite; }
+  .match.goal { animation: goalrow 1.2s ease-in-out infinite; }
+}
+@keyframes goalblink { 50% { background: var(--focus); color: var(--ink); outline-color: transparent; } }
+@keyframes goalrow { 50% { border-color: var(--surface); box-shadow: inset 4px 0 0 transparent, 0 1px 3px rgb(0 0 0 / 0.18); } }
 .sign.now { box-shadow: 0 0 0 3px var(--focus); }
 .kind button { border: 0; background: none; color: var(--lock); font: 600 12px var(--font-body); cursor: pointer; padding: 0; }
 @media (max-width: 560px) {
@@ -530,7 +538,7 @@ function render() {
         aria-pressed="${on}" aria-label="Match ${m.nr}, ${o}: ${pct(p)}, värde ${m.varde[o].toFixed(2)}">
         <span class="fill" style="height:${Math.round(p * 100)}%"></span><span class="s">${o}</span><span class="p">${Math.round(p * 100)}%</span></button>`;
     }).join("");
-    return `<div class="match${locked ? " locked" : ""}">
+    return `<div class="match${locked ? " locked" : ""}${goalNrs.has(String(m.nr)) ? " goal" : ""}">
       <span class="nr">${m.nr}</span>
       <div class="teams"><div class="name">${m.match}${liveBadge(m.nr, cover)}</div><div class="sub"><span>${sub}</span></div></div>
       <div class="signs">${signs}</div>
@@ -544,6 +552,27 @@ function render() {
 
 let live = null;
 
+// Matcherna där det senast blev mål blinkar tills nästa mål görs någon annanstans.
+// Ställningarna sparas i webbläsaren så att det fungerar även efter omladdning.
+const GOAL_STORE = "stryktips-mal-" + SPEL;
+let goalNrs = new Set();
+
+function goals(s) { return s && s.mal ? s.mal[0] + s.mal[1] : 0; }
+
+function trackGoals(prev, next) {
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem(GOAL_STORE) || "{}"); } catch (e) {}
+  if (saved.omgang !== next.omgang) saved = {};
+  const before = prev ? Object.fromEntries(Object.entries(prev.matcher).map(([nr, s]) => [nr, goals(s)])) : saved.mal;
+  if (!prev && saved.senaste) goalNrs = new Set(saved.senaste);
+  const mal = Object.fromEntries(Object.entries(next.matcher).map(([nr, s]) => [nr, goals(s)]));
+  if (before) {
+    const scored = Object.keys(mal).filter(nr => mal[nr] > (before[nr] || 0));
+    if (scored.length) goalNrs = new Set(scored);
+  }
+  try { localStorage.setItem(GOAL_STORE, JSON.stringify({ omgang: next.omgang, mal, senaste: [...goalNrs] })); } catch (e) {}
+}
+
 const liveOutcome = nr => live && live.matcher[nr] && live.matcher[nr].utfall;
 
 function liveBadge(nr, cover) {
@@ -551,7 +580,8 @@ function liveBadge(nr, cover) {
   if (!s || s.lage === "ej startad") return "";
   const score = s.mal ? `${s.mal[0]}–${s.mal[1]}` : "";
   const cls = s.utfall ? (cover.includes(s.utfall) ? " hit" : " miss") : "";
-  return `<span class="live${cls}">${score}<small>${s.status}</small></span>`;
+  const goal = goalNrs.has(String(nr)) ? " goal" : "";
+  return `<span class="live${cls}${goal}"${goal ? ' title="Senaste målet"' : ""}>${score}<small>${s.status}</small></span>`;
 }
 
 function renderLive() {
@@ -564,7 +594,9 @@ function renderLive() {
   const hits = started.filter(([nr, s]) => (covers[idx(nr)] || []).includes(s.utfall)).length;
   const ongoing = started.filter(([, s]) => s.lage === "pågår").length;
   const time = new Date(live.hamtad).toLocaleTimeString("sv-SE", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Stockholm" });
+  const latest = [...goalNrs].map(nr => data.matcher[idx(nr)]).filter(Boolean).map(m => `${m.nr}. ${m.match}`).join(", ");
   bar.innerHTML = `<span class="dot" aria-hidden="true"></span><b>Live: ${hits} av ${started.length} rätt just nu</b>
+    ${latest ? `<span>Senaste mål: <b>${latest}</b></span>` : ""}
     <span class="muted">${ongoing ? `${ongoing} ${ongoing === 1 ? "match" : "matcher"} pågår` : "Alla startade matcher är klara"} · uppdaterad ${time} · ${liveFromProxy ? "hämtas varje minut" : "hämtas var tionde minut"}</span>`;
 }
 
@@ -590,6 +622,7 @@ async function refreshLive() {
   const l = await fetchLive();
   if (!l || l.omgang !== data.omgang) return;
   if (live && live.hamtad === l.hamtad) return;
+  trackGoals(live, l);
   live = l;
   render();
 }
