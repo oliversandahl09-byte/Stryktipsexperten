@@ -148,6 +148,25 @@ h2 { font: 700 13px/1.2 var(--font-body); text-transform: uppercase; letter-spac
 input[type="range"] { width: 100%; accent-color: var(--accent); }
 .range-labels { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); }
 
+.rlist { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.rlist button { font: 700 12px var(--font-data); border: 1.5px solid var(--ink); background: var(--surface); color: var(--ink);
+  padding: 8px 4px; border-radius: 6px; cursor: pointer; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.rlist button small { font-weight: 500; color: var(--muted); }
+.rlist button[aria-pressed="true"] { background: var(--mark); border-color: var(--mark); color: var(--mark-ink); }
+.rlist button[aria-pressed="true"] small { color: inherit; }
+.rlist button.free { grid-column: 1 / -1; font-family: var(--font-body); border-style: dashed; }
+.rinfo { background: var(--soft); border-radius: 8px; padding: 10px 12px; display: grid; gap: 6px; font-size: 13px; }
+.rinfo dl { margin: 0; display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; }
+.rinfo dt { color: var(--muted); }
+.rinfo dd { margin: 0; font: 700 13px var(--font-data); text-align: right; }
+.rinfo p { margin: 0; color: var(--muted); font-size: 12px; }
+.rinfo summary, .rmore summary { cursor: pointer; color: var(--mark); font-weight: 600; font-size: 13px; }
+.rmore p { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
+.rrows { max-height: 260px; overflow: auto; margin-top: 6px; }
+.rrows table { border-collapse: collapse; font: 600 12px var(--font-data); font-variant-numeric: tabular-nums; }
+.rrows th, .rrows td { padding: 2px 5px; text-align: center; border-bottom: 1px solid var(--line); }
+.rrows th { position: sticky; top: 0; background: var(--soft); color: var(--muted); font-weight: 600; }
+.rrows td:first-child { color: var(--muted); }
 .sum { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 12px; padding-top: 16px; border-top: 1px solid var(--line); }
 .stat .k { font-size: 12px; color: var(--muted); }
 .stat .v { font: 700 22px/1.15 var(--font-data); font-variant-numeric: tabular-nums; }
@@ -269,6 +288,22 @@ footer { font-size: 13px; color: var(--on-page-muted); max-width: 70ch; }
         <label class="field" for="budget">Eget antal rader <input type="number" id="budget" min="1" max="1594323" step="1"></label>
       </div>
 
+      <div class="group" id="rlist-box" hidden>
+        <div class="rlist" id="rsys-list" role="group" aria-label="R-system"></div>
+        <div class="rinfo" id="rsys-info"></div>
+        <details class="rmore">
+          <summary>Läs mer om R-system</summary>
+          <p>Ett R-system (reducerat system) spelar bara en del av raderna i ett fullt system med samma garderingar.
+          I gengäld får du en garanti: sitter alla spikar och alla garderade tecken har du minst så många rätt som
+          siffran inom parentes säger, även om ingen av raderna har 13 rätt.</p>
+          <p><b>R 4-0-9 (12)</b> betyder 4 helgarderingar, 0 halvgarderingar, 9 rader och garanti för 12 rätt.
+          Det fulla systemet hade varit 81 rader.</p>
+          <p>Chansen för 13 rätt blir lägre än med det fulla systemet, men systemet blir mycket billigare.
+          Systemen har samma garderingar och garantier som Svenska Spels R-system, men raderna är framräknade här
+          och är ofta färre. Sidan väljer vilka matcher som garderas utifrån spelstilen. Tryck på tecken för att välja själv.</p>
+        </details>
+      </div>
+
       <div class="group" id="exakt-box" hidden>
         <div class="stepper">
           <span class="lbl">Halvgarderingar <small>två tecken, ×2 rader</small></span>
@@ -280,10 +315,11 @@ footer { font-size: 13px; color: var(--on-page-muted); max-width: 70ch; }
         </div>
         <div class="group" id="rsys-box" hidden>
           <div class="seg" role="group" aria-label="Garanti">
-            <button type="button" id="garanti-12" aria-pressed="true">Garanti 12 rätt</button>
-            <button type="button" id="garanti-11" aria-pressed="false">Garanti 11 rätt</button>
+            <button type="button" data-garanti="12" aria-pressed="true">12 rätt</button>
+            <button type="button" data-garanti="11" aria-pressed="false">11 rätt</button>
+            <button type="button" data-garanti="10" aria-pressed="false">10 rätt</button>
           </div>
-          <p class="hint" id="rsys-hint"></p>
+          <p class="hint">Reducera fritt: välj egna garderingar och garanti, så räknas raderna fram här.</p>
         </div>
       </div>
 
@@ -360,7 +396,7 @@ const pct = (x, d = 0) => (x * 100).toLocaleString("sv-SE", { minimumFractionDig
 const $ = id => document.getElementById(id);
 
 let data;
-const state = { mode: "budget", budget: 64, halv: 6, hel: 0, garanti: 12, risk: 0.5, h2hw: 0.15, locks: {} };
+const state = { mode: "budget", budget: 64, halv: 6, hel: 0, garanti: 12, rfree: false, risk: 0.5, h2hw: 0.15, locks: {} };
 let base, h2h = {};
 
 // Väger ihop oddsens sannolikhet med utfallen i inbördes möten. Få möten ger mindre vikt,
@@ -474,9 +510,55 @@ function coverCode(sizes, radius, seed) {
   return code;
 }
 
+// Färdiga R-system med samma garderingar och garantier som Svenska Spels: [hel, halv, garanti].
+// Raderna är framräknade i förväg (simulerad glödgning, varje system kontrollerat mot sin garanti)
+// och ligger i R_KODER som tal i bas 36, nycklade på "hel-halv-radie".
+const R_SYSTEM = [
+  [0, 7, 12], [0, 11, 10], [2, 5, 11], [3, 3, 12], [4, 0, 12], [4, 4, 11], [4, 4, 12], [4, 5, 11], [4, 6, 10], [4, 6, 11],
+  [4, 7, 10], [4, 7, 11], [5, 0, 11], [5, 3, 11], [5, 5, 11], [6, 3, 10], [6, 3, 11], [6, 4, 10], [7, 0, 11], [7, 2, 10],
+  [7, 2, 11], [8, 0, 10], [8, 0, 11], [8, 2, 11], [9, 0, 11], [10, 0, 10], [10, 0, 11], [11, 0, 11],
+];
+const R_KODER = /*R_KODER*/{
+  "0-7-1": "5 8 m r z 1a 1c 1p 1u 27 29 2k 2s 2x 3b 3e",
+  "0-11-3": "e 3l a8 e7 fx j6 n7 r0 vd yi 107 144 190 1d3 1ey 1i1",
+  "2-5-2": "q 15 3h 3l 3o 3s 49 4d 5q 61 6u",
+  "3-3-1": "8 d i u 12 1g 1j 1x 25 2c 2k 2y 33 3b 3p 3s 46 4e 4j 4x 55 5h 5m 5r",
+  "4-0-1": "5 9 p x 14 1b 1j 1z 23",
+  "4-4-2": "2 14 26 7a 7l 8q bl cq cs dp ei fn kg l9 me mu nz o1 rj ru sz xt yv zx",
+  "4-4-1": "3 a l z 1a 1g 1i 1w 1x 25 2f 2l 2s 34 3b 3o 3v 48 4p 4s 4z 52 59 5l 68 6m 6w 6x 7e 7t 7u 85 8a 8p 8r 8y 93 9h 9q a0 a4 ab ad ap b1 bb bp c0 ce ct d1 dc df dj e5 e6 ee ep ex fb fd fo g0 gd ge gp gq h1 hc hq i2 if im j5 j9 jp js k6 ka kz l3 l5 lg m0 mb md mk mp n2 nd ng nz o3 o9 oa oe or p2 p4 pc pf px q1 qh qn rg ri rs rx sn su sz t5 td tk tn tr uf up uq ux v1 vq vu w1 wk wu x0 xp xv xz y7 yk yv yx z3 zd zo zt",
+  "4-5-2": "2h 3e 47 7c 81 89 9q 9v ar e7 ee f9 i9 jf k2 mp ne od tv u1 uu y2 yx zz 10m 10s 11l 14t 15o 16q 1bi 1co 1db 1fy 1gn 1hm 1kk 1l4 1mf 1pc 1pz 1qa 1r8 1s5 1sy 1w3 1ws 1x0",
+  "4-6-3": "s 8x a6 kq pu sd t1 yg zb 14e 14l 1bf 1dt 1fm 1jv 1pa 1sx 1u0 22p 261 26n 2de 2gm 2it 2lu 2vr 2zr 30i 37z 3dn 3nh 3sg 3va 3yv",
+  "4-6-2": "4q 5n 6g 6z 7w 8p e3 es f0 gc h1 h9 iq iv jr kz l4 m0 rp rw sr ty u5 v0 109 11f 122 12i 13o 14b 197 19w 1av 1bg 1c5 1d4 1n4 1na 1o3 1pd 1pj 1qc 1vt 1wo 1xq 1y2 1yx 1zz 20m 20s 21l 22v 231 23u 29b 2a6 2b8 2bk 2cf 2dh 2mr 2nx 2ok 2p0 2q6 2qt 2vp 2we 2xd 2xy 2yn 2zm 34t 35d 36o 372 37m 38x 3e3 3eq 3f1 3gc 3gz 3ha 3i8 3j5 3jy 3kh 3le 3m7 3rl 3sa 3si 3tu 3uj 3ur",
+  "4-7-3": "2 14 26 ft gv hx 1ij 1iu 1jz 1ya 1yl 1zq 2ic 2jh 2jj 2y3 2z8 2za 307 310 325 3fy 3gr 3hw 4i7 4j0 4k5 4xy 4yr 4zw 50c 51h 51j 5g3 5h8 5ha 60j 60u 61z 6ga 6gl 6hq 7i2 7j4 7k6 7xt 7yv 7zx",
+  "4-7-2": "0 d q w 16 1a 1p 1t 23 fr g4 gh gn gx h1 hg hk hu 1k9 1km 1kz 1l5 1lf 1lj 1ly 1m2 1mc 1vi 1vv 1w8 1we 1wo 1ws 1x7 1xb 1xl 2mi 2mv 2n8 2ne 2no 2ns 2o7 2ob 2ol 2t9 2tm 2tz 2u5 2uf 2uj 2uy 2v2 2vc 36r 374 37h 37n 37x 381 38g 38k 38u 390 39d 39q 39w 3a6 3aa 3ap 3at 3b3 4or 4p4 4ph 4pn 4px 4q1 4qg 4qk 4qu 4r0 4rd 4rq 4rw 4s6 4sa 4sp 4st 4t3 54i 54v 558 55e 55o 55s 567 56b 56l 5b9 5bm 5bz 5c5 5cf 5cj 5cy 5d2 5dc 629 62m 62z 635 63f 63j 63y 642 64c 6di 6dv 6e8 6ee 6eo 6es 6f7 6fb 6fl 7i0 7id 7iq 7iw 7j6 7ja 7jp 7jt 7k3 7xr 7y4 7yh 7yn 7yx 7z1 7zg 7zk 7zu",
+  "5-0-2": "s 10 1s 2w 3x 58 5p 63",
+  "5-3-2": "2 2w 3y 4z 6j 7v 86 a0 c3 e9 fc h3 j6 mh mp ob pa qe s5 sf u9 wc za 108 124 12t 147 157 171 18h 194 1b2 1bl 1c0 1eu 1gx",
+  "5-5-2": "b 28 3h 3t 4q 5t 72 8z a8 ak bh ck dt fq gz hb i8 jb kk mh nq o2 oz q2 rv tv xd ym 10m 144 15d 17d 1av 1c4 1e4 1hm 1iw 1kv 1oe 1pn 1rm 1v5 1we 1yd 21w 235 254 28n 299 2b6 2cf 2cr 2do 2er 2g0 2hx 2j6 2ji 2kf 2li 2mr 2oo 2px 2q9 2r6 2s9 2ti 2vf 2wo 2x0 2xx 2z0 30u 32u 36c 37l 39l 3d3 3ec 3gc 3ju 3l3 3n3 3ql 3rg 3t1 3u9 3uy 3vi 3wy 3y7 3zs 410 41p 429 43p 44y 46j 47r 48g 490 4ag 4bp 4da 4ei 4f7 4fr 4h7 4ig 4k1 4la 4ly 4mj 4ny 4p7 4qs 4s1 4sp 4ta 4up 4vy 4xj 4ys 4zg 501 51g 52p 54a 55j 567 56s 587 59w 5bw 5fe 5gn 5in 5m5 5ne 5pe 5sw 5u5 5w5 5zn",
+  "6-3-3": "22 9j bq i1 ml wv yr 17t 18g 1a4 1an 1bu 1wb 1xc 226 25x 26h 2ex 2gt 2o3 2pw 2x9 2xa 2xn 30z 35v 37g 3do 3mt 3ng 3t7 3yd 4g2 4h9",
+  "6-3-2": "25 2a 5z 8m 9i cg f3 g2 ix l9 of p3 rt uz vn yg 11d 14a 14x 17u 1ar 1bh 1ee 1hb 1ja 1mg 1n4 1qd 1rk 1u7 1xl 1y1 21f 245 24i 27z 29s 2cy 2dm 2e3 2gf 2jc 2m9 2oe 2p2 2s8 2to 2wl 2zi 308 335 362 381 3al 3b7 3bf 3bv 3et 3hz 3ic 3la 3ms 3og 3ow 3rp 3rr 3um 3ux 3xj 3zw 401 40k 43q 46d 471 479 4a7 4cu 4dt 4go",
+  "6-4-3": "2i 2y 36 3d 3s 4c 6w 82 8q ia io iy j3 ji k4 409 40p 40x 414 41j 423 44n 45t 46h 4g1 4gf 4gp 4gu 4h9 4hv 4mn 4nt 4oh 4p1 4pf 4pp 4pu 4q9 4qv 4xw 4z2 4zq 8ke 8lk 8m8 8ms 8n6 8ng 8nl 8o0 8om 8vn 8wt 8xh",
+  "7-0-2": "2v 33 45 67 76 88 aj f4 ij ir jt kb la m9 q8 ti vn wm xl zd 108 117 126 18d 19f 1ah 1by 1c6 1d8 1dr 1et 1ic 1je 1o1",
+  "7-2-3": "0 q 9r ah ji k8 o0 oq vi w8 yi z8 19r 1ah 1cr 1dh 1k9 1kz 1ph 1z8 28z 2dh 2kz 2nz 2z8 328 39q 3di 3n9 3x0 41i 490 4c0 4n9 4q9 4xr 52m 5cd 5m4 5qm 5y4 614 6cd 6fd 6mv",
+  "7-2-2": "y 2t 43 53 77 ac ct ek fp fu gt j3 kv l0 n4 qq r9 uz wz x4 zr 114 12h 15e 17f 1as 1bn 1cx 1f1 1h1 1hf 1k5 1lf 1mj 1pp 1rk 1su 1tu 1vy 1z3 21k 23b 24g 24l 25k 27u 29m 29r 2bv 2fh 2g0 2jq 2lq 2lv 2oi 2pv 2r8 2u5 2w6 2zj 30e 31o 33s 35s 366 38w 3a6 3ba 3eg 3gb 3hl 3il 3kp 3nu 3qb 3s2 3t7 3tc 3ub 3wl 3yd 3yi 40m 448 44r 48h 4ah 4am 4d9 4em 4fz 4iw 4kx 4oa 4p5 4qf 4sj 4uj 4ux 4xn 4yx 501 537 552 56c 57c 59g 5cl 5f2 5gt 5hy 5i3 5j2 5lc 5n4 5n9 5pd 5sz 5ti 5x8 5z8 5zd 620 63d 64q 67n 69o 6d1 6dw 6f6 6ha 6ja 6jo 6me 6no 6os",
+  "8-0-3": "0 d q w 16 1a 1p 1t 23 2i0 2id 2iq 2iw 2j6 2ja 2jp 2jt 2k3 500 50d 50q 50w 516 51a 51p 51t 523",
+  "8-0-2": "0 d q w 16 1a 1p 1t 23 t9 tm tz u5 uf uj uy v2 vc 1mi 1mv 1n8 1ne 1no 1ns 1o7 1ob 1ol 200 20d 20q 20w 216 21a 21p 21t 223 2mi 2mv 2n8 2ne 2no 2ns 2o7 2ob 2ol 2vi 2vv 2w8 2we 2wo 2ws 2x7 2xb 2xl 3t9 3tm 3tz 3u5 3uf 3uj 3uy 3v2 3vc 429 42m 42z 435 43f 43j 43y 442 44c 4or 4p4 4ph 4pn 4px 4q1 4qg 4qk 4qu",
+  "8-2-2": "0 d q w 16 1a 1p 1t 23 t9 tm tz u5 uf uj uy v2 vc 1mi 1mv 1n8 1ne 1no 1ns 1o7 1ob 1ol 200 20d 20q 20w 216 21a 21p 21t 223 2mi 2mv 2n8 2ne 2no 2ns 2o7 2ob 2ol 2vi 2vv 2w8 2we 2wo 2ws 2x7 2xb 2xl 3t9 3tm 3tz 3u5 3uf 3uj 3uy 3v2 3vc 429 42m 42z 435 43f 43j 43y 442 44c 4or 4p4 4ph 4pn 4px 4q1 4qg 4qk 4qu 529 52m 52z 535 53f 53j 53y 542 54c 5vi 5vv 5w8 5we 5wo 5ws 5x7 5xb 5xl 6or 6p4 6ph 6pn 6px 6q1 6qg 6qk 6qu 729 72m 72z 735 73f 73j 73y 742 74c 7or 7p4 7ph 7pn 7px 7q1 7qg 7qk 7qu 7xr 7y4 7yh 7yn 7yx 7z1 7zg 7zk 7zu 8vi 8vv 8w8 8we 8wo 8ws 8x7 8xb 8xl 94i 94v 958 95e 95o 95s 967 96b 96l 9r0 9rd 9rq 9rw 9s6 9sa 9sp 9st 9t3 a4i a4v a58 a5e a5o a5s a67 a6b a6l axr ay4 ayh ayn ayx az1 azg azk azu br0 brd brq brw bs6 bsa bsp bst bt3 c4i c4v c58 c5e c5o c5s c67 c6b c6l cr0 crd crq crw cs6 csa csp cst ct3 d00 d0d d0q d0w d16 d1a d1p d1t d23 dxr dy4 dyh dyn dyx dz1 dzg dzk dzu e6r e74 e7h e7n e7x e81 e8g e8k e8u et9 etm etz eu5 euf euj euy ev2 evc f6r f74 f7h f7n f7x f81 f8g f8k f8u g00 g0d g0q g0w g16 g1a g1p g1t g23 gt9 gtm gtz gu5 guf guj guy gv2 gvc h6r h74 h7h h7n h7x h81 h8g h8k h8u ht9 htm htz hu5 huf huj huy hv2 hvc i29 i2m i2z i35 i3f i3j i3y i42 i4c j00 j0d j0q j0w j16 j1a j1p j1t j23 j90 j9d j9q j9w ja6 jaa jap jat jb3 jvi jvv jw8 jwe jwo jws jx7 jxb jxl",
+  "9-0-2": "0 1 2 13 14 15 26 27 28 2o 2p 2q 3i 3j 3k 3u 3v 3w 53 54 55 5f 5g 5h 69 6a 6b 2fr 2fs 2ft 2gu 2gv 2gw 2hx 2hy 2hz 2if 2ig 2ih 2j9 2ja 2jb 2jl 2jm 2jn 2ku 2kv 2kw 2l6 2l7 2l8 2m0 2m1 2m2 4vi 4vj 4vk 4wl 4wm 4wn 4xo 4xp 4xq 4y6 4y7 4y8 4z0 4z1 4z2 4zc 4zd 4ze 50l 50m 50n 50x 50y 50z 51r 51s 51t 600 601 602 613 614 615 626 627 628 62o 62p 62q 63i 63j 63k 63u 63v 63w 653 654 655 65f 65g 65h 669 66a 66b 7vi 7vj 7vk 7wl 7wm 7wn 7xo 7xp 7xq 7y6 7y7 7y8 7z0 7z1 7z2 7zc 7zd 7ze 80l 80m 80n 80x 80y 80z 81r 81s 81t 8mi 8mj 8mk 8nl 8nm 8nn 8oo 8op 8oq 8p6 8p7 8p8 8q0 8q1 8q2 8qc 8qd 8qe 8rl 8rm 8rn 8rx 8ry 8rz 8sr 8ss 8st bfr bfs bft bgu bgv bgw bhx bhy bhz bif big bih bj9 bja bjb bjl bjm bjn bku bkv bkw bl6 bl7 bl8 bm0 bm1 bm2 c6r c6s c6t c7u c7v c7w c8x c8y c8z c9f c9g c9h ca9 caa cab cal cam can cbu cbv cbw cc6 cc7 cc8 cd0 cd1 cd2 e29 e2a e2b e3c e3d e3e e4f e4g e4h e4x e4y e4z e5r e5s e5t e63 e64 e65 e7c e7d e7e e7o e7p e7q e8i e8j e8k",
+  "10-0-3": "vi vv w8 we wo ws x7 xb xl 2xr 2y4 2yh 2yn 2yx 2z1 2zg 2zk 2zu 8vi 8vv 8w8 8we 8wo 8ws 8x7 8xb 8xl 9r0 9rd 9rq 9rw 9s6 9sa 9sp 9st 9t3 aor ap4 aph apn apx aq1 aqg aqk aqu db9 dbm dbz dc5 dcf dcj dcy dd2 ddc gor gp4 gph gpn gpx gq1 gqg gqk gqu j4i j4v j58 j5e j5o j5s j67 j6b j6l li0 lid liq liw lj6 lja ljp ljt lk3 oi0 oid oiq oiw oj6 oja ojp ojt ok3 r90 r9d r9q r9w ra6 raa rap rat rb3 s29 s2m s2z s35 s3f s3j s3y s42 s4c umi umv un8 une uno uns uo7 uob uol 11b9 11bm 11bz 11c5 11cf 11cj 11cy 11d2 11dc 124i 124v 1258 125e 125o 125s 1267 126b 126l 18di 18dv 18e8 18ee 18eo 18es 18f7 18fb 18fl 1990 199d 199q 199w 19a6 19aa 19ap 19at 19b3",
+  "10-0-2": "0 3l 6f 88 at be fd fy ja l4 op p1 t0 tl wf y8 10t 14e 168 17b 1a5 1bv 1ep 1ha 1j0 1lu 1n6 1qs 1rd 1u7 1vx 1yi 223 235 26q 272 29n 2ch 2f2 2gs 2jm 2ky 2o6 2p9 2s3 2uo 2x9 2xu 31w 32h 35t 36s 3ad 3d7 3ek 3he 3iq 3ly 3n1 3pv 3rl 3uf 3x0 3zl 406 43i 44k 485 4az 4cp 4fa 4fv 4ig 4l1 4om 4pl 4t6 4ti 4xk 4y5 50z 52y 55j 58d 5a3 5cx 5e0 5hb 5in 5lh 5nt 5qn 5r8 5v7 5vj 5z4 603 63o 669 68u 69f 6c0 6dt 6gn 6k8 6l7 6oj 6p4 6sz 6tb 6ww 6xv 71g 741 75r 78l 796 7bi 7ec 7hx 7iz 7mb 7mw 7qv 7rg 7u1 7wm 7zg 80j 83r 853 87x 89q 8cb 8f5 8go 8k0 8kl 8on 8p8 8rt 8tj 8wd 8zy 91j 92v 95p 97f 9a0 9cu 9en 9hh 9ik 9ke 9nz 9qk 9sa 9v4 9vp 9zo a00 a3l a4w a7q ab2 ac1 afm ag7 ak6 aki anc apx asi atu ax5 ayh b12 b2s b5m b8g bas bbd bey bfx bj9 bm3 bnw bqq br2 buu bw6 byr c0k c3e c68 c7y caj cbv cdp ch1 cjv cll cof cor cst cte cwz cyk d25 d2q d6p d71 d9v dbl def dhr djd dm7 dmj dqi dr3 duo dvq dz2 e1w e4h e4t e7n e9d ec7 efj egi ek3 eko en0 epu eso euh ex2 eye f1m f2y f5j f8w f9h fc2 fds fgm fk7 fl6 foi fp3 fro fu9 fx3 fyw g1q g2t g61 g7d ga7 gcj gfd gfy gjx gk9 gnu gow gsh gv2 gwl gzf h0i h3t h55 h7z h9p hca hf4 hhp hi1 hlm hml hq6 hsr huk hxe hxz i0b i35 i6q i7p ib1 ibm ifl ig6 iir ikd iny iqj is9 iv3 ivo izq j02 j3n j5h j8t j9e jdd jdy jgj ji9 jl3 joo jq9 jrl juf jw8 jyt k1n k3d k67 k7a kar kbc kex kfz kjb km5 knv kqp kr1 ktm kwg kzs l0r l4c l4x l8z l9b lc5 leq lhb lin llv ln7 lps lri luc lx6 lyj m24 m2p m6o m70 m9u mbn meh mht mjn mkz mnk mpa ms4 muy mwo mz9 n0l n2f n5r n8l nae nd8 ndk nhj ni4 nlp nn2 npw nsq nug nx1 nyd o1l o2x o5i o83 oax ob9 ofb ofw ojh okg ons oqm ot7 otj owd oy3 p0x p49 p5b p8w p9h pcy pe1 pgv pil plf po0 ppt psn ptz pvk pz5 q1z q3p q6a q6v qau qbf qer qgl qk6 qki qok qp5 qrz qtp qwa qzv r1h r42 r4n r8m r97 rcj rdi rh3 rjx rm9 rmu rpo rrh ru2 rxn rym s27 s2j s54 s7y saj sc9 sf3 sgf sjq skt snn sp6 srr svc swe szz t0b t4a t4v t7p ta1 tcv te7 thf tii tlc tn5 tpz tsk tv5 tvq tz2 u01 u3m u6g u86 uar ubc uep uha uim ulu un6 upr urk uue ux8 uzk v05 v3q v4p v81 vav vcl vff vfr vic vl6 voi vpk vt5 vtq vxp vy1 w0v w2h w5t w8n wad wd7 wdj whi wi3 wlo wn9 wqu wrf wvh wvt wyn x0d x37 x6j x8d x9p xca xe0 xgu xjo xlh xo2 xpe xt6 xti xwc xy5 y0z y4b y5a y8v y9g ybs yem yhg yj6 ylr yn3 yqe yrq yub yww yzq z02 z41 z4m z87 z96 zci zfc zgn zk8 zkk zoj zp4 zry zto zw9 zzu 101o 102r 105l 107e 10a8 10ct 10ej 10hd 10ip 10ka 10nv 10qp 10sf 10v0 10vl 10zn 1108 113k 1153 117x 11ai 11cb 11f5 11gh 11jp 11ks 11nm 11q7 11ss 11td 11xc 11xx 1219 122b 125w 128q 12b2 12bn 12eh 12g7 12is 12md 12nc 12qx 12r9 12v4 12vp 12z1 1300 133l 136f 1388 13at 13be 13dz 13gk 13k5 13l4 13op 13p1 13t0 13tl 13wf 13yr 141l 142x 1468 147b 14a5 14bv 14ep 14ha 14j9 14m3 14mo 14qq 14r2 14un 14vm 14z7 151s 154d 154y 157j 1599 15c3 15fo 15gq 15k2 15kn 15n8 15pt 15sn 15ud 15x7 15ya 161i 162u 165o 1671 169v 16dg 16ef 16hr 16ic 16me 16mz 16pk 16s5 16uz 16w2 16za 170m 173g 1756 177r 17al 17d6 17di 17h3 17i5 17lq 17ob 17q1 17sv 17tg 17x2 17ye 1818 182y 185j 188d 18a3 18cx 18e0 18fu 18jf 18m0 18nt 18qn 18r8 18v7 18vj 18z4 190y 194a 194v 198u 199f 19c0 19dt 19gn 19k8",
+  "11-0-2": "0 at ja op wf y8 1a5 1bv 1lu 1rd 223 235 2f2 2gs 2p9 2uo 32h 3d7 3iq 3ly 3uf 3zl 485 4fv 4l1 4ti 4xk 58d 5a3 5in 5nt 5vj 669 69f 6k8 6l7 6sz 71g 796 7ec 7mw 7qv 80j 83r 8cb 8k0 8rt 8tj 95p 97f 9hh 9ke 9v4 a3l a7q ag7 ak6 atu ax5 b5m bas bj9 br2 byr c0k caj cdp cof cwz d25 d9v dbl djd dr3 e1w e4t efj egi eso euh f2y f8w fgm fp3 fu9 g2t g61 gfy gjx gsh gzf h7z h9p hlm hml hxe i0b ib1 iir iqj is9 j02 j5h jdy joo jrl k1n k3d kex kfz kqp ktm l4c lc5 lhb lps lri lyj m70 mht mkz muy mwo n8l nae ni4 npw nyd o1l ob9 ofb ons ot7 p0x p9h pe1 po0 ppt q1z q3p qbf qgl qp5 qzv r4n r8m rh3 rm9 ru2 s2j s7y sgf sjq sp6 szz t7p tcv tlc tn5 tz2 u01 uar uep un6 ux8 v05 vav vcl voi vpk vy1 w5t wdj whi wrf wvh x37 x8d xgu xpe xwc xy5 y8v ybs ylr yub yzq z87 z96 zkk zoj zw9 101o 10a8 10ip 10nv 10vl 10zn 1153 11f5 11nm 11ss 1219 122b 12eh 12g7 12qx 12vp 136f 1388 13k5 13l4 13tl 13yr 147b 14ha 14m3 14un 14vm 157j 1599 15k2 15n8 15x7 165o 16dg 16ef 16mz 16s5 170m 17al 17di 17ob 17q1 17x2 185j 18e0 18jf 18r8 18v7 194v 198u 19gn 19qo 19sh 1a07 1a5d 1adu 1aon 1ark 1b1j 1b39 1bb1 1bir 1brb 1bwq 1c57 1c8f 1ci3 1cm5 1cum 1d1n 1da4 1dbu 1dnr 1dot 1dzj 1e2p 1edf 1el8 1eps 1ey9 1f1k 1fbh 1ffg 1fnx 1ft3 1g0w 1g9d 1gh5 1gi4 1gsu 1gvr 1h6k 1hea 1hjp 1hs6 1htz 1i0x 1i9h 1ik7 1in4 1ix3 1iyw 1jat 1jcj 1jk9 1jp5 1jzv 1k7l 1kcr 1klb 1kn1 1kz7 1l06 1laz 1lgf 1lqh 1ls7 1m44 1m5u 1mdn 1mit 1mra 1n20 1n6s 1nar 1njb 1noq 1nwg 1o4x 1oa3 1oin 1olv 1owb 1oy1 1p8r 1pbx 1plz 1pug 1pzm 1q83 1q95 1qgu 1qpe 1qzd 1r2a 1rd0 1ret 1rqz 1rry 1s0f 1s87 1sfx 1sjz 1stn 1sxm 1t5c 1tai 1tj2 1trj 1tvl 1u6e 1u84 1uk1 1ul0 1utk 1uyz 1v7g 1vhf 1vmy 1vqx 1vyq 1w3w 1wcd 1wku 1wq0 1wxt 1x1s 1x7b 1xha 1xpr 1xv6 1y3q 1y4p 1ygm 1yic 1yt5 1yx7 1z5o 1ze8 1zje 1zr4 1zv3 204r 208t 20gj 20ob 20ws 20xr 219x 21bq 21mg 21pd 21zc 227w 22fl 22gn 22p4 22ua 232r 23ct 23fz 23qp 23sf 242v 2463 24en 24jt 24sa 2500 255f 25dz 25hy 25mq 25xg 265x 26b3 26iw 26km 26wj 26y9 278b 27dr 27ok 27pj 281p 283f 28bz 28h5 28ov 28zl 294h 29c7 29dx 29pu 29rn 2a1m 2a4j 2af9 2ant 2aur 2awk 2b51 2bag 2bi6 2bsz 2bvw 2c6m 2c7l 2cfd 2cnu 2cvn 2d0t 2d9a 2dd9 2dn6 2dqh 2dyy 2e3i 2ebb 2em1 2ep7 2ezx 2f0z 2fcw 2fem 2fn3 2fu4 2g2l 2g6n 2ggb 2gjj 2gs0 2gxf 2h5z 2hdp 2hlh 2hn7 2hx6 2i03 2iaw 2ijd 2ioj 2iw9 2iy2 2j83 2jfw 2jjv 2jtj 2jxi 2k5b 2kaq 2kj7 2kro 2kyp 2l0f 2lb8 2le5 2lo4 2lwl 2m1r 2mab 2mba 2mj2 2mrj 2n1i 2n4o 2nfh 2nh7 2nt4 2nu3 2o2n 2o7g 2ohf 2opz 2ov5 2p3m 2p4l 2pgi 2pib 2pt1 2pxt 2q8j 2qa9 2qmf 2qnh 2qvy 2r14 2r9l 2rjn 2rp3 2rt5 2s0v 2s61 2sei 2sn2 2ssh 2t07 2t46 2tfk 2tgj 2tp0 2tuf 2u2z 2ucy 2ufv 2uql 2use 2uzc 2v7w 2vgd 2vlj 2vt9 2vxb 2w78 2wb7 2wix 2wqp 2wz6 2x08 2xc5 2xdv 2xol 2xri 2y1k 2ya1 2ydz 2yop 2ypo 2z1l 2z3e 2zbv 2zh1 2zor 2zzk 3050 308b 30gs 30m7 30uo 312h 317n 31g4 31k3 31ov 31zl 3285 32db 32l1 32mr 32yx 330q 33ap 33f9 33nt 33vj 340y 349f 34dh 34n5 34qd 34yu 356m 35ec 35g5 35s2 35ts 363r 366x 36hq 36q7 36x8 36yy 377f 37cl 37ke 37v4 37y1 388r 389t 38ld 38n3 38x5 3902 39as 39j9 39oo 39wh 39y7 3a5z 3adp 3aof 3arc 3b25 3b34 3bf1 3bgr 3bpb 3bw9 3c4t 3c8s 3cip 3clx 3cuh 3czn 3d84 3dfu 3dls 3du9 3dw2 3e88 3e97 3ejx 3emu 3exn 3f5d 3fd5 3fev 3fml 3frr 3g0b 3gb1 3ge7 3go6 3gpz 3gxo 3h5h 3hdy 3hj4 3hrl 3huw 3i4k 3i8j 3ih0 3il5 3itm 3j4c 3j79 3jhb 3jj1 3jv7 3jwx 3k4q 3kcf 3kkz 3ko7 3kxv 3l1u 3lae 3lfk 3lna 3lvr 3m3j 3m4i 3mfb 3mih 3mt7 3n0x 3n63 3nen 3ngd 3nr6 3nv8 3o3p 3o8v 3ogl 3op5 3oub 3p2s 3p60 3pbj 3pm9 3pu2 3pzh 3q7y 3q9o 3qll 3qmn 3qxd 3r2w 3rcv 3rel 3rqi 3rsb 3s01 3s5g 3sdx 3soq",
+}/*SLUT*/;
+const presetCode = (hel, halv, radius) => {
+  const s = R_KODER[`${hel}-${halv}-${radius}`];
+  return s ? s.split(" ").map(x => parseInt(x, 36)) : null;
+};
+const rSystemRows = ([hel, halv, garanti]) => (presetCode(hel, halv, 13 - garanti) || []).length;
+
 const codeCache = new Map();
 function reducedCode(sizes, radius) {
   const key = sizes.join("") + "/" + radius;
+  const preset = presetCode(sizes.filter(s => s === 3).length, sizes.filter(s => s === 2).length, radius);
+  if (preset && !codeCache.has(key)) codeCache.set(key, preset);
   if (!codeCache.has(key)) {
     const N = sizes.reduce((a, b) => a * b, 1);
     const tries = N <= 2000 ? 8 : 0;
@@ -490,6 +572,13 @@ function reducedCode(sizes, radius) {
   return codeCache.get(key);
 }
 
+// Antal rader inom `radius` tecken från en rad: (1 + (s - 1)x) multiplicerat över matcherna.
+function ballSize(sizes, radius) {
+  let poly = [1];
+  for (const s of sizes) poly = [...poly, 0].map((c, k) => c + (k ? (s - 1) * poly[k - 1] : 0));
+  return poly.slice(0, radius + 1).reduce((a, b) => a + b, 0);
+}
+
 const garderade = covers => covers.map((c, i) => i).filter(i => covers[i].length > 1)
   .sort((a, b) => covers[b].length - covers[a].length || a - b);
 
@@ -497,9 +586,10 @@ const garderade = covers => covers.map((c, i) => i).filter(i => covers[i].length
 function reduceSystem(covers, garanti) {
   // Helgarderingarna först, så att samma antal halv och hel alltid ger samma (sparade) kod.
   const pos = garderade(covers), sizes = pos.map(i => covers[i].length);
-  const full = sizes.reduce((a, b) => a * b, 1);
-  if (full > R_MAX) return null;
-  const code = reducedCode(sizes, covers.length - garanti);
+  const full = sizes.reduce((a, b) => a * b, 1), radius = covers.length - garanti;
+  const preset = presetCode(sizes.filter(s => s === 3).length, sizes.filter(s => s === 2).length, radius);
+  if (!preset && (full > R_MAX || full * ballSize(sizes, radius) > 4e6)) return null;
+  const code = reducedCode(sizes, radius);
   const rows = code.map(x => {
     const row = covers.map(c => c[0]);
     pos.forEach((i, j) => { row[i] = covers[i][x % sizes[j]]; x = Math.floor(x / sizes[j]); });
@@ -593,8 +683,35 @@ function renderStatic() {
   $("meta").innerHTML = `<span>Omgång <b>${data.omgang}</b></span>` +
     (close ? `<span>Spelstopp <b>${close.toLocaleString("sv-SE", { weekday: "long", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Stockholm" })}</b></span>` : "");
   $("budget-chips").innerHTML = BUDGETS.map(b => `<button type="button" data-b="${b}">${b}</button>`).join("");
+  $("rsys-list").innerHTML = R_SYSTEM.map((s, i) => `<button type="button" data-r="${i}">R ${s[0]}-${s[1]}-${rSystemRows(s)} <small>(${s[2]})</small></button>`).join("") +
+    `<button type="button" class="free" data-r="fri">Reducera fritt</button>`;
   const hasH2H = Object.keys(h2h).length > 0;
   $("h2h-box").hidden = $("h2h-legend").hidden = !hasH2H;
+}
+
+function renderRInfo(sys, rsys, free) {
+  const fmt = x => x.toLocaleString("sv-SE");
+  const name = rsys ? `R ${state.hel}-${state.halv}-${rsys.rows.length} (${state.garanti})` : "–";
+  const dl = [
+    ["System", free ? `${name}, fritt` : name],
+    ["Helgarderingar", state.hel],
+    ["Halvgarderingar", state.halv],
+    ["Antal rader och pris", rsys ? `${fmt(rsys.rows.length)} rader · ${fmt(rsys.rows.length)} kr` : "–"],
+    ["Garanterat antal rätt när alla tecken är rätt tippade", state.garanti],
+  ].map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("");
+  let more = "";
+  if (rsys) {
+    const saved = 1 - rsys.rows.length / sys.rows;
+    more = `<p>Fullt system: ${fmt(sys.rows)} rader. R-systemet spelar ${fmt(rsys.rows.length)} av dem och är ${Math.round(saved * 100)} % billigare.</p>`;
+    // De garderade matcherna som kolumner, en rad per rad i systemet.
+    const cols = sys.covers.map((c, i) => i).filter(i => sys.covers[i].length > 1);
+    const shown = rsys.rows.slice(0, 300);
+    more += `<details><summary>Visa systemets rader</summary><div class="rrows"><table>
+      <thead><tr><th>Rad</th>${cols.map(i => `<th>${data.matcher[i].nr}</th>`).join("")}</tr></thead>
+      <tbody>${shown.map((r, k) => `<tr><td>${k + 1}</td>${cols.map(i => `<td>${r[i]}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+      <p>Kolumnerna är de garderade matcherna. Spikarna är samma på alla rader.${rsys.rows.length > shown.length ? ` Visar de första ${shown.length}.` : ""}</p></details>`;
+  }
+  $("rsys-info").innerHTML = `<dl>${dl}</dl>${more}`;
 }
 
 function renderLikely() {
@@ -614,19 +731,21 @@ function render() {
   const warn = $("warn");
   warn.hidden = !!sys && (state.mode !== "rsys" || !!rsys);
   if (!sys) warn.textContent = "Dina låsta val ryms inte i systemet. Öka antalet rader eller rensa några val.";
-  else if (state.mode === "rsys" && !rsys) warn.textContent = `Det fulla systemet har ${sys.rows.toLocaleString("sv-SE")} rader. R-system räknas här upp till ${R_MAX.toLocaleString("sv-SE")}, så ta bort någon gardering.`;
+  else if (state.mode === "rsys" && !rsys) warn.textContent = `Det fulla systemet har ${sys.rows.toLocaleString("sv-SE")} rader och är för stort att reducera fritt här. Välj ett av de färdiga R-systemen eller färre garderingar.`;
 
   $("mode-budget").setAttribute("aria-pressed", state.mode === "budget");
   $("mode-exakt").setAttribute("aria-pressed", state.mode === "exakt");
   $("mode-rsys").setAttribute("aria-pressed", state.mode === "rsys");
   $("budget-box").hidden = state.mode !== "budget";
-  $("exakt-box").hidden = state.mode === "budget";
-  $("rsys-box").hidden = state.mode !== "rsys";
-  $("garanti-12").setAttribute("aria-pressed", state.garanti === 12);
-  $("garanti-11").setAttribute("aria-pressed", state.garanti === 11);
-  $("rsys-hint").textContent = rsys
-    ? `Det fulla systemet på ${sys.rows.toLocaleString("sv-SE")} rader blir ${rsys.rows.length.toLocaleString("sv-SE")}. Sitter alla spikar och garderingar har du minst ${state.garanti} rätt.`
-    : "Välj garderingar ovan. Systemet krymps till färre rader med garanti för 12 eller 11 rätt.";
+  const picked = R_SYSTEM.findIndex(([hel, halv, g]) => hel === state.hel && halv === state.halv && g === state.garanti);
+  const free = state.rfree || picked < 0;
+  $("exakt-box").hidden = state.mode === "budget" || (state.mode === "rsys" && !free);
+  $("rlist-box").hidden = state.mode !== "rsys";
+  $("rsys-box").hidden = state.mode !== "rsys" || !free;
+  document.querySelectorAll("#rsys-list button").forEach(b =>
+    b.setAttribute("aria-pressed", b.dataset.r === "fri" ? free : !free && +b.dataset.r === picked));
+  document.querySelectorAll("#rsys-box [data-garanti]").forEach(b => b.setAttribute("aria-pressed", +b.dataset.garanti === state.garanti));
+  if (state.mode === "rsys") renderRInfo(sys, rsys, free);
   document.querySelectorAll("#budget-chips button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.b === state.budget));
   $("budget").value = state.budget;
   $("halv").textContent = state.halv;
@@ -779,9 +898,22 @@ function toast(msg) {
 function bind() {
   $("mode-budget").onclick = () => { state.mode = "budget"; render(); };
   $("mode-exakt").onclick = () => { state.mode = "exakt"; render(); };
-  $("mode-rsys").onclick = () => { state.mode = "rsys"; render(); };
-  $("garanti-12").onclick = () => { state.garanti = 12; render(); };
-  $("garanti-11").onclick = () => { state.garanti = 11; render(); };
+  $("mode-rsys").onclick = () => {
+    state.mode = "rsys";
+    // Börja med ett litet färdigt system om de valda garderingarna inte är ett av dem.
+    if (!R_SYSTEM.some(([hel, halv, g]) => hel === state.hel && halv === state.halv && g === state.garanti)) {
+      [state.hel, state.halv, state.garanti] = R_SYSTEM[0]; state.rfree = false;
+    }
+    render();
+  };
+  $("rsys-list").onclick = e => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    if (b.dataset.r === "fri") state.rfree = true;
+    else { [state.hel, state.halv, state.garanti] = R_SYSTEM[+b.dataset.r]; state.rfree = false; }
+    render();
+  };
+  $("rsys-box").onclick = e => { const b = e.target.closest("[data-garanti]"); if (b) { state.garanti = +b.dataset.garanti; render(); } };
   $("budget-chips").onclick = e => { const b = e.target.closest("button"); if (b) { state.budget = +b.dataset.b; render(); } };
   $("budget").onchange = e => { const v = Math.max(1, Math.floor(+e.target.value || 1)); state.budget = v; render(); };
   const step = (key, d) => () => { state[key] = Math.max(0, state[key] + d); render(); };
