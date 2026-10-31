@@ -228,6 +228,8 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--focus); out
 @keyframes pulse { 50% { opacity: 0.3; } }
 .livebar b { font: 700 15px var(--font-display); }
 .livebar .muted { color: var(--muted); font-size: 13px; }
+.livebar .payout { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; }
+.livebar .payout b { font: 700 13px var(--font-data); }
 .live { display: inline-block; margin-left: 8px; padding: 1px 7px; border-radius: 5px; font: 700 12px/18px var(--font-data);
   background: var(--soft); color: var(--ink); vertical-align: 1px; }
 .live.hit { background: var(--ok); color: var(--ok-ink); }
@@ -417,7 +419,7 @@ footer { font-size: 13px; color: var(--on-page-muted); max-width: 70ch; }
     Sannolikheterna kommer från oddsen med spelbolagets marginal borträknad. <b>Värde</b> är sannolikhet delat med svenska folkets streck;
     över 1 betyder att tecknet går in oftare än folk tror. Chanserna för 10–13 rätt gäller systemets bästa rad och bygger på modellen,
     inte på några garantier. Inbördes möten kommer från football-data.co.uk (tio säsonger bakåt) och vägs in så mycket du väljer;
-    oddsen tar redan hänsyn till mycket av det, så en låg vikt är oftast klokast. Spela för pengar du har råd att förlora.
+    oddsen tar redan hänsyn till mycket av det, så en låg vikt är oftast klokast. Förväntad utdelning under omgången räknas ur omsättningen och strecken och är en grov uppskattning; den faktiska utdelningen visas när Svenska Spel har räknat klart. Spela för pengar du har råd att förlora.
   </footer>
 </div>
 <div class="toast" id="toast" hidden></div>
@@ -890,7 +892,60 @@ function renderLive() {
   const latest = [...goalNrs].filter(isGoal).map(nr => data.matcher[idx(nr)]).filter(Boolean).map(m => `${m.nr}. ${m.match}`).join(", ");
   bar.innerHTML = `<span class="dot" aria-hidden="true"></span><b>Live: ${hits} av ${started.length} rätt just nu</b>
     ${latest ? `<span>Senaste mål: <b>${latest}</b></span>` : ""}
-    <span class="muted">${ongoing ? `${ongoing} ${ongoing === 1 ? "match" : "matcher"} pågår` : "Alla startade matcher är klara"} · uppdaterad ${time} · ${liveFromProxy ? "hämtas varje minut" : "hämtas var tionde minut"}</span>`;
+    <span class="muted">${ongoing ? `${ongoing} ${ongoing === 1 ? "match" : "matcher"} pågår` : "Alla startade matcher är klara"} · uppdaterad ${time} · ${liveFromProxy ? "hämtas varje minut" : "hämtas var tionde minut"}</span>
+    ${payoutLine(window.currentRows)}`;
+}
+
+// Svenska Spel delar ut 65 % av omsättningen: 40 % till 13 rätt, 15 % till 12, 12 % till 11 och
+// 25 % till 10 rätt. Blir det under 15 kr per rad betalas inget ut i den gruppen.
+const POTT = { 13: 0.26, 12: 0.0975, 11: 0.078, 10: 0.1625 };
+const MIN_UTDELNING = 15;
+const kr = x => Math.round(x).toLocaleString("sv-SE") + " kr";
+
+// Förväntad utdelning per rad om raden går in. Varje spelad rad antas ha rätt i en match
+// med den andel som strecken anger, oberoende av de andra matcherna.
+function forecast(row) {
+  const hits = data.matcher.map((m, i) => {
+    const streck = (live.matcher[m.nr] || {}).streck || m.streck;
+    return streck ? streck[row[i]] : 1 / 3;
+  });
+  const dist = correctDist(hits);
+  const played = live.omsattning / (live.radpris || 1);
+  const out = {};
+  for (const k of [13, 12, 11, 10]) {
+    const each = Math.floor(POTT[k] * live.omsattning / Math.max(played * dist[k], 1));
+    out[k] = each >= MIN_UTDELNING ? each : 0;
+  }
+  return out;
+}
+
+// Antal rader i systemet (fullt eller reducerat) med 0..13 rätt om raden går in.
+function systemHits(rows, row) {
+  const n = new Array(row.length + 1).fill(0);
+  for (const r of rows) n[r.reduce((k, o, i) => k + (o === row[i]), 0)]++;
+  return n;
+}
+
+function payoutLine(rows) {
+  const done = live.utdelning && Object.values(live.matcher).every(s => s.lage === "slut" || s.lage === "inställd");
+  if (!done && !live.omsattning) return "";
+  // Matcher som inte har startat räknas med det mest troliga tecknet.
+  const row = data.matcher.map(m => liveOutcome(m.nr) || topSign(m));
+  const each = done ? Object.fromEntries([13, 12, 11, 10].map(k => [k, (live.utdelning[k] || {}).kr || 0])) : forecast(row);
+  const parts = [13, 12, 11, 10].map(k => {
+    const w = done && live.utdelning[k] ? live.utdelning[k].vinnare : null;
+    return `<span>${k} rätt <b>${each[k] ? kr(each[k]) : "ingen utdelning"}</b>${w != null ? ` <span class="muted">(${w.toLocaleString("sv-SE")} vinnare)</span>` : ""}</span>`;
+  });
+  let mine = "";
+  if (rows && rows.length) {
+    const n = systemHits(rows, row);
+    const won = [13, 12, 11, 10].filter(k => n[k]);
+    const total = won.reduce((a, k) => a + n[k] * each[k], 0);
+    mine = `<span>Ditt system: <b>${won.length ? won.map(k => `${n[k]} × ${k} rätt`).join(", ") + " = " + kr(total) : "ingen vinst"}</b></span>`;
+  }
+  const notStarted = data.matcher.some(m => !liveOutcome(m.nr));
+  const label = done ? "Utdelning:" : `Förväntad utdelning om ställningarna står sig${notStarted ? " (ej startade matcher med mest troliga tecknet)" : ""}:`;
+  return `<div class="payout"><span class="muted">${label}</span>${parts.join("")}${mine}</div>`;
 }
 
 // Adressen till Cloudflare-proxyn (cloudflare/live-worker.js). Den ger ställningar
