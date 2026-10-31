@@ -28,7 +28,20 @@ Hämtar veckans Stryktips-kupong från Svenska Spel och föreslår ett system
 och värde per match. Du väljer system (max antal rader, eller exakt antal halv-
 och helgarderingar) och spelstil, och förslaget räknas om direkt i webbläsaren
 med samma metod som `kupong.py`. Tryck på ett tecken för att låsa egna val, så
-fylls resten av systemet i runt dem.
+fylls resten av systemet i runt dem. Lägger du till ett tecken växer systemet
+i stället för att andra garderingar plockas bort: 64 rader och en halvgardering
+till blir 128 rader, en halv som blir hel ger ×1,5.
+
+Under **R-system** finns färdiga reducerade system med samma garderingar och
+garantier som Svenska Spels R-system, till exempel R 4-0-9 (12): 4 helgarderingar,
+0 halvgarderingar, 9 rader och minst 12 rätt om alla spikar och garderingar sitter.
+Varje system visas med garderingar, antal rader och pris, garanti och raderna själva.
+Raderna är framräknade i förväg (lokal sökning för små delsystem, ternära Golaykoden
+för R 11-0-729 och sammansättning av delsystem för resten) och kontrollerade mot sin
+garanti; de ligger i `R_KODER` i `webb/index.html`. **Reducera fritt** räknar fram
+ett eget R-system i webbläsaren för valfria garderingar och garanti 12, 11 eller 10
+rätt. Chanserna för 10–13 rätt räknas på de reducerade raderna, och filen till
+Svenska Spel innehåller bara de raderna.
 
 Sidan visar också **inbördes möten** mellan lagen (senaste tio säsongerna, från
 [football-data.co.uk](https://www.football-data.co.uk), ingen nyckel behövs).
@@ -60,6 +73,22 @@ För ställningar varje minut finns en liten Cloudflare Worker i
 Lägg upp den i Cloudflare (Workers & Pages → Create → Worker, klistra in koden,
 Deploy) och skriv dess adress i `LIVE_PROXY` i `webb/index.html`. Svarar den
 inte används live.json som vanligt.
+
+**Inloggning och sparade tips:** utan inloggning sparas dina val bara i
+webbläsaren. Med ett gratis Supabase-projekt kan besökare logga in med en
+länk till sin e-post, och då sparas tipset per omgång i databasen så att det
+syns på alla enheter, tillsammans med de senaste omgångarnas tips.
+
+1. Skapa ett projekt på [supabase.com](https://supabase.com).
+2. Kör `supabase/tips.sql` under **SQL Editor**. Den skapar tabellen `tips`
+   och ser till att varje användare bara kan läsa och ändra sina egna tips.
+3. Under **Authentication → URL Configuration**: sätt Site URL till sidans
+   adress och lägg till både den och `…/?spel=europatipset` som Redirect URLs.
+4. Skriv projektets URL och anon-nyckel (**Project Settings → API**) i
+   `SUPABASE_URL` och `SUPABASE_KEY` i `webb/index.html`. Anon-nyckeln är
+   gjord för att ligga publikt; skyddet sitter i databasens regler.
+
+Är de tomma visas ingen inloggning och sidan fungerar som förut.
 
 Sidan publiceras med GitHub Pages av `.github/workflows/webb.yml`, varje gång
 veckans förslag har skrivits. Slå på det under **Settings → Pages → Source:
