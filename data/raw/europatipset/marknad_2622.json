@@ -1,0 +1,115 @@
+{
+ "hamtad": "2026-11-02T06:57:43+00:00",
+ "matcher": {
+  "1": {
+   "sannolikhet": {
+    "1": 0.1017948257466116,
+    "X": 0.16559089804671406,
+    "2": 0.7326142762066744
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 22,
+   "match": "Slavia Praha - Arsenal"
+  },
+  "2": {
+   "sannolikhet": {
+    "1": 0.18723706819932454,
+    "X": 0.2012798483142739,
+    "2": 0.6114830834864016
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 22,
+   "match": "RB Leipzig - Manchester City"
+  },
+  "3": {
+   "sannolikhet": {
+    "1": 0.5593167782862077,
+    "X": 0.2266084371042481,
+    "2": 0.21407478460954413
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 22,
+   "match": "Borussia Dortmund - Real Betis"
+  },
+  "4": {
+   "sannolikhet": {
+    "1": 0.4724246233355158,
+    "X": 0.2555331076089202,
+    "2": 0.2720422690555639
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 22,
+   "match": "Porto - Napoli"
+  },
+  "5": {
+   "sannolikhet": {
+    "1": 0.4702321983524909,
+    "X": 0.21526185080136248,
+    "2": 0.3145059508461465
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 22,
+   "match": "PSV Eindhoven - Club Brugge"
+  },
+  "6": {
+   "sannolikhet": {
+    "1": 0.32297078704646004,
+    "X": 0.23460347727345768,
+    "2": 0.4424257356800823
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 22,
+   "match": "RC Lens - Como"
+  },
+  "7": {
+   "sannolikhet": {
+    "1": 0.6490678371030009,
+    "X": 0.19342221545669425,
+    "2": 0.15750994744030478
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 22,
+   "match": "Viking FK - Sabah FK"
+  },
+  "8": {
+   "sannolikhet": {
+    "1": 0.2689762253471496,
+    "X": 0.269736045192763,
+    "2": 0.46128772946008745
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 22,
+   "match": "Bristol City - Wolverhampton Wanderers"
+  },
+  "9": {
+   "sannolikhet": {
+    "1": 0.28136330425655254,
+    "X": 0.22442861210110898,
+    "2": 0.4942080836423385
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 22,
+   "match": "Cardiff City - West Ham United"
+  },
+  "10": {
+   "sannolikhet": {
+    "1": 0.22041411955142157,
+    "X": 0.227269104130772,
+    "2": 0.5523167763178064
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 22,
+   "match": "Wrexham AFC - Middlesbrough"
+  },
+  "11": {
+   "sannolikhet": {
+    "1": 0.3611906102251389,
+    "X": 0.25883686781801507,
+    "2": 0.37997252195684605
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 16,
+   "match": "Oxford United - Reading"
+  }
+ }
+}

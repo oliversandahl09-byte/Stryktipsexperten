@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "Liverpool - Arsenal",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 96883,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 41,
+     "type": "home",
+     "name": "Liverpool",
+     "shortName": "LFC",
+     "mediumName": "Liverpool",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 83,
+     "type": "away",
+     "name": "Arsenal",
+     "shortName": "ARS",
+     "mediumName": "Arsenal",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "Juventus - Napoli",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 96885,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 173,
+     "type": "home",
+     "name": "Juventus",
+     "shortName": "JUV",
+     "mediumName": "Juventus",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    },
+    {
+     "id": 343,
+     "type": "away",
+     "name": "Napoli",
+     "shortName": "NAP",
+     "mediumName": "Napoli",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Lazio - Cagliari",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 96880,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 316,
+     "type": "home",
+     "name": "Lazio",
+     "shortName": "LAZ",
+     "mediumName": "Lazio",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    },
+    {
+     "id": 172,
+     "type": "away",
+     "name": "Cagliari",
+     "shortName": "CAG",
+     "mediumName": "Cagliari",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Lecce - Genoa",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 96881,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 1061,
+     "type": "home",
+     "name": "Lecce",
+     "shortName": "LEC",
+     "mediumName": "Lecce",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    },
+    {
+     "id": 231,
+     "type": "away",
+     "name": "Genoa",
+     "shortName": "GEN",
+     "mediumName": "Genoa",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "Frosinone - Torino",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 97070,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 1055,
+     "type": "home",
+     "name": "Frosinone",
+     "shortName": "FRO",
+     "mediumName": "Frosinone",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    },
+    {
+     "id": 193,
+     "type": "away",
+     "name": "Torino",
+     "shortName": "TOR",
+     "mediumName": "Torino",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "Racing Sa - R. Madrid",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 3
+   },
+   "matchId": 96893,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 1067,
+     "type": "home",
+     "name": "Racing Santander",
+     "shortName": "SAN",
+     "mediumName": "Racing Sa",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    },
+    {
+     "id": 72,
+     "type": "away",
+     "name": "Real Madrid",
+     "shortName": "RMA",
+     "mediumName": "R. Madrid",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "At Bilbao - Sociedad",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 96891,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 241,
+     "type": "home",
+     "name": "Athletic Bilbao",
+     "shortName": "BIL",
+     "mediumName": "At Bilbao",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    },
+    {
+     "id": 232,
+     "type": "away",
+     "name": "Real Sociedad",
+     "shortName": "SOC",
+     "mediumName": "Sociedad",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Elche - Valencia",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 0,
+    "away": 1
+   },
+   "matchId": 96892,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 349,
+     "type": "home",
+     "name": "Elche",
+     "shortName": "ELC",
+     "mediumName": "Elche",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    },
+    {
+     "id": 212,
+     "type": "away",
+     "name": "Valencia",
+     "shortName": "VAL",
+     "mediumName": "Valencia",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Häcken - IFK Göteb",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 96899,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 236,
+     "type": "home",
+     "name": "Häcken",
+     "shortName": "HAC",
+     "mediumName": "Häcken",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 237,
+     "type": "away",
+     "name": "IFK Göteborg",
+     "shortName": "IFK",
+     "mediumName": "IFK Göteb",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "Elfsborg - Örgryte",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 96897,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 210,
+     "type": "home",
+     "name": "Elfsborg",
+     "shortName": "IFE",
+     "mediumName": "Elfsborg",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 335,
+     "type": "away",
+     "name": "Örgryte",
+     "shortName": "ÖRG",
+     "mediumName": "Örgryte",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "Västerås - Brommapoj",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 96896,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 205,
+     "type": "home",
+     "name": "Västerås",
+     "shortName": "VSK",
+     "mediumName": "Västerås",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    },
+    {
+     "id": 454,
+     "type": "away",
+     "name": "Brommapojkarna",
+     "shortName": "BRO",
+     "mediumName": "Brommapoj",
+     "countryId": 30,
+     "countryName": "Sverige",
+     "isoCode": "SWE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "Paris FC - Monaco",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 3,
+    "away": 1
+   },
+   "matchId": 96879,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 370,
+     "type": "home",
+     "name": "Paris FC",
+     "shortName": "PAR",
+     "mediumName": "Paris FC",
+     "countryId": 22,
+     "countryName": "Frankrike",
+     "isoCode": "FRA"
+    },
+    {
+     "id": 224,
+     "type": "away",
+     "name": "Monaco",
+     "shortName": "ASM",
+     "mediumName": "Monaco",
+     "countryId": 22,
+     "countryName": "Frankrike",
+     "isoCode": "FRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "U. Berlin - Köln",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 1,
+    "away": 1
+   },
+   "matchId": 96895,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 240,
+     "type": "home",
+     "name": "Union Berlin",
+     "shortName": "UNI",
+     "mediumName": "U. Berlin",
+     "countryId": 21,
+     "countryName": "Tyskland",
+     "isoCode": "DEU"
+    },
+    {
+     "id": 424,
+     "type": "away",
+     "name": "Köln",
+     "shortName": "KÖL",
+     "mediumName": "Köln",
+     "countryId": 21,
+     "countryName": "Tyskland",
+     "isoCode": "DEU"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 1193,
+   "amount": "3639,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 21659,
+   "amount": "82,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 144518,
+   "amount": "0,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 538534,
+   "amount": "0,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Europatipset",
+ "productId": 2,
+ "drawNumber": 2621,
+ "currentNetSale": "12546303,00",
+ "regCloseTime": "2026-11-01T14:59:00+01:00"
+}
