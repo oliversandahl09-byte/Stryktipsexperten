@@ -1,0 +1,135 @@
+{
+ "hamtad": "2026-11-05T18:45:05+00:00",
+ "matcher": {
+  "1": {
+   "sannolikhet": {
+    "1": 0.4390109271559253,
+    "X": 0.25200367506872595,
+    "2": 0.3089853977753487
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 25,
+   "match": "Manchester United - Aston Villa"
+  },
+  "2": {
+   "sannolikhet": {
+    "1": 0.1722485218723605,
+    "X": 0.21725038794712132,
+    "2": 0.6105010901805181
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 25,
+   "match": "Crystal Palace - Liverpool"
+  },
+  "3": {
+   "sannolikhet": {
+    "1": 0.26909950118141246,
+    "X": 0.2583355211341559,
+    "2": 0.4725649776844316
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 25,
+   "match": "Sunderland - Chelsea"
+  },
+  "4": {
+   "sannolikhet": {
+    "1": 0.4969467819918693,
+    "X": 0.2453281581985177,
+    "2": 0.257725059809613
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 25,
+   "match": "Brighton and Hove Albion - Brentford"
+  },
+  "5": {
+   "sannolikhet": {
+    "1": 0.2509821246516686,
+    "X": 0.2597294909263916,
+    "2": 0.4892883844219397
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 25,
+   "match": "Ipswich Town - Bournemouth"
+  },
+  "6": {
+   "sannolikhet": {
+    "1": 0.5200061321477848,
+    "X": 0.228115897593132,
+    "2": 0.2518779702590833
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 24,
+   "match": "Inter Milan - Como"
+  },
+  "7": {
+   "sannolikhet": {
+    "1": 0.20095754906374333,
+    "X": 0.26683619462458485,
+    "2": 0.5322062563116718
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 24,
+   "match": "Genoa - AC Milan"
+  },
+  "8": {
+   "sannolikhet": {
+    "1": 0.26941486136572773,
+    "X": 0.27091997232307813,
+    "2": 0.4596651663111942
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 24,
+   "match": "Fiorentina - Juventus"
+  },
+  "9": {
+   "sannolikhet": {
+    "1": 0.25828970331588136,
+    "X": 0.2181500872600349,
+    "2": 0.5235602094240838
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 20,
+   "match": "Atlético Madrid - Barcelona"
+  },
+  "10": {
+   "sannolikhet": {
+    "1": 0.5238809505013026,
+    "X": 0.24536196415883793,
+    "2": 0.2307570853398595
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 21,
+   "match": "Celta Vigo - Levante"
+  },
+  "11": {
+   "sannolikhet": {
+    "1": 0.22834645669291342,
+    "X": 0.22834645669291342,
+    "2": 0.5433070866141733
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 21,
+   "match": "AIK - BK Hacken"
+  },
+  "12": {
+   "sannolikhet": {
+    "1": 0.3931994212953711,
+    "X": 0.2754681992214664,
+    "2": 0.3313323794831624
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 21,
+   "match": "IF Brommapojkarna - Mjällby AIF"
+  },
+  "13": {
+   "sannolikhet": {
+    "1": 0.3157905049277974,
+    "X": 0.2668652154319415,
+    "2": 0.41734427964026094
+   },
+   "kalla": "pinnacle",
+   "spelbolag": 21,
+   "match": "Kalmar FF - IK Sirius"
+  }
+ }
+}

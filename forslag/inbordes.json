@@ -1,428 +1,17 @@
 {
- "omgang": 4977,
+ "omgang": 4978,
  "kalla": "football-data.co.uk",
  "matcher": {
   "1": {
    "lag": [
-    "Aston Villa",
-    "Fulham"
+    "Nott'm Forest",
+    "Man City"
    ],
    "moten": [
     {
-     "datum": "2026-04-25",
-     "hemma": "Fulham",
-     "borta": "Aston Villa",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2025-09-28",
-     "hemma": "Aston Villa",
-     "borta": "Fulham",
-     "mal": [
-      3,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2025-05-03",
-     "hemma": "Aston Villa",
-     "borta": "Fulham",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-10-19",
-     "hemma": "Fulham",
-     "borta": "Aston Villa",
-     "mal": [
-      1,
-      3
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-02-17",
-     "hemma": "Fulham",
-     "borta": "Aston Villa",
-     "mal": [
-      1,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2023-11-12",
-     "hemma": "Aston Villa",
-     "borta": "Fulham",
-     "mal": [
-      3,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-04-25",
-     "hemma": "Aston Villa",
-     "borta": "Fulham",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2022-10-20",
-     "hemma": "Fulham",
-     "borta": "Aston Villa",
-     "mal": [
-      3,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2021-04-04",
-     "hemma": "Aston Villa",
-     "borta": "Fulham",
-     "mal": [
-      3,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2020-09-28",
-     "hemma": "Fulham",
-     "borta": "Aston Villa",
-     "mal": [
-      0,
-      3
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": false
-    }
-   ],
-   "summering": {
-    "1": 8,
-    "X": 0,
-    "2": 2
-   }
-  },
-  "2": {
-   "lag": [
-    "Tottenham",
-    "Crystal Palace"
-   ],
-   "moten": [
-    {
-     "datum": "2026-03-05",
-     "hemma": "Tottenham",
-     "borta": "Crystal Palace",
-     "mal": [
-      1,
-      3
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2025-12-28",
-     "hemma": "Crystal Palace",
-     "borta": "Tottenham",
-     "mal": [
-      0,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2025-05-11",
-     "hemma": "Tottenham",
-     "borta": "Crystal Palace",
-     "mal": [
-      0,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-10-27",
-     "hemma": "Crystal Palace",
-     "borta": "Tottenham",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-03-02",
-     "hemma": "Tottenham",
-     "borta": "Crystal Palace",
-     "mal": [
-      3,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-10-27",
-     "hemma": "Crystal Palace",
-     "borta": "Tottenham",
-     "mal": [
-      1,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2023-05-06",
-     "hemma": "Tottenham",
-     "borta": "Crystal Palace",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-01-04",
-     "hemma": "Crystal Palace",
-     "borta": "Tottenham",
-     "mal": [
-      0,
-      4
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2021-12-26",
-     "hemma": "Tottenham",
-     "borta": "Crystal Palace",
-     "mal": [
-      3,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2021-09-11",
-     "hemma": "Crystal Palace",
-     "borta": "Tottenham",
-     "mal": [
-      3,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": false
-    }
-   ],
-   "summering": {
-    "1": 6,
-    "X": 0,
-    "2": 4
-   }
-  },
-  "3": {
-   "lag": [
-    "Man City",
-    "Brighton"
-   ],
-   "moten": [
-    {
-     "datum": "2026-01-07",
+     "datum": "2026-03-04",
      "hemma": "Man City",
-     "borta": "Brighton",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": true
-    },
-    {
-     "datum": "2025-08-31",
-     "hemma": "Brighton",
-     "borta": "Man City",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2025-03-15",
-     "hemma": "Man City",
-     "borta": "Brighton",
-     "mal": [
-      2,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-11-09",
-     "hemma": "Brighton",
-     "borta": "Man City",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-04-25",
-     "hemma": "Brighton",
-     "borta": "Man City",
-     "mal": [
-      0,
-      4
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2023-10-21",
-     "hemma": "Man City",
-     "borta": "Brighton",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-05-24",
-     "hemma": "Brighton",
-     "borta": "Man City",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2022-10-22",
-     "hemma": "Man City",
-     "borta": "Brighton",
-     "mal": [
-      3,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2022-04-20",
-     "hemma": "Man City",
-     "borta": "Brighton",
-     "mal": [
-      3,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2021-10-23",
-     "hemma": "Brighton",
-     "borta": "Man City",
-     "mal": [
-      1,
-      4
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": false
-    }
-   ],
-   "summering": {
-    "1": 5,
-    "X": 3,
-    "2": 2
-   }
-  },
-  "4": {
-   "lag": [
-    "Bournemouth",
-    "Leeds"
-   ],
-   "moten": [
-    {
-     "datum": "2026-04-22",
-     "hemma": "Bournemouth",
-     "borta": "Leeds",
-     "mal": [
-      2,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": true
-    },
-    {
-     "datum": "2025-09-27",
-     "hemma": "Leeds",
-     "borta": "Bournemouth",
+     "borta": "Nott'm Forest",
      "mal": [
       2,
       2
@@ -432,24 +21,84 @@
      "samma_plan": false
     },
     {
-     "datum": "2023-04-30",
-     "hemma": "Bournemouth",
-     "borta": "Leeds",
+     "datum": "2025-12-27",
+     "hemma": "Nott'm Forest",
+     "borta": "Man City",
      "mal": [
-      4,
-      1
+      1,
+      2
+     ],
+     "serie": "E0",
+     "utfall": "2",
+     "samma_plan": true
+    },
+    {
+     "datum": "2025-03-08",
+     "hemma": "Nott'm Forest",
+     "borta": "Man City",
+     "mal": [
+      1,
+      0
      ],
      "serie": "E0",
      "utfall": "1",
      "samma_plan": true
     },
     {
-     "datum": "2022-11-05",
-     "hemma": "Leeds",
-     "borta": "Bournemouth",
+     "datum": "2024-12-04",
+     "hemma": "Man City",
+     "borta": "Nott'm Forest",
      "mal": [
-      4,
-      3
+      3,
+      0
+     ],
+     "serie": "E0",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2024-04-28",
+     "hemma": "Nott'm Forest",
+     "borta": "Man City",
+     "mal": [
+      0,
+      2
+     ],
+     "serie": "E0",
+     "utfall": "2",
+     "samma_plan": true
+    },
+    {
+     "datum": "2023-09-23",
+     "hemma": "Man City",
+     "borta": "Nott'm Forest",
+     "mal": [
+      2,
+      0
+     ],
+     "serie": "E0",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2023-02-18",
+     "hemma": "Nott'm Forest",
+     "borta": "Man City",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "E0",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2022-08-31",
+     "hemma": "Man City",
+     "borta": "Nott'm Forest",
+     "mal": [
+      6,
+      0
      ],
      "serie": "E0",
      "utfall": "2",
@@ -459,21 +108,190 @@
    "summering": {
     "1": 1,
     "X": 2,
-    "2": 1
+    "2": 5
+   }
+  },
+  "2": {
+   "lag": [
+    "Arsenal",
+    "Hull"
+   ],
+   "moten": [],
+   "summering": {
+    "1": 0,
+    "X": 0,
+    "2": 0
+   }
+  },
+  "3": {
+   "lag": [
+    "Fulham",
+    "Newcastle"
+   ],
+   "moten": [
+    {
+     "datum": "2026-05-24",
+     "hemma": "Fulham",
+     "borta": "Newcastle",
+     "mal": [
+      2,
+      0
+     ],
+     "serie": "E0",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2025-10-25",
+     "hemma": "Newcastle",
+     "borta": "Fulham",
+     "mal": [
+      2,
+      1
+     ],
+     "serie": "E0",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2025-02-01",
+     "hemma": "Newcastle",
+     "borta": "Fulham",
+     "mal": [
+      1,
+      2
+     ],
+     "serie": "E0",
+     "utfall": "1",
+     "samma_plan": false
+    },
+    {
+     "datum": "2024-09-21",
+     "hemma": "Fulham",
+     "borta": "Newcastle",
+     "mal": [
+      3,
+      1
+     ],
+     "serie": "E0",
+     "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2024-04-06",
+     "hemma": "Fulham",
+     "borta": "Newcastle",
+     "mal": [
+      0,
+      1
+     ],
+     "serie": "E0",
+     "utfall": "2",
+     "samma_plan": true
+    },
+    {
+     "datum": "2023-12-16",
+     "hemma": "Newcastle",
+     "borta": "Fulham",
+     "mal": [
+      3,
+      0
+     ],
+     "serie": "E0",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2023-01-15",
+     "hemma": "Newcastle",
+     "borta": "Fulham",
+     "mal": [
+      1,
+      0
+     ],
+     "serie": "E0",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2022-10-01",
+     "hemma": "Fulham",
+     "borta": "Newcastle",
+     "mal": [
+      1,
+      4
+     ],
+     "serie": "E0",
+     "utfall": "2",
+     "samma_plan": true
+    },
+    {
+     "datum": "2021-05-23",
+     "hemma": "Fulham",
+     "borta": "Newcastle",
+     "mal": [
+      0,
+      2
+     ],
+     "serie": "E0",
+     "utfall": "2",
+     "samma_plan": true
+    },
+    {
+     "datum": "2020-12-19",
+     "hemma": "Newcastle",
+     "borta": "Fulham",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "E0",
+     "utfall": "X",
+     "samma_plan": false
+    }
+   ],
+   "summering": {
+    "1": 3,
+    "X": 1,
+    "2": 6
+   }
+  },
+  "4": {
+   "lag": [
+    "Blackburn",
+    "West Ham"
+   ],
+   "moten": [],
+   "summering": {
+    "1": 0,
+    "X": 0,
+    "2": 0
    }
   },
   "5": {
    "lag": [
-    "Coventry",
-    "Sunderland"
+    "Birmingham",
+    "Swansea"
    ],
    "moten": [
     {
-     "datum": "2025-03-15",
-     "hemma": "Coventry",
-     "borta": "Sunderland",
+     "datum": "2026-01-17",
+     "hemma": "Swansea",
+     "borta": "Birmingham",
      "mal": [
-      3,
+      1,
+      1
+     ],
+     "serie": "E1",
+     "utfall": "X",
+     "samma_plan": false
+    },
+    {
+     "datum": "2025-09-20",
+     "hemma": "Birmingham",
+     "borta": "Swansea",
+     "mal": [
+      1,
       0
      ],
      "serie": "E1",
@@ -481,45 +299,69 @@
      "samma_plan": true
     },
     {
-     "datum": "2024-11-09",
-     "hemma": "Sunderland",
-     "borta": "Coventry",
+     "datum": "2024-01-13",
+     "hemma": "Birmingham",
+     "borta": "Swansea",
      "mal": [
       2,
       2
      ],
      "serie": "E1",
      "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2023-08-05",
+     "hemma": "Swansea",
+     "borta": "Birmingham",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "E1",
+     "utfall": "X",
      "samma_plan": false
     },
     {
-     "datum": "2023-12-23",
-     "hemma": "Sunderland",
-     "borta": "Coventry",
+     "datum": "2023-02-04",
+     "hemma": "Swansea",
+     "borta": "Birmingham",
      "mal": [
-      0,
-      3
+      3,
+      4
      ],
      "serie": "E1",
      "utfall": "1",
      "samma_plan": false
     },
     {
-     "datum": "2023-08-26",
-     "hemma": "Coventry",
-     "borta": "Sunderland",
+     "datum": "2022-11-08",
+     "hemma": "Birmingham",
+     "borta": "Swansea",
      "mal": [
-      0,
-      0
+      2,
+      2
      ],
      "serie": "E1",
      "utfall": "X",
      "samma_plan": true
     },
     {
-     "datum": "2023-02-25",
-     "hemma": "Coventry",
-     "borta": "Sunderland",
+     "datum": "2022-03-19",
+     "hemma": "Swansea",
+     "borta": "Birmingham",
+     "mal": [
+      0,
+      0
+     ],
+     "serie": "E1",
+     "utfall": "X",
+     "samma_plan": false
+    },
+    {
+     "datum": "2021-10-23",
+     "hemma": "Birmingham",
+     "borta": "Swansea",
      "mal": [
       2,
       1
@@ -529,178 +371,82 @@
      "samma_plan": true
     },
     {
-     "datum": "2022-07-31",
-     "hemma": "Sunderland",
-     "borta": "Coventry",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "E1",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2020-03-01",
-     "hemma": "Coventry",
-     "borta": "Sunderland",
+     "datum": "2021-04-02",
+     "hemma": "Birmingham",
+     "borta": "Swansea",
      "mal": [
       1,
       0
      ],
-     "serie": "E2",
+     "serie": "E1",
      "utfall": "1",
      "samma_plan": true
     },
     {
-     "datum": "2019-11-23",
-     "hemma": "Sunderland",
-     "borta": "Coventry",
+     "datum": "2020-09-19",
+     "hemma": "Swansea",
+     "borta": "Birmingham",
      "mal": [
-      1,
-      1
+      0,
+      0
      ],
-     "serie": "E2",
+     "serie": "E1",
      "utfall": "X",
      "samma_plan": false
-    },
-    {
-     "datum": "2019-04-13",
-     "hemma": "Sunderland",
-     "borta": "Coventry",
-     "mal": [
-      4,
-      5
-     ],
-     "serie": "E2",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2018-09-29",
-     "hemma": "Coventry",
-     "borta": "Sunderland",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "E2",
-     "utfall": "X",
-     "samma_plan": true
     }
    ],
    "summering": {
-    "1": 5,
-    "X": 5,
+    "1": 4,
+    "X": 6,
     "2": 0
    }
   },
   "6": {
    "lag": [
-    "Brentford",
-    "Nott'm Forest"
+    "Cardiff",
+    "Burnley"
    ],
    "moten": [
     {
-     "datum": "2026-01-25",
-     "hemma": "Brentford",
-     "borta": "Nott'm Forest",
-     "mal": [
-      0,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2025-08-17",
-     "hemma": "Nott'm Forest",
-     "borta": "Brentford",
-     "mal": [
-      3,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2025-05-01",
-     "hemma": "Nott'm Forest",
-     "borta": "Brentford",
-     "mal": [
-      0,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-12-21",
-     "hemma": "Brentford",
-     "borta": "Nott'm Forest",
-     "mal": [
-      0,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-01-20",
-     "hemma": "Brentford",
-     "borta": "Nott'm Forest",
-     "mal": [
-      3,
-      2
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-10-01",
-     "hemma": "Nott'm Forest",
-     "borta": "Brentford",
+     "datum": "2025-03-04",
+     "hemma": "Cardiff",
+     "borta": "Burnley",
      "mal": [
       1,
-      1
+      2
      ],
-     "serie": "E0",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2023-04-29",
-     "hemma": "Brentford",
-     "borta": "Nott'm Forest",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "1",
+     "serie": "E1",
+     "utfall": "2",
      "samma_plan": true
     },
     {
-     "datum": "2022-11-05",
-     "hemma": "Nott'm Forest",
-     "borta": "Brentford",
+     "datum": "2024-08-17",
+     "hemma": "Burnley",
+     "borta": "Cardiff",
      "mal": [
-      2,
-      2
+      5,
+      0
      ],
-     "serie": "E0",
-     "utfall": "X",
+     "serie": "E1",
+     "utfall": "2",
      "samma_plan": false
     },
     {
-     "datum": "2021-03-20",
-     "hemma": "Brentford",
-     "borta": "Nott'm Forest",
+     "datum": "2023-05-08",
+     "hemma": "Burnley",
+     "borta": "Cardiff",
+     "mal": [
+      3,
+      0
+     ],
+     "serie": "E1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2022-10-01",
+     "hemma": "Cardiff",
+     "borta": "Burnley",
      "mal": [
       1,
       1
@@ -710,179 +456,119 @@
      "samma_plan": true
     },
     {
-     "datum": "2020-12-12",
-     "hemma": "Nott'm Forest",
-     "borta": "Brentford",
+     "datum": "2019-04-13",
+     "hemma": "Burnley",
+     "borta": "Cardiff",
+     "mal": [
+      2,
+      0
+     ],
+     "serie": "E0",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2018-09-30",
+     "hemma": "Cardiff",
+     "borta": "Burnley",
      "mal": [
       1,
-      3
+      2
      ],
-     "serie": "E1",
-     "utfall": "1",
-     "samma_plan": false
+     "serie": "E0",
+     "utfall": "2",
+     "samma_plan": true
     }
    ],
    "summering": {
-    "1": 4,
-    "X": 3,
-    "2": 3
+    "1": 0,
+    "X": 1,
+    "2": 5
    }
   },
   "7": {
    "lag": [
-    "Hull",
-    "Ipswich"
+    "Charlton",
+    "Sheffield United"
    ],
    "moten": [
     {
-     "datum": "2026-03-03",
-     "hemma": "Ipswich",
-     "borta": "Hull",
+     "datum": "2026-01-17",
+     "hemma": "Charlton",
+     "borta": "Sheffield United",
      "mal": [
       1,
       0
      ],
      "serie": "E1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2025-11-25",
-     "hemma": "Hull",
-     "borta": "Ipswich",
-     "mal": [
-      0,
-      2
-     ],
-     "serie": "E1",
-     "utfall": "2",
+     "utfall": "1",
      "samma_plan": true
     },
     {
-     "datum": "2024-04-27",
-     "hemma": "Hull",
-     "borta": "Ipswich",
-     "mal": [
-      3,
-      3
-     ],
-     "serie": "E1",
-     "utfall": "X",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-10-03",
-     "hemma": "Ipswich",
-     "borta": "Hull",
-     "mal": [
-      3,
-      0
-     ],
-     "serie": "E1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2021-02-23",
-     "hemma": "Hull",
-     "borta": "Ipswich",
+     "datum": "2025-09-20",
+     "hemma": "Sheffield United",
+     "borta": "Charlton",
      "mal": [
       0,
       1
      ],
-     "serie": "E2",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2020-11-24",
-     "hemma": "Ipswich",
-     "borta": "Hull",
-     "mal": [
-      0,
-      3
-     ],
-     "serie": "E2",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2019-03-30",
-     "hemma": "Ipswich",
-     "borta": "Hull",
-     "mal": [
-      0,
-      2
-     ],
      "serie": "E1",
      "utfall": "1",
      "samma_plan": false
-    },
-    {
-     "datum": "2018-09-15",
-     "hemma": "Hull",
-     "borta": "Ipswich",
-     "mal": [
-      2,
-      0
-     ],
-     "serie": "E1",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2018-03-13",
-     "hemma": "Ipswich",
-     "borta": "Hull",
-     "mal": [
-      0,
-      3
-     ],
-     "serie": "E1",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2017-11-18",
-     "hemma": "Hull",
-     "borta": "Ipswich",
-     "mal": [
-      2,
-      2
-     ],
-     "serie": "E1",
-     "utfall": "X",
-     "samma_plan": true
     }
    ],
    "summering": {
-    "1": 4,
-    "X": 2,
-    "2": 4
+    "1": 2,
+    "X": 0,
+    "2": 0
    }
   },
   "8": {
    "lag": [
-    "Bolton",
-    "Bristol City"
+    "Preston",
+    "Southampton"
    ],
    "moten": [
     {
-     "datum": "2019-01-12",
-     "hemma": "Bristol City",
-     "borta": "Bolton",
+     "datum": "2026-05-02",
+     "hemma": "Preston",
+     "borta": "Southampton",
      "mal": [
-      2,
-      1
+      1,
+      3
+     ],
+     "serie": "E1",
+     "utfall": "2",
+     "samma_plan": true
+    },
+    {
+     "datum": "2025-11-01",
+     "hemma": "Southampton",
+     "borta": "Preston",
+     "mal": [
+      0,
+      2
+     ],
+     "serie": "E1",
+     "utfall": "1",
+     "samma_plan": false
+    },
+    {
+     "datum": "2024-04-16",
+     "hemma": "Southampton",
+     "borta": "Preston",
+     "mal": [
+      3,
+      0
      ],
      "serie": "E1",
      "utfall": "2",
      "samma_plan": false
     },
     {
-     "datum": "2018-08-11",
-     "hemma": "Bolton",
-     "borta": "Bristol City",
+     "datum": "2023-10-25",
+     "hemma": "Preston",
+     "borta": "Southampton",
      "mal": [
       2,
       2
@@ -890,30 +576,6 @@
      "serie": "E1",
      "utfall": "X",
      "samma_plan": true
-    },
-    {
-     "datum": "2018-02-02",
-     "hemma": "Bolton",
-     "borta": "Bristol City",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "E1",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2017-09-26",
-     "hemma": "Bristol City",
-     "borta": "Bolton",
-     "mal": [
-      2,
-      0
-     ],
-     "serie": "E1",
-     "utfall": "2",
-     "samma_plan": false
     }
    ],
    "summering": {
@@ -924,53 +586,40 @@
   },
   "9": {
    "lag": [
-    "Burnley",
-    "Portsmouth"
+    "QPR",
+    "Lincoln"
    ],
-   "moten": [
-    {
-     "datum": "2025-02-01",
-     "hemma": "Portsmouth",
-     "borta": "Burnley",
-     "mal": [
-      0,
-      0
-     ],
-     "serie": "E1",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-09-21",
-     "hemma": "Burnley",
-     "borta": "Portsmouth",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "E1",
-     "utfall": "1",
-     "samma_plan": true
-    }
-   ],
+   "moten": [],
    "summering": {
-    "1": 1,
-    "X": 1,
+    "1": 0,
+    "X": 0,
     "2": 0
    }
   },
   "10": {
    "lag": [
-    "Millwall",
-    "Derby"
+    "Watford",
+    "Middlesbrough"
    ],
    "moten": [
     {
-     "datum": "2026-03-10",
-     "hemma": "Millwall",
-     "borta": "Derby",
+     "datum": "2026-04-25",
+     "hemma": "Middlesbrough",
+     "borta": "Watford",
      "mal": [
-      1,
+      5,
+      1
+     ],
+     "serie": "E1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2025-11-01",
+     "hemma": "Watford",
+     "borta": "Middlesbrough",
+     "mal": [
+      3,
       0
      ],
      "serie": "E1",
@@ -978,21 +627,9 @@
      "samma_plan": true
     },
     {
-     "datum": "2025-12-10",
-     "hemma": "Derby",
-     "borta": "Millwall",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "E1",
-     "utfall": "X",
-     "samma_plan": false
-    },
-    {
-     "datum": "2025-02-22",
-     "hemma": "Derby",
-     "borta": "Millwall",
+     "datum": "2025-02-15",
+     "hemma": "Middlesbrough",
+     "borta": "Watford",
      "mal": [
       0,
       1
@@ -1002,69 +639,33 @@
      "samma_plan": false
     },
     {
-     "datum": "2024-10-19",
-     "hemma": "Millwall",
-     "borta": "Derby",
+     "datum": "2024-10-05",
+     "hemma": "Watford",
+     "borta": "Middlesbrough",
      "mal": [
-      1,
+      2,
       1
      ],
      "serie": "E1",
-     "utfall": "X",
+     "utfall": "1",
      "samma_plan": true
     },
     {
-     "datum": "2022-02-23",
-     "hemma": "Derby",
-     "borta": "Millwall",
+     "datum": "2024-05-04",
+     "hemma": "Middlesbrough",
+     "borta": "Watford",
      "mal": [
-      1,
-      2
-     ],
-     "serie": "E1",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2021-11-06",
-     "hemma": "Millwall",
-     "borta": "Derby",
-     "mal": [
-      1,
-      1
-     ],
-     "serie": "E1",
-     "utfall": "X",
-     "samma_plan": true
-    },
-    {
-     "datum": "2021-03-13",
-     "hemma": "Derby",
-     "borta": "Millwall",
-     "mal": [
-      0,
-      1
-     ],
-     "serie": "E1",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2020-12-05",
-     "hemma": "Millwall",
-     "borta": "Derby",
-     "mal": [
-      0,
+      3,
       1
      ],
      "serie": "E1",
      "utfall": "2",
-     "samma_plan": true
+     "samma_plan": false
     },
     {
-     "datum": "2020-06-20",
-     "hemma": "Millwall",
-     "borta": "Derby",
+     "datum": "2023-09-30",
+     "hemma": "Watford",
+     "borta": "Middlesbrough",
      "mal": [
       2,
       3
@@ -1074,275 +675,371 @@
      "samma_plan": true
     },
     {
-     "datum": "2019-12-14",
-     "hemma": "Derby",
-     "borta": "Millwall",
+     "datum": "2023-01-28",
+     "hemma": "Middlesbrough",
+     "borta": "Watford",
      "mal": [
-      0,
+      2,
+      0
+     ],
+     "serie": "E1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2022-08-30",
+     "hemma": "Watford",
+     "borta": "Middlesbrough",
+     "mal": [
+      2,
       1
      ],
      "serie": "E1",
      "utfall": "1",
+     "samma_plan": true
+    },
+    {
+     "datum": "2021-04-05",
+     "hemma": "Middlesbrough",
+     "borta": "Watford",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "E1",
+     "utfall": "X",
      "samma_plan": false
+    },
+    {
+     "datum": "2020-09-11",
+     "hemma": "Watford",
+     "borta": "Middlesbrough",
+     "mal": [
+      1,
+      0
+     ],
+     "serie": "E1",
+     "utfall": "1",
+     "samma_plan": true
     }
    ],
    "summering": {
     "1": 5,
-    "X": 3,
-    "2": 2
+    "X": 1,
+    "2": 4
    }
   },
   "11": {
    "lag": [
-    "Southampton",
-    "QPR"
+    "West Brom",
+    "Millwall"
    ],
    "moten": [
     {
-     "datum": "2026-02-24",
-     "hemma": "Southampton",
-     "borta": "QPR",
+     "datum": "2026-04-10",
+     "hemma": "West Brom",
+     "borta": "Millwall",
      "mal": [
-      5,
+      0,
       0
      ],
      "serie": "E1",
-     "utfall": "1",
+     "utfall": "X",
      "samma_plan": true
     },
     {
-     "datum": "2025-11-05",
-     "hemma": "QPR",
-     "borta": "Southampton",
+     "datum": "2025-10-04",
+     "hemma": "Millwall",
+     "borta": "West Brom",
      "mal": [
-      1,
-      2
+      3,
+      0
      ],
      "serie": "E1",
-     "utfall": "1",
+     "utfall": "2",
      "samma_plan": false
     },
     {
-     "datum": "2023-12-23",
-     "hemma": "QPR",
-     "borta": "Southampton",
+     "datum": "2025-02-15",
+     "hemma": "Millwall",
+     "borta": "West Brom",
      "mal": [
-      0,
+      1,
       1
      ],
      "serie": "E1",
-     "utfall": "1",
+     "utfall": "X",
      "samma_plan": false
     },
     {
-     "datum": "2023-08-26",
-     "hemma": "Southampton",
-     "borta": "QPR",
+     "datum": "2024-10-05",
+     "hemma": "West Brom",
+     "borta": "Millwall",
+     "mal": [
+      0,
+      0
+     ],
+     "serie": "E1",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2024-03-29",
+     "hemma": "Millwall",
+     "borta": "West Brom",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "E1",
+     "utfall": "X",
+     "samma_plan": false
+    },
+    {
+     "datum": "2023-09-23",
+     "hemma": "West Brom",
+     "borta": "Millwall",
+     "mal": [
+      0,
+      0
+     ],
+     "serie": "E1",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2023-04-01",
+     "hemma": "West Brom",
+     "borta": "Millwall",
+     "mal": [
+      0,
+      0
+     ],
+     "serie": "E1",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2022-10-22",
+     "hemma": "Millwall",
+     "borta": "West Brom",
      "mal": [
       2,
       1
      ],
      "serie": "E1",
-     "utfall": "1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2022-01-29",
+     "hemma": "Millwall",
+     "borta": "West Brom",
+     "mal": [
+      2,
+      0
+     ],
+     "serie": "E1",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2021-09-11",
+     "hemma": "West Brom",
+     "borta": "Millwall",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "E1",
+     "utfall": "X",
      "samma_plan": true
     }
    ],
    "summering": {
-    "1": 4,
-    "X": 0,
-    "2": 0
+    "1": 0,
+    "X": 7,
+    "2": 3
    }
   },
   "12": {
    "lag": [
-    "Swansea",
-    "Blackburn"
+    "Crewe",
+    "AFC Wimbledon"
    ],
    "moten": [
     {
-     "datum": "2026-01-20",
-     "hemma": "Swansea",
-     "borta": "Blackburn",
+     "datum": "2025-02-11",
+     "hemma": "AFC Wimbledon",
+     "borta": "Crewe",
+     "mal": [
+      3,
+      0
+     ],
+     "serie": "E3",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2025-01-28",
+     "hemma": "Crewe",
+     "borta": "AFC Wimbledon",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "E3",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2024-03-23",
+     "hemma": "Crewe",
+     "borta": "AFC Wimbledon",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "E3",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2023-09-16",
+     "hemma": "AFC Wimbledon",
+     "borta": "Crewe",
+     "mal": [
+      2,
+      2
+     ],
+     "serie": "E3",
+     "utfall": "X",
+     "samma_plan": false
+    },
+    {
+     "datum": "2023-01-07",
+     "hemma": "Crewe",
+     "borta": "AFC Wimbledon",
+     "mal": [
+      0,
+      0
+     ],
+     "serie": "E3",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2022-10-25",
+     "hemma": "AFC Wimbledon",
+     "borta": "Crewe",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "E3",
+     "utfall": "X",
+     "samma_plan": false
+    },
+    {
+     "datum": "2022-04-15",
+     "hemma": "Crewe",
+     "borta": "AFC Wimbledon",
      "mal": [
       3,
       1
      ],
-     "serie": "E1",
+     "serie": "E2",
      "utfall": "1",
      "samma_plan": true
     },
     {
-     "datum": "2025-09-30",
-     "hemma": "Blackburn",
-     "borta": "Swansea",
+     "datum": "2021-11-23",
+     "hemma": "AFC Wimbledon",
+     "borta": "Crewe",
+     "mal": [
+      3,
+      2
+     ],
+     "serie": "E2",
+     "utfall": "2",
+     "samma_plan": false
+    },
+    {
+     "datum": "2021-01-23",
+     "hemma": "Crewe",
+     "borta": "AFC Wimbledon",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "E2",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2020-12-19",
+     "hemma": "AFC Wimbledon",
+     "borta": "Crewe",
      "mal": [
       1,
       2
      ],
-     "serie": "E1",
+     "serie": "E2",
      "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2025-02-22",
-     "hemma": "Swansea",
-     "borta": "Blackburn",
-     "mal": [
-      3,
-      0
-     ],
-     "serie": "E1",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2024-10-19",
-     "hemma": "Blackburn",
-     "borta": "Swansea",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "E1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2024-03-02",
-     "hemma": "Swansea",
-     "borta": "Blackburn",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "E1",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2023-10-28",
-     "hemma": "Blackburn",
-     "borta": "Swansea",
-     "mal": [
-      0,
-      1
-     ],
-     "serie": "E1",
-     "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2023-02-18",
-     "hemma": "Blackburn",
-     "borta": "Swansea",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "E1",
-     "utfall": "2",
-     "samma_plan": false
-    },
-    {
-     "datum": "2022-08-06",
-     "hemma": "Swansea",
-     "borta": "Blackburn",
-     "mal": [
-      0,
-      3
-     ],
-     "serie": "E1",
-     "utfall": "2",
-     "samma_plan": true
-    },
-    {
-     "datum": "2022-02-05",
-     "hemma": "Swansea",
-     "borta": "Blackburn",
-     "mal": [
-      1,
-      0
-     ],
-     "serie": "E1",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2021-08-07",
-     "hemma": "Blackburn",
-     "borta": "Swansea",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "E1",
-     "utfall": "2",
      "samma_plan": false
     }
    ],
    "summering": {
-    "1": 6,
-    "X": 0,
-    "2": 4
+    "1": 2,
+    "X": 6,
+    "2": 2
    }
   },
   "13": {
    "lag": [
-    "West Ham",
-    "West Brom"
+    "Oxford",
+    "Stevenage"
    ],
    "moten": [
     {
-     "datum": "2021-05-19",
-     "hemma": "West Brom",
-     "borta": "West Ham",
+     "datum": "2026-08-22",
+     "hemma": "Stevenage",
+     "borta": "Oxford",
+     "mal": [
+      1,
+      2
+     ],
+     "serie": "E2",
+     "utfall": "1",
+     "samma_plan": false
+    },
+    {
+     "datum": "2024-04-19",
+     "hemma": "Oxford",
+     "borta": "Stevenage",
+     "mal": [
+      1,
+      1
+     ],
+     "serie": "E2",
+     "utfall": "X",
+     "samma_plan": true
+    },
+    {
+     "datum": "2023-09-30",
+     "hemma": "Stevenage",
+     "borta": "Oxford",
      "mal": [
       1,
       3
      ],
-     "serie": "E0",
+     "serie": "E2",
      "utfall": "1",
-     "samma_plan": false
-    },
-    {
-     "datum": "2021-01-19",
-     "hemma": "West Ham",
-     "borta": "West Brom",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2018-01-02",
-     "hemma": "West Ham",
-     "borta": "West Brom",
-     "mal": [
-      2,
-      1
-     ],
-     "serie": "E0",
-     "utfall": "1",
-     "samma_plan": true
-    },
-    {
-     "datum": "2017-09-16",
-     "hemma": "West Brom",
-     "borta": "West Ham",
-     "mal": [
-      0,
-      0
-     ],
-     "serie": "E0",
-     "utfall": "X",
      "samma_plan": false
     }
    ],
    "summering": {
-    "1": 3,
+    "1": 2,
     "X": 1,
     "2": 0
    }

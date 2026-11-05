@@ -1,0 +1,513 @@
+{
+ "cancelled": false,
+ "events": [
+  {
+   "eventNumber": 1,
+   "eventComment": "",
+   "eventDescription": "Sl. Prag - Arsenal",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 97140,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 220,
+     "type": "home",
+     "name": "Slavia Prag",
+     "shortName": "SPR",
+     "mediumName": "Sl. Prag",
+     "countryId": 33,
+     "countryName": "Tjeckien",
+     "isoCode": "CZE"
+    },
+    {
+     "id": 83,
+     "type": "away",
+     "name": "Arsenal",
+     "shortName": "ARS",
+     "mediumName": "Arsenal",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 2,
+   "eventComment": "",
+   "eventDescription": "RB Leipzi - Man City",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 2,
+    "away": 3
+   },
+   "matchId": 97128,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 77,
+     "type": "home",
+     "name": "RB Leipzig",
+     "shortName": "RBL",
+     "mediumName": "RB Leipzi",
+     "countryId": 21,
+     "countryName": "Tyskland",
+     "isoCode": "DEU"
+    },
+    {
+     "id": 2,
+     "type": "away",
+     "name": "Manchester City",
+     "shortName": "MNC",
+     "mediumName": "Man City",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 3,
+   "eventComment": "",
+   "eventDescription": "Dortmund - Real Beti",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 1
+   },
+   "matchId": 97130,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 149,
+     "type": "home",
+     "name": "Dortmund",
+     "shortName": "BVB",
+     "mediumName": "Dortmund",
+     "countryId": 21,
+     "countryName": "Tyskland",
+     "isoCode": "DEU"
+    },
+    {
+     "id": 233,
+     "type": "away",
+     "name": "Real Betis",
+     "shortName": "RBB",
+     "mediumName": "Real Beti",
+     "countryId": 10,
+     "countryName": "Spanien",
+     "isoCode": "ESP"
+    }
+   ]
+  },
+  {
+   "eventNumber": 4,
+   "eventComment": "",
+   "eventDescription": "Porto - Napoli",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 4,
+    "away": 1
+   },
+   "matchId": 97131,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 314,
+     "type": "home",
+     "name": "Porto",
+     "shortName": "FCP",
+     "mediumName": "Porto",
+     "countryId": 17,
+     "countryName": "Portugal",
+     "isoCode": "PRT"
+    },
+    {
+     "id": 343,
+     "type": "away",
+     "name": "Napoli",
+     "shortName": "NAP",
+     "mediumName": "Napoli",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 5,
+   "eventComment": "",
+   "eventDescription": "PSV Eindh - Club Brüg",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 97121,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 61,
+     "type": "home",
+     "name": "PSV Eindhoven",
+     "shortName": "PSV",
+     "mediumName": "PSV Eindh",
+     "countryId": 26,
+     "countryName": "Nederländerna",
+     "isoCode": "NLD"
+    },
+    {
+     "id": 414,
+     "type": "away",
+     "name": "Club Brügge",
+     "shortName": "BRÜ",
+     "mediumName": "Club Brüg",
+     "countryId": 32,
+     "countryName": "Belgien",
+     "isoCode": "BEL"
+    }
+   ]
+  },
+  {
+   "eventNumber": 6,
+   "eventComment": "",
+   "eventDescription": "Lens - Como",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 9
+   },
+   "matchId": 97139,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 267,
+     "type": "home",
+     "name": "Lens",
+     "shortName": "LEN",
+     "mediumName": "Lens",
+     "countryId": 22,
+     "countryName": "Frankrike",
+     "isoCode": "FRA"
+    },
+    {
+     "id": 496,
+     "type": "away",
+     "name": "Como",
+     "shortName": "COM",
+     "mediumName": "Como",
+     "countryId": 25,
+     "countryName": "Italien",
+     "isoCode": "ITA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 7,
+   "eventComment": "",
+   "eventDescription": "Viking - Sabah Mas",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 4,
+    "away": 1
+   },
+   "matchId": 97129,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 199,
+     "type": "home",
+     "name": "Viking",
+     "shortName": "VIK",
+     "mediumName": "Viking",
+     "countryId": 24,
+     "countryName": "Norge",
+     "isoCode": "NOR"
+    },
+    {
+     "id": 4649,
+     "type": "away",
+     "name": "Sabah Masazir",
+     "shortName": "SBH",
+     "mediumName": "Sabah Mas",
+     "countryId": 11,
+     "countryName": "Azerbajdzjan",
+     "isoCode": "AZE"
+    }
+   ]
+  },
+  {
+   "eventNumber": 8,
+   "eventComment": "",
+   "eventDescription": "Bristol C - Wolves",
+   "cancelled": false,
+   "outcome": "2",
+   "outcomeDescription": "2",
+   "outcomeScore": {
+    "home": 1,
+    "away": 2
+   },
+   "matchId": 97138,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 96,
+     "type": "home",
+     "name": "Bristol City",
+     "shortName": "BRC",
+     "mediumName": "Bristol C",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 89,
+     "type": "away",
+     "name": "Wolverhampton",
+     "shortName": "WOL",
+     "mediumName": "Wolves",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 9,
+   "eventComment": "",
+   "eventDescription": "Cardiff - West Ham",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 3,
+    "away": 3
+   },
+   "matchId": 97124,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 90,
+     "type": "home",
+     "name": "Cardiff",
+     "shortName": "CAR",
+     "mediumName": "Cardiff",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 52,
+     "type": "away",
+     "name": "West Ham",
+     "shortName": "WHU",
+     "mediumName": "West Ham",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 10,
+   "eventComment": "",
+   "eventDescription": "Wrexham - Middlesbr",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 97125,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 1554,
+     "type": "home",
+     "name": "Wrexham",
+     "shortName": "WRE",
+     "mediumName": "Wrexham",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 67,
+     "type": "away",
+     "name": "Middlesbrough",
+     "shortName": "MID",
+     "mediumName": "Middlesbr",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 11,
+   "eventComment": "",
+   "eventDescription": "Oxford - Reading",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 2,
+    "away": 0
+   },
+   "matchId": 97126,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 106,
+     "type": "home",
+     "name": "Oxford",
+     "shortName": "OXU",
+     "mediumName": "Oxford",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    },
+    {
+     "id": 31,
+     "type": "away",
+     "name": "Reading",
+     "shortName": "REA",
+     "mediumName": "Reading",
+     "countryId": 2,
+     "countryName": "England",
+     "isoCode": "ENG"
+    }
+   ]
+  },
+  {
+   "eventNumber": 12,
+   "eventComment": "",
+   "eventDescription": "Botafogo - A Mineiro",
+   "cancelled": false,
+   "outcome": "1",
+   "outcomeDescription": "1",
+   "outcomeScore": {
+    "home": 1,
+    "away": 0
+   },
+   "matchId": 97168,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 197,
+     "type": "home",
+     "name": "Botafogo RJ",
+     "shortName": "BOT",
+     "mediumName": "Botafogo",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    },
+    {
+     "id": 195,
+     "type": "away",
+     "name": "Atletico Mineiro",
+     "shortName": "ATL",
+     "mediumName": "A Mineiro",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    }
+   ]
+  },
+  {
+   "eventNumber": 13,
+   "eventComment": "",
+   "eventDescription": "Sao Paulo - Corinthia",
+   "cancelled": false,
+   "outcome": "X",
+   "outcomeDescription": "X",
+   "outcomeScore": {
+    "home": 0,
+    "away": 0
+   },
+   "matchId": 97169,
+   "participantType": "Team",
+   "participants": [
+    {
+     "id": 327,
+     "type": "home",
+     "name": "Sao Paulo",
+     "shortName": "SPA",
+     "mediumName": "Sao Paulo",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    },
+    {
+     "id": 198,
+     "type": "away",
+     "name": "Corinthians",
+     "shortName": "COR",
+     "mediumName": "Corinthia",
+     "countryId": 19,
+     "countryName": "Brasilien",
+     "isoCode": "BRA"
+    }
+   ]
+  }
+ ],
+ "distribution": [
+  {
+   "winDiv": 0,
+   "winSet": 0,
+   "winners": 106,
+   "amount": "48743,00",
+   "name": "13 rätt"
+  },
+  {
+   "winDiv": 1,
+   "winSet": 0,
+   "winners": 3192,
+   "amount": "379,00",
+   "name": "12 rätt"
+  },
+  {
+   "winDiv": 2,
+   "winSet": 0,
+   "winners": 34200,
+   "amount": "19,00",
+   "name": "11 rätt"
+  },
+  {
+   "winDiv": 3,
+   "winSet": 0,
+   "winners": 191091,
+   "amount": "0,00",
+   "name": "10 rätt"
+  }
+ ],
+ "sport": {
+  "id": 1,
+  "type": 1,
+  "name": "Fotboll"
+ },
+ "productName": "Europatipset",
+ "productId": 2,
+ "drawNumber": 2622,
+ "currentNetSale": "8478977,00",
+ "regCloseTime": "2026-11-04T20:44:00+01:00"
+}
