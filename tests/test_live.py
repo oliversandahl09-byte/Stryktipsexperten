@@ -55,6 +55,13 @@ class WindowTest(unittest.TestCase):
         self.assertTrue(live.in_live_window(raw, at(16, 50)))
         self.assertFalse(live.in_live_window(raw, at(17, 10)))
 
+    def test_keeps_writing_for_payout_after_all_ended(self):
+        start = datetime(2026, 10, 24, 14, 0, tzinfo=timezone.utc)
+        raw = {"drawNumber": 3, "drawEvents": [event(1, "Ended", start=start.isoformat(), current=(1, 0))]}
+        # Utanför livefönstret men inom tiden då utdelningen väntas.
+        self.assertFalse(live.in_live_window(raw, start + live.AFTER + live.BEFORE))
+        self.assertTrue(live.in_live_window(raw, start + live.AFTER + live.BEFORE, after=live.PAYOUT_AFTER))
+
 
 class WriteTest(unittest.TestCase):
     def test_writes_only_in_window(self):

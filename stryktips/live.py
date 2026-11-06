@@ -17,6 +17,9 @@ ENDED = {"Ended", "EndedAfterExtratime", "EndedAfterPenalties", "Fulltime"}
 NOT_STARTED = {"NotStarted"}
 # Matcher räknas som aktuella från en kvart före avspark till tre timmar efter.
 BEFORE, AFTER = timedelta(minutes=15), timedelta(hours=3)
+# När alla matcher är slut fortsätter live.json att skrivas en stund till, så att
+# Svenska Spels utdelning hinner komma med.
+PAYOUT_AFTER = timedelta(hours=6)
 
 
 def _start(event):
@@ -27,10 +30,10 @@ def _start(event):
         return None
 
 
-def in_live_window(raw_draw, now=None):
+def in_live_window(raw_draw, now=None, after=AFTER):
     """Sant om någon match på kupongen pågår eller nyss har slutat."""
     now = now or datetime.now(timezone.utc)
-    return any(start and start - BEFORE <= now <= start + AFTER
+    return any(start and start - BEFORE <= now <= start + after
                for start in map(_start, raw_draw.get("drawEvents", [])))
 
 
@@ -129,7 +132,8 @@ def write(out_path, force=False, draws=None, result=_result):
     """Skriver live.json för den omgång som spelas nu. Returnerar omgångsnumret,
     eller None om ingen match är aktuell (då skrivs ingenting)."""
     for raw in draws if draws is not None else candidates():
-        if raw and (force or in_live_window(raw)):
+        if raw and (force or in_live_window(raw)
+                    or (all_ended(raw) and in_live_window(raw, after=PAYOUT_AFTER))):
             out_path = Path(out_path)
             out_path.parent.mkdir(parents=True, exist_ok=True)
             out_path.write_text(json.dumps(build(raw, result(raw)), ensure_ascii=False, indent=1), encoding="utf-8")

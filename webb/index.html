@@ -937,9 +937,24 @@ function systemHits(rows, row) {
   return n;
 }
 
+// Innan veckans första match har startat visas förra omgångens utdelning.
+function renderPrevious() {
+  const f = data.forra;
+  $("payout").hidden = !f;
+  if (!f) return;
+  $("payout-h").textContent = `Utdelning omgång ${f.omgang}`;
+  const parts = [13, 12, 11, 10].map(k => {
+    const u = f.utdelning[k] || {};
+    return `<div>${k} rätt <b>${u.kr ? kr(u.kr) : "ingen utdelning"}</b>${u.vinnare != null ? `<small>${u.vinnare.toLocaleString("sv-SE")} vinnare</small>` : ""}</div>`;
+  });
+  $("payout-body").innerHTML = `<div class="payout-grid">${parts.join("")}</div>
+    <p>Förra omgången, rätt rad <b>${f.rad}</b>. När veckans första match har startat visas förväntad utdelning här, och den slutgiltiga när alla matcher är klara.</p>`;
+}
+
 // Visas längst ner på sidan när minst en match har startat.
 function renderPayout(started, rows) {
   const box = $("payout");
+  if (!started) return renderPrevious();
   const done = started && live.utdelning && Object.values(live.matcher).every(s => s.lage === "slut" || s.lage === "inställd");
   box.hidden = !started || (!done && !live.omsattning);
   if (box.hidden) return;
@@ -953,7 +968,7 @@ function renderPayout(started, rows) {
   let mine = "";
   if (rows.length) {
     const n = systemHits(rows, row);
-    const won = [13, 12, 11, 10].filter(k => n[k]);
+    const won = [13, 12, 11, 10].filter(k => n[k] && each[k]);
     const total = won.reduce((a, k) => a + n[k] * each[k], 0);
     mine = `<p class="mine">Ditt system: <b>${won.length ? won.map(k => `${n[k]} × ${k} rätt`).join(", ") + " = " + kr(total) : "ingen vinst"}</b></p>`;
   }
@@ -970,16 +985,29 @@ function renderPayout(started, rows) {
 const LIVE_PROXY = "https://stryktips-live.persandahl.workers.dev/";
 let liveFromProxy = false;
 
-async function fetchLive() {
-  const urls = dataUrls("live.json", "?t=" + Date.now());
-  if (LIVE_PROXY) urls.unshift(`${LIVE_PROXY}?omgang=${data.omgang}&spel=${SPEL}`);
+async function getJson(urls) {
   for (const url of urls) {
     try {
       const r = await fetch(url, { cache: "no-store" });
-      if (r.ok) { liveFromProxy = url.startsWith(LIVE_PROXY || "-"); return await r.json(); }
+      if (r.ok) return await r.json();
     } catch (e) {}
   }
   return null;
+}
+
+async function fetchLive() {
+  const file = () => getJson(dataUrls("live.json", "?t=" + Date.now()));
+  const proxy = LIVE_PROXY ? await getJson([`${LIVE_PROXY}?omgang=${data.omgang}&spel=${SPEL}`]) : null;
+  liveFromProxy = !!proxy;
+  if (!proxy) return file();
+  // En äldre proxy skickar inte omsättning och utdelning; då tas de från live.json.
+  if (!proxy.omsattning || (!proxy.utdelning && Object.values(proxy.matcher).every(s => s.lage === "slut" || s.lage === "inställd"))) {
+    const f = await file();
+    if (f && f.omgang === proxy.omgang) {
+      for (const k of ["omsattning", "radpris", "utdelning"]) if (proxy[k] == null && f[k] != null) proxy[k] = f[k];
+    }
+  }
+  return proxy;
 }
 
 async function refreshLive() {

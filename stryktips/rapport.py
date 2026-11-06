@@ -3,6 +3,8 @@
 import json
 from pathlib import Path
 
+from . import svenskaspel as ss
+from .live import payouts
 from .svenskaspel import OUTCOMES, SPEL, SPEL_NAMN
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "forslag"
@@ -47,8 +49,23 @@ def to_markdown(draw, system, risk):
     return "\n".join(lines) + "\n"
 
 
+def previous_payout(number):
+    """Rätt rad och utdelning för den senaste omgången före `number` som har resultat."""
+    for n in sorted((n for n in ss.saved_draw_numbers() if n < number), reverse=True):
+        raw = ss.load_raw("result", n)
+        if not raw:
+            continue
+        utdelning = payouts(raw)
+        if not utdelning:
+            return None
+        events = sorted(raw.get("events", []), key=lambda e: int(e.get("eventNumber", 0)))
+        rad = "".join(str(e.get("outcome") or "-").upper()[:1] for e in events)
+        return {"omgang": n, "rad": rad, "utdelning": utdelning}
+    return None
+
+
 def to_dict(draw, system, risk):
-    return {
+    out = {
         "omgang": draw.number,
         "spelstopp": draw.close_time,
         "rader": system.rows,
@@ -67,6 +84,10 @@ def to_dict(draw, system, risk):
             for p in system.picks
         ],
     }
+    forra = previous_payout(draw.number)
+    if forra:
+        out["forra"] = forra
+    return out
 
 
 def write(draw, system, risk):
