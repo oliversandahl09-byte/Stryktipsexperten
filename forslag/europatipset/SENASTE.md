@@ -2,22 +2,22 @@
 
 Spelstopp: 2026-11-08T14:59:00+01:00  
 System: **64 rader** (64 kr), risknivå 0.5  
-Chans till 13 rätt enligt modellen: **0.02%**
+Chans till 13 rätt enligt modellen: **0.03%**
 
 | # | Match | Tips | Sannolikhet 1/X/2 | Streck 1/X/2 | Värde 1/X/2 | Källa |
 |---|---|---|---|---|---|---|
-| 1 | Manchester United - Aston Villa | **1** | 44% / 25% / 31% | 43% / 26% / 31% | 1.02 / 0.97 / 1.00 | pinnacle |
-| 2 | Crystal Palace - Liverpool | **12** | 17% / 22% / 61% | 9% / 14% / 77% | **1.91** / **1.55** / 0.79 | pinnacle |
-| 3 | Sunderland - Chelsea | **1** | 27% / 26% / 47% | 11% / 17% / 72% | **2.45** / **1.52** / 0.66 | pinnacle |
-| 4 | Brighton - Brentford | **2** | 50% / 25% / 26% | 73% / 18% / 9% | 0.68 / **1.36** / **2.86** | pinnacle |
-| 5 | Ipswich - Bournemouth | **12** | 25% / 26% / 49% | 16% / 24% / 60% | **1.57** / 1.08 / 0.82 | pinnacle |
-| 6 | Inter - Como | **1** | 52% / 23% / 25% | 54% / 25% / 21% | 0.96 / 0.91 / **1.20** | pinnacle |
-| 7 | Genoa - Milan | **12** | 20% / 27% / 53% | 11% / 20% / 69% | **1.83** / **1.33** / 0.77 | pinnacle |
-| 8 | Fiorentina - Juventus | **12** | 27% / 27% / 46% | 15% / 25% / 60% | **1.80** / 1.08 / 0.77 | pinnacle |
-| 9 | Atlético Madrid - Barcelona | **2** | 26% / 22% / 52% | 19% / 23% / 58% | **1.36** / 0.95 / 0.90 | pinnacle |
-| 10 | Celta de Vigo - Levante | **12** | 52% / 25% / 23% | 77% / 17% / 6% | 0.68 / **1.44** / **3.85** | pinnacle |
-| 11 | AIK - Häcken | **2** | 23% / 23% / 54% | 25% / 29% / 46% | 0.91 / 0.79 / **1.18** | pinnacle |
-| 12 | Brommapojkarna - Mjällby | **12** | 39% / 28% / 33% | 46% / 26% / 28% | 0.85 / 1.06 / **1.18** | pinnacle |
+| 1 | Manchester United - Aston Villa | **1** | 44% / 25% / 31% | 44% / 26% / 30% | 0.99 / 0.98 / 1.03 | pinnacle |
+| 2 | Crystal Palace - Liverpool | **X2** | 17% / 22% / 62% | 10% / 13% / 77% | **1.66** / **1.65** / 0.80 | pinnacle |
+| 3 | Sunderland - Chelsea | **1** | 27% / 26% / 47% | 11% / 17% / 72% | **2.43** / **1.54** / 0.65 | pinnacle |
+| 4 | Brighton - Brentford | **12** | 51% / 24% / 25% | 73% / 17% / 10% | 0.69 / **1.44** / **2.51** | pinnacle |
+| 5 | Ipswich - Bournemouth | **12** | 24% / 26% / 50% | 17% / 24% / 59% | **1.40** / 1.08 / 0.85 | pinnacle |
+| 6 | Inter - Como | **1** | 50% / 23% / 27% | 54% / 25% / 21% | 0.92 / 0.93 / **1.27** | pinnacle |
+| 7 | Genoa - Milan | **12** | 20% / 27% / 52% | 12% / 21% / 67% | **1.69** / **1.30** / 0.78 | pinnacle |
+| 8 | Fiorentina - Juventus | **1** | 28% / 27% / 45% | 15% / 27% / 58% | **1.85** / 1.01 / 0.78 | pinnacle |
+| 9 | Atlético Madrid - Barcelona | **2** | 24% / 22% / 54% | 17% / 23% / 60% | **1.43** / 0.95 / 0.90 | pinnacle |
+| 10 | Celta de Vigo - Levante | **12** | 51% / 25% / 24% | 75% / 17% / 8% | 0.68 / **1.48** / **2.97** | pinnacle |
+| 11 | AIK - Häcken | **2** | 21% / 22% / 56% | 24% / 28% / 48% | 0.88 / 0.80 / **1.18** | pinnacle |
+| 12 | Brommapojkarna - Mjällby | **12** | 39% / 27% / 34% | 43% / 28% / 29% | 0.90 / 0.98 / **1.17** | pinnacle |
 | 13 | Kalmar - Sirius | **1** | 32% / 27% / 42% | 15% / 22% / 63% | **2.11** / **1.21** / 0.66 | pinnacle |
 
 **Värde** = sannolikhet delat med streck. Över 1 betyder att tecknet är understreckat, alltså troligare än vad svenska folket tror. Fetstil från 1,15.
